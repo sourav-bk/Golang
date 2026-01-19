@@ -1,7 +1,5 @@
 Go (Golang) Questions — Categorized
 
-Note: Categories are indicative to help study planning. Some topics span multiple levels.
-
 # Basic Concepts
 
 1. What is Go programming language, and why is it used? 11
