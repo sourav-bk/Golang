@@ -1,4 +1,8 @@
 I have nearly 5 years of experience working with two companies. I started my career at Insync Tech Fix Solutions, and currently I am working as an Associate Consultant at Capgemini.
+
+
 I joined Capgemini as a Magento / Adobe Commerce Developer. Due to limited Magento opportunities, I later transitioned to working as a Golang Developer. During this time, I gained good exposure to the E-commerce domain, including both B2B and B2C applications.
+
+
 From a technology perspective, my primary skills include PHP, JavaScript, and Golang. I have hands-on experience with databases such as MySQL and NoSQL databases including MariaDB, PostgreSQL, and MongoDB. I have also worked with Redis cache and RabbitMQ for message queuing.
 Additionally, I have experience in building APIs using REST and GraphQL, working with microservices architecture, CI/CD pipelines, and basic exposure to gRPC
