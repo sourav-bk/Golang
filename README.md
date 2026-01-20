@@ -1,10 +1,15 @@
 <details>
   <summary>Click to expand for more details</summary>
+  
+  - <details><summary> Option -1</summary> Option -1 Details [link](#installation)</details>
+  - <details><summary> Option -2</summary> Option -2 Details [link](#Setup)</details>
+  
+</details>
 
-  ### Any Markdown content goes here
 
-  * You can include lists, code blocks, and other formatting.
-  * Just be sure to add a blank line after the `</summary>` tag and before the content you want to include.
 
-  ```python
-  print("hello world!")
+### installation
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+
+### setup
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
