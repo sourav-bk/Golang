@@ -1,8 +1,10 @@
 <details>
   <summary>Click to expand for more details</summary>
   
-  - <details><summary> Option -1</summary> Option -1 Details [link](#installation)</details>
-  - <details><summary> Option -2</summary> Option -2 Details [link](#Setup)</details>
+  - <details><summary> Option -1</summary> 
+    Option -1 Details [link](#installation)</details>
+  - <details><summary> Option -2</summary> 
+    Option -2 Details [link](#Setup)</details>
   
 </details>
 
