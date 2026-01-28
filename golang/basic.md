@@ -1,5 +1,4 @@
---Basic -- 
-   ## what is GO? - Why Developers Choose Go?
+## what is GO? - Why Developers Choose Go?
      
 Go (Golang) is a statically typed, compiled programming language designed by Google.
 It is known for its simplicity, fast, and efficient, especially for building scalable backend systems.
