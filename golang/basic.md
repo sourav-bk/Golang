@@ -1,5 +1,6 @@
 --Basic -- 
-   - what is GO? - Why Developers Choose Go?
+   ## what is GO? - Why Developers Choose Go?
+     
 Go (Golang) is a statically typed, compiled programming language designed by Google.
 It is known for its simplicity, fast, and efficient, especially for building scalable backend systems.
 
@@ -27,14 +28,14 @@ We chose Go because it is fast, cost‑effective, easy to develop and deploy, an
 
 
    
-   - How Run Go Code?
-   - init and main function Role 
-   - what is GOPATH | GOROOT
-   - Cli - go mod init | run | mod tidy | build | go install . 
-   - Go workspaces | How Create project workspaces
-   - mod and sum file
-   - Packages and module
-   - Exported and Unexported identifiers
+   ## How Run Go Code?
+   ## init and main function Role 
+   ## what is GOPATH | GOROOT
+   ## Cli - go mod init | run | mod tidy | build | go install . 
+   ## Go workspaces | How Create project workspaces
+   ## mod and sum file
+   ## Packages and module
+   ## Exported and Unexported identifiers
 
 
 
