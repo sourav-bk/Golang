@@ -28,15 +28,17 @@ We chose Go because it is fast, cost‑effective, easy to develop and deploy, an
 
    
    ## How Run Go Code?
-Running a Go application is simple because Go is a compiled language. When you build a Go program, it is compiled into a single static binary file. This means you do not need to install a Go runtime on the target machine to run the program — you only need the compiled file.
+Running a Go application is simple because Go is a compiled language. When you build a Go program, it is compiled into a single static binary file. This means you do not need to install a Go runtime on the target machine — you only need the compiled file.
 
 However, to compile Go code, you must install Go on your system (or download the Go compiler). You write your code in a file with the .go extension.
 
 Every Go program starts from the main function. The main function is the entry point of the program, and execution always begins there.
 
-To create the executable file, you run the go build command. This command builds an executable for the current operating system and architecture by default.
+To create an executable file, you use the go build command. By default, this command builds an executable for the current operating system and architecture.
 
 If you want to build an executable for a different target system, you can specify the GOOS and GOARCH environment variables when running go build. This allows you to cross-compile for another operating system or CPU architecture.
+
+Go also provides the go run command, which is used to quickly compile and run a Go program from the command line without creating a permanent executable file.
 
    
    ## init and main function Role 
