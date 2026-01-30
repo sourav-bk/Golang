@@ -42,6 +42,12 @@ Go also provides the go run command, which is used to quickly compile and run a 
 
    
    ## init and main function Role 
+
+main() :== The main() function is the entry point of the executable application, determining the program's primary logic and flow. 
+
+init() :== In Go, init() automatically runs once per package before main() to initialize variables, set up states, or register resources, ensuring preparation before execution.   
+
+
    ## what is GOPATH | GOROOT
    ## Cli - go mod init | run | mod tidy | build | go install . 
    ## Go workspaces | How Create project workspaces
