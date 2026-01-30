@@ -45,7 +45,7 @@ Go also provides the go run command, which is used to quickly compile and run a 
 
 main() :== The main() function is the entry point of the executable application, determining the program's primary logic and flow. 
 
-init() :== In Go, init() automatically runs once per package before main() to initialize variables, set up states, or register resources, ensuring preparation before execution.   
+init() :== In Go, the init() function is a special built‑in function that the Go runtime executes automatically once per package, before the main() function runs. It is commonly used for tasks such as initializing global variables, validating configuration, or setting up resources (for example, checking database connections).
 
 
    ## what is GOPATH | GOROOT
