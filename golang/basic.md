@@ -48,7 +48,23 @@ main() :== The main() function is the entry point of the executable application,
 init() :== In Go, the init() function is a special built‑in function that the Go runtime executes automatically once per package, before the main() function runs. It is commonly used for tasks such as initializing global variables, validating configuration, or setting up resources (for example, checking database connections).
 
 
-   ## what is GOPATH | GOROOT
+   ## what is GOROOT | GOPATH 
+
+--GOROOT 
+
+GOROOT points to the Go installation directory.
+This is where the Go compiler, standard library, and tools present.
+need to set GOROOT manually. The Go installer sets it automatically.
+
+--GOPATH 
+
+GOPATH is Where Go code dependencies, downloaded third‑party packages, and compiled binaries are stored.
+Before Go 1.11 version , all Go projects have to required to reside the $GOPATH/src directory.
+
+after introduced of stable production ready "'Go Modules'" on Go 1.16 version. GOPATH mode was effectively disabled by default. As a result, developers no longer need to place projects inside GOPATH, and Go projects can now live anywhere on the filesystem.  
+
+However, GOPATH is still used internally by Go for purposes such as the module cache and installed binaries.
+   
    ## Cli - go mod init | run | mod tidy | build | go install . 
    ## Go workspaces | How Create project workspaces
    ## mod and sum file
