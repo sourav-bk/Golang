@@ -67,7 +67,13 @@ However, GOPATH is still used internally by Go for purposes such as the module c
 
    ## Packages || Go Modules || Go workspaces 
    
-   -- Packages
+   --Go Packages
+   
+   A package is a collection of one or more Go source files (.go files) located in the same directory that are compiled together and share the same package name. 
+   
+   Every Go source file must declare its package name at the very top of the file using a package declaration. 
+   
+   Packages form the fundamental unit for organizing and reusing code in Go, enabling related source files to be grouped logically while helping structure programs, control visibility, and promote modular, maintainable code.
    
    --Go Modules 
 
