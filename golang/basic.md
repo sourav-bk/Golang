@@ -110,9 +110,7 @@ Additionally, a go.work file can be generated from an existing go.mod file if it
 
       
    ## Cli - go mod init | run | mod tidy | build | go install . 
-   ## Go workspaces | How Create project workspaces
-   ## mod and sum file
-   ## Packages and module
+ 
    ## Exported and Unexported identifiers
 
 
