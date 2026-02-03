@@ -96,8 +96,19 @@ The go mod tidy command is used to maintain module files. It adds any missing de
 
 
    --Go workspaces
-   
-   
+
+Go workspaces:
+Go workspaces, introduced in Go 1.18, make it easier to work with multiple Go modules within a single project during local development without having to edit the go.mod files of each individual module. 
+
+go work init :
+Go workspace is initialized using 'go work init' command . This creates a go.work file.
+
+go.work :
+The go.work file lists the local modules that are part of the workspace using use directives. These directives tell the Go toolchain to use the local versions of the specified modules during development. When a workspace is created, tools like GoLand can automatically detect and include all modules in the current project. 
+
+Additionally, a go.work file can be generated from an existing go.mod file if it contains replace directives, simplifying the transition to workspace mode.
+
+      
    ## Cli - go mod init | run | mod tidy | build | go install . 
    ## Go workspaces | How Create project workspaces
    ## mod and sum file
