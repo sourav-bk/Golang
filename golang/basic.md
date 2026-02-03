@@ -65,7 +65,10 @@ after introduced of stable production ready "'Go Modules'" on Go 1.16 version. G
 
 However, GOPATH is still used internally by Go for purposes such as the module cache and installed binaries.
 
-   ## Go Modules || Go workspaces 
+   ## Packages || Go Modules || Go workspaces 
+   
+   -- Packages
+   
    --Go Modules 
 
    --Go workspaces
