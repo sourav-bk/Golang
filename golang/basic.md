@@ -64,6 +64,12 @@ Before Go 1.11 version , all Go projects have to required to reside the $GOPATH/
 after introduced of stable production ready "'Go Modules'" on Go 1.16 version. GOPATH mode was effectively disabled by default. As a result, developers no longer need to place projects inside GOPATH, and Go projects can now live anywhere on the filesystem.  
 
 However, GOPATH is still used internally by Go for purposes such as the module cache and installed binaries.
+
+   ## Go Modules || Go workspaces 
+   --Go Modules 
+
+   --Go workspaces
+   
    
    ## Cli - go mod init | run | mod tidy | build | go install . 
    ## Go workspaces | How Create project workspaces
