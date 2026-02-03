@@ -73,34 +73,3 @@ However, GOPATH is still used internally by Go for purposes such as the module c
 
 
 
-go run main.go: This command directly executes your Go program. main.go refers to the name of your main Go file, which can be different.
-go build: This command compiles your Go project and generates an executable file . The type of executable file depends on your operating system:
-Mac: Generates a .DMG file .
-Windows: Generates an .exe file .
-Ubuntu: Generates a .deb file.
-Note that an executable generated for one OS will only run on that OS . However, you can specify an environment to generate an executable for a different OS, even if you're on a different system.
-go install: This command does the same as go build but also moves the generated executable file to your Go path variable, allowing you to run it from any directory.
-
-
-
-
-
-
-
-Go is a statically typed language that requires setting up a workspace and compiling the code to run it .
-
-Here are the common ways to run Go code:
-
-Using the Command Line (Terminal/Command Prompt):
-
-Install Go: Ensure Go is installed on your system.
-Write Your Code: Create a .go file (e.g., main.go) with your Go program.
-Navigate: Open your terminal and navigate to the directory where your .go file is located.
-Run:
-Use go run main.go to compile and execute the program immediately.
-Use go build main.go to compile the code and create an executable file. You then run the executable directly.
-Using an IDE (like VS Code):
-
-Install Go Extension: Add the official Go extension for Visual Studio Code.
-Open Your File: Open your Go project in VS Code.
-Run: Use the Run and Debug view or search for "Go: Run" or "Go: Build" in the command palette.
