@@ -111,7 +111,14 @@ Additionally, a go.work file can be generated from an existing go.mod file if it
       
    ## Cli - go mod init | run | mod tidy | build | go install . 
  
-   ## Exported and Unexported identifiers
+   ## Access Modifiers in Go: Exported vs Unexported Identifiers
 
+Go does not use traditional access‑control keywords such as public, private, or protected. Instead, access control is determined by the capitalization of an identifier’s name. This rule controls whether an identifier can be accessed outside the package in which it is defined.
+
+## Exported Identifiers
+An identifier whose name starts with an uppercase letter is called an exported identifier. Exported identifiers are accessible from any other package that imports the defining package.
+
+## Unexported Identifiers
+An identifier whose name starts with a lowercase letter is called an unexported identifier (also known as package‑private). Unexported identifiers are accessible only within the same package and cannot be accessed from outside it.
 
 
