@@ -20,7 +20,7 @@ Common primitive data types in Go include:
 
  note -- Go provides multiple  Primitive types based on bit size (8, 16, 32, and 64 bits).
 
-  ## - Non‑Primitive Data Types ::
+ ## - Non‑Primitive Data Types ::
 Non‑primitive data types are built using primitive data types. They are used to store collections of data, references to values, or more complex data structures.
 
 Common non‑primitive data types in Go include:
