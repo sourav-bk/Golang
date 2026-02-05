@@ -1,10 +1,10 @@
-## Data type in Go | Primitive / Non-Primitive
+# Data type in Go | Primitive / Non-Primitive
 
 Go is a statically and strongly typed compiled language, that meaning every variable has a specific data type that cannot change after declaration. It makes Golang as Type safety to improve reliability and performance.
 
 In Go, data types are broadly classified into two categories: Primitive and Non‑Primitive data types.
 
-  ### - Primitive Data Types
+  ## - Primitive Data Types ::
 Primitive data types, also known as basic or core types, are the fundamental building blocks of the Go language. They are used to store simple values.
 Common primitive data types in Go include:
 
@@ -19,6 +19,31 @@ Common primitive data types in Go include:
  Numeric Types: complex types (complex64, complex128)
 
  note -- Go provides multiple  Primitive types based on bit size (8, 16, 32, and 64 bits).
+
+  ## - Non‑Primitive Data Types ::
+Non‑primitive data types are built using primitive data types. They are used to store collections of data, references to values, or more complex data structures.
+
+Common non‑primitive data types in Go include:
+
+Arrays
+Fixed‑length collections of elements of the same primitive data type.
+
+Slices
+Dynamic‑length sequences of elements of the same primitive data type.
+
+Structures (Structs)
+Used to group multiple fields of different data types into a single unit.
+
+Maps
+Key‑value pairs where keys are unique and values can be duplicated.
+
+Pointers
+Store the memory address of another variable.
+
+Channels
+Used for communication between goroutines, allowing concurrent functions to exchange data safely.
+
+ 
 
 ## Convert types in Golang
 ## Constant
