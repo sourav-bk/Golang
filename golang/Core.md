@@ -9,10 +9,15 @@ Primitive data types, also known as basic or core types, are the fundamental bui
 Common primitive data types in Go include:
 
  Boolean: bool — stores true or false
+ 
  Integer Types: int, int8, int16, int32, int64, uint, uint8, uint16, uint32, uint64
+ 
  Floating‑Point Types: float32, float64
+ 
  String: string — used to store text data
+ 
  Numeric Types: complex types (complex64, complex128)
+
  note -- Go provides multiple  Primitive types based on bit size (8, 16, 32, and 64 bits).
 
 ## Convert types in Golang
