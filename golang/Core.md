@@ -69,14 +69,10 @@ Boolean = false
 String = "" (An empty string)
 Pointers, Slices, Maps, Channels, Functions or Interfaces = nill
 
-
-
-
 ## Convert types in Golang
-## Constant
+
 ## Garbage collection 
 ## memory management in go
-## Zero Value of variable in GO 
 ## Pointer ? how go handel  
 ## Handle memory leak 
 ## new() and make() keyword 
