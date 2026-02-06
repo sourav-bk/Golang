@@ -52,9 +52,6 @@ Go is a statically and strongly typed compiled language, that meaning every vari
 Variables are declared using the 'var' keyword or the shorthand ':=' operator. 
 
 
-
-
-
 ### Constants:
 In Go, a constant is an immutable value that must be assigned at compile time and cannot be changed during the program's execution. They are useful for fixed values.
 
