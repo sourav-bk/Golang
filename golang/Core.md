@@ -85,8 +85,33 @@ string -> []byte || b := []byte(s)
 
 []byte -> string || s := string(b)
 
-## Garbage collection 
-## memory management in go
+## Memory management and Garbage collection 
+### Memory management :
+
+memory management in Golang, its simple compared to other languages. Golang handles memory allocation and deallocation automatically.
+
+
+The 2 main methods used for memory allocation in Golang. 
+
+1. new() 
+
+Using new() we allocated memory but not initialize.
+new() give to Zero storage
+
+
+2. make()
+
+and Using make() we allocated memory and it is initialize.
+make() give to non-Zero storage
+
+
+### Garbage collection :
+
+In Golang, GC automatically happens when objects are out of scope or nil. Go internally uses "Tricolor Mark-and-Sweep" algorithm for Garbage collection.
+
+also, Golang provide limited excess to manipulate GC using GOGC and GOMEMLIMIT during go env setup.
+
+
 ## Pointer ? how go handel  
 ## Handle memory leak 
 ## new() and make() keyword 
