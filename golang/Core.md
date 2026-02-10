@@ -110,11 +110,13 @@ make() give to non-Zero storage
 In Golang, GC automatically happens when objects are out of scope or nil. Go internally uses "Tricolor Mark-and-Sweep" algorithm for Garbage collection.
 
 also, Golang provide limited excess to manipulate GC using GOGC and GOMEMLIMIT during go env setup.
+Manually trigger garbage collection using == runtime.GC() during go runtime.
+
 
 
 ## Pointer ? how go handel  
-## Handle memory leak 
-## new() and make() keyword 
+
+
 ## manually trigger garbage collection 
 ## Function and method (variadic | anonymous )
 ## Closure
