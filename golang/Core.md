@@ -86,6 +86,7 @@ string -> []byte || b := []byte(s)
 []byte -> string || s := string(b)
 
 ## Memory management and Garbage collection 
+
 ### Memory management :
 
 memory management in Golang, its simple compared to other languages. Golang handles memory allocation and deallocation automatically.
@@ -110,7 +111,9 @@ make() give to non-Zero storage
 In Golang, GC automatically happens when objects are out of scope or nil. Go internally uses "Tricolor Mark-and-Sweep" algorithm for Garbage collection.
 
 also, Golang provide limited excess to manipulate GC using GOGC and GOMEMLIMIT during go env setup.
-Manually trigger garbage collection using == runtime.GC() during go runtime.
+
+#### Manually trigger garbage collection using 
+== runtime.GC() during go runtime.
 
 
 
