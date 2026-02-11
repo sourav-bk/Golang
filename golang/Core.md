@@ -177,3 +177,9 @@ Interfaces can also be used  as variable types. The empty interface (interface{}
 
 ## Generic  
 Generics introduced in Go 1.18.  Generics in Go allow to write functions and types that work with multiple data types while maintaining type safety.
+
+
+
+## Range keyword: 
+
+In Go, the range keyword is used within a for loop to iterate over elements in a variety of data structures, including arrays, slices, strings, maps, and channels. That unpacks data during for loop so don't have to manage counters or pointers manually.
