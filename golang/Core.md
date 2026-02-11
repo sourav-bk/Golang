@@ -141,14 +141,25 @@ Nil pointer is checked at runtime.
 
 ## Function and method (variadic | anonymous )
 
+### Function
 
-## variadic Function:: 
+A function is piece or blocks of code that does a specific task and called independently.
+Function help organize code, improve readability, and allow re-use.
+
+### Methods:
+
+In Go, method is like function but associated with a special argument type called a receiver. 
+The receiver binding the method to a specific type, which can be a struct or a non-struct type.
+Method is called on an instance of that type and is used to define behavior related to that structure.
+
+
+### variadic Function:: 
 
 In Go, Function that can accept a variable number of arguments of any type.
 Variadic functions are declared with an ellipsis (...) before the type.
 Ex: fmt.Println()
 
-## Anonymous Function
+### Anonymous Function
 
 An anonymous function in Go is a function that does not have a name. It can be defined and used immediately by adding () at the end.
 Primary use of anonymous functions in Goroutine.
