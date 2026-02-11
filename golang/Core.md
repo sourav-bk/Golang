@@ -176,4 +176,4 @@ In Go, an interface  is a collection of method signatures . It acts as a contrac
 Interfaces can also be used  as variable types. The empty interface (interface{}) can hold values of any type, such as integers, strings, or float.
 
 ## Generic  
-## Method overloading 
+Generics introduced in Go 1.18.  Generics in Go allow to write functions and types that work with multiple data types while maintaining type safety.
