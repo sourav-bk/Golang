@@ -89,7 +89,8 @@ string -> []byte || b := []byte(s)
 
 ### Memory management :
 
-memory management in Golang, its simple compared to other languages. Golang handles memory allocation and deallocation automatically.
+memory management in Golang, its simple compared to other languages. Golang handles memory allocation and deallocation automatically. Go compiler is smart. it used escape analysis to decide, whether data is allocated on the stack or heap memory.
+
 
 
 The 2 main methods used for memory allocation in Golang. 
@@ -106,6 +107,8 @@ and Using make() we allocated memory and it is initialize.
 make() give to non-Zero storage
 
 
+
+
 ### Garbage collection :
 
 In Golang, GC automatically happens when objects are out of scope or nil. Go internally uses "Tricolor Mark-and-Sweep" algorithm for Garbage collection.
@@ -115,9 +118,26 @@ also, Golang provide limited excess to manipulate GC using GOGC and GOMEMLIMIT d
 #### Manually trigger garbage collection using 
 == runtime.GC() during go runtime.
 
+## Pointer in go ? how go handle in Golang ?
+
+In Go, a pointer is simply a variable that stores Memory address of another variable value.
+
+In pointer, There are 2 symbols need to know for Core Operators.
+
+1. Address-of operator (&) 
+This generates a pointer. It finds where value is sitting in memory.
+
+2. Dereference operator (*)
+"follows" the pointer to the actual value stored at that address.
 
 
-## Pointer ? how go handel  
+### How Go Handles Pointers:
+
+Go is memory-safe. Uninitialized pointers are nil.
+Go does not allow pointer arithmetic, so we can’t access random memory locations.
+Nil pointer is checked at runtime.
+
+ 
 
 
 ## manually trigger garbage collection 
