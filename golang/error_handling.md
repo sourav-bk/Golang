@@ -18,9 +18,8 @@ Inside the deferred function, recover() is called. If a panic is active, it capt
 
 
 
-
-
-
-# Panic and Recover
 # defer statement
-# how create Custom Error type in go
+
+The defer statement guarantees that, Any function method, or statement is executed at the end of the surrounding function.
+If a function contains multiple defer statements, they are pushed onto a stack and executed in reverse order, following Last-In, First-Out (LIFO) behavior.
+
