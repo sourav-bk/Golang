@@ -166,6 +166,9 @@ Primary use of anonymous functions in Goroutine.
 
 
 ## Closure
+A closure is an anonymous function that uses variables from outside its own body.
+In Go, a closure captures variables from its outer scope and remembers their values between calls.
+
 ## Interfaces
 ## Generic  
 ## Method overloading 
