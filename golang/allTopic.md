@@ -41,23 +41,24 @@
   - defer statement
   - how create Custom Error type in go
 
--- Array | Map | Slice | Structure  --
-    - array
-    - map
-    - Slice
-    - how slice different from array
-    - Structure
-    - Renge keyword 
+
+-- Array | Map | Slice | Structure 
+   - array
+   - map
+   - Slice
+   - how slice different from array
+   - Structure
+   - Renge keyword 
 
 
 -- Go Routine and Channel   --
-    - what is Go Routine
-    - What is Go Channel | Type of Channel
-    - Concurrency in go
-    - Difference between concurrency and parallelism in golang
-    - Go Memory Model | Thread Safety | Mutexes
-    - Data Race | Race Condition
-    - Deadlocks
+   - what is Go Routine
+   - What is Go Channel | Type of Channel
+   - Concurrency in go
+   - Difference between concurrency and parallelism in golang
+   - Go Memory Model | Thread Safety | Mutexes
+   - Data Race | Race Condition
+   - Deadlocks
 
 
 
