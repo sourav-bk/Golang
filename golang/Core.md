@@ -170,5 +170,9 @@ A closure is an anonymous function that uses variables from outside its own body
 In Go, a closure captures variables from its outer scope and remembers their values between calls.
 
 ## Interfaces
+
+In Go, an interface  is a collection of method signatures . It acts as a contract that type must fulfill by implementing all the methods declared in the interface. This allows Go to achieve polymorphism without traditional inheritance .
+
+Interfaces can also be used in function or method as variable types. The empty interface (interface{}) can hold values of any type, such as integers, strings, or float
 ## Generic  
 ## Method overloading 
