@@ -20,6 +20,32 @@ Go is designed to be concurrent, which allows it to be parallel when have a proc
 
 
 # What is Go Channel | Type of Channel
+
+A channel in Go is a communication mechanism used by goroutines.
+It allows safe data sharing between goroutines without explicit locks.
+
+Channels are reference types. zero value is nil. Initialize using the make() function.
+
+We can send and receive values on channel with the channel operator, (<-)(->).
+
+By default, channels are bidirectional, but for better API design and type safety, we often restrict them in function signatures:
+
+Bidirectional: chan T (can send and receive).
+
+Send-only: chan<- T (the arrow points into the chan).
+
+Receive-only: <-chan T (the arrow points out of the chan).
+
+Channel has been closed using close() function. No values can be sent after closing but  Receivers can still read remaining values after close .Channel close() Used to signal completion.
+
+## Type of Channel 
+Channels can be TWO type
+1. Unbuffered Channel  2. Buffered Channel
+
+Unbuffered : Capacity of 0. The sender blocks until a receiver is ready. Used for strict synchronization.
+
+Buffered : Has a fixed capacity. The Sender only blocks when the buffer is full. receiver blocks when it's empty. its Allows asynchronous communication.
+
 # Concurrency in go
 # Difference between concurrency and parallelism in golang
 # Go Memory Model | Thread Safety | Mutexes
