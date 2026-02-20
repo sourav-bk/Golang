@@ -68,3 +68,20 @@ All data races are race conditions. Not all race conditions are data races
 
 
 # Deadlocks
+
+
+## sync.WaitGroup:
+
+It's a fundamental tool for concurrency management.
+Think of it as a counter that tells main program and wait till all goroutine finish. 
+Without it, main function might finish and exit while goroutines are still halfway through their work. and that causing to Race Conditions.
+It's also Standard Way to dill To prevent Race Conditions in Go.
+
+- The sync.WaitGroup type exposes three core methods  1. Add(n int) 2. Done() 3. Wait()
+
+### Add(int): 
+Increments the counter by the number of goroutines you are starting.
+
+### Done(): Decrements the counter by 1. Usually called via defer inside the goroutine.
+
+### Wait(): Blocks the execution of the program (usually in main) until the counter reaches zero.
