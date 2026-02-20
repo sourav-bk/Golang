@@ -77,7 +77,7 @@ Think of it as a counter that tells main program and wait till all goroutine fin
 Without it, main function might finish and exit while goroutines are still halfway through their work. and that causing to Race Conditions.
 It's also Standard Way to dill To prevent Race Conditions in Go.
 
-- The sync.WaitGroup type exposes three core methods  1. Add(n int) 2. Done() 3. Wait()
+- sync.WaitGroup operates on  internal counter using three main methods:
 
 ### Add(int): 
 Increments the counter by the number of goroutines you are starting.
