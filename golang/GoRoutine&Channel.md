@@ -101,18 +101,19 @@ The standard Mutex is "exclusive." If one goroutine has the lock, nobody else ca
 - For simple lock we use The sync.Mutex (The Simple Lock) or more specialized, "smart" lock we used sync.RWMutex.
 
 
-- Mutexes have two methods 
-###  Lock() :
-Blocks both new Readers and new Writers
+- Mutexes have two methods
+  ###  Lock() :
+  Blocks both new Readers and new Writers
+  
+  ### Unlock() :
+  Releases the lock for everyone.
 
-### Unlock() : 
-Releases the lock for everyone.
+
 
 
 - also RWMutex have two methods for Read Lock and Read Unlock
-
-### RLock() 
-Blocks new Writers, but allows other Readers.
-
-### RUnlock() 
-Releases one reader's hold on the lock.
+  ### RLock()
+  Blocks new Writers, but allows other Readers.
+  
+  ### RUnlock()
+  Releases one reader's hold on the lock.
