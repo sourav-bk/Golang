@@ -49,5 +49,22 @@ Buffered : Has a fixed capacity. The Sender only blocks when the buffer is full.
 # Concurrency in go
 # Difference between concurrency and parallelism in golang
 # Go Memory Model | Thread Safety | Mutexes
-# Data Race | Race Condition
+# Data Race and Race Condition
+
+## Race Conditions:
+A Race Condition is a logic/design errors, not syntax errors in the program  when the correctness of the program depends on the order/timing of goroutines.
+A Race condition happens when multiple goroutines access and modify shared data concurrently using goroutines without proper synchronization, that causing un-predictable results.
+
+- Go makes detection easier with -race flag during run or test Go program to check unsynchronized memory access at runtime.
+
+### 
+
+
+## Data Race :
+
+A Data Race is a specific type of race condition that happens at the memory level when Two or more goroutines access the same memory location concurrently. There is no synchronization used to coordinate the access.It is a low-level memory safety issue.
+
+All data races are race conditions. Not all race conditions are data races
+
+
 # Deadlocks
