@@ -82,6 +82,9 @@ It's also Standard Way to dill To prevent Race Conditions in Go.
 ### Add(int): 
 Increments the counter by the number of goroutines you are starting.
 
-### Done(): Decrements the counter by 1. Usually called via defer inside the goroutine.
+### Done(): 
+Decrements the counter by 1. Usually called via defer inside the goroutine.
 
-### Wait(): Blocks the execution of the program (usually in main) until the counter reaches zero.
+### Wait(): 
+
+Blocks the execution of the program (usually in main) until the counter reaches zero.
