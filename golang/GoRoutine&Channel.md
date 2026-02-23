@@ -137,3 +137,11 @@ The standard Mutex is "exclusive." If one goroutine has the lock, nobody else ca
   
   ### RUnlock()
   Releases one reader's hold on the lock.
+
+
+
+# select statement ::
+
+In Go, the select statement is like a switch specifically designed for channels. Its wait on multiple channel operations (send/receive) simultaneously and blocking until one of them is ready to go.
+
+Normally, select blocks the goroutine until a case is ready. By adding a default block, we can make it non-blocking. If no channel is ready, the default code executes immediately.
