@@ -67,7 +67,27 @@ A Data Race is a specific type of race condition that happens at the memory leve
 All data races are race conditions. Not all race conditions are data races
 
 
-# Deadlocks
+## Deadlocks :
+
+A deadlock occurs when two or more goroutines are permanently blocked. Its waiting for each other to release resources or send/receive data — so no progress is possible.
+
+In simple Deadlock is a state where goroutines wait indefinitely for resources or communication, causing the program to stop executing.
+
+In Go, deadlocks usually happen due to incorrect use of channels, mutexes, or wait groups.
+
+### Channels ::
+ Common Deadlock Scenarios in Go. Unbuffered Channel Blocking
+
+
+### Circular Wait (Mutexes) ::
+This occurs when Goroutine A holds Lock 1 and waits for Lock 2, while Goroutine B holds Lock 2 and waits for Lock 1.
+
+
+
+### Resource Leak / WaitGroup Misuse ::
+
+If  increment a sync.WaitGroup but a goroutine crashes or returns before calling .Done(), the wg.Wait() call will block forever.
+
 
 
 ## sync.WaitGroup:
