@@ -131,4 +131,5 @@
  Q. Can you explain how slices work in Go, including their structure and memory management? 
  
  Q. Given a string, reverse the order of its characters and return the reversed string. 
+ 
  Q. Crud in Go
