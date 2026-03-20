@@ -1,17 +1,86 @@
-<details>
-  <summary>Click to expand for more details</summary>
+# Core GO :
+  <details>
+    <summary> What is GO? - Why Developers Choose Go? </summary>  
+  </details>
+  <details>
+    <summary> How Run Go Code? </summary>  
+  </details>
+  <details>
+    <summary> init() and main() function Role ? </summary>  
+  </details>
   
-  - <details><summary> Option -1</summary> 
-    Option -1 Details [link](#installation)</details>
-  - <details><summary> Option -2</summary> 
-    Option -2 Details [link](#Setup)</details>
+  <hr>
+  <details>
+    <summary> What is GOROOT | GOPATH </summary>  
+  </details>
+  <details>
+    <summary> Packages || Go Modules || Go workspaces </summary>  
+  </details>
+  <details>
+    <summary> Access Modifiers in Go: Exported vs Unexported Identifiers </summary>  
+  </details>
   
-</details>
+  <hr>
+  <details>
+    <summary> Data type in Go? Primitive & Non-Primitive </summary>  
+  </details>
+  <details>
+    <summary> Variables && Constant </summary>
+  </details>
+  <details>
+    <summary> Zero Value of variable in GO </summary>  
+  </details>
+  <details>
+    <summary> Convert types in Golang </summary>
+  </details>
+   
+  <hr>
+  <details>
+    <summary> Memory management and Garbage collection </summary>  
+  </details>
+  <details>
+    <summary> Pointer in go ? how go handle in Golang ? </summary>  
+  </details>
+  <details>
+    <summary> Function and method (variadic | anonymous ) </summary>  
+  </details>
+  <details>
+    <summary> Closure | Interfaces | Generic </summary>  
+  </details>
+  
+  <br>
 
+# Go Routine & Channel :
+  <details>
+    <summary> What is Go Routine </summary>  
+  </details>
+  <details>
+    <summary> What is Go Channel | Type of Channel </summary>  
+  </details>
+  <details>
+    <summary> Concurrency in go </summary>  
+  </details>
+  <details>
+    <summary> Data Race and Race Condition </summary>  
+  </details>
+  <details>
+    <summary> Deadlocks </summary>  
+  </details>
 
+<br>
 
-### installation
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+# Error Handling :
+ <details>
+   <summary> How to error in go? </summary>  
+ </details>
+ <details>
+   <summary> defer statement </summary>  
+ </details>
+  
 
-### setup
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+# Keyword
+- Range
+- Defer
+- select
+- go
+
