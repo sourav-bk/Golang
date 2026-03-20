@@ -22,7 +22,19 @@
   
   <hr>
   <details>
-    <summary> Data type in Go? Primitive & Non-Primitive </summary>  
+    <summary> Data type in Go? Primitive & Non-Primitive </summary>
+    <ul>
+      <li>
+        <details>
+          <summary> Primitive </summary>
+        </details>
+      </li>
+      <li>
+        <details>
+          <summary> Non-Primitive </summary>
+        </details>
+      </li>
+    </ul>  
   </details>
   <details>
     <summary> Variables && Constant </summary>
