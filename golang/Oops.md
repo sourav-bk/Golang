@@ -26,3 +26,23 @@ Inheritance allows one class to inherit fields and methods from another, promoti
 
 
 # Object-Oriented Programming in Go
+
+Go takes a unique approach to OOP, focusing on interfaces and composition rather than traditional class-based inheritance. This leads to a more flexible and modular design.
+
+Abstraction in Go: 
+
+In Go, abstraction is achieved using interfaces. An interface is a type that specifies a set of method signatures without implementing them. Any type that implements these methods satisfies the interface.
+
+Encapsulation in Go:
+
+Encapsulation is achieved by controlling access to struct fields using visibility rules. In Go, an identifier is exported if it begins with an uppercase letter, making it accessible from other packages.
+
+Polymorphism in Go:
+
+Go achieves polymorphism primarily through interfaces. Any type that implements an interface is considered to satisfy that interface, enabling polymorphic behavior without the need for a strict type hierarchy.
+
+
+Composition Over Inheritance: 
+
+Instead of relying on inheritance, Go promotes composition. By embedding types within structs, you can reuse code and achieve similar results without the pitfalls of deep inheritance hierarchies.
+
