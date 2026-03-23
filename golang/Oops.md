@@ -46,3 +46,6 @@ Composition Over Inheritance:
 
 Instead of relying on inheritance, Go promotes composition. By embedding types within structs, you can reuse code and achieve similar results without the pitfalls of deep inheritance hierarchies.
 
+
+https://www.linkedin.com/pulse/mastering-object-oriented-programming-go-arya-pathak-inu4f/
+
