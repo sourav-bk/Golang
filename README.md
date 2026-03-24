@@ -1,23 +1,7 @@
-# Core GO : <span style="background-color:#66ff00; padding:4px;">
-What is GO? - Why Developers Choose Go?
-</span>
-
-# Core GO : <mark>What is GO? - Why Developers Choose Go?</mark>
-
-<!--
-Source - https://stackoverflow.com/a/72773978
-Posted by Artyom Vancyan, modified by community. See post 'Timeline' for change history
-Retrieved 2026-03-24, License - CC BY-SA 4.0
--->
-
-
-# Core GO : 
-
-![GO](https://img.shields.io/badge/What%20is%20GO%3F%20--%20Why%20Developers%20Choose%20Go-66ff00)
 
 
 # Core GO :
-  <details><summary>$\color{hsla(94,100%,50%, 0.5)}{\textsf{What is GO? - Why Developers Choose Go?}}$</summary>  
+  <details><summary><mark> What is GO? - Why Developers Choose Go? </mark></summary>  
 
 Go (Golang) is a statically typed, compiled programming language designed by Google.
 It is known for its simplicity, fast, and efficient, especially for building scalable backend systems.
@@ -47,9 +31,9 @@ Go is well suited for cloud applications and microservices. It scales easily, wo
 We chose Go because it is fast, cost‑effective, easy to develop and deploy, and works very well for cloud‑based microservices.
 
   </details>
-  <details><summary>$\color{hsla(94,100%,50%, 0.5)}{\textsf{How Run Go Code?}}$</summary>  
+  <details><summary><mark>$\color{hsla(94,100%,50%, 0.4)}{\textsf{How Run Go Code?}}$</mark></summary>  
   </details>
-  <details><summary>$\color{hsla(94,100%,50%, 0.5)}{\textsf{init() and main() function Role ?}}$</summary>  
+  <details><summary><mark>$\color{hsla(94,100%,50%, 0.4)}{\textsf{init() and main() function Role ?}}$</mark></summary>  
   </details>
   
   <hr>
