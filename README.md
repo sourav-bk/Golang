@@ -33,14 +33,14 @@ Go is well suited for cloud applications and microservices. It scales easily, wo
 We chose Go because it is fast, cost‑effective, easy to develop and deploy, and works very well for cloud‑based microservices.
 
   </details>
-  <details><summary><mark>$\color{hsla(94,100%,50%, 0.4)}{\textsf{How Run Go Code?}}$</mark></summary>  
+  <details><summary><mark>How Run Go Code?</mark></summary>  
   </details>
-  <details><summary><mark>$\color{hsla(94,100%,50%, 0.4)}{\textsf{init() and main() function Role ?}}$</mark></summary>  
+  <details><summary><mark>init() and main() function Role?</mark></summary>  
   </details>
   
   <hr>
   <details>
-    <summary> What is GOROOT | GOPATH </summary>  
+    <summary><mark>What is GOROOT | GOPATH</mark> </summary>  
   </details>
   <details>
     <summary> Packages || Go Modules || Go workspaces </summary>  
