@@ -68,14 +68,14 @@ Go also provides the go run command, which is used to quickly compile and run a 
 </details>
 <details><summary><h4><mark>Packages || Go Modules || Go workspaces</mark></h4></summary>
   
-  - Go Packages :
+  - <b>Go Packages :</b>
     A package is a collection of one or more Go source files (.go files) located in the same directory that are compiled together and share the same package name.
 
     Every Go source file must declare its package name at the very top of the file using a package declaration.
 
     Packages is fundamental unit for organizing and reusing code in Go, enabling related source files to be grouped logically while helping structure programs, control visibility, and promote modular, maintainable code.
    
-  - Go Modules :
+  - <b>Go Modules :</b>
     Go Modules are the official dependency management system for Go projects. They were introduced in Go 1.11 and became the default behavior starting with Go 1.16. Go Modules allow projects to be developed and maintained outside of GOPATH, enabling better version control, dependency management, and reproducible builds.
 
 <h6>go mod init :</h6>
