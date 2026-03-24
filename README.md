@@ -1,6 +1,3 @@
-
-$\color{green}{\text{some text}}$
-
 # Core GO :
   <details><summary><mark>What is GO? - Why Developers Choose Go?</mark></summary>  
   
