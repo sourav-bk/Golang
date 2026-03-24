@@ -1,3 +1,21 @@
+# Core GO : <span style="background-color:#66ff00; padding:4px;">
+What is GO? - Why Developers Choose Go?
+</span>
+
+# Core GO : <mark>What is GO? - Why Developers Choose Go?</mark>
+
+<!--
+Source - https://stackoverflow.com/a/72773978
+Posted by Artyom Vancyan, modified by community. See post 'Timeline' for change history
+Retrieved 2026-03-24, License - CC BY-SA 4.0
+-->
+
+
+# Core GO : 
+
+![GO](https://img.shields.io/badge/What%20is%20GO%3F%20--%20Why%20Developers%20Choose%20Go-66ff00)
+
+
 # Core GO :
   <details><summary>$\color{hsla(94,100%,50%, 0.5)}{\textsf{What is GO? - Why Developers Choose Go?}}$</summary>  
 
