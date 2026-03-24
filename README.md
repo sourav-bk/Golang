@@ -66,7 +66,7 @@ Go also provides the go run command, which is used to quickly compile and run a 
   However, GOPATH is still used internally by Go for purposes such as the module cache and installed binaries.
 
 </details>
-<details><summary><h4><mark>Packages || Go Modules || Go workspaces</mark></h4></summary>
+<details><summary><h4><mark>Go Packages || Go Modules || Go workspaces</mark></h4></summary>
   
   - <b>Go Packages :</b>
     A package is a collection of one or more Go source files (.go files) located in the same directory that are compiled together and share the same package name.
