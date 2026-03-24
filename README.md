@@ -1,8 +1,4 @@
-<style>
-H1{color:Blue !important;}
-H2{color:DarkOrange !important;}
-p{color:Black !important;}
-</style>
+<span style="color: red;"> Sourav </span>
 
 # Color Test Document
 
