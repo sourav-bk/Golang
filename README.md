@@ -2,7 +2,7 @@
 
 
 # Core GO :
-  <details><summary><mark>`What is GO? - Why Developers Choose Go?`</mark></summary>  
+  <details><summary>`What is GO? - Why Developers Choose Go?`</summary>  
   
 
 Go (Golang) is a statically typed, compiled programming language designed by Google.
