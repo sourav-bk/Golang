@@ -1,6 +1,6 @@
 
 # Core GO :
-<details><summary><h4><mark><b>What is GO? - Why Developers Choose Go?</b></mark></h4></summary>
+<details><summary><h4><mark>What is GO? - Why Developers Choose Go?</mark></h4></summary>
   
 Go (Golang) is a statically typed, compiled programming language designed by Google.
 It is known for its simplicity, fast, and efficient, especially for building scalable backend systems.
@@ -40,6 +40,7 @@ If you want to build an executable for a different target system, you can specif
 Go also provides the go run command, which is used to quickly compile and run a Go program from the command line without creating a permanent executable file.
 
 </details>
+
 <details><summary><h4><mark>init() and main() function Role?</mark></h4></summary>  
   
   - main() :== The main() function is the entry point of the executable application, determining the program's primary logic and flow. 
@@ -49,9 +50,17 @@ Go also provides the go run command, which is used to quickly compile and run a 
 </details>
   
 <hr>
-<details>
-  <summary><mark>What is GOROOT | GOPATH</mark> </summary>
-  
+<details><summary><h4><mark>What is GOROOT | GOPATH</mark></h4></summary>
+  - GOROOT 
+  GOROOT points to the Go installation directory.
+  This is where the Go compiler, standard library, and tools present.
+  need to set GOROOT manually. The Go installer sets it automatically.
+  - GOPATH
+  GOPATH is Where Go code dependencies, downloaded third‑party packages, and compiled binaries are stored.
+  Before Go 1.11 version , all Go projects have to required to reside the $GOPATH/src directory.
+  after introduced of stable production ready "'Go Modules'" on Go 1.16 version. GOPATH mode was effectively disabled by default. As a result, developers no longer need to place projects inside GOPATH, and Go projects can now live anywhere on the filesystem.
+  However, GOPATH is still used internally by Go for purposes such as the module cache and installed binaries.
+
 </details>
   
   <details>
