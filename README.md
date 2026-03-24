@@ -1,4 +1,3 @@
-
 # Core GO :
 
 <details><summary><h4><mark>What is GO? - Why Developers Choose Go?</mark></h4></summary>
@@ -169,7 +168,8 @@ The go mod tidy command is used to maintain module files. It adds any missing de
  <details>
    <summary> defer statement </summary>  
  </details>
-  
+ 
+# OPPOS  
 
 # Keyword
 - Range
