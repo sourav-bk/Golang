@@ -1,6 +1,6 @@
 # Core GO :
   <details>
-    <summary>## $\color{hsla(94,100%,50%, 0.5)}{\textsf{What is GO? - Why Developers Choose Go?}}$</summary>  
+    <summary>$\color{hsla(94,100%,50%, 0.5)}{\textsf{What is GO? - Why Developers Choose Go?}}$</summary>  
 
 Go (Golang) is a statically typed, compiled programming language designed by Google.
 It is known for its simplicity, fast, and efficient, especially for building scalable backend systems.
@@ -31,10 +31,10 @@ We chose Go because it is fast, cost‑effective, easy to develop and deploy, an
 
   </details>
   <details>
-    <summary><h6>$\color{hsla(94,100%,50%, 0.5)}{\textsf{How Run Go Code?}}$</h6></summary>  
+    <summary>$\color{hsla(94,100%,50%, 0.5)}{\textsf{How Run Go Code?}}$</summary>  
   </details>
   <details>
-    <summary><h6>$\color{hsla(94,100%,50%, 0.5)}{\textsf{init() and main() function Role ?}}$</h6></summary>  
+    <summary>$\color{hsla(94,100%,50%, 0.5)}{\textsf{init() and main() function Role ?}}$<summary>  
   </details>
   
   <hr>
