@@ -1,30 +1,33 @@
+**This is normal text.**
+
+<b>This is normal text.</b>
+
+<ins>This text is also underlined using the ins tag.</ins>
+
+
 # Core GO :
-  <details><summary><h6><mark>What is GO? - Why Developers Choose Go?</mark></h6></summary>  
+  <details><summary><h6><mark>What is GO? - Why Developers Choose Go?</mark></h6></summary>
+  
   
 
 Go (Golang) is a statically typed, compiled programming language designed by Google.
 It is known for its simplicity, fast, and efficient, especially for building scalable backend systems.
 
-Reasons for choosing Go:
+Reasons for choosing Go---
 
-1. Performance and Efficiency:
-   
+<b>1. Performance and Efficiency : </b>
 Go is very fast because it runs directly on machine code. It can handle many requests at the same time without slowing down, which makes applications more responsive.
 
-2. Cost Efficient:
-   
+<b>2. Cost Efficient : </b>
 Go uses less memory and RAM, so applications need fewer servers. This helps companies reduce cloud and infrastructure costs, especially for high‑traffic systems.
 
-3. Fast Development & Deployment:
-   
+<b>3. Fast Development & Deployment : </b>
 Go is easy to write and understand, and it compiles very quickly. It creates a single executable file, which makes deployment simple and reliable.
 
-4. Strong Standard Library:
-   
+<b>4. Strong Standard Library : </b>
 Go comes with many built‑in features like HTTP servers, JSON handling, logging, and testing. This reduces the need for extra tools and saves development time.
 
-5. Cloud & Microservices Friendly:
-   
+<b>5. Cloud & Microservices Friendly : </b>
 Go is well suited for cloud applications and microservices. It scales easily, works well with Docker and Kubernetes, and is widely used in modern systems.
 
 We chose Go because it is fast, cost‑effective, easy to develop and deploy, and works very well for cloud‑based microservices.
