@@ -1,9 +1,7 @@
 
 # Core GO :
-  <details><summary><h5><mark>What is GO? - Why Developers Choose Go?</mark></h5></summary>
+<details><summary><h4><mark><b>What is GO? - Why Developers Choose Go?</b></mark></h4></summary>
   
-  
-
 Go (Golang) is a statically typed, compiled programming language designed by Google.
 It is known for its simplicity, fast, and efficient, especially for building scalable backend systems.
 
@@ -26,8 +24,9 @@ Go is well suited for cloud applications and microservices. It scales easily, wo
 
 We chose Go because it is fast, cost‑effective, easy to develop and deploy, and works very well for cloud‑based microservices.
 
-  </details>
-  <details><summary><h5><mark>How Run Go Code?</mark></h5></summary>
+</details>
+
+<details><summary><h4><mark>How Run Go Code?</mark></h4></summary>
 Running a Go application is simple because Go is a compiled language. When you build a Go program, it is compiled into a single static binary file. This means you do not need to install a Go runtime on the target machine — you only need the compiled file.
 
 However, to compile Go code, you must install Go on your system (or download the Go compiler). You write your code in a file with the .go extension.
