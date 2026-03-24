@@ -1,11 +1,4 @@
-<span style="color: red;"> Sourav </span>
-
-# Color Test Document
-
-## Second Heading
-
-This is a test to see how the colors work.
-
+# $\color{red}{\textsf{lorem ipsum}}$
 
 # Core GO :
   <details>
