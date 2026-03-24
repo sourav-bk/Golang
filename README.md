@@ -39,9 +39,14 @@ If you want to build an executable for a different target system, you can specif
 
 Go also provides the go run command, which is used to quickly compile and run a Go program from the command line without creating a permanent executable file.
 
-  </details>
-  <details><summary><h5><mark>init() and main() function Role?</mark></h5></summary>  
-  </details>
+</details>
+<details><summary><h4><mark>init() and main() function Role?</mark></h4></summary>  
+  
+  - main() :== The main() function is the entry point of the executable application, determining the program's primary logic and flow. 
+  
+  - init() :== In Go, the init() function is a special built‑in function that the Go runtime executes automatically once per package, before the main() function runs. It is commonly used for tasks such as initializing global variables, validating configuration, or setting up resources (for example, checking database connections).
+
+</details>
   
   <hr>
   <details>
