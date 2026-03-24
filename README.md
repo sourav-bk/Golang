@@ -1,6 +1,6 @@
 
 # Core GO :
-  <details><summary><h6><mark>What is GO? - Why Developers Choose Go?</mark></h6></summary>
+  <details><summary><h5><mark>What is GO? - Why Developers Choose Go?</mark></h5></summary>
   
   
 
@@ -27,7 +27,7 @@ Go is well suited for cloud applications and microservices. It scales easily, wo
 We chose Go because it is fast, cost‑effective, easy to develop and deploy, and works very well for cloud‑based microservices.
 
   </details>
-  <details><summary><h6><mark>How Run Go Code?</mark></h6></summary>
+  <details><summary><h5><mark>How Run Go Code?</mark></h5></summary>
 Running a Go application is simple because Go is a compiled language. When you build a Go program, it is compiled into a single static binary file. This means you do not need to install a Go runtime on the target machine — you only need the compiled file.
 
 However, to compile Go code, you must install Go on your system (or download the Go compiler). You write your code in a file with the .go extension.
@@ -41,7 +41,7 @@ If you want to build an executable for a different target system, you can specif
 Go also provides the go run command, which is used to quickly compile and run a Go program from the command line without creating a permanent executable file.
 
   </details>
-  <details><summary><h6><mark>init() and main() function Role?</mark></h6></summary>  
+  <details><summary><h5><mark>init() and main() function Role?</mark></h5></summary>  
   </details>
   
   <hr>
