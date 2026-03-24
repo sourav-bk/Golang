@@ -48,10 +48,12 @@ Go also provides the go run command, which is used to quickly compile and run a 
 
 </details>
   
-  <hr>
-  <details>
-    <summary><mark>What is GOROOT | GOPATH</mark> </summary>  
-  </details>
+<hr>
+<details>
+  <summary><mark>What is GOROOT | GOPATH</mark> </summary>
+  
+</details>
+  
   <details>
     <summary> Packages || Go Modules || Go workspaces </summary>  
   </details>
