@@ -34,7 +34,7 @@ We chose Go because it is fast, cost‑effective, easy to develop and deploy, an
     <summary><h3>$\color{hsla(94,100%,50%, 0.5)}{\textsf{How Run Go Code?}}$<h3></summary>  
   </details>
   <details>
-    <summary> init() and main() function Role ? </summary>  
+    <summary><h3>$\color{hsla(94,100%,50%, 0.5)}{\textsf{init() and main() function Role ?}}$</summary>  
   </details>
   
   <hr>
