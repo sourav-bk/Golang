@@ -30,9 +30,9 @@ Go is well suited for cloud applications and microservices. It scales easily, wo
 We chose Go because it is fast, cost‑effective, easy to develop and deploy, and works very well for cloud‑based microservices.
 
   </details>
-  <details><summary><mark>How Run Go Code?</mark></summary>  
+  <details><summary><h6><mark>How Run Go Code?</mark></h6></summary>  
   </details>
-  <details><summary><mark>init() and main() function Role?</mark></summary>  
+  <details><summary><h6><mark>init() and main() function Role?</mark></h6></summary>  
   </details>
   
   <hr>
