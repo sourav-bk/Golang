@@ -66,10 +66,35 @@ Go also provides the go run command, which is used to quickly compile and run a 
   However, GOPATH is still used internally by Go for purposes such as the module cache and installed binaries.
 
 </details>
+<details><summary><h4><mark>Packages || Go Modules || Go workspaces</mark></h4></summary>
   
-  <details>
-    <summary> Packages || Go Modules || Go workspaces </summary>  
-  </details>
+  - Go Packages :
+    A package is a collection of one or more Go source files (.go files) located in the same directory that are compiled together and share the same package name.
+
+    Every Go source file must declare its package name at the very top of the file using a package declaration.
+
+    Packages is fundamental unit for organizing and reusing code in Go, enabling related source files to be grouped logically while helping structure programs, control visibility, and promote modular, maintainable code.
+   
+  - Go Modules :
+    Go Modules are the official dependency management system for Go projects. They were introduced in Go 1.11 and became the default behavior starting with Go 1.16. Go Modules allow projects to be developed and maintained outside of GOPATH, enabling better version control, dependency management, and reproducible builds.
+
+<h6>go mod init :</h6>
+To create a Go module, the go mod init command is used in the root directory of a Go project. This command initializes the project as a module and prepares it for dependency tracking.
+
+<h6>go.mod :</h6>
+go mod init creates a go.mod file. This file defines the module’s import path, specifies the Go version the project supports, and lists all the direct dependencies required by the application.
+
+<h6>go.sum :</h6>
+Go Modules also use a go.sum file. This file is not a lock file, but a security file that stores cryptographic checksums for all direct and indirect dependencies used in the project. These checksums ensure the integrity and authenticity of downloaded modules by verifying that the dependencies have not been tampered with
+
+<h6>go get :</h6>
+The go get command is used to add, upgrade, or downgrade dependencies to a specific version. 
+
+<h6>go mod tidy :</h6>
+The go mod tidy command is used to maintain module files. It adds any missing dependencies, removes unused ones, and cleans up both the go.mod and go.sum files to keep the dependency list accurate and minimal.
+
+</details>
+
   <details>
     <summary> Access Modifiers in Go: Exported vs Unexported Identifiers </summary>  
   </details>
