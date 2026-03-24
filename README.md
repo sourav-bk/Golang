@@ -60,8 +60,8 @@ Go also provides the go run command, which is used to quickly compile and run a 
   need to set GOROOT manually. The Go installer sets it automatically.
 
   - <b> GOPATH: </b> GOPATH is Where Go code dependencies, downloaded third‑party packages, and compiled binaries are stored.
-  
-  Before Go 1.11 version , all Go projects have to required to reside the $GOPATH/src directory.
+    
+    Before Go 1.11 version , all Go projects have to required to reside the $GOPATH/src directory.
   after introduced of stable production ready "'Go Modules'" on Go 1.16 version. GOPATH mode was effectively disabled by default. As a result, developers no longer need to place projects inside GOPATH, and Go projects can now live anywhere on the filesystem.
   However, GOPATH is still used internally by Go for purposes such as the module cache and installed binaries.
 
