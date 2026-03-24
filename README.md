@@ -46,7 +46,9 @@ Go also provides the go run command, which is used to quickly compile and run a 
   
   - <b>main() : </b> The main() function is the entry point of the executable application, determining the program's primary logic and flow. 
   
-  - <b>init() : </b> In Go, the init() function is a special built‑in function that the Go runtime executes automatically once per package, before the main() function runs. It is commonly used for tasks such as initializing global variables, validating configuration, or setting up resources (for example, checking database connections).
+  - <b>init() : </b> In Go, the init() function is a special built‑in function that the Go runtime executes automatically once per package, before the main() function runs.
+
+    It is commonly used for tasks such as initializing global variables, validating configuration, or setting up resources (for example, checking database connections).
     
 </details>
   
@@ -58,6 +60,7 @@ Go also provides the go run command, which is used to quickly compile and run a 
   need to set GOROOT manually. The Go installer sets it automatically.
 
   - <b> GOPATH: </b> GOPATH is Where Go code dependencies, downloaded third‑party packages, and compiled binaries are stored.
+  
   Before Go 1.11 version , all Go projects have to required to reside the $GOPATH/src directory.
   after introduced of stable production ready "'Go Modules'" on Go 1.16 version. GOPATH mode was effectively disabled by default. As a result, developers no longer need to place projects inside GOPATH, and Go projects can now live anywhere on the filesystem.
   However, GOPATH is still used internally by Go for purposes such as the module cache and installed binaries.
