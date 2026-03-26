@@ -130,7 +130,7 @@ The go mod tidy command is used to maintain module files. It adds any missing de
       <li><h6>Floating‑Point:</h6></li> float32, float64
       <li><h6>String:</h6></li> string — used to store text data
       <li><h6>Numeric Types:</h6></li> complex types (complex64, complex128)
-    </ul><br><br>
+    </ul><br>
 
   > NOTE:  Go provides multiple Primitive types based on bit size (8, 16, 32, and 64 bits). 
     </details>
