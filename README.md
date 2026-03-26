@@ -120,7 +120,8 @@ The go mod tidy command is used to maintain module files. It adds any missing de
   <ul>
     <li><details><summary><h5>Primitive Data Types</h5></summary>
     Primitive data types, also known as basic or core types, are the fundamental building blocks of the Go language. They are used to store simple values. 
-    Common primitive data types in Go include:
+    
+  Common primitive data types in Go include:
     <ul>
       <li><h6>Boolean:</h6></li> bool — stores true or false
       <li><h6>Integer:</h6></li> int, int8, int16, int32, int64, uint, uint8, uint16, uint32, uint64
