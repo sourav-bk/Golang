@@ -95,9 +95,7 @@ The go get command is used to add, upgrade, or downgrade dependencies to a speci
 The go mod tidy command is used to maintain module files. It adds any missing dependencies, removes unused ones, and cleans up both the go.mod and go.sum files to keep the dependency list accurate and minimal.
 
 <br><br>
-
 </details>
-
 
 <details><summary><h4><mark>Access Modifiers in Go: Exported vs Unexported Identifiers</mark></h4></summary> 
 
@@ -116,13 +114,17 @@ The go mod tidy command is used to maintain module files. It adds any missing de
 <hr>
 
 <details><summary><h4><mark>Data type in Go? Primitive & Non-Primitive</mark></h4></summary>
+  
+  Go is a statically and strongly typed compiled language, that meaning every variable has a specific data type that cannot change after declaration. It makes Golang as Type safety to improve reliability and performance.
+  In Go, data types are broadly classified into two categories: Primitive and Non‑Primitive data types.
   <ul>
-    <li><details><summary> Primitive </summary>
-      </details>
+    <li><details><summary><h5>Primitive Data Types</h5></summary>
+    </details>
     </li>
-    <li><details><summary> Non-Primitive </summary></details>
-      </li>
-    </ul>
+    <li><details><summary><h5>Non-Primitive Data Types</h5></summary>
+    </details>
+    </li>
+  </ul>
 </details>
 
 <details><summary>Variables && Constant</summary>
