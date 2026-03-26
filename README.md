@@ -103,9 +103,13 @@ The go mod tidy command is used to maintain module files. It adds any missing de
 
   Go does not use traditional access‑control keywords such as public, private, or protected. Instead, access control is determined by the capitalization of an identifier’s name. This rule controls whether an identifier can be accessed outside the package in which it is defined.
   
-  - <b>Exported Identifiers</b>: An identifier whose name starts with an uppercase letter is called an exported identifier. Exported identifiers are accessible from any other package that imports the defining package.
+  - <b>Exported Identifiers</b> :
+
+    An identifier whose name starts with an uppercase letter is called an exported identifier. Exported identifiers are accessible from any other package that imports the defining package.
   
-  - <b>Unexported Identifiers</b> : An identifier whose name starts with a lowercase letter is called an unexported identifier (also known as package‑private). Unexported identifiers are accessible only within the same package and cannot be accessed from outside it.
+  - <b>Unexported Identifiers</b> :
+
+    An identifier whose name starts with a lowercase letter is called an unexported identifier (also known as package‑private). Unexported identifiers are accessible only within the same package and cannot be accessed from outside it.
 
 </details>
 
