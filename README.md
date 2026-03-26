@@ -125,17 +125,29 @@ The go mod tidy command is used to maintain module files. It adds any missing de
     
   Common primitive data types in Go include:
     <ul>
-      <li><h6>Boolean:</h6></li> bool — stores true or false
-      <li><h6>Integer:</h6></li> int, int8, int16, int32, int64, uint, uint8, uint16, uint32, uint64
-      <li><h6>Floating‑Point:</h6></li> float32, float64
-      <li><h6>String:</h6></li> string — used to store text data
-      <li><h6>Numeric Types:</h6></li> complex types (complex64, complex128)
+    <li><h6>Boolean:</h6></li> bool — stores true or false
+    <li><h6>Integer:</h6></li> int, int8, int16, int32, int64, uint, uint8, uint16, uint32, uint64
+    <li><h6>Floating‑Point:</h6></li> float32, float64
+    <li><h6>String:</h6></li> string — used to store text data
+    <li><h6>Numeric Types:</h6></li> complex types (complex64, complex128)
     </ul><br>
 
   > NOTE:  Go provides multiple Primitive types based on bit size (8, 16, 32, and 64 bits). 
     </details>
     </li>
     <li><details><summary><h5>Non-Primitive Data Types</h5></summary>
+    Non‑primitive data types are built using primitive data types. They are used to store collections of data, references to values, or more complex data structures.
+  
+  Common non‑primitive data types in Go include:
+    <ul>
+    <li><h6>Arrays:</h6></li> Fixed‑length collections of elements of the same primitive data type
+    <li><h6>Slices:</h6></li> Dynamic‑length sequences of elements of the same primitive data type.
+    <li><h6>Structures (Structs):</h6></li> Used to group multiple fields of different data types into a single unit.
+    <li><h6>String:</h6></li> string — used to store text data
+    <li><h6>Maps:</h6></li> Key‑value pairs where keys are unique and values can be duplicated.
+    <li><h6>Pointers:</h6></li> Pointers Store the memory address of another variable.
+    <li><h6>Channels:</h6></li> Channels Used for communication between goroutines, allowing concurrent functions to exchange data safely.
+    </ul><br>
     </details>
     </li>
   </ul>
