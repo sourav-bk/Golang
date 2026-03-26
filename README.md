@@ -98,32 +98,36 @@ The go mod tidy command is used to maintain module files. It adds any missing de
 
 </details>
 
-  <details>
-    <summary> Access Modifiers in Go: Exported vs Unexported Identifiers </summary>  
-  </details>
+
+<details><summary><h4><mark>Access Modifiers in Go: Exported vs Unexported Identifiers</mark></h4></summary> 
+
+  Go does not use traditional access‑control keywords such as public, private, or protected. Instead, access control is determined by the capitalization of an identifier’s name. This rule controls whether an identifier can be accessed outside the package in which it is defined.
   
-  <hr>
-  <details>
-    <summary> Data type in Go? Primitive & Non-Primitive </summary>
-    <ul>
-      <li>
-        <details>
-          <summary> Primitive </summary>
-        </details>
+  - <b>Exported Identifiers</b>: An identifier whose name starts with an uppercase letter is called an exported identifier. Exported identifiers are accessible from any other package that imports the defining package.
+  
+  - <b>Unexported Identifiers</b> : An identifier whose name starts with a lowercase letter is called an unexported identifier (also known as package‑private). Unexported identifiers are accessible only within the same package and cannot be accessed from outside it.
+
+</details>
+
+<hr>
+
+<details><summary><h4><mark>Data type in Go? Primitive & Non-Primitive</mark></h4></summary>
+  <ul>
+    <li><details><summary> Primitive </summary>
+      </details>
+    </li>
+    <li><details><summary> Non-Primitive </summary></details>
       </li>
-      <li>
-        <details>
-          <summary> Non-Primitive </summary>
-        </details>
-      </li>
-    </ul>  
-  </details>
-  <details>
-    <summary> Variables && Constant </summary>
-  </details>
-  <details>
-    <summary> Zero Value of variable in GO </summary>  
-  </details>
+    </ul>
+</details>
+
+<details><summary>Variables && Constant</summary>
+  
+</details>
+
+<details><summary> Zero Value of variable in GO </summary>
+</details>
+
   <details>
     <summary> Convert types in Golang </summary>
   </details>
