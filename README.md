@@ -173,6 +173,14 @@ The go mod tidy command is used to maintain module files. It adds any missing de
 </details>
 
 <details><summary><h3><mark> Convert types in Golang</mark></h3></summary>
+  In Go, type conversion is explicit, meaning you must manually convert a value from one type to another. Be aware about during type conversions between certain types can lead to data loss.
+
+  - int -> float64 || var f float64 = float64(i)
+  - float64 -> int || var i int = int(f)
+  - int -> string || var stringValue string := strconv.Itoa(intValue)
+  - string -> int || i, err := strconv.Atoi(str) // Atoi returns the integer value and a potential error
+  - string -> []byte || b := []byte(s)
+  - []byte -> string || s := string(b)
   
 </details>
 <hr>
