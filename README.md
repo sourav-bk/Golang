@@ -153,18 +153,30 @@ The go mod tidy command is used to maintain module files. It adds any missing de
   </ul>
 </details>
 
-<details><summary>Variables && Constant</summary>
+<details><summary><h3><mark>Variables & Constant</mark></h3></summary>
+  Variable:
+  Variables are containers for storing data values. Go is a statically and strongly typed compiled language, that meaning every variable have some specific data type that cannot change after declaration but value can be changed (or varied) during the execution of a program.
+  Variables are declared using the 'var' keyword or the shorthand ':=' operator.
+  
+  Constants:
+  In Go, a constant is an immutable value that must be assigned at compile time and cannot be changed during the program's execution. They are useful for fixed values.
+  
+  Constants, declared with the 'const' keyword, hold immutable values determined at compile time.
+</details>
+
+<details><summary><h3><mark>Zero Value of variable in GO</mark></h3></summary>
+  In Go, the Zero Value is a default value assigned to a variable when it is declared but not initialized that ensuring variables always hold a valid value, even without explicit initialization.
+  
+  Each type has its own zero value.
+  
+  Numeric types ( int, float64, byte, etc.) = 0 (or 0.0 for floats) Boolean = false String = "" (An empty string) Pointers, Slices, Maps, Channels, Functions or Interfaces = nill
+</details>
+
+<details><summary><h3><mark> Convert types in Golang</mark></h3></summary>
   
 </details>
+<hr>
 
-<details><summary> Zero Value of variable in GO </summary>
-</details>
-
-  <details>
-    <summary> Convert types in Golang </summary>
-  </details>
-   
-  <hr>
   <details>
     <summary> Memory management and Garbage collection </summary>  
   </details>
