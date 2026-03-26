@@ -152,7 +152,7 @@ The go mod tidy command is used to maintain module files. It adds any missing de
     </li>
   </ul>
 
-  <details><summary><h4><mark> Convert types in Golang</mark></h4></summary>
+  <details><summary>Convert types in Golang</summary>
   
   In Go, type conversion is explicit, meaning you must manually convert a value from one type to another. Be aware about during type conversions between certain types can lead to data loss.
   
