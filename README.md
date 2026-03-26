@@ -65,7 +65,7 @@ Go also provides the go run command, which is used to quickly compile and run a 
   However, GOPATH is still used internally by Go for purposes such as the module cache and installed binaries.
 
 </details>
-<details><summary><h4><mark>Go Packages || Go Modules || Go workspaces</mark></h4></summary>
+<details><summary><h3><mark>Go Packages || Go Modules || Go workspaces</mark></h3></summary>
   
   - <b>Go Packages :</b>
     A package is a collection of one or more Go source files (.go files) located in the same directory that are compiled together and share the same package name.
@@ -97,7 +97,7 @@ The go mod tidy command is used to maintain module files. It adds any missing de
 <br><br>
 </details>
 
-<details><summary><h4><mark>Access Modifiers in Go: Exported vs Unexported Identifiers</mark></h4></summary> 
+<details><summary><h3><mark>Access Modifiers in Go: Exported vs Unexported Identifiers</mark></h3></summary> 
 
   Go does not use traditional access‑control keywords such as public, private, or protected. Instead, access control is determined by the capitalization of an identifier’s name. This rule controls whether an identifier can be accessed outside the package in which it is defined.
   
@@ -113,7 +113,7 @@ The go mod tidy command is used to maintain module files. It adds any missing de
 
 <hr>
 
-<details><summary><h4><mark>Data type in Go? Primitive & Non-Primitive</mark></h4></summary>
+<details><summary><h3><mark>Data type in Go? Primitive & Non-Primitive</mark></h3></summary>
   
   Go is a statically and strongly typed compiled language, that meaning every variable has a specific data type that cannot change after declaration. It makes Golang as Type safety to improve reliability and performance.
   In Go, data types are broadly classified into two categories: Primitive and Non‑Primitive data types.
