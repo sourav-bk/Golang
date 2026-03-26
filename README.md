@@ -116,7 +116,9 @@ The go mod tidy command is used to maintain module files. It adds any missing de
 <details><summary><h3><mark>Data type in Go? Primitive & Non-Primitive</mark></h3></summary>
   
   Go is a statically and strongly typed compiled language, that meaning every variable has a specific data type that cannot change after declaration. It makes Golang as Type safety to improve reliability and performance.
+  
   In Go, data types are broadly classified into two categories: Primitive and Non‑Primitive data types.
+  
   <ul>
     <li><details><summary><h5>Primitive Data Types</h5></summary>
     Primitive data types, also known as basic or core types, are the fundamental building blocks of the Go language. They are used to store simple values. 
