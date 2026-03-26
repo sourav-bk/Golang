@@ -1,6 +1,6 @@
 # Core GO :
 
-<details><summary><h4><mark>What is GO? - Why Developers Choose Go?</mark></h4></summary>
+<details><summary><h3><mark>What is GO? - Why Developers Choose Go?</mark></h3></summary>
   
 Go (Golang) is a statically typed, compiled programming language designed by Google.
 It is known for its simplicity, fast, and efficient, especially for building scalable backend systems.
@@ -26,7 +26,7 @@ We chose Go because it is fast, cost‑effective, easy to develop and deploy, an
 
 </details>
 
-<details><summary><h4><mark>How Run Go Code?</mark></h4></summary>
+<details><summary><h3><mark>How Run Go Code?</mark></h3></summary>
 Running a Go application is simple because Go is a compiled language. When you build a Go program, it is compiled into a single static binary file. This means you do not need to install a Go runtime on the target machine — you only need the compiled file.
 
 However, to compile Go code, you must install Go on your system (or download the Go compiler). You write your code in a file with the .go extension.
@@ -41,7 +41,7 @@ Go also provides the go run command, which is used to quickly compile and run a 
 
 </details>
 
-<details><summary><h4><mark>init() and main() function Role?</mark></h4></summary>  
+<details><summary><h3><mark>init() and main() function Role?</mark></h3></summary>  
   
   - <b>main() : </b> The main() function is the entry point of the executable application, determining the program's primary logic and flow. 
   
@@ -52,7 +52,7 @@ Go also provides the go run command, which is used to quickly compile and run a 
 </details>
   
 <hr>
-<details><summary><h4><mark>What is GOROOT | GOPATH</mark></h4></summary>
+<details><summary><h3><mark>What is GOROOT | GOPATH</mark></h3></summary>
   
   - <b> GOROOT: </b> GOROOT points to the Go installation directory.
   This is where the Go compiler, standard library, and tools present.
