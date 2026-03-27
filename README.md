@@ -184,7 +184,7 @@ The go mod tidy command is used to maintain module files. It adds any missing de
   Numeric types ( int, float64, byte, etc.) = 0 (or 0.0 for floats) Boolean = false String = "" (An empty string) Pointers, Slices, Maps, Channels, Functions or Interfaces = nill
 </details>
 
-<details><summary><h3><mark> Convert types in Golang</mark></h3></summary>
+<details><summary><h3><mark>Convert types in Golang</mark></h3></summary>
   
   In Go, type conversion is explicit, meaning you must manually convert a value from one type to another. Be aware about during type conversions between certain types can lead to data loss.
   
@@ -199,18 +199,10 @@ The go mod tidy command is used to maintain module files. It adds any missing de
 </details>
 <hr>
 
-  <details>
-    <summary> Memory management and Garbage collection </summary>  
-  </details>
-  <details>
-    <summary> Pointer in go ? how go handle in Golang ? </summary>  
-  </details>
-  <details>
-    <summary> Function and method (variadic | anonymous ) </summary>  
-  </details>
-  <details>
-    <summary> Closure | Interfaces | Generic </summary>  
-  </details>
+<details><summary><h3><mark>Memory management and Garbage collection</mark></h3></summary></details>
+<details><summary><h3><mark>Pointer in go ? how go handle in Golang?</mark></h3></summary></details>
+<details><summary><h3><mark>Function and method (variadic | anonymous )</mark></h3></summary></details>
+<details><summary><h3><mark>Closure | Interfaces | Generic</summary></mark></h3></details>
   
   <br>
 
