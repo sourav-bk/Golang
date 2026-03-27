@@ -199,7 +199,26 @@ The go mod tidy command is used to maintain module files. It adds any missing de
 </details>
 <hr>
 
-<details><summary><h3><mark>Memory management and Garbage collection</mark></h3></summary></details>
+<details><summary><h3><mark>Memory management and Garbage collection</mark></h3></summary>
+  
+  - **Memory management** :
+
+    memory management in Golang, its simple compared to other languages. Golang handles memory allocation and deallocation automatically. Go compiler is smart. it used escape analysis to decide, whether data is allocated on the stack or heap memory.
+
+    The 2 main methods used for memory allocation in Golang.
+    
+    | **new()** | **make()** |
+    |:---|:---|
+    | Using new() we allocated memory but not initialize. new() give to Zero storage | and Using make() we allocated memory and it is initialize. make() give to non-Zero storage
+
+Garbage collection : | 
+    
+
+    
+  - **Garbage collection** :
+  
+</details>
+
 <details><summary><h3><mark>Pointer in go ? how go handle in Golang?</mark></h3></summary></details>
 <details><summary><h3><mark>Function and method (variadic | anonymous )</mark></h3></summary></details>
 <details><summary><h3><mark>Closure | Interfaces | Generic</summary></mark></h3></details>
