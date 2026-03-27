@@ -211,6 +211,9 @@ The go mod tidy command is used to maintain module files. It adds any missing de
 <br>
 
   - **Garbage collection** :
+    In Golang, GC automatically happens when objects are out of scope or nil. Go internally uses "Tricolor Mark-and-Sweep" algorithm for Garbage collection.
+    Also, Golang provide limited excess to manipulate GC using GOGC and GOMEMLIMIT during go env setup.
+  > Manually trigger garbage collection using `runtime.GC()` during go runtime
   
 </details>
 
