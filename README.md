@@ -217,7 +217,15 @@ The go mod tidy command is used to maintain module files. It adds any missing de
   
 </details>
 
-<details><summary><h3><mark>Pointer in go ? how go handle in Golang?</mark></h3></summary></details>
+<details><summary><h3><mark>Pointer in go ? how go handle in Golang?</mark></h3></summary>
+  
+  In Go, a pointer is simply a variable that stores Memory address of another variable value.
+  In pointer, There are 2 symbols need to know for Core Operators.
+  
+  - **Address-of operator (&)** This generates a pointer. It finds where value is sitting in memory.
+  - **Dereference operator (*)** "follows" the pointer to the actual value stored at that address.
+    
+</details>
 <details><summary><h3><mark>Function and method (variadic | anonymous )</mark></h3></summary></details>
 <details><summary><h3><mark>Closure | Interfaces | Generic</summary></mark></h3></details>
   
