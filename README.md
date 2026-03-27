@@ -275,7 +275,7 @@ Go is memory-safe. Uninitialized pointers are nil. Go does not allow pointer ari
 <br>
 
 # Error Handling :
- <details><summary><h3><mark>Error in go? Panics | recover | recover </mark></h3></summary>
+ <details><summary><h3><mark>Error in go? Panics | recover | defer </mark></h3></summary>
    
    In Golang, Error isn't an exception that crashes program — it’s just a value. Go treats errors as "first-class citizens," meaning we handle like, as any other variable.
    The most common way to handle errors is to check if the returned error value is nil (meaning success) or not nil (meaning failure), and then deal with the failure.
