@@ -266,31 +266,17 @@ Go is memory-safe. Uninitialized pointers are nil. Go does not allow pointer ari
 <br>
 
 # Go Routine & Channel :
-  <details>
-    <summary> What is Go Routine </summary>  
-  </details>
-  <details>
-    <summary> What is Go Channel | Type of Channel </summary>  
-  </details>
-  <details>
-    <summary> Concurrency in go </summary>  
-  </details>
-  <details>
-    <summary> Data Race and Race Condition </summary>  
-  </details>
-  <details>
-    <summary> Deadlocks </summary>  
-  </details>
+<details><summary>Go Routine?</summary></details>
+<details><summary>Go Channel | Type of Channel</summary></details>
+<details><summary>Concurrency in go</summary></details>
+<details><summary> Data Race and Race Condition</summary></details>
+<details><summary> Deadlocks</summary></details>
 
 <br>
 
 # Error Handling :
- <details>
-   <summary> How to error in go? </summary>  
- </details>
- <details>
-   <summary> defer statement </summary>  
- </details>
+ <details><summary><h3><mark>How to error in go?</mark></h3></summary></details>
+ <details><summary><h3><mark>defer statement</mark></h3></summary></details>
 <br>
 
 # OPPOS  
