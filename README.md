@@ -231,7 +231,22 @@ The go mod tidy command is used to maintain module files. It adds any missing de
 Go is memory-safe. Uninitialized pointers are nil. Go does not allow pointer arithmetic, so we can’t access random memory locations. Nil pointer is checked at runtime.
     
 </details>
-<details><summary><h3><mark>Function and method (variadic | anonymous )</mark></h3></summary></details>
+
+<details><summary><h3><mark>Function and method (variadic | anonymous )</mark></h3></summary>
+  
+  - ##### Function :
+    A function is piece or blocks of code that does a specific task and called independently. Function help organize code, improve readability, and allow re-use.
+  
+  - ##### Methods :
+    In Go, method is like function but associated with a special argument type called a receiver. The receiver binding the method to a specific type, which can be a struct or a non-struct type. Method is called on an instance of that type and is used to define behavior related to that structure.
+    
+  - ##### variadic Function :
+    In Go, Function that can accept a variable number of arguments of any type. Variadic functions are declared with an ellipsis (...) before the type. Ex: fmt.Println().
+
+  - ##### Anonymous Function :
+    An anonymous function in Go is a function that does not have a name. It can be defined and used immediately by adding () at the end. Primary use of anonymous functions in Goroutine.
+
+</details>
 <details><summary><h3><mark>Closure | Interfaces | Generic</summary></mark></h3></details>
   
   <br>
