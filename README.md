@@ -210,11 +210,8 @@ The go mod tidy command is used to maintain module files. It adds any missing de
     | **new()** | **make()** |
     |:---|:---|
     | Using new() we allocated memory but not initialize. new() give to Zero storage | and Using make() we allocated memory and it is initialize. make() give to non-Zero storage
+<br>
 
-Garbage collection : | 
-    
-
-    
   - **Garbage collection** :
   
 </details>
