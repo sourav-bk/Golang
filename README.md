@@ -225,6 +225,9 @@ The go mod tidy command is used to maintain module files. It adds any missing de
   - **Address-of operator (&)** This generates a pointer. It finds where value is sitting in memory.
   - **Dereference operator (*)** "follows" the pointer to the actual value stored at that address.
     
+**How Go Handles Pointers:**
+Go is memory-safe. Uninitialized pointers are nil. Go does not allow pointer arithmetic, so we can’t access random memory locations. Nil pointer is checked at runtime.
+    
 </details>
 <details><summary><h3><mark>Function and method (variadic | anonymous )</mark></h3></summary></details>
 <details><summary><h3><mark>Closure | Interfaces | Generic</summary></mark></h3></details>
