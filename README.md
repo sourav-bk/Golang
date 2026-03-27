@@ -201,9 +201,7 @@ The go mod tidy command is used to maintain module files. It adds any missing de
 
 <details><summary><h3><mark>Memory management and Garbage collection</mark></h3></summary>
   
-  - **Memory management** :
-
-    memory management in Golang, its simple compared to other languages. Golang handles memory allocation and deallocation automatically. Go compiler is smart. it used escape analysis to decide, whether data is allocated on the stack or heap memory.
+  - **Memory management** :memory management in Golang, its simple compared to other languages. Golang handles memory allocation and deallocation automatically. Go compiler is smart. it used escape analysis to decide, whether data is allocated on the stack or heap memory.
 
     The 2 main methods used for memory allocation in Golang.
     
