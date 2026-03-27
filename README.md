@@ -247,9 +247,23 @@ Go is memory-safe. Uninitialized pointers are nil. Go does not allow pointer ari
     An anonymous function in Go is a function that does not have a name. It can be defined and used immediately by adding () at the end. Primary use of anonymous functions in Goroutine.
 
 </details>
-<details><summary><h3><mark>Closure | Interfaces | Generic</summary></mark></h3></details>
+
+<details><summary><h3><mark>Closure | Interfaces | Generic</summary></mark></h3>
   
-  <br>
+  - ##### Closure :
+    A closure is an anonymous function that uses variables from outside its own body. In Go, a closure captures variables from its outer scope and remembers their values between calls.
+  
+  - ##### Interfaces :
+
+    In Go, an interface is a collection of method signatures . It acts as a contract that type must fulfill by implementing all the methods declared in the interface.
+
+    Interfaces can also be used as variable types. The empty interface (interface{}) can hold values of any type, such as integers, strings, or float.
+
+  - ##### Generic:
+    Generics introduced in Go 1.18. Generics in Go allow to write functions and types that work with multiple data types while maintaining type safety.
+
+</details>
+<br>
 
 # Go Routine & Channel :
   <details>
