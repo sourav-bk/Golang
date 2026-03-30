@@ -1,8 +1,18 @@
-<details><summary>Go Routine?</summary></details>
-<details><summary>Go Channel | Type of Channel</summary></details>
-<details><summary>Concurrency in go</summary></details>
-<details><summary> Data Race and Race Condition</summary></details>
-<details><summary> Deadlocks</summary></details>
+
+<details><summary><h2><mark>Go Routine?</mark></h3></summary>
+</details>
+
+<details><summary><h2><mark>Go Channel | Type of Channel</mark></h3></summary>
+</details>
+
+<details><summary><h2><mark>Concurrency in go</mark></h3></summary>
+</details>
+
+<details><summary><h2><mark>Data Race and Race Condition</mark></h3></summary>
+</details>
+
+<details><summary><h2><mark>Deadlocks</mark></h3></summary>
+</details>
 
 
 
