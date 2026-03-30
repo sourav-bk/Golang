@@ -295,8 +295,6 @@ Go is memory-safe. Uninitialized pointers are nil. Go does not allow pointer ari
 
 <br>
 
-# OPPOS  
-
 # Keyword
 - Range
 - Defer
