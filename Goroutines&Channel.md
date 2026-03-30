@@ -1,7 +1,7 @@
 
 <details><summary><h2><mark>Go Routine and Channel? Type of Channel? </mark></h3></summary>
  
-### Go Routine :
+## Go Routine :
 A Goroutine is a lightweight thread managed by the Go runtime, Used to run multiple function or method Concurrently.
 While a traditional OS thread might take up 1MB of memory, a Goroutine starts with just 2KB.
 
@@ -21,7 +21,7 @@ I'm drinking eating Coke and pizza also watching TV at the same time.
 Go is designed to be concurrent, which allows it to be parallel when have a processor with multiple cores.
 
 
-### Channel :
+## Channel :
 
 A channel in Go is a communication mechanism used by goroutines.
 It allows safe data sharing between goroutines without explicit locks.
@@ -41,12 +41,14 @@ Receive-only: <-chan T (the arrow points out of the chan).
 Channel has been closed using close() function. No values can be sent after closing but  Receivers can still read remaining values after close .Channel close() Used to signal completion.
 
 #### Type of Channel 
-Channels can be TWO type
+
+Channels can be TWO type --
+
 1. Unbuffered Channel  2. Buffered Channel
 
-Unbuffered : Capacity of 0. The sender blocks until a receiver is ready. Used for strict synchronization.
+- ***Unbuffered*** : Capacity of 0. The sender blocks until a receiver is ready. Used for strict synchronization.
 
-Buffered : Has a fixed capacity. The Sender only blocks when the buffer is full. receiver blocks when it's empty. its Allows asynchronous communication.
+- ***Buffered*** : Has a fixed capacity. The Sender only blocks when the buffer is full. receiver blocks when it's empty. its Allows asynchronous communication.
 
 
 
