@@ -28,11 +28,11 @@ We can send and receive values on channel with the channel operator, (<-)(->).
 
 By default, channels are bidirectional, but for better API design and type safety, we often restrict them in function signatures:
 
-- Bidirectional: chan T (can send and receive).
+- ***Bidirectional:*** chan T (can send and receive).
 
-- Send-only: chan<- T (the arrow points into the chan).
+- ***Send-only:*** chan<- T (the arrow points into the chan).
 
-- Receive-only: <-chan T (the arrow points out of the chan).
+- ***Receive-only:*** <-chan T (the arrow points out of the chan).
 
 Channel has been closed using close() function. No values can be sent after closing  but  Receivers can still read remaining values after close .Channel close() Used to signal completion.
 
