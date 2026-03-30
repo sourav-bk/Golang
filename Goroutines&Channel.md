@@ -47,9 +47,6 @@ Channels can be TWO type -- 1. Unbuffered Channel   2. Buffered Channel
  
 </details>
 
-<details><summary><h2><mark>Go Channel | Type of Channel</mark></h3></summary>
-</details>
-
 <details><summary><h2><mark>Concurrency in go</mark></h3></summary>
 </details>
 
