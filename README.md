@@ -265,11 +265,6 @@ Go is memory-safe. Uninitialized pointers are nil. Go does not allow pointer ari
 </details>
 <br>
 
-# Go Routine & Channel :
-
-
-<br>
-
 # Error Handling :
  <details><summary><h3><mark>Error in go? Panics | recover | defer </mark></h3></summary>
    
