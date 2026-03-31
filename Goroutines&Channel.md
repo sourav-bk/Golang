@@ -5,6 +5,7 @@
 A Goroutine is a lightweight thread managed by the Go runtime, Used to run multiple function or method Concurrently.
 While a traditional OS thread might take up 1MB of memory, a Goroutine starts with just 2KB.
 
+- #### Concurrency vs. Parallelism
 Concurrency is not Parallelism.
 Concurrency is ability to handle many tasks at once. and Parallelism doing multiple things at the exact same time.
 
@@ -36,7 +37,7 @@ By default, channels are bidirectional, but for better API design and type safet
 
 Channel has been closed using close() function. No values can be sent after closing  but  Receivers can still read remaining values after close .Channel close() Used to signal completion.
 
-### Type of Channel 
+- ### Type of Channel 
 
 Channels can be TWO type -- 1. Unbuffered Channel   2. Buffered Channel
 
