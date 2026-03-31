@@ -7,6 +7,7 @@ While a traditional OS thread might take up 1MB of memory, a Goroutine starts wi
 
 - #### Concurrency vs. Parallelism
 Concurrency is not Parallelism.
+
 Concurrency is ability to handle many tasks at once. and Parallelism doing multiple things at the exact same time.
 
 I will give small example:
@@ -16,6 +17,8 @@ I will give small example:
 - Case 2: ***Parallelism*** - I'm drinking eating Coke and pizza also watching TV at the same time. 
 
 Go is designed to be concurrent, which allows it to be parallel when have a processor with multiple cores.
+
+A Go program can be concurrent even on a single core machine, but it achieves true parallelism when running on a multi-core system, as the Go runtime efficiently distributes goroutines across available cores.
 
 
 ### Channel :
