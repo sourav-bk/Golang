@@ -108,20 +108,19 @@ For simple lock we use The sync.Mutex (The Simple Lock) or more specialized, "sm
 
 
 - Mutexes have two methods
-
-  ####  Lock() :
-  Blocks both new Readers and new Writers
+   - ####  Lock() :
+     Blocks both new Readers and new Writers
   
-  #### Unlock() :
-  Releases the lock for everyone.
+   - #### Unlock() :
+     Releases the lock for everyone.
   
 
 - Also RWMutex have two methods for Read Lock and Read Unlock
-  #### RLock()
-  Blocks new Writers, but allows other Readers.
+   - #### RLock()
+     Blocks new Writers, but allows other Readers.
   
-  #### RUnlock()
-  Releases one reader's hold on the lock.
+   - #### RUnlock()
+     Releases one reader's hold on the lock.
   
 </details>
 
