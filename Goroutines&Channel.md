@@ -67,6 +67,78 @@ All data races are race conditions. Not all race conditions are data races.
 </details>
 
 <details><summary><h2><mark>Deadlocks</mark></h3></summary>
+ 
+## Deadlocks :
+
+A deadlock occurs when two or more goroutines are permanently blocked. Its waiting for each other to release resources or send/receive data — so no progress is possible.
+
+In simple Deadlock is a state where goroutines wait indefinitely for resources or communication, causing the program to stop executing.
+
+In Go, deadlocks usually happen due to incorrect use of channels, mutexes, or wait groups.
+
+### Channels ::
+ Common Deadlock Scenarios in Go. Unbuffered Channel Blocking
+
+
+### Circular Wait (Mutexes) ::
+This occurs when Goroutine A holds Lock 1 and waits for Lock 2, while Goroutine B holds Lock 2 and waits for Lock 1.
+
+
+
+### Resource Leak / WaitGroup Misuse ::
+
+If  increment a sync.WaitGroup but a goroutine crashes or returns before calling .Done(), the wg.Wait() call will block forever.
+
+
+
+## sync.WaitGroup:
+
+It's a fundamental tool for concurrency management.
+Think of it as a counter that tells main program and wait till all goroutine finish. 
+Without it, main function might finish and exit while goroutines are still halfway through their work. and that causing to Race Conditions.
+It's also Standard Way to dill To prevent Race Conditions in Go.
+
+- sync.WaitGroup operates on  internal counter using three main methods:
+
+### Add(int): 
+Increments the counter by the number of goroutines you are starting.
+
+### Done(): 
+Decrements the counter by 1. Usually called via defer inside the goroutine.
+
+### Wait(): 
+
+Blocks the execution of the program (usually in main) until the counter reaches zero.
+
+
+
+
+## sync.Mutex && Mutexes ::
+
+In Go, when multiple goroutines try to access the same piece of data at the same time, its end up with a Date race. To prevent Date race , we use "Mutual Exclusion" locks, or Mutexes.
+
+The standard Mutex is "exclusive." If one goroutine has the lock, nobody else can access the protected code until the lock is released.
+
+- For simple lock we use The sync.Mutex (The Simple Lock) or more specialized, "smart" lock we used sync.RWMutex.
+
+
+- Mutexes have two methods
+  ###  Lock() :
+  Blocks both new Readers and new Writers
+  
+  ### Unlock() :
+  Releases the lock for everyone.
+
+
+
+
+- also RWMutex have two methods for Read Lock and Read Unlock
+  ### RLock()
+  Blocks new Writers, but allows other Readers.
+  
+  ### RUnlock()
+  Releases one reader's hold on the lock.
+  
 </details>
 
 
