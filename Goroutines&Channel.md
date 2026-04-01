@@ -1,6 +1,6 @@
 <details><summary><h2><mark>Go Routine and Channel? Type of Channel? </mark></h3></summary>
  
-### Go Routine :
+### ***Go Routine*** :
 A Goroutine is a lightweight thread managed by the Go runtime, Used to run multiple function or method Concurrently.
 While a traditional OS thread might take up 1MB of memory, a Goroutine starts with just 2KB.
 
@@ -20,7 +20,7 @@ Go is designed to be concurrent, which allows it to be parallel when have a proc
 A Go program can be concurrent even on a single core machine, but it achieves true parallelism when running on a multi-core system, as the Go runtime efficiently distributes goroutines across available cores.
 
 
-### Channel :
+### ***Channel*** :
 
 A channel in Go is a communication mechanism used by goroutines.
 It allows safe data sharing between goroutines without explicit locks.
