@@ -82,7 +82,7 @@ In Go, deadlocks usually happen due to incorrect use of channels, mutexes, or wa
 - ***Resource Leak / WaitGroup Misuse*** :: If  increment a sync.WaitGroup but a goroutine crashes or returns before calling .Done(), the wg.Wait() call will block forever.
 
 
-### sync.WaitGroup:
+## sync.WaitGroup:
 
 It's a fundamental tool for concurrency management.
 Think of it as a counter that tells main program and wait till all goroutine finish. 
@@ -98,7 +98,7 @@ sync.WaitGroup operates on  internal counter using three main methods:
 - ***Wait()***: Blocks the execution of the program (usually in main) until the counter reaches zero.
 
 
-### sync.Mutex && Mutexes ::
+## sync.Mutex && Mutexes ::
 
 In Go, when multiple goroutines try to access the same piece of data at the same time, its end up with a Date race. To prevent Date race , we use "Mutual Exclusion" locks, or Mutexes.
 
