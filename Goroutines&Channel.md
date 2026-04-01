@@ -66,6 +66,7 @@ All data races are race conditions. Not all race conditions are data races.
  
 </details>
 
+
 <details><summary><h2><mark>Deadlocks</mark></h3></summary>
  
 A deadlock occurs when two or more goroutines are permanently blocked. Its waiting for each other to release resources or send/receive data — so no progress is possible.
@@ -123,16 +124,3 @@ For simple lock we use The sync.Mutex (The Simple Lock) or more specialized, "sm
      Releases one reader's hold on the lock.
   
 </details>
-
-
-
-
-# Concurrency in go
-
-# Difference between concurrency and parallelism in golang
-
-# Go Memory Model | Thread Safety | Mutexes
-
-# Data Race and Race Condition
-
-
