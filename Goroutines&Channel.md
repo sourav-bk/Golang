@@ -1,6 +1,6 @@
 <details><summary><h2><mark>Go Routine and Channel? Type of Channel? </mark></h3></summary>
  
-### ***Go Routine*** :
+## ***Go Routine*** :
 A Goroutine is a lightweight thread managed by the Go runtime, Used to run multiple function or method Concurrently.
 While a traditional OS thread might take up 1MB of memory, a Goroutine starts with just 2KB.
 
@@ -20,7 +20,7 @@ Go is designed to be concurrent, which allows it to be parallel when have a proc
 A Go program can be concurrent even on a single core machine, but it achieves true parallelism when running on a multi-core system, as the Go runtime efficiently distributes goroutines across available cores.
 
 
-### ***Channel*** :
+## ***Channel*** :
 
 A channel in Go is a communication mechanism used by goroutines.
 It allows safe data sharing between goroutines without explicit locks.
@@ -55,11 +55,11 @@ Channels can be TWO type -- 1. Unbuffered Channel   2. Buffered Channel
 
 <details><summary><h2><mark>Data Race and Race Condition</mark></h3></summary>
 
-### ***Race Conditions***:
+## ***Race Conditions***:
 A Race Condition is a logic/design errors, not syntax errors in the program when the correctness of the program depends on the order/timing of goroutines. A Race condition happens when multiple goroutines access and modify shared data concurrently using goroutines without proper synchronization, that causing un-predictable results.
 
 Go makes detection easier with -race flag during run or test Go program to check unsynchronized memory access at runtime.
-### ***Data Race*** :
+## ***Data Race*** :
 A Data Race is a specific type of race condition that happens at the memory level when Two or more goroutines access the same memory location concurrently. There is no synchronization used to coordinate the access.It is a low-level memory safety issue.
 
 All data races are race conditions. Not all race conditions are data races.
