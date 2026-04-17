@@ -16,7 +16,10 @@ RPC follow action based oparation so it can handel CRUD or Action based oparatio
 
 ## 2. Statelessness and Request Overhead :: 
 - The Problem (REST):
-As we know REST stands for Representational State Transfer. REST is strictly Stateless, menaning that every single request must have necessary context ( Like Authentication tokens, Cookies, Accept-Headers, and Content-Types ).
+As we know REST stands for Representational State Transfer. REST is strictly Stateless, menaning that every single request must have necessary context
+
+( Like Authentication tokens, Cookies, Accept-Headers, and Content-Types ).
+
 So that In microservices environment where servers talk to each other thousands of times per second, sending this redundant metadata over and over wastes significant bandwidth.
 
 - The RPC Solution :
