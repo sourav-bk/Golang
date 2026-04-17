@@ -85,3 +85,51 @@ Speed: Converting binary to a Go struct is a direct memory operation, making ser
 
 # type of gRPC ?
 
+
+
+
+
+
+
+
+
+
+
+1. Handling Non-CRUD Actions::
+
+REST is resource-based so struggles on Action-Oriented Operations:
+
+REST is focuse on resource based oparation like resource CRUD oparation example like user add update insert and Delete. For every resource oparation need specific end point.
+
+BUT RPC follow action based oparation so it can handel CRUD or Action based oparation like calculate , notifly , Mailsend etc handel like a local function call.
+
+so REST  may need many API calls to complete one Complex task.
+
+
+2. Statelessness and Request Overhead ::
+
+As we know REST stands for REpresentational State Transfer and it is stateless, menaning that every single request must have necessary context ( Content-types, accept headers, Authorization headers ).
+But RPC can be stateless or stateful depending on the implementation. so it is more faxible. 
+
+
+3. Transport Leayer Protocol ::
+
+Sending Data and getting Response from server , transport layer REST mostly used Http version 1 or 1.1 over the network call. so it is unidirectional ( like request-response ) communication.
+so its slow and not support high spreed Streaming  bidirectional  comunication .
+but RPC can use on Transport Leayer HTTP/2, TCP or other protocols over network for faster bidirectional or unidirectional comunication.
+
+
+
+4. Data Format and CPU Performance ::
+Sending Data and getting Response from server REST API mostly used Text based format link Json or XML. 
+Its take havy CPU timing during Data Serialization/Deserialization ( techniques for transforming complex data structure / object into format usually byte stream format suitable for stored on disk or in a buffer and 
+vice versa ). 
+
+Text based format is suitable for human but not for machine. it is take Large Size as per binary based format.
+
+so overcome those issue on REST , RPC use   binary based format so that Data Size shoud be  small and during Serialization/Deserialization take less CPU time.  
+
+
+
+
+
