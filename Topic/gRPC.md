@@ -35,6 +35,44 @@ also that text based format (like json, xml ) payload for getting response getti
 
 
 
+
+
+
+1. Action-Oriented vs. Resource-Oriented
+The Problem with REST: REST forces every action into a CRUD (Create, Read, Update, Delete) model. This creates "Semantic Friction" when you need to perform an action that isn't a resource, such as ProcessPayment or CalculateTax. You end up with "hacky" URLs like POST /orders/1/calculate-and-validate.
+
+The RPC Solution: RPC is Procedure-Based. It treats operations as functions. You don't have to map your business logic to a "resource"; you simply call a function. This is more natural for complex workflows, reducing the number of API calls needed to complete a single multi-step task.
+
+2. Statelessness and Flexibility
+The Problem with REST: By definition, REST is strictly stateless. While this is great for scaling, it forces the client to send the entire context (Auth tokens, headers, metadata) with every single request, which increases bandwidth overhead.
+
+The RPC Solution: RPC offers architectural flexibility. While it can be stateless, it also supports Stateful connections and Long-lived streams. Because gRPC (a modern RPC) keeps a persistent connection open via HTTP/2, you don't need to re-negotiate headers or resend heavy metadata for every small interaction.
+
+3. Protocol and Transport Layer
+The Problem with REST: REST is traditionally "bound" to the HTTP semantics. It relies heavily on HTTP verbs and status codes, which can be limiting when you need lower-level control or non-standard communication.
+
+The RPC Solution: RPC is Transport-Agnostic. While gRPC uses HTTP/2 for its advanced features (like multiplexing), other RPC implementations can run directly over raw TCP or even UDP. This allows for significantly lower latency and faster data transmission than the standard HTTP/1.1 request-response cycle.
+
+4. Payload Efficiency and Serialization
+The Problem with REST: JSON is human-readable, but it is expensive for machines.
+
+Size: Every message repeats field names (e.g., "username": "admin"), which bloats the payload.
+
+CPU Cost: Parsing text into objects is a heavy CPU task.
+
+The RPC Solution: RPC (via Protobuf) uses Binary Serialization.
+
+Compactness: It uses field tags (numbers) instead of string names, making the payload up to 5x–10x smaller than JSON.
+
+Speed: Converting binary to a Go struct is a direct memory operation, making serialization and deserialization significantly faster and reducing CPU load on your servers.
+
+
+
+
+
+
+
+
 # what is gRPC ?
 - ## what is Protocol Buffers ?
 - ## What Problems do Protocol Buffers Solve?
