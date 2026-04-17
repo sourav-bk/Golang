@@ -6,7 +6,8 @@ REST is good for Web or browser based comunication but not suitable for inter se
 ## 1. Handling Non-CRUD Actions::
 
 - The Problem (REST):
-REST is resource-based so struggles on Action-Oriented Operations. REST is focuse on only resource based oparation like resource CRUD oparation example like user add update insert and Delete. For every resource oparation need specific end point.
+REST is resource-based so struggles on Action-Oriented Operations. REST is focuse on only resource based oparation like resource CRUD oparation example like user add update insert and Delete. For every resource oparation need specific end point.\
+
 Also REST may need many API calls to complete one Complex task.
 
 - The RPC Solution :
@@ -16,9 +17,7 @@ RPC follow action based oparation so it can handel CRUD or Action based oparatio
 
 ## 2. Statelessness and Request Overhead :: 
 - The Problem (REST):
-As we know REST stands for Representational State Transfer. REST is strictly Stateless, menaning that every single request must have necessary context
-
-( Like Authentication tokens, Cookies, Accept-Headers, and Content-Types ).
+As we know REST stands for Representational State Transfer. REST is strictly Stateless, menaning that every single request must have necessary context ( Like Authentication tokens, Cookies, Accept-Headers, and Content-Types ).
 
 So that In microservices environment where servers talk to each other thousands of times per second, sending this redundant metadata over and over wastes significant bandwidth.
 
@@ -28,6 +27,7 @@ RPC can be stateless or stateful depending on the implementation. so it is more 
 ## 3. Transport Leayer Protocol ::
 - The Problem (REST):
 Sending Data and getting Response from server , transport layer REST mostly used Http version 1 or 1.1 over the network call. so it is unidirectional ( like request-response ) communication.
+
 so its slow and not support high speed Streaming  bidirectional  comunication .
 
 - The RPC Solution :
@@ -39,8 +39,10 @@ but RPC can use on Transport Leayer HTTP version 2, TCP or other protocols over 
 
 - The Problem (REST):
 Sending Data and getting Response from server REST API mostly used Text based format link Json or XML. 
-Its take havy CPU timing during Data Serialization/Deserialization ( techniques for transforming complex data structure / object into format usually byte stream format suitable for stored on disk or in a buffer and 
-vice versa ).
+Its take havy CPU timing during Data Serialization/Deserialization
+
+( Serialization/Deserialization : techniques for transforming complex data structure / object into format usually byte stream format suitable for stored on disk or in a buffer and vice versa )
+
 Text based format is suitable for human but not for machine. it is take Large Size as per binary based format.
 
 - The RPC Solution :
