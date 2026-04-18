@@ -1,6 +1,26 @@
 # RPC
 RPC stands for Remote Procedure Calls, it is way for a program to execute a function on one to another machine over the network as its look just like a local call . its Does this by abstraction or hiding all the complexity (like serializing/deserializing, tranport layer, network call ).  Its used for distributed applications service to service  or inter server communication.  
 
+Core Components::
+
+- The IDL (Interface Definition Language):
+
+This is the "contract" (like a .proto file in gRPC) that defines the methods and data types available for remote execution.
+
+- Stubs (Client & Server):
+
+These are pieces of auto-generated code. The Client Stub acts as a local proxy for the remote service, while the Server Stub (or Skeleton) acts as the receiver that dispatches requests to the actual implementation.
+
+- Serialization (Marshaling):
+
+The mechanism that converts complex data structures (like Go structs) into a platform-independent binary or text format for transmission.
+
+- Transport Layer:
+
+The underlying network protocol, such as HTTP/2, TCP, or UDP, that moves the serialized data from the client to the server.
+
+
+
 
 <hr>
 REST is good for Web or browser based comunication but not suitable for inter server comunication
