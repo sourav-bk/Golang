@@ -1,6 +1,8 @@
 # RPC
+RPC stands for Remote Procedure Calls, it is way for a program to execute a function on one to another machine over the network as its look just like a local call . its Does this by abstraction or hiding all the complexity (like serializing/deserializing, tranport layer, network call ).  Its used for distributed applications service to service  or inter server communication.  
 
 
+<hr>
 REST is good for Web or browser based comunication but not suitable for inter server comunication
 
 ## 1. Handling Non-CRUD Actions::
