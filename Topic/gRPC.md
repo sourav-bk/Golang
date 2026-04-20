@@ -2,7 +2,7 @@
 g-RPC RPC ? 
 
 g-RPC (stands for Google Remote Procedure Call) open-source Remote Procedure Call (RPC) framework. It was developed by Google and is now part of the Cloud Native Computing Foundation (CNCF).
-It's a modern, high-performance framework mostly used for server-to-server or inter-server communication. 
+It's a modern, high-performance framework mostly used for server-to-server or Inter-server communication. 
 
 In g-RPC, the client application can directly call a method., on the server application., That is on a different machine over the network call as it is just a local Funtion call.
 
