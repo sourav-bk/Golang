@@ -10,9 +10,14 @@ gRPC follow that Developer is only focus on the business logic rather than insta
 
 ***Protobuf***
 
-Protobuf is a concrete technology developed by Google
-gRPC use protocol buffers as both the IDL (for Interface Definition Language ) and the serialization format (for converting data into binary format).
-g-RPC handels abstracting the complexity of client-server communication. It uses client stubs and server stubs, which are automatically generated from an Interface Definition Language (IDL) specified in a .proto file. These stubs allow developers to call remote methods as like local function calls, by abstracts the entire Transport Layer using HTTP/2, without writing low-level networking code.
+Protobuf is a concrete technology developed by Google. gRPC use protocol buffers as both the IDL (for Interface Definition Language ) and the serialization format (for converting data into binary format).
+
+- The IDL (Interface Definition Language) and .proto file :
+
+g-RPC handels abstracting the complexity of client-server communication. It uses IDL(Interface Definition Language) which define .proto file. It is the "contract" for the service. Contents means Defines messages (data structures) and services (RPC methods).
+
+then this file use into the protoc compiler to generate client stubs and server skeletons in various languages (Go, Java, Python, etc.).
+These stubs allow developers to call remote methods as like local function calls, by abstracts the entire Transport Layer using HTTP/2, without writing low-level networking code.
 
 gRPC also handles data serialization and deserialization using Protocol Buffers, ensuring efficient and compact message exchange. It hides the transport layer details (typically HTTP/2), manages request and response handling in a structured way, and provides features like streaming, authentication, and deadlines—making distributed communication more efficient and easier to implement.
  
