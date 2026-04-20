@@ -22,6 +22,41 @@ The underlying network protocol, such as HTTP/2, TCP, or UDP, that moves the ser
 
 
 
+
+
+<hr>
+
+## What gRPC Handles (The Simple Version)
+At its heart, gRPC acts as a bridge that makes a remote function call look and feel like a local one. It automates the "busy work" of networking through three main pillars:
+
+1. Code Generation (The "Stubs")
+Instead of writing manual networking code, you define your service once in a .proto file (using Protocol Buffers). gRPC then automatically generates:
+
+Client Stubs: Local objects the client calls as if the logic were on its own machine.
+
+Server Skeletons: Pre-built structures the server fills with actual logic.
+
+Result: This "hides" the complexity of the underlying communication, allowing different languages (e.g., Python and Go) to talk to each other seamlessly.
+
+2. Efficient Data Handling
+gRPC handles the Serialization and Deserialization (marshaling) of data.
+
+It converts your objects into a highly compressed binary format before sending them.
+
+This is significantly faster and smaller than traditional JSON or XML.
+
+3. Transport & Protocol Management
+gRPC abstracts the entire Transport Layer by using HTTP/2. It automatically manages:
+
+Multiplexing: Sending multiple requests over a single connection.
+
+Streaming: Handling one-way or two-way data streams.
+
+Error Handling: Systematically managing status codes, timeouts, and retries.
+
+
+
+
 <hr>
 REST is good for Web or browser based comunication but not suitable for inter server comunication
 
