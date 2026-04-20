@@ -18,6 +18,7 @@ Protobuf is a concrete technology developed by Google. gRPC use protocol buffers
   
 
 - Stubs:
+  
   Then .proto file use into the protoc compiler to generate code for client stubs and server skeletons in various languages (Go, Java, Python, etc.).
   
   These stubs allow developers to call remote methods as like local function calls, by abstracts the entire Transport Layer using HTTP/2, without writing low-level networking code.
