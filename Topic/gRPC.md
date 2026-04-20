@@ -8,8 +8,11 @@ In gRPC, the client application can directly call a method., on the server appli
 
 gRPC follow that Developer is only focus on the business logic rather than instant of planning or under-line Implementation.
 
+***Protobuf***
 
-g-RPC handels abstracting the complexity of client-server communication. It uses client stubs and server stubs, which are automatically generated from an Interface Definition Language (IDL) specified in a .proto file. These stubs allow developers to call remote methods as if they were local function calls, without writing low-level networking code.
+Protobuf is a concrete technology developed by Google
+gRPC use protocol buffers as both the IDL (for Interface Definition Language ) and the serialization format (for converting data into binary format).
+g-RPC handels abstracting the complexity of client-server communication. It uses client stubs and server stubs, which are automatically generated from an Interface Definition Language (IDL) specified in a .proto file. These stubs allow developers to call remote methods as like local function calls, by abstracts the entire Transport Layer using HTTP/2, without writing low-level networking code.
 
 gRPC also handles data serialization and deserialization using Protocol Buffers, ensuring efficient and compact message exchange. It hides the transport layer details (typically HTTP/2), manages request and response handling in a structured way, and provides features like streaming, authentication, and deadlines—making distributed communication more efficient and easier to implement.
  
