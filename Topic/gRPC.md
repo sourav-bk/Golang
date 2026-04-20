@@ -1,16 +1,15 @@
 # RPC
 g-RPC RPC ? 
 
-GRPC (stands for Google Remote Procedure Call) open-source Remote Procedure Call (RPC) framework. It was developed by Google and is now part of the Cloud Native Computing Foundation (CNCF).
+g-RPC (stands for Google Remote Procedure Call) open-source Remote Procedure Call (RPC) framework. It was developed by Google and is now part of the Cloud Native Computing Foundation (CNCF).
 It's a modern, high-performance framework mostly used for server-to-service or inter-server communication. 
 
 In gRPC, the client application can directly call a method., on the server application., That is on a different machine over the network call as it is just a local Funtion call
 
-g-RPC follow that Devloper is only focus on the business logic regar instanst or palling or under line Implementation.
+gRPC follow that Developer is only focus on the business logic rather than instant of planning or under-line Implementation.
 
-so g-RPC handels ---
 
-gRPC handels abstracting the complexity of client-server communication. It uses client stubs and server stubs, which are automatically generated from an Interface Definition Language (IDL) specified in a .proto file. These stubs allow developers to call remote methods as if they were local function calls, without writing low-level networking code.
+g-RPC handels abstracting the complexity of client-server communication. It uses client stubs and server stubs, which are automatically generated from an Interface Definition Language (IDL) specified in a .proto file. These stubs allow developers to call remote methods as if they were local function calls, without writing low-level networking code.
 
 gRPC also handles data serialization and deserialization using Protocol Buffers, ensuring efficient and compact message exchange. It hides the transport layer details (typically HTTP/2), manages request and response handling in a structured way, and provides features like streaming, authentication, and deadlines—making distributed communication more efficient and easier to implement.
  
