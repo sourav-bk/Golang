@@ -9,6 +9,7 @@ In gRPC, the client application can directly call a method., on the server appli
 g-RPC follow that Devloper is only focus on the business logic regar instanst or palling or under line Implementation.
 
 so g-RPC handels ---
+
 gRPC handels abstracting the complexity of client-server communication. It uses client stubs and server stubs, which are automatically generated from an Interface Definition Language (IDL) specified in a .proto file. These stubs allow developers to call remote methods as if they were local function calls, without writing low-level networking code.
 
 gRPC also handles data serialization and deserialization using Protocol Buffers, ensuring efficient and compact message exchange. It hides the transport layer details (typically HTTP/2), manages request and response handling in a structured way, and provides features like streaming, authentication, and deadlines—making distributed communication more efficient and easier to implement.
