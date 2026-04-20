@@ -14,7 +14,7 @@ Protobuf is a concrete technology developed by Google. gRPC use protocol buffers
 
 - #### The IDL (Interface Definition Language) and .proto file :
   
-  g-RPC handels abstracting the complexity of client-server communication. It uses IDL(Interface Definition Language) which define .proto file. It's a simple "contract" for the server and client. Contents means Defines messages (data structures) and services (RPC methods).
+  g-RPC handels abstracting the complexity of client-server communication. It uses IDL(Interface Definition Language) which written in .proto file. It's a simple "contract" for the server and client. Contents means Defines messages (data structures) and services (RPC methods).
   
 - #### Stubs:
   
