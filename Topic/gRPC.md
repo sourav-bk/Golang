@@ -4,9 +4,9 @@ g-RPC RPC ?
 g-RPC (stands for Google Remote Procedure Call) open-source Remote Procedure Call (RPC) framework. It was developed by Google and is now part of the Cloud Native Computing Foundation (CNCF).
 It's a modern, high-performance framework mostly used for server-to-service or inter-server communication. 
 
-In gRPC, the client application can directly call a method., on the server application., That is on a different machine over the network call as it is just a local Funtion call
+In g-RPC, the client application can directly call a method., on the server application., That is on a different machine over the network call as it is just a local Funtion call.
 
-gRPC follow that Developer is only focus on the business logic rather than instant of planning or under-line Implementation.
+g-RPC follow that Developer is only focus on the business logic rather than instant of planning or under-line Implementation.
 
 ***Protobuf***
 
@@ -16,7 +16,6 @@ Protobuf is a concrete technology developed by Google. gRPC use protocol buffers
   
   g-RPC handels abstracting the complexity of client-server communication. It uses IDL(Interface Definition Language) which define .proto file. It is the "contract" for the service. Contents means Defines messages (data structures) and services (RPC methods).
   
-
 - Stubs:
   
   Then .proto file use into the protoc compiler to generate code for client stubs and server skeletons in various languages (Go, Java, Python, etc.).
@@ -24,8 +23,7 @@ Protobuf is a concrete technology developed by Google. gRPC use protocol buffers
   - ***Client Stub:*** Provides local methods that the client can call directly. It handles the serialization of parameters and sends them over HTTP/2 to the server.
   - ***Server Skeleton (or Base Class):*** Implements the service methods defined in the .proto file, allowing the server to handle incoming requests.
   
-  These stubs allow developers to call remote methods as like local function calls, by abstracts the entire Transport Layer using HTTP/2, without writing low-level networking code.
-
+  These stubs allow developers to call remote methods as like local function calls, by abstracts the entire Transport Layer (that internally used HTTP/2), without writing low-level networking code.
 
   gRPC also handles data serialization and deserialization using Protocol Buffers, ensuring efficient and compact message exchange. It hides the transport layer details (typically HTTP/2), manages request and response handling in a structured way, and provides features like streaming, authentication, and deadlines—making distributed communication more efficient and easier to implement.
  
