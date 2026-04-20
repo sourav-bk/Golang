@@ -85,6 +85,9 @@ Error Handling: Systematically managing status codes, timeouts, and retries.
 
 
 <hr>
+
+
+
 REST is good for Web or browser based comunication but not suitable for inter server comunication
 
 ## 1. Handling Non-CRUD Actions::
