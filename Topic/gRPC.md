@@ -24,10 +24,9 @@ Protobuf is a concrete technology developed by Google. gRPC use protocol buffers
   - ***Server Skeleton (or Base Class):*** Implements the service methods defined in the .proto file, allowing the server to handle incoming requests.
   
   These stubs allow developers to call remote methods as like local function calls, by abstracts the entire Transport Layer (that internally used HTTP/2), without writing low-level networking code.
-
-  gRPC also handles data serialization and deserialization using Protocol Buffers, ensuring efficient and compact message exchange. It hides the transport layer details (typically HTTP/2), manages request and response handling in a structured way, and provides features like streaming, authentication, and deadlines—making distributed communication more efficient and easier to implement.
+  
+  gRPC uses Protocol Buffers, Its a binary-based format, for client–server data exchange. This approach minimizes data size from any other text bases format (like Json,XML) and improves performance by reducing CPU time during serialization and deserialization. gRPC manages request and response handling in a structured way, and provides features like streaming, authentication, and deadlines—making distributed communication more efficient and easier to implement.
  
-
 Core Components::
 
 - The IDL (Interface Definition Language):
