@@ -8,7 +8,7 @@ In g-RPC, the client application can directly call a method., on the server appl
 
 g-RPC follow that Developer is only focus on the business logic rather than instant of planning or under-line Implementation.
 
-***Protobuf***
+## Protobuf
 
 Protobuf is a concrete technology developed by Google. gRPC use protocol buffers as both the IDL (for Interface Definition Language ) and the serialization format (for converting data into binary format).
 
@@ -16,15 +16,15 @@ Protobuf is a concrete technology developed by Google. gRPC use protocol buffers
   
   g-RPC handels abstracting the complexity of client-server communication. It uses IDL(Interface Definition Language) which written in .proto file. It's a simple "contract" for the server and client. Contents means Defines messages (data structures) and services (RPC methods).
   
-- #### Stubs:
-  
-  Then .proto file use into the protoc compiler to generate code for client stubs and server skeletons in various languages (Go, Java, Python, etc.).
-
-  - ***Client Stub:*** Provides local methods that the client can call directly. It handles the serialization of parameters and sends them over HTTP/2 Protocol, to the server.
-  - ***Server Skeleton (or Base Class):*** Implements the service methods defined in the .proto file, allowing the server to handle incoming requests.
+  - #### Stubs:
+    Then .proto file use into the protoc compiler to generate code for client stubs and server skeletons in various languages (Go, Java, Python, etc.).
+    
+    - ***Client Stub:*** Provides local methods that the client can call directly. It handles the serialization of parameters and sends them over HTTP/2 Protocol, to the server.
+    - ***Server Skeleton (or Base Class):*** Implements the service methods defined in the .proto file, allowing the server to handle incoming requests.
   
   These stubs allow developers to call remote methods as like local function calls, by abstracts the entire Transport Layer (that internally used HTTP/2), without writing low-level networking code.
   
+- ####Data Format :
   gRPC uses Protocol Buffers, Its a binary-based format, for client–server data exchange. This approach minimizes data size from any other text bases format (like Json,XML) and improves performance by reducing CPU time during serialization and deserialization.
 
   gRPC manages request and response handling in a structured way, and provides features like streaming, authentication, and deadlines—making distributed communication more efficient and easier to implement.
