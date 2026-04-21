@@ -1,5 +1,5 @@
 # RPC
-g-RPC RPC ? 
+# g-RPC ? 
 
 g-RPC (stands for Google Remote Procedure Call) open-source Remote Procedure Call (RPC) framework. It was developed by Google and is now part of the Cloud Native Computing Foundation (CNCF).
 It's a modern, high-performance framework mostly used for server-to-server or Inter-server communication. 
