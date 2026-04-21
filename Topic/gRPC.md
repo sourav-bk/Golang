@@ -62,7 +62,7 @@ In g-RPC, the client application can directly call a method., on the server appl
 
 g-RPC follow that Developer is only focus on the business logic rather than instant of planning or under-line Implementation.
 
-## protocol buffers (Protobuf)
+## Protocol Buffers (Protobuf)
 
 Protobuf is a concrete technology developed by Google. gRPC use protocol buffers as both the IDL (for Interface Definition Language ) and the serialization format (for converting data into binary format).
 
