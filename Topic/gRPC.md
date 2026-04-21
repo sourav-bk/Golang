@@ -29,27 +29,6 @@ Protobuf is a concrete technology developed by Google. gRPC use protocol buffers
 
   gRPC manages request and response handling in a structured way, and provides features like streaming, authentication, and deadlines—making distributed communication more efficient and easier to implement.
  
-Core Components::
-
-- The IDL (Interface Definition Language):
-
-This is the "contract" (like a .proto file in gRPC) that defines the methods and data types available for remote execution.
-
-- Stubs (Client & Server):
-
-These are pieces of auto-generated code. The Client Stub acts as a local proxy for the remote service, while the Server Stub (or Skeleton) acts as the receiver that dispatches requests to the actual implementation.
-
-- Serialization (Marshaling):
-
-The mechanism that converts complex data structures (like Go structs) into a platform-independent binary or text format for transmission.
-
-- Transport Layer:
-
-The underlying network protocol, such as HTTP/2, TCP, or UDP, that moves the serialized data from the client to the server.
-
-
-
-
 
 
 <hr>
