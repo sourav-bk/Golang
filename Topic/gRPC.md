@@ -44,7 +44,7 @@ REST is good for Web or browser based comunication but not suitable for inter se
   Sending Data and getting Response from server REST API mostly used Text based format link Json or XML.
   Its take havy CPU timing during Data Serialization/Deserialization.
 
-  ( Serialization/Deserialization : techniques for transforming complex data structure / object into format usually byte stream format suitable for stored on disk or in a buffer and vice versa )
+( Serialization/Deserialization : techniques for transforming complex data structure / object into format usually byte stream format suitable for stored on disk or in a buffer and vice versa )
 
   Text based format is suitable for human but not for machine. it is take Large Size as per binary based format.
 
