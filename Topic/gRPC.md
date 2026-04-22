@@ -96,6 +96,7 @@ gRPC supports four primary types of service methods that define how clients and 
 
 
 <hr>
+
 # what is gRPC ?
 - ## what is Protocol Buffers ?
 - ## What Problems do Protocol Buffers Solve?
