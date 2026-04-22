@@ -98,6 +98,30 @@ gRPC supports four primary types of service methods that define how clients and 
 
 # Implementation of gRPC server in Go
 
+# Advanced Features of gRPC
+gRPC also offers several advanced features that make developing and debugging distributed systems easier:
+
+- ***Synchronous and Asynchronous Calls:***
+
+gRPC supports both synchronous and asynchronous RPC calls. Synchronous calls wait for the remote server to return a response before continuing. Asynchronous calls return immediately and the response is handled as a separate task.
+
+- ***Metadata:***
+
+gRPC allows you to attach metadata to calls. This metadata can be used to describe services and methods, helping clients find the right services and their methods. Developers can also use metadata to validate calls.
+
+- ***Channels:***
+
+gRPC channels allow simultaneously sending and receiving multiple calls. This can improve performance by enabling the server to handle multiple requests simultaneously.
+
+- ***Interceptors:***
+
+gRPC supports interceptors, which are a powerful mechanism for extending gRPC functionality. They can be used for logging, authentication, monitoring, and more.
+
+- ***Deadlines/Timeouts:***
+
+gRPC allows clients to specify how long they are willing to wait for an RPC to complete. The gRPC framework will automatically cancel the RPC if it exceeds this deadline.
+
+
 # Why use gRPC?
 There are several reasons you may want to use the gRPC framework for developing your APIs.
 
