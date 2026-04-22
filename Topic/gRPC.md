@@ -182,7 +182,6 @@ Overall, gRPC is a powerful tool that offers many benefits for your applications
   
 However, the advantages can far outweigh such drawbacks for many use cases, particularly in microservices architectures and high-performance systems.
 
-<hr>
 
 
 
