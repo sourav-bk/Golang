@@ -1,4 +1,8 @@
 # RPC
+
+RPC most commonly stands for Remote Procedure Call, a software communication protocol that allows a program on one computer to execute code on another computer (server) without needing to understand the network details. It acts like a local function call.
+
+
 REST is good for Web or browser based comunication but not suitable for inter server comunication
 
 ### 1. Handling Non-CRUD Actions ::
