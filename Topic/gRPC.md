@@ -81,12 +81,21 @@ Protocol Buffers is a concrete technology developed by Google. gRPC use protocol
   gRPC uses Protocol Buffers, Its a binary-based format, for client–server data exchange. This approach minimizes data size from any other text bases format (like Json,XML) and improves performance by reducing CPU time during serialization and deserialization.
 
   gRPC manages request and response handling in a structured way, and provides features like streaming, authentication, and deadlines—making distributed communication more efficient and easier to implement.
- 
+
+  
+ but RPC can use on Transport Leayer HTTP version 2, TCP or other protocols over network for faster bidirectional or unidirectional comunication.
+
+
+At the transport layer, gRPC uses the HTTP/2 protocol. HTTP/2 is faster than HTTP/1 and supports bidirectional communication.
+gRPC supports four primary types of service methods that define how clients and servers exchange messages: 
+
+- ***Unary RPC:*** The simplest form, where the client sends a single request and receives a single response, similar to a traditional function call.
+- ***Server Streaming RPC:*** The client sends one request and receives a stream of multiple messages from the server. The client reads from the stream until there are no more messages.
+- ***Client Streaming RPC:*** The client sends a sequence of messages to the server. Once the client finishes sending, it waits for the server to process the entire stream and return a single response.
+- ***Bidirectional Streaming RPC:*** Both the client and server send a sequence of messages using a read-write stream. The two streams operate independently, allowing messages to be sent and received in any order. 
 
 
 <hr>
-
-
 # what is gRPC ?
 - ## what is Protocol Buffers ?
 - ## What Problems do Protocol Buffers Solve?
