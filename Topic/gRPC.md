@@ -157,12 +157,25 @@ gRPC uses Protocol Buffers, which provide strong typing for messages. This can h
 gRPC automatically generates client and server code from your service definitions. This can significantly reduce the amount of boilerplate code you need to write and maintain.
 
 
+# What are the drawbacks of gRPC?
+Overall, gRPC is a powerful tool that offers many benefits for your applications. However, there are some drawbacks as well:
 
-# Advanced Features of gRPC?
-
-# Disadvantages  Features of gRPC?
-
-# gRPC
+- ***Debugging Complexity:***
+   Application errors can be difficult to debug in gRPC systems, especially for developers who are new to the framework.
+  
+- ***Limited Browser Support:***
+   gRPC relies on HTTP/2, which is not fully supported in all web browsers. This can make it challenging to use gRPC directly in web applications.
+  
+- ***Learning Curve:***
+   For teams familiar with REST, there can be a significant learning curve when adopting gRPC.
+  
+- ***Limited Tooling:***
+   While the situation is improving, there are still fewer tools available for working with gRPC compared to REST APIs.
+  
+- ***Firewall Issues:***
+   Some firewalls may have issues with HTTP/2, which can cause problems for gRPC in certain network environments.
+  
+However, the advantages can far outweigh such drawbacks for many use cases, particularly in microservices architectures and high-performance systems.
 
 <hr>
 
@@ -175,9 +188,6 @@ gRPC automatically generates client and server code from your service definition
 - ## How do Protocol Buffers Work?
 
 # lifecycle of gRPC?
-
-# type of gRPC ?
-
 
 
 
