@@ -86,7 +86,7 @@ Protocol Buffers is a concrete technology developed by Google. gRPC use protocol
  but RPC can use on Transport Leayer HTTP version 2, TCP or other protocols over network for faster bidirectional or unidirectional comunication.
 
 
-At the transport layer, gRPC uses the HTTP/2 protocol. HTTP/2 is faster than HTTP/1 and supports bidirectional communication.
+At the transport layer, gRPC uses the HTTP/2 protocol. HTTP/2 is faster than HTTP/1 and supports bidirectional communication. ( Also unidirectional )
 gRPC supports four primary types of service methods that define how clients and servers exchange messages: 
 
 - ***Unary RPC:*** The simplest form, where the client sends a single request and receives a single response, similar to a traditional function call.
