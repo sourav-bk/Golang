@@ -5,7 +5,7 @@ RPC most commonly stands for Remote Procedure Call, a software communication pro
 
 REST is good for Web or browser based comunication but not suitable for inter server comunication
 
-### 1. Handling Non-CRUD Actions ::
+#### 1. Handling Non-CRUD Actions ::
 
 - ***The Problem (REST):***
 
@@ -17,7 +17,7 @@ REST is good for Web or browser based comunication but not suitable for inter se
 
   RPC follow action based oparation so it can handel CRUD or Action based oparation like calculate , notifly , Mailsend etc handel like a local function call.
 
-### 2. Statelessness and Request Overhead :: 
+#### 2. Statelessness and Request Overhead :: 
 
 - ***The Problem (REST):***
 
@@ -29,7 +29,7 @@ REST is good for Web or browser based comunication but not suitable for inter se
 
   RPC can be stateless or stateful depending on the implementation. so it is more faxible. so don't need to resend heavy headers or content-type metadata with every call. This reduces the "per-request overhead" significantly.
 
-### 3. Transport Leayer Protocol ::
+#### 3. Transport Leayer Protocol ::
 
 - ***The Problem (REST):***
 
@@ -41,7 +41,7 @@ REST is good for Web or browser based comunication but not suitable for inter se
 
   but RPC can use on Transport Leayer HTTP version 2, TCP or other protocols over network for faster bidirectional or unidirectional comunication.
 
-### 4. Data Format and CPU Performance ::
+#### 4. Data Format and CPU Performance ::
 
 - ***The Problem (REST):***
 
