@@ -46,7 +46,7 @@ REST is good for Web or browser based comunication but not suitable for inter se
 
 ( Serialization/Deserialization : techniques for transforming complex data structure / object into format usually byte stream format suitable for stored on disk or in a buffer and vice versa )
   
-  Text based format is suitable for human but not for machine. it is take Large Size as per binary based format.
+   Text based format is suitable for human but not for machine. it is take Large Size as per binary based format.
 
 - ***The RPC Solution :***
 
