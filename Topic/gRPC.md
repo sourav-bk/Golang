@@ -96,6 +96,48 @@ gRPC supports four primary types of service methods that define how clients and 
 - ***Client Streaming RPC:*** The client sends a sequence of messages to the server. Once the client finishes sending, it waits for the server to process the entire stream and return a single response.
 - ***Bidirectional Streaming RPC:*** Both the client and server send a sequence of messages using a read-write stream. The two streams operate independently, allowing messages to be sent and received in any order. 
 
+# Implementation of gRPC server in Go
+
+# Why use gRPC?
+There are several reasons you may want to use the gRPC framework for developing your APIs.
+
+- ***1. Broad language support***
+  
+gRPC has broad language support. It's widely supported in most modern languages and frameworks, including Java, Ruby, Go, Node.js, Python, C#, and PHP. As mentioned above, gRPC clients can invoke any function just GET and making it more versatile than traditional APIs.
+
+- ***2. Smaller message size***
+
+gRPC messages are smaller than traditional RESTful API messages because the binary message formats—Protocol Buffers—are smaller and faster to parse than text-based formats like JSON. This results in faster transmission between the client and the server.
+
+- ***3. Faster communication***
+
+HTTP/2 is more efficient than older protocols like HTTP/1.1—allowing gRPC to reduce network bandwidth usage and decrease latency. Also, since the messages are smaller, they can be transferred more quickly between servers and clients. This also helps to reduce the load on the network and provides a smoother user experience.
+
+- ***4. Streaming Connection***
+
+Another advantage of gRPC is its support for streaming connection mode. Streaming mode sends or receives data in chunks, which can improve performance when the data is too large to send or receive at once. This allows clients to continuously receive data from the server without waiting for the entire response to arrive. As a result, users don't have to wait until all the data transfer is complete.
+
+During streaming, the connection between the client and the server is maintained, meaning no data is lost or corrupted while transmitted. gRPC streaming is ideal for real-time applications like chat or gaming.
+
+- ***5. Pluggable Support***
+
+gRPC supports plugging in load balancing, tracing, health checking, and authentication. This makes it easy to set up and manage high-performance systems. gRPC is modular, so it's simple to set up and configure its different feature sets.
+
+- ***6. Strong Typing***
+
+gRPC uses Protocol Buffers, which provide strong typing for messages. This can help catch errors at compile-time rather than runtime, leading to more robust and reliable systems.
+
+- ***7. Code Generation***
+
+gRPC automatically generates client and server code from your service definitions. This can significantly reduce the amount of boilerplate code you need to write and maintain.
+
+
+
+# Advanced Features of gRPC?
+
+# Disadvantages  Features of gRPC?
+
+# gRPC
 
 <hr>
 
