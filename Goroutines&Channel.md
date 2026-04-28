@@ -46,7 +46,7 @@ By default, channels are bidirectional, but for better API design and type safet
 
 - ***Receive-only:*** <-chan T (the arrow points out of the chan).
 
-Channel has been closed using close() function. No values can be sent after closing  but  Receivers can still read remaining values after close .Channel close() Used to signal completion.
+Channel has been closed using close() function. No values can be sent after closing  but  Receivers can still read remaining values after close. Channel close() Used to signal completion.
 
 - ### Type of Channel 
 
