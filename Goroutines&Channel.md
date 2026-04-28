@@ -30,7 +30,7 @@ A Go program can be concurrent even on a single core machine, but it achieves tr
 
 A channel in Go is a communication mechanism used by goroutines. It allows safe data sharing between goroutines without explicit locks.
 
-Go channels use the FIFO (First-In, First-Out) method. Values sent to a channel are received in the same order they were sent. 
+Go channels use the FIFO (First-In, First-Out) method and Values sent to a channel are received in the same order they were sent. 
 
 If multiple goroutines are sending/receiving, the order of operations is preserved as they are processed through the channel's internal buffer.
 
