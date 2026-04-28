@@ -69,7 +69,7 @@ A Race Condition is a logic/design errors, not syntax errors in the program when
 
 Go makes detection easier with -race flag during run or test Go program to check unsynchronized memory access at runtime.
 ## ***Data Race*** :
-A Data Race is a specific type of race condition that happens at the memory level when Two or more goroutines access the same memory location concurrently. There is no synchronization used to coordinate the access.It is a low-level memory safety issue.
+A Data Race is a specific type of race condition that happens at the memory level when Two or more goroutines access the same memory location concurrently. There is no synchronization used to coordinate the access. It is a low-level memory safety issue.
 
 All data races are race conditions. Not all race conditions are data races.
  
