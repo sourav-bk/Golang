@@ -4,6 +4,10 @@
 A Goroutine is a lightweight thread managed by the Go runtime, Used to run multiple function or method Concurrently.
 While a traditional OS thread might take up 1MB of memory, a Goroutine starts with just 2KB.
 
+Go channels use the FIFO (First-In, First-Out) method. 
+
+Values sent to a channel are received in the same order they were sent. If multiple goroutines are sending/receiving, the order of operations is preserved as they are processed through the channel's internal buffer
+
 - #### Concurrency vs. Parallelism
 Concurrency is not Parallelism.
 
