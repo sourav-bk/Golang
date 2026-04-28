@@ -3,7 +3,7 @@
 <details><summary><h3><mark>What is GO? - Why Developers Choose Go?</mark></h3></summary>
   
 Go (Golang) is a statically typed, compiled programming language designed by Google.
-It is known for its simplicity, fast, and efficient, especially for building scalable backend systems.
+It is known for its simplicity, fast, and efficient, specially for building scalable backend systems.
 
 Reasons for choosing Go---
 
@@ -11,7 +11,7 @@ Reasons for choosing Go---
 Go is very fast because it runs directly on machine code. It can handle many requests at the same time without slowing down, which makes applications more responsive.
 
 <b>2. Cost Efficient : </b>
-Go uses less memory and RAM, so applications need fewer servers. This helps companies reduce cloud and infrastructure costs, especially for high‑traffic systems.
+Go uses less memory and RAM, so applications need fewer servers. This helps companies reduce cloud and infrastructure costs, specially for high‑traffic systems.
 
 <b>3. Fast Development & Deployment : </b>
 Go is easy to write and understand, and it compiles very quickly. It creates a single executable file, which makes deployment simple and reliable.
