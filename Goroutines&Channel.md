@@ -5,8 +5,8 @@ A Goroutine is a lightweight thread managed by the Go runtime, Used to run multi
 While a traditional OS thread might take up 1MB of memory, a Goroutine starts with just 2KB.
 
 ***Concurrency***
-Go follow Concurrency.
-Concurrency is the ability to run multiple things at once.
+
+Go follow Concurrency. Concurrency is the ability to run multiple things at once.
 When we normally write code, that code runs sequentially, meaning that each job is run back to back. 
 In concurrent code, those jobs are run simultaneously.
 
