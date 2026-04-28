@@ -47,7 +47,7 @@ Channel has been closed using close() function. No values can be sent after clos
 
 Channels can be TWO type -- 1. Unbuffered Channel   2. Buffered Channel
 
-- ***Unbuffered*** : Capacity of 0. The sender blocks until a receiver is ready. Used for strict synchronization.
+- ***Unbuffered*** : Capacity of 0. The sender blocks until a receiver is ready. Used for strict synchronization. Since they have no capacity, they act as direct synchronization points.
 
 - ***Buffered*** : Has a fixed capacity. The Sender only blocks when the buffer is full. receiver blocks when it's empty. its Allows asynchronous communication.
 
