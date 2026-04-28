@@ -264,6 +264,30 @@ Go is memory-safe. Uninitialized pointers are nil. Go does not allow pointer ari
 
 </details>
 <br>
+<details><summary><h3><mark> Range, switch, default, select </summary></mark></h3>
+  
+  - ##### Range :
+    In Golang Range keyword is used in different kinds of data structures in order to iterates over elements. The range keyword is mainly used in for loops in order to iterate over all the elements of a map, slice, channel, or an array.
+  
+  - ##### switch, default  :
+    - switch :
+
+      A switch statement is a shorter way to write a sequence of if - else statements. It runs the first case whose value is equal to the condition expression.
+
+      Go provides automatic break statements after each case.
+      
+    - default :
+
+      The default case in a select is run if no other case is ready.
+
+      
+    - select :
+
+      The select statement lets a goroutine wait on multiple communication operations.
+      
+      A select blocks until one of its cases can run, then it executes that case. It chooses one at random if multiple are ready.
+
+</details>
 
 # Error Handling :
  <details><summary><h3><mark>Error in go? Panics | recover | defer </mark></h3></summary>
