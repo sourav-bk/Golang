@@ -110,7 +110,7 @@ sync.WaitGroup operates on  internal counter using three main methods:
 
 ## sync.Mutex && Mutexes ::
 
-In Go, when multiple goroutines try to access the same piece of data at the same time, its end up with a Date race. To prevent Date race , we use "Mutual Exclusion" locks, or Mutexes.
+In Go, when multiple goroutines try to access the same piece of data at the same time on the memory, its end up with a Date race. To prevent Date race , we use "Mutual Exclusion" locks, or Mutexes.
 
 The standard Mutex is "exclusive." If one goroutine has the lock, nobody else can access the protected code until the lock is released.
 
