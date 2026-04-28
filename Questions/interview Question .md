@@ -4,3 +4,4 @@
 4. hash map and linked list ?
 5. binary tree ?
 6. load balancing. how to implement load balancing  ?
+7. how to scale mysql database
