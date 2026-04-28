@@ -3,4 +3,4 @@
 3. what is api version in rest ?
 4. hash map and linked list ?
 5. binary tree ?
-6. load balancing ?
+6. load balancing. how to implement load balancing  ?
