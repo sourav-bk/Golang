@@ -27,15 +27,15 @@ We chose Go because it is fast, cost‑effective, easy to develop and deploy, an
 </details>
 
 <details><summary><h3><mark>How Run Go Code?</mark></h3></summary>
-Running a Go application is simple because Go is a compiled language. When you build a Go program, it is compiled into a single static binary file. This means you do not need to install a Go runtime on the target machine — you only need the compiled file.
+Running a Go application is simple because Go is a compiled language. When build a Go program, it is compiled into a single static binary file. This means we do not need to install a Go runtime on the target machine — only need the compiled file.
 
-However, to compile Go code, you must install Go on your system (or download the Go compiler). You write your code in a file with the .go extension.
+However, to compile Go code, must install Go on system (or download the Go compiler). we write code in a file with the .go extension.
 
 Every Go program starts from the main function. The main function is the entry point of the program, and execution always begins there.
 
-To create an executable file, you use the go build command. By default, this command builds an executable for the current operating system and architecture.
+To create an executable file, we use the go build command. By default, this command builds an executable for the current operating system and architecture.
 
-If you want to build an executable for a different target system, you can specify the GOOS and GOARCH environment variables when running go build. This allows you to cross-compile for another operating system or CPU architecture.
+If we want to build an executable for a different target system, we can specify the GOOS and GOARCH environment variables when running go build. This allows we to cross-compile for another operating system or CPU architecture.
 
 Go also provides the go run command, which is used to quickly compile and run a Go program from the command line without creating a permanent executable file.
 
@@ -153,7 +153,7 @@ The go mod tidy command is used to maintain module files. It adds any missing de
   </ul>
     <details><summary>Convert types in Golang</summary>
       
-  In Go, type conversion is explicit, meaning you must manually convert a value from one type to another. Be aware about during type conversions between certain types can lead to data loss.
+  In Go, type conversion is explicit, meaning we must manually convert a value from one type to another. Be aware about during type conversions between certain types can lead to data loss.
   
   - int -> float64 || var f float64 = float64(i)
   - float64 -> int || var i int = int(f)
@@ -186,7 +186,7 @@ The go mod tidy command is used to maintain module files. It adds any missing de
 
 <details><summary><h3><mark>Convert types in Golang</mark></h3></summary>
   
-  In Go, type conversion is explicit, meaning you must manually convert a value from one type to another. Be aware about during type conversions between certain types can lead to data loss.
+  In Go, type conversion is explicit, meaning we must manually convert a value from one type to another. Be aware about during type conversions between certain types can lead to data loss.
   
 
   - int -> float64 || var f float64 = float64(i)
@@ -299,7 +299,7 @@ Go is memory-safe. Uninitialized pointers are nil. Go does not allow pointer ari
    
    - ##### Errors: Expected Failures
 
-     Errors represent issues that can happen during normal program execution. They’re part of the flow, and program should be prepared for them. Errors should be handled gracefully. They should not crash your program.
+     Errors represent issues that can happen during normal program execution. They’re part of the flow, and program should be prepared for them. Errors should be handled gracefully. They should not crash program.
    
    - ##### Panics: Unexpected Failures
 
