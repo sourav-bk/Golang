@@ -25,8 +25,8 @@ RabbitMQ Architecture component
     - Fanout (broadcast to all),
     - Topic (pattern matching),
     - Headers (based on header attributes)
-	- Binding
-	- Queues
+  - Binding
+  - Queues
 - Consumer
 
 
