@@ -16,15 +16,20 @@ In Core application layer, RabbitMQ primarily uses AMQP 0-9-1 (Advanced Message 
 It acts as a central hub, allowing producers to send data and consumers to receive it, decoupling services to increase scalability and reliability.
 
 
+RabbitMQ Architecture component
+- producer 
+
+- Broker
+  - Exchange
+    - Direct (exact key match),
+    - Fanout (broadcast to all),
+    - Topic (pattern matching),
+    - Headers (based on header attributes)
+	- Binding
+	- Queues
+- Consumer
 
 
-
-
-
-
-What is RabbitMQ?
-
-RabbitMQ Architecture
 
 
 Data Flow Process
