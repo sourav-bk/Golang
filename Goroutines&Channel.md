@@ -23,7 +23,9 @@ I will give small example:
 
 Go is designed to be concurrent, which allows it to be parallel, when have a processor with multiple cores.
 
-Go program can be concurrent, even on a single core machine, but it achieves true parallelism, when running on a multi-core system, And Go runtime efficiently distributes goroutines across available cores.
+Go program can be concurrent, even on a single core machine, but it achieves true parallelism, when running on a multi-core system, 
+
+And Go runtime efficiently distributes goroutines across available cores.
 
 
 ## ***Channel*** :
