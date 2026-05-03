@@ -2,7 +2,7 @@
  
 ## ***Go Routine*** :
 A Goroutine is a lightweight thread managed by the Go runtime, Used to run multiple function or method Concurrently.
-While a traditional OS thread might take up 1MB of memory, a Goroutine starts with just 2KB.
+While traditional OS thread might take up 1MB of memory, a Goroutine starts with just 2KB.
 
 ***Concurrency***
 
