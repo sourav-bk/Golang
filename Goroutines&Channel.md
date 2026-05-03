@@ -38,7 +38,7 @@ If multiple goroutines are sending/receiving, the order of operations is preserv
 
 Channels are reference types. zero value is nil. Initialize using the make() function.
 
-We can send and receive values on channel with the channel operator, (<-)(->).
+We can send and receive values on channel with the channel operator, (<-)(->). ( receive operator && arrow operator )
 
 By default, channels are bidirectional, but for better API design and type safety, we often restrict them in function signatures:
 
