@@ -40,15 +40,15 @@ Key Concepts of the Relational Model are --
 
 - ***3. Primary Key***
 
-***4. Alternate Key***
+- ***4. Alternate Key***
 
-***5. Unique Key***
+- ***5. Unique Key***
 
-***6. Composite Key*** 
+- ***6. Composite Key*** 
 
-***7. Foreign Key***
+- ***7. Foreign Key***
 
-***8. Partial Key***
+- ***8. Partial Key***
 
 
 
