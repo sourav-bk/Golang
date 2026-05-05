@@ -34,14 +34,14 @@ Key Concepts of the Relational Model are --
 ## Keys in Relational Model
 
 
-1. Super Key
-2. Candidate Key
-3. Primary Key
-4. Alternate Key
-5. Unique Key
-6. Composite Key
-7. Foreign Key
-8. Partial Key
+***1. Super Key***
+***2. Candidate Key***
+***3. Primary Key***
+***4. Alternate Key***
+***5. Unique Key***
+***6. Composite Key*** 
+***7. Foreign Key***
+***8. Partial Key***
 
 
 
