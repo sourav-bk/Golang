@@ -38,10 +38,13 @@ Key Concepts of the Relational Model are --
   Its set of one or more attributes (columns) that can uniquely identify a each tuple/record/Row in a relation or table. 
 
 - ***2. Candidate Key :***
+  Its minimum set of one or more attributes (columns) that can uniquely identify a each tuple/record/Row in a relation or table. A table can have multiple candidate keys.
 
 - ***3. Primary Key :***
+  Its specific candidate key chosen to uniquely identify tuple/record/Row in a table. It cannot contain NULL values and must be unique.
 
 - ***4. Alternate Key :***
+  Any candidate key that is not selected as the primary key.
 
 - ***5. Unique Key :***
 
