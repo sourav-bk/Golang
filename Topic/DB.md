@@ -1,5 +1,15 @@
 ## ER Model (Entity-Relationship) 
 
+The E-R model stands for the Entity-Relationship model,
+E-R model is a high-level conceptual data model used in software engineering to visualize the structure of a database.
+It represents real-world objects as entities and their associations as relationships, creating a, diagrammatic blueprint (ER Diagram) that facilitates database design and understanding about the Data.
+
+This model represents the logical structure of a database, using entities, their attributes, and relationships between them.
+
+- Entity: An object that is stored as data. E.g: Student, Course, or Company.
+- Attribute: Properties that describe an entity. E.g: StudentID, CourseName, or EmployeeEmail.
+- Relationship: A connection between entities. E.g: Student enrolls in a Course.
+
 ## Relational Model 
 
 ## Types of relationship in Rdbms
