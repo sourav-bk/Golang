@@ -24,6 +24,12 @@ Key Concepts of the Relational Model are --
 - ***Schema:*** The logical structure of a relation.
   
 ## Types of relationship in Rdbms
+- One-to-One (1:1): A single record in Table A is related to only one record in Table B.
+  - Example: A Person table and an AadharCard table, where one person has exactly one Aadhar card.
+- One-to-Many (1:M) / Many-to-One (M:1): A record in Table A can be associated with multiple records in Table B, but a record in Table B relates to only one in Table A.
+  - Example: A Department table (one) and an Employee table (many).
+- Many-to-Many (M:N): Multiple records in Table A are related to multiple records in Table B, requiring a junction table to implement.
+  - Example: A Student table and a Course table, where students take multiple courses and courses have multiple students
 
 
 
