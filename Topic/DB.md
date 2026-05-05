@@ -1,4 +1,16 @@
+## ER Model (Entity-Relationship) 
 
+## Relational Model 
+
+## Types of relationship in Rdbms
+
+
+
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Q. What is the difference between DDL and DML?'
 Q. What is a primary key in a database, and how is it used to uniquely identify records?
 Q. Can you explain basic database concepts and your experience with databases?
