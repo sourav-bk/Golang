@@ -11,11 +11,18 @@ This model represents the logical structure of a database, using entities, their
 - Relationship: A connection between entities. E.g: Student enrolls in a Course.
 
 ## Relational Model 
-The relational model represents the database management approach that organizes or stored data into tables , columns and rows.
 
-- Table: Table represents the Entity
-- aa
-- A
+The relational model represents the database management approach that organizes or stored data into tables , columns and rows.
+Relational Model real Implementation is Mysql, SQL server. 
+
+Key Concepts of the Relational Model are --
+
+- Relation (Table): Relational Model represents Data as a Collection of tables. A table is called Relation. 
+- Tuple (Row/Record) : Represents single instance or Each Row of data in a table (e.g., one customer Data).
+- Attribute (Column/Field) : Represents a specific characteristic or property of the entity or Column Header.  (e.g., customer name, ID).
+- Domain : The set of allowed values for an attribute.( e.g., Data type, Name )
+- Schema : The logical structure of a relation.
+  
 ## Types of relationship in Rdbms
 
 
