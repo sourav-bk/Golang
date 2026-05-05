@@ -11,7 +11,11 @@ This model represents the logical structure of a database, using entities, their
 - Relationship: A connection between entities. E.g: Student enrolls in a Course.
 
 ## Relational Model 
+The relational model represents the database management approach that organizes or stored data into tables , columns and rows.
 
+- Table: Table represents the Entity
+- aa
+- A
 ## Types of relationship in Rdbms
 
 
