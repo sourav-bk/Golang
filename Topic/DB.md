@@ -30,7 +30,18 @@ Key Concepts of the Relational Model are --
   - Example: A Department table (one) and an Employee table (many).
 - Many-to-Many (M:N): Multiple records in Table A are related to multiple records in Table B, requiring a junction table to implement.
   - Example: A Student table and a Course table, where students take multiple courses and courses have multiple students
+ 
+## Keys in Relational Model
 
+
+1. Super Key
+2. Candidate Key
+3. Primary Key
+4. Alternate Key
+5. Unique Key
+6. Composite Key
+7. Foreign Key
+8. Partial Key
 
 
 
