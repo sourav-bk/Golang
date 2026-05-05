@@ -20,7 +20,7 @@ Key Concepts of the Relational Model are --
 - ***Relation (Table):*** Relational Model represents Data as a Collection of tables. A table is called Relation. 
 - ***Tuple (Row/Record):*** Represents single instance or Each Row of data in a table (e.g., one customer Data).
 - ***Attribute (Column/Field):*** Represents a specific characteristic or property of the entity or Column Header.  (e.g., customer name, ID).
-- ***Domain:*** The set of allowed values for an attribute.( e.g., Data type, Name )
+- ***Domain:*** The set of allowed values for an attribute.( e.g., String Data type customer name  )
 - ***Schema:*** The logical structure of a relation.
   
 ## Types of relationship in Rdbms
