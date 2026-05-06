@@ -130,27 +130,27 @@ ACID properties in a Database Management System (DBMS) are a set of 4 core princ
 ## Type of sql commands:
 SQL commands are categorized into 5 primary types based on their specific functionality in managing a database: DDL, DML, DQL, DCL, and TCL.
 
- 1. Data Definition Language (DDL)
+ 1. ***Data Definition Language (DDL)***
     DDL commands are used to define or modify the structure (schema) of the database, such as tables, indexes, and views.
     - CREATE: Creates a new database object (e.g., table or view).
     - ALTER: Modifies the structure of an existing object, like adding or deleting columns.
     - DROP: Permanently deletes an object from the database.
     - TRUNCATE: Removes all records from a table while keeping its structure intact.
     - RENAME: Changes the name of a database object.
- 3. Data Manipulation Language (DML)
+ 2. ***Data Manipulation Language (DML)***
     DML commands are used to handle the actual data stored within the tables. Most everyday SQL operations fall under this category.
     - INSERT: Adds new rows of data to a table.
     - UPDATE: Modifies existing records based on specific conditions.
     - DELETE: Removes rows from a table.
     - LOCK: Controls concurrent access to data to ensure consistency.
- 5. Data Query Language (DQL)
+ 3. ***Data Query Language (DQL)***
     DQL is used specifically for retrieving and viewing data from the database.
     - SELECT: The primary command used to fetch data. It is often paired with clauses like WHERE, ORDER BY, and GROUP BY to filter and sort results.
- 7. Data Control Language (DCL)
+ 4. ***Data Control Language (DCL)***
     DCL commands manage user access, permissions, and security within the database system.
     - GRANT: Gives a user specific privileges to access or modify data.
     - REVOKE: Withdraws previously granted permissions.
- 9. Transaction Control Language (TCL)
+ 5. ***Transaction Control Language (TCL)***
     TCL commands manage database transactions to ensure data integrity and consistency, often used in conjunction with DML operations.
     - COMMIT: Permanently saves the changes made during the current transaction.
     - ROLLBACK: Undoes changes that have not yet been saved, returning the data to its previous state.
