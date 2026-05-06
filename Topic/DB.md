@@ -35,13 +35,13 @@ Key Concepts of the Relational Model are --
 
 
 - ***1. Super Key :***
-  Its set of one or more attributes (columns) that can uniquely identify a each tuple/record/Row in a relation/table. 
+  Its set of one or more attributes (columns) that can uniquely identify a each Tuple/Record/Row in a Relation/Table. 
 
 - ***2. Candidate Key :***
-  Its minimum set of one or more attributes (columns) that can uniquely identify a each tuple/record/Row in a relation/table. A table can have multiple candidate keys.
+  Its minimum set of one or more attributes (columns) that can uniquely identify a each tuple/record/Row in a Relation/Table. A table can have multiple candidate keys.
 
 - ***3. Primary Key :***
-  Its specific candidate key chosen to uniquely identify tuple/record/Row in a relation/table. It cannot contain NULL values and must be unique.
+  Its specific candidate key chosen to uniquely identify tuple/record/Row in a Relation/Table. It cannot contain NULL values and must be unique.
 
 - ***4. Alternate Key :***
   Any candidate key that is not selected as the primary key.
@@ -49,10 +49,10 @@ Key Concepts of the Relational Model are --
 - ***5. Unique Key :***
 
 - ***6. Composite Key :***
-  Its a combination of two or attributes (columns) that together uniquely identify a tuple/record/Row in a relation/table. Each attributes (columns) may contain duplicate values but cannot contain NULL values. And by combined its Behave like Primary Key.
+  Its a combination of two or attributes (columns) that together uniquely identify a tuple/record/Row in a Relation/Table. Each attributes (columns) may contain duplicate values but cannot contain NULL values. And by combined its Behave like Primary Key.
 
 - ***7. Foreign Key :***
-  Foreign key is a attribute/column (or set of attributes/columns) in one relation/table that links to the primary key of another relation/table. It serves as a cross-reference between relation/table to establish a relationship and maintain referential integrity.
+  Foreign key is a attribute/column (or set of attributes/columns) in one Relation/Table that links to the primary key of another Relation/Table. It serves as a cross-reference between Relation/Table to establish a relationship and maintain referential integrity.
 
 - ***8. Partial Key :***
 
