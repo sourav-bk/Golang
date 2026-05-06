@@ -188,6 +188,28 @@ Types of Joins ---
 
   Returns all records when there is a match in either left or right table.
   - Eg = SELECT * FROM Customers FULL OUTER JOIN Orders ON Customers.CustomerID = Orders.CustomerID;.
+ 
+## Index in DB
+An index in SQL is a data structure used to speed up the retrieval of records from a database table. It acts like the index at the back of a textbook: instead of scanning every page to find a topic, you look it up in the index and jump straight to the correct page.
+
+Common Types of Indexes---
+
+- Clustered Index:
+
+  Determines the physical order of data in the table. A table can have only one clustered index because data can only be physically stored in one order (often automatically created on the Primary Key).
+  
+- Non-Clustered Index:
+
+  A separate structure from the data rows that contains pointers to the original data. You can have multiple non-clustered indexes on a single table.
+
+- Unique Index:
+
+  Ensures that all values in the indexed column are unique, preventing duplicate entries and maintaining data integrity.
+
+- Composite Index:
+
+  An index created on two or more columns together, useful for queries that filter by multiple criteria
+
 
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
