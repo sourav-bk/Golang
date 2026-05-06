@@ -165,7 +165,7 @@ SQL commands are categorized into 5 primary types based on their specific functi
 
 ## Joint and types of joins In RDBMS?
 
-Join is an operation in DBMS that combines the rows of two or more tables based on related columns between them. The main purpose of join is to retrieve the data from multiple tables in other words Join is used to perform multi-table queries.
+Join is an operation in DBMS that combines the rows of two or more tables based on related columns between them. The main purpose of join is to retrieve data from multiple tables, in other words Join is used to perform multi-table queries.
 
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
