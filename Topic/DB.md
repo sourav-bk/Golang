@@ -95,12 +95,15 @@ Normalization is achieved through a series of stages called normal forms. Each s
   Address multi-valued dependencies and join dependencies, used in advanced database design.
 
 
-  ### Advantages
-  - Improved Data Integrity: Ensures data accuracy and consistency across the database.
-  - Better Organization: Data is organized logically, making it easier to maintain.Faster Maintenance: Smaller tables are easier to manage.
-  ### Disadvantages
-  - Increased Query Complexity: Breaking data into many tables may require complex JOIN operations, potentially slowing down read-heavy applications.
-  - Performance Trade-off: Extremely high normalization (4NF/5NF) can decrease performance in some scenarios
+### Advantages :
+
+  - ***Improved Data Integrity:*** Ensures data accuracy and consistency across the database.
+  - ***Better Organization:*** Data is organized logically, making it easier to maintain.Faster Maintenance: Smaller tables are easier to manage.
+    
+### Disadvantages :
+
+  - ***Increased Query Complexity:*** Breaking data into many tables may require complex JOIN operations, potentially slowing down read-heavy applications.
+  - ***Performance Trade-off:*** Extremely high normalization (4NF/5NF) can decrease performance in some scenarios
 
 
 
