@@ -74,11 +74,33 @@ Minimizes duplicate data, saving storage space. Prevents issues where updating o
 ### Normal Forms (Levels of Normalization)
 
 Normalization is achieved through a series of stages called normal forms. Each stage has specific rules
-- ***1NF (First Normal Form):*** Data is in a tabular format, and every cell contains atomic (indivisible) values.
-- ***2NF (Second Normal Form):*** Must be in 1NF, and all non-key attributes are fully functionally dependent on the primary key. It removes partial dependencies.
-- ***3NF (Third Normal Form):*** Must be in 2NF, and no transitive dependencies exist (i.e., non-key attributes must not depend on other non-key attributes).
-- ***BCNF (Boyce-Codd Normal Form):*** A stricter version of 3NF, sometimes called 3.5NF, which addresses, which addresses anomalies caused by multiple overlapping candidate keys.
-- ***4NF & 5NF:*** Address multi-valued dependencies and join dependencies, used in advanced database design
+- ***1NF (First Normal Form):***
+  
+  Data is in a tabular format, and every cell contains atomic (indivisible) values.
+  
+- ***2NF (Second Normal Form):***
+
+  Must be in 1NF, and all non-key attributes are fully functionally dependent on the primary key. It removes partial dependencies.
+  
+- ***3NF (Third Normal Form):***
+  
+  Must be in 2NF, and no transitive dependencies exist (i.e., non-key attributes must not depend on other non-key attributes).
+  
+- ***BCNF (Boyce-Codd Normal Form):***
+
+  A stricter version of 3NF, sometimes called 3.5NF, which addresses, which addresses anomalies caused by multiple overlapping candidate keys.
+  
+- ***4NF & 5NF:***
+
+  Address multi-valued dependencies and join dependencies, used in advanced database design.
+
+
+  ### Advantages
+  - Improved Data Integrity: Ensures data accuracy and consistency across the database.
+  - Better Organization: Data is organized logically, making it easier to maintain.Faster Maintenance: Smaller tables are easier to manage.
+  ### Disadvantages
+  - Increased Query Complexity: Breaking data into many tables may require complex JOIN operations, potentially slowing down read-heavy applications.
+  - Performance Trade-off: Extremely high normalization (4NF/5NF) can decrease performance in some scenarios
 
 
 
