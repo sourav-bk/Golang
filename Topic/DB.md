@@ -107,7 +107,7 @@ Normalization is achieved through a series of stages called normal forms. Each s
 
 
 ## ACID properties in DB :
-ACID properties in a Database Management System (DBMS) are a set of four core principles — **Atomicity**, **Consistency**, **Isolation**, and **Durability** — that ensure database transactions are processed reliably, maintaining data integrity and accuracy. They guarantee that even in the event of failures or concurrent access, data remains accurate and consistent
+ACID properties in a Database Management System (DBMS) are a set of 4 core principles — **Atomicity**, **Consistency**, **Isolation**, and **Durability** — that ensure database transactions are processed reliably, maintaining data integrity and accuracy. They guarantee that even in the event of failures or concurrent access, data remains accurate and consistent
 
 
 
