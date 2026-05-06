@@ -283,9 +283,11 @@ Go is memory-safe. Uninitialized pointers are nil. Go does not allow pointer ari
       
     - select :
 
-      The select statement lets a goroutine wait on multiple communication operations.
+      The select statement lets a goroutine wait on multiple channel operations simultaneously.
       
-      A select blocks until one of its cases can run, then it executes that case. It chooses one at random if multiple are ready.
+      It blocks until one of its cases is ready to execute, making it essential for managing concurrency.
+      It functions like a switch statement, but instead of checking values, each case is a communication operation.
+      If multiple channels are ready at the same time, Go picks one at random to ensure fairness and prevent starvation.
 
 </details>
 
