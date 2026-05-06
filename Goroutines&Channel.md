@@ -135,3 +135,9 @@ For simple lock we use The sync.Mutex (The Simple Lock) or more specialized, "sm
      Releases one reader's hold on the lock.
   
 </details>
+
+
+
+<details><summary><h2><mark> Worker pool </mark></h3></summary>
+ 
+</details>
