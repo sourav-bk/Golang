@@ -190,7 +190,7 @@ Types of Joins ---
   - Eg = SELECT * FROM Customers FULL OUTER JOIN Orders ON Customers.CustomerID = Orders.CustomerID;.
  
 ## Index in DB
-An index in SQL is a data structure used to speed up the retrieval of records from a database table. It acts like the index at the back of a textbook: instead of scanning every page to find a topic, you look it up in the index and jump straight to the correct page.
+An index in SQL is a data structure used to speed up the retrieval of records, from a DB table. It acts like the index at the back of a textbook: instead of scanning every page to find topic, we look in to the index and jump straight to the correct page.
 
 Common Types of Indexes---
 
