@@ -48,7 +48,8 @@ Key Concepts of the Relational Model are --
 
 - ***5. Unique Key :***
 
-- ***6. Composite Key :*** 
+- ***6. Composite Key :***
+  Its a combination of two or attributes (columns) that together uniquely identify a tuple/record/Row in a relation or table. Each attributes (columns) may contain duplicate values but cannot contain NULL values. And by combined its Behave like Primary Key.
 
 - ***7. Foreign Key :***
 
