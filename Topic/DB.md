@@ -172,22 +172,22 @@ Types of Joins ---
 - INNER JOIN:
 
   Returns records with matching values in both tables.
-  - Example: SELECT * FROM Orders INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID;.
+  - Eg = SELECT * FROM Orders INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID;.
     
 - LEFT (OUTER) JOIN:
 
   Returns all records from the left table, and matched records from the right table.
-  - Example: SELECT * FROM Customers LEFT JOIN Orders ON Customers.CustomerID = Orders.CustomerID;.
+  - Eg = SELECT * FROM Customers LEFT JOIN Orders ON Customers.CustomerID = Orders.CustomerID;.
     
 - RIGHT (OUTER) JOIN:
 
   Returns all records from the right table, and matched records from the left table.
-  - Example: SELECT * FROM Orders RIGHT JOIN Customers ON Orders.CustomerID = Customers.CustomerID;.
+  - Eg = SELECT * FROM Orders RIGHT JOIN Customers ON Orders.CustomerID = Customers.CustomerID;.
     
 - FULL (OUTER) JOIN:
 
   Returns all records when there is a match in either left or right table.
-  - Example: SELECT * FROM Customers FULL OUTER JOIN Orders ON Customers.CustomerID = Orders.CustomerID;.
+  - Eg = SELECT * FROM Customers FULL OUTER JOIN Orders ON Customers.CustomerID = Orders.CustomerID;.
 
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
