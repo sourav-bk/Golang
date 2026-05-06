@@ -167,6 +167,28 @@ SQL commands are categorized into 5 primary types based on their specific functi
 
 Join is an operation in DBMS that combines the rows of two or more tables based on related columns between them. The main purpose of join is to retrieve data from multiple tables, in other words Join is used to perform multi-table queries.
 
+Types of Joins ---
+
+- INNER JOIN:
+
+  Returns records with matching values in both tables.
+  - Example: SELECT * FROM Orders INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID;.
+    
+- LEFT (OUTER) JOIN:
+
+  Returns all records from the left table, and matched records from the right table.
+  - Example: SELECT * FROM Customers LEFT JOIN Orders ON Customers.CustomerID = Orders.CustomerID;.
+    
+- RIGHT (OUTER) JOIN:
+
+  Returns all records from the right table, and matched records from the left table.
+  - Example: SELECT * FROM Orders RIGHT JOIN Customers ON Orders.CustomerID = Customers.CustomerID;.
+    
+- FULL (OUTER) JOIN:
+
+  Returns all records when there is a match in either left or right table.
+  - Example: SELECT * FROM Customers FULL OUTER JOIN Orders ON Customers.CustomerID = Orders.CustomerID;.
+
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Q. What is the difference between DDL and DML?'
