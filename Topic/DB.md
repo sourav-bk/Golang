@@ -59,6 +59,20 @@ Key Concepts of the Relational Model are --
 
 
 
+## Normalization
+
+Normalization in DBMS is the process of structuring a relational database to reduce data redundancy (repetition) and eliminate undesirable characteristics. It involves decomposing large, inefficient tables into smaller, related tables to improve data integrity, consistency, and storage efficiency.
+
+It involves decomposing large, inefficient tables into smaller, related tables to improve data integrity, consistency, and storage efficiency.
+
+***Key Objectives of Normalization:***
+Minimizes duplicate data, saving storage space. Prevents issues where updating or deleting data causes inconsistency, or where data cannot be inserted due to missing information.
+
+
+
+
+
+
 
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
