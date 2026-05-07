@@ -221,7 +221,10 @@ Common Types of Indexes---
   SQL: SQL (Structured Query Language) is the standard programming language designed for managing, manipulating, and retrieving data from RDBMS.
  
 - ***Nosql***
-  NoSQL databases are non-relational data management systems designed for high scalability, flexibility, and performance, handling large volumes of unstructured, semi-structured, or rapidly changing data. Its flexible, schemaless data models—including usinging document, key-value, graph, or wide-column stores—and scale horizontally across distributed servers, making them ideal for modern, data-intensive web application.
+
+  NoSQL databases are non-relational data management systems designed for high scalability, flexibility, and performance, handling large volumes of unstructured, semi-structured, or rapidly changing data. They use flexible, schemaless data models—including document, key-value, graph, or wide-column stores—and scale horizontally across distributed servers, making them ideal for modern, data-intensive web applications.
+
+
   
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Q. What is the difference between DDL and DML?'
