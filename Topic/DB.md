@@ -212,6 +212,10 @@ Common Types of Indexes---
 
 
 
+## What is RDBMS and Nosql?
+
+- ***RDBMS(Mysql)***
+- **Nosql***
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Q. What is the difference between DDL and DML?'
 Q. What is a primary key in a database, and how is it used to uniquely identify records?
