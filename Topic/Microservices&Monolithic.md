@@ -12,3 +12,16 @@ It is simple to develop, test, and deploy, making it ideal for smaller applicati
 However, it can become challenging to scale, maintain, and update as the application grows, often requiring a full re-deployment for any change.
 
 ## Microservices && Monolithic Architecture
+
+| Feature | Monolithic Architecture | Microservices Architecture |
+|---|---|---|
+| Structure | Single, unified codebase and project. | Collection of small, independent services. |
+| Coupling | Tightly coupled components. | Loosely coupled, independent components. |
+| Deployment | Entire application deployed as one unit. | Individual services deployed independently. |
+| Database | Single, shared database. | Database per service (decentralized). |
+| Scalability | Scale the entire application. | Scale individual components/services. |
+| Technology | Uniform technology stack (single language/framework). | Diverse technology stacks (polyglot). |
+| Fault Tolerance | Low; one bug can crash the entire system. | High; failure in one service rarely crashes others. |
+| Testing | Simple (end-to-end testing). | Complex (requires inter-service testing). |
+| Complexity | Low complexity (initially). | High complexity (due to distributed systems). |
+| Use Case | Small projects, startups, MVPs. | Large-scale, complex applications. |
