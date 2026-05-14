@@ -1,6 +1,6 @@
 ## Microservices ::
 
-Microservices architecture is an approach to software development where a large application is structured as a collection of small, independent services, each running in its own process and communicating via lightweight APIs (e.g., REST, gRPC). 
+Microservices architecture is an approach to software development where a large application is structured as a collection of small, independent services, each running in its own process and communicating via message brokers or lightweight APIs (e.g., REST, gRPC). 
 Each service is focused on a specific business capability, can be developed, deployed, and scaled independently, and often manages its own database.
 
 ## Monolithic ::
