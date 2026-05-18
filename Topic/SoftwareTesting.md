@@ -26,3 +26,110 @@ The STLC typically consists of six standard phases:
 - ***Test Environment Setup:*** This phase involves setting up the hardware and software conditions (servers, networks, devices) under which the software will be tested.
 - ***Test Execution:*** Testers run the test cases in the established environment, log any defects found, and retest once issues are fixed.
 - ***Test Closure:*** The team analyzes test results, prepares a summary report, and evaluates whether the software meets the exit criteria for release
+
+
+
+
+
+# 🧾 Software Testing – Session Summary
+
+## ✅ What is Software Testing?
+Software testing is a **process in the software development lifecycle (SDLC)** used to:
+- Verify and validate applications  
+- Ensure the software is **bug-free**  
+- Confirm it meets **customer requirements**  
+
+👉 **Goal:** Deliver a **high-quality, reliable product** to the end user.
+
+---
+
+## ❓ Why Do We Need Software Testing?
+- Identify **defects early**
+- Ensure software works **correctly and efficiently**
+- Prevent failures in critical systems (e.g., medical equipment)
+- Improve:
+  - Quality
+  - Performance
+  - Security
+  - Customer satisfaction
+
+---
+
+## 🔍 Verification vs Validation
+
+### 🔹 Verification
+- Performed **before development**
+- Focuses on: Documents (requirements, design)
+- Enses: ✅ *"Are we building the product right?"*
+- Example: Reviewing requirement specifications
+
+### 🔹 Validation
+- Performed **after development (testing phase)**
+- Focuses on: Actual application
+- Ensures: ✅ *"Are we building the right product?"*
+- Example: Testing the application functionality
+
+---
+
+## 🎯 Key Objectives of Testing
+- Detect defects early
+- Improve software quality
+- Ensure:
+  - Reliability
+  - Security
+  - Performance
+- Achieve **customer satisfaction**
+
+---
+
+## 🧪 Types of Software Testing
+
+### 1. Manual Testing
+- Performed manually without tools
+
+### 2. Automation Testing
+- Uses tools/scripts for repeated and faster execution
+
+---
+
+## 🔬 Testing Approaches
+
+- **White Box Testing** → Tests internal code structure  
+- **Black Box Testing** → Tests functionality without code knowledge  
+- **Gray Box Testing** → Partial knowledge of internal system  
+
+---
+
+## ⚙️ Functional Testing Types
+
+### ✅ Unit Testing
+- Done by developers  
+- Tests individual components/modules  
+
+### ✅ Integration Testing
+- Tests interaction between modules  
+- Ensures modules work together correctly  
+
+### ✅ System Testing
+- Tests the **entire application**
+- Covers:
+  - Functional requirements  
+  - Non-functional requirements (performance, security, etc.)  
+
+---
+
+## 🔄 Key Discussion Points
+- **Integration Testing** → Testing interconnected modules  
+- **System Testing** → Testing complete system behavior  
+- **Unit Testing** → Testing individual units/components  
+
+---
+
+## 📌 Key Takeaway
+Software testing is essential to:
+- Deliver **bug-free software**
+- Reduce risks
+- Improve user experience
+- Meet **business and customer requirements**
+
+---
