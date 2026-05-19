@@ -63,7 +63,7 @@ It's a modern, high-performance framework mostly used for server-to-server or In
 
 In g-RPC, the client application can directly call a method., on the server application., That is on a different machine over the network call as it is just a local Funtion call.
 
-g-RPC follow that Developer is only focus on the business logic rather than instant of planning or under-line Implementation.
+g-RPC follow that Developer is only focus on the business logic rather than instant of planning or under-line Implementation stuff.
 
 ## Protocol Buffers (Protobuf)
 
