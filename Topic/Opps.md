@@ -16,4 +16,4 @@ Core OOP Concepts in Go :
 ## Struct embedding or Composition
 
 
-## composition over inheritance
+## Composition over Inheritance
