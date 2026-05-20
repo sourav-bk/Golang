@@ -19,7 +19,7 @@ I will give small example:
 
 - Case 1: ***Concurrency*** - I was writing something, then I get thirsty, so I stopped writing and drank some water, then started writing again.
 
-- Case 2: ***Parallelism*** - I'm drinking eating Coke and pizza also watching TV at the same time. 
+- Case 2: ***Parallelism*** - I'm drinking and eating, Coke and pizza also watching TV at the same time. 
 
 Go is designed to be concurrent, which allows it to be parallel, when have a processor with multiple cores.
 
