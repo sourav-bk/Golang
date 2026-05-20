@@ -62,26 +62,24 @@ Channels can be TWO type -- 1. Unbuffered Channel   2. Buffered Channel
 </details>
 
 <details><summary><h2><mark>Concurrency in go</mark></h3></summary>
-Go follow Concurrency. Concurrency in Golang is one of its most powerful features.
-Concurrency  allows to run multiple tasks simultaneously. 
-and  Concurrency in Go programs to make progress on independent operations by rapidly switching context between them, optimizing resource utilization and keeping applications responsive. 
-
-
-Concurrency is not Parallelism., although it enables parallelism.
-
-Concurrency is ability to handle many tasks at once. (not necessarily running at the exact same time — that’s parallelism)
-and Parallelism doing multiple things at the exact same time.
-
-
-I will give small example:
-
-Case 1: Concurrency - I was writing something, then I get thirsty, so I stopped writing and drank some water, then started writing again.
-
-Case 2: Parallelism - I'm drinking eating Coke and pizza also watching TV at the same time.
-
-
-If have only one processor, Go program can still be concurrent but it cannot be parallel.
-On the other hand, a well-written concurrent program might run efficiently in parallel on a multiprocessor system.
+ Go follow Concurrency. Concurrency in Golang is one of its most powerful features.
+ Concurrency is the ability to run multiple tasks simultaneously.
+ Its allows Go programs to make progress on independent operations by rapidly switching context between them, optimizing resource utilization and keeping applications responsive. 
+ 
+ Concurrency is not Parallelism., although it enables parallelism.
+ 
+ Concurrency is ability to handle many tasks at once. (not necessarily running at the exact same time — that’s parallelism)
+ and Parallelism doing multiple things at the exact same time.
+ 
+ 
+ I will give small example:
+ 
+ Case 1: Concurrency - I was writing something, then I get thirsty, so I stopped writing and drank some water, then started writing again.
+ 
+ Case 2: Parallelism - I'm drinking eating Coke and pizza also watching TV at the same time.
+ 
+ If have only one processor, Go program can still be concurrent but it cannot be parallel.
+ On the other hand, a well-written concurrent program might run efficiently in parallel on a multiprocessor system.
 
 
 </details>
