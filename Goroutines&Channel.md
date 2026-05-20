@@ -86,6 +86,7 @@ Channels can be TWO type -- 1. Unbuffered Channel   2. Buffered Channel
 
  Go program can be concurrent, even on the single core machine, but it achieves true parallelism, when running on a multi-core system.
 
+ --- --- ---
 
  Go handles concurrency using the CSP(Communicating Sequential Processes) model.
  
