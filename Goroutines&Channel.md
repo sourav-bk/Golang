@@ -4,6 +4,20 @@
 A Goroutine is a lightweight thread managed by the Go runtime, Used to run multiple function or method Concurrently.
 While traditional OS thread might take up 1MB of memory, a Goroutine starts with just 2KB.
 
+---
+#### Difference between Goroutine and Thread 
+# Goroutines vs OS Threads
+
+| Feature             | Goroutine                                                                | OS Thread                                                                |
+|---------------------|--------------------------------------------------------------------------|--------------------------------------------------------------------------|
+| Management          | Managed entirely by the Go runtime                                       | Managed by the Operating System Kernel                                   |
+| Memory Footprint    | Starts small (~2 KB) and dynamically grows                               | Usually reserves a fixed, large size (~1+ MB) per thread                 |
+| Creation Cost       | Extremely low – creates a lightweight state machine in user space        | High – requires expensive system calls and kernel-level bookkeeping      |
+| Maximum Capacity    | Millions can run concurrently                                            | Typically thousands at most before performance degrades                  |
+| Communication       | Uses channels for safe communication without explicit locks              | Requires shared memory, mutexes, and locks to prevent race conditions    |
+| Context Switching   | Fast – handled in user space by the Go scheduler                         | Slower – involves kernel mode switching and CPU register save/restore    |
+
+---
 ***Concurrency***
 
 Go follow Concurrency. Concurrency is the ability to run multiple things at once.
