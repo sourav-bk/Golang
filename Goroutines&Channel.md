@@ -88,7 +88,10 @@ Channels can be TWO type -- 1. Unbuffered Channel   2. Buffered Channel
 
 
  Go handles concurrency using the CSP(Communicating Sequential Processes) model.
- CSP model is formal mathematical model/theory for describing collection of independent, sequential processes how data will share in the concurrent systems. Its follow that, do not share memory directly, share memory by Communicating.
+ 
+ CSP model is formal mathematical model/theory for describing collection of independent, sequential processes how data will share in the concurrent systems. 
+ 
+ Its follow that, do not share memory directly, share memory by Communicating.
  
  Managing concurrent in a program is a nightmare So CSP was designed precisely to solve in Managing concurrent, privent locks, race conditions, and unpredictable result or  crashes in concurrent go program.
 
