@@ -103,7 +103,7 @@ Channels can be TWO type -- 1. Unbuffered Channel   2. Buffered Channel
       Goroutine is a lightweight thread managed by the Go runtime.
  - ## 2. Channels:
       Channel is used for communication between goroutines. Think of it as a pipe through which goroutines send and receive values.
- - ## 3. select: 
+ - ## 3. Select: 
 
  - ## 4. Sync primitives like WaitGroup, Mutex, Once, etc.
 
