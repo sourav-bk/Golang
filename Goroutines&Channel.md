@@ -95,7 +95,17 @@ Channels can be TWO type -- 1. Unbuffered Channel   2. Buffered Channel
  Its follow that, do not share memory directly, share memory by Communicating.
  
  Managing concurrent in a program is a nightmare So CSP was designed precisely to solve in Managing concurrent, privent locks, race conditions, and unpredictable result or  crashes in concurrent go program.
+ 
+ Go manage or makes concurrency using 
+ 
+ 1. Goroutines 2. Channels 3. select 4. Sync primitives like WaitGroup, Mutex, Once, etc.
+ - ## 1. Goroutines:
+      Goroutine is a lightweight thread managed by the Go runtime.
+ - ## 2. Channels:
+      Channel is used for communication between goroutines. Think of it as a pipe through which goroutines send and receive values.
+ - ## 3. select: 
 
+ - ## 4. Sync primitives like WaitGroup, Mutex, Once, etc.
 
 </details>
 
