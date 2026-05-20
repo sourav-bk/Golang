@@ -76,14 +76,15 @@ Channels can be TWO type -- 1. Unbuffered Channel   2. Buffered Channel
  
  I will give small example:
  
- Case 1: Concurrency - I was writing something, then I get thirsty, so I stopped writing and drank some water, then started writing again.
+ - Case 1: Concurrency - I was writing something, then I get thirsty, so I stopped writing and drank some water, then started writing again.
  
- Case 2: Parallelism - I'm drinking eating Coke and pizza also watching TV at the same time.
+ - Case 2: Parallelism - I'm drinking eating Coke and pizza also watching TV at the same time.
  
  If have only one processor, Go program can still be concurrent but it cannot be parallel.
+ 
  On the other hand, a well-written concurrent program might run efficiently in parallel on a multiprocessor system.
 
- Go program can be concurrent, even on a single core machine, but it achieves true parallelism, when running on a multi-core system.
+ Go program can be concurrent, even on the single core machine, but it achieves true parallelism, when running on a multi-core system.
 
 
 </details>
