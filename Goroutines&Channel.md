@@ -184,7 +184,7 @@ For simple lock we use The sync.Mutex (The Simple Lock) or more specialized, "sm
 
 
 <details><summary><h2><mark> Worker pool </mark></h3></summary>
- Workerpool in Go is a concurrency pattern.
+ Worker-pool in Go is a concurrency pattern.
  Which is also known as thread pool is the pattern used to achieve concurrency.
  
  where a fixed number of goroutines  — called workers.
