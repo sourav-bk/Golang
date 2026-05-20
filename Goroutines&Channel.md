@@ -87,6 +87,12 @@ Channels can be TWO type -- 1. Unbuffered Channel   2. Buffered Channel
  Go program can be concurrent, even on the single core machine, but it achieves true parallelism, when running on a multi-core system.
 
 
+ Go handles concurrency using the CSP(Communicating Sequential Processes) model.
+ CSP model is formal mathematical model/theory for describing collection of independent, sequential processes how data will share in the concurrent systems. Its follow that, do not share memory directly, share memory by Communicating.
+ 
+ Managing concurrent in a program is a nightmare So CSP was designed precisely to solve in Managing concurrent, privent locks, race conditions, and unpredictable result or  crashes in concurrent go program.
+
+
 </details>
 
 <details><summary><h2><mark>Data Race and Race Condition</mark></h3></summary>
