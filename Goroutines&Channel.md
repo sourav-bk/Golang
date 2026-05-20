@@ -63,7 +63,7 @@ Channels can be TWO type -- 1. Unbuffered Channel   2. Buffered Channel
 
 <details><summary><h2><mark>Concurrency in go</mark></h3></summary>
  
- Go follow Concurrency. Concurrency in Golang is one of its most powerful features.
+ Go follow Concurrency. Concurrency in Golang is one of most powerful features.
  
  Concurrency is the ability to run multiple tasks simultaneously.
  Its allows Go programs to make progress on independent operations by rapidly switching context between them, optimizing resource utilization and keeping applications responsive. 
