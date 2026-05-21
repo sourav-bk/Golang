@@ -1,3 +1,15 @@
+what is git and github, how to use it
+
+git workflow
+
+Branching Strategies
+
+Git Cherry-pick:
+
+Git Rebase vs. Merge
+
+
+
 git reset HEAD~1  			
 
 git branch -D <BranchName>
