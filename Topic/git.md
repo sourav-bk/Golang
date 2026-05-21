@@ -9,6 +9,9 @@ Git Cherry-pick:
 Git Rebase vs. Merge
 
 
+How CI/CD Work and tell me the branching plan used for it
+
+
 
 git reset HEAD~1  			
 
