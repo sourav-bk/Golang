@@ -7,7 +7,7 @@ Exp - User Enter, email and password on system/software. The system/software che
 - Basic Authentication
 - JSON Web Tokens (JWT)
 - OAuth 2.0
-
+- Multi-Factor Authentication (MFA)
 - Single Sign-On (SSO)
 
 ## Authorization
