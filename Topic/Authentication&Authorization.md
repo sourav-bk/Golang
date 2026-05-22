@@ -3,6 +3,8 @@ Authentication is.. the process of verifying, who you are (Proving your identity
 
 Exp - User Enter, email and password on system/software. The system/software checks, If the credentials match, user are authenticated. The system/software now knows who User are.
 
+### Web & API Authentication Techniques
+
 ## Authorization
 Authorization is.. what you can do (Your permissions and access rights).
 
