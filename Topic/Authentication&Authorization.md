@@ -6,5 +6,5 @@ Exp - User Enter, email and password on system/software. The system/software che
 ## Authorization
 Authorization is.. what you can do (your permissions and access rights).
 
-Exp - Once user logged-in/authenticated, user attempt to do some activity/access some resources, During that The system checks user profile's assigned Role (e.g., "Editor" vs. "Viewer") and as per the permission, User do the activity/access some resources. If not have permission, The system/software denies the request. 
+Exp - Once user logged-in/authenticated, user attempt to do some activity/access some resources, During that The system checks user profile's assigned Role (e.g., "Editor" vs. "Viewer") and as per the permission, User do the activity/access some resources. If not have permission, The system/software will denies the request. 
 
