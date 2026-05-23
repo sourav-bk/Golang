@@ -34,3 +34,12 @@ Go does not support inheritance and Instead of, it relies on composition. The id
 | **Reuse direction** | Vertical (hierarchy) | Horizontal (mix-and-match) |
 
 
+| Feature | Composition ("Has-A") | Inheritance ("Is-A") |
+|---|---|---|
+| Relationship | Car has an Engine | Car is a Vehicle |
+| Coupling | Loose coupling | Tight coupling |
+| Flexibility | Highly flexible at runtime | Rigid; fixed at compile time |
+| Encapsulation | Strong; internal details stay hidden | Weak; breaks parent encapsulation |
+| Testing | Easy to mock dependencies | Harder; tests depend on parent state |
+
+
