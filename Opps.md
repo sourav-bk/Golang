@@ -43,3 +43,20 @@ Go does not support inheritance and Instead of, it relies on composition. The id
 | Testing | Easy to mock dependencies | Harder; tests depend on parent state |
 
 
+---
+
+## The Unified Comparison
+
+| Feature / Dimension | Composition ("Has-A") | Inheritance ("Is-A") |
+| :--- | :--- | :--- |
+| **Core Concept** | "A Dog **has-a** barking behavior"<br>"A Car **has-an** Engine" | "A Dog **is-an** Animal"<br>"A Car **is-a** Vehicle" |
+| **Mechanism** | Struct embeds other structs / references components | Subclass extends a base class |
+| **Reuse Direction** | **Horizontal:** Mix-and-match independent features | **Vertical:** Deep hierarchical inheritance tree |
+| **Coupling** | **Loose:** Components are decoupled, isolated modules | **Tight:** Child class depends heavily on parent state |
+| **Flexibility** | **High:** Easy to swap or modify pieces at runtime | **Rigid:** Hard-coded and fixed at compile time |
+| **Encapsulation** | **Strong:** Inner details stay hidden inside components | **Weak:** Breaks parent encapsulation (via `protected`) |
+| **Testing** | **Easy:** Straightforward to mock isolated dependencies | **Harder:** Tests must manage complex parent states |
+
+---
+
+
