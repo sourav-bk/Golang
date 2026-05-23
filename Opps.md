@@ -15,5 +15,8 @@ Core OOP Concepts in Go :
 
 ## Struct embedding or Composition
 
+Go doesn't have classes or inheritance. Instead,
+it uses struct embedding to embed one struct inside another to re-use struct attributes(fields and methods).
+
 
 ## Composition over Inheritance
