@@ -22,3 +22,15 @@ Go doesn't have classes or inheritance. Instead, it uses struct embedding to emb
 Go does not support inheritance and Instead of, it relies on composition. The idea that .., The larger object is built by combining smaller and focused objects (follow "has-a" relationships rather than "is-a" relationships).
 
 ## Composition over Inheritance
+
+# Composition vs Inheritance
+
+
+| | Inheritance | Composition |
+|---|---|---|
+| **Relationship** | "A Dog **is-a** Animal" | "A Dog **has** flying ability" |
+| **Mechanism** | Subclass extends base class | Struct embeds other structs |
+| **Coupling** | Tight — child depends on parent | Loose — components are independent |
+| **Reuse direction** | Vertical (hierarchy) | Horizontal (mix-and-match) |
+
+
