@@ -26,27 +26,6 @@ Go does not support inheritance and Instead of, it relies on composition. The id
 # Composition vs Inheritance
 
 
-| | Inheritance | Composition |
-|---|---|---|
-| **Relationship** | "A Dog **is-a** Animal" | "A Dog **has** flying ability" |
-| **Mechanism** | Subclass extends base class | Struct embeds other structs |
-| **Coupling** | Tight — child depends on parent | Loose — components are independent |
-| **Reuse direction** | Vertical (hierarchy) | Horizontal (mix-and-match) |
-
-
-| Feature | Composition ("Has-A") | Inheritance ("Is-A") |
-|---|---|---|
-| Relationship | Car has an Engine | Car is a Vehicle |
-| Coupling | Loose coupling | Tight coupling |
-| Flexibility | Highly flexible at runtime | Rigid; fixed at compile time |
-| Encapsulation | Strong; internal details stay hidden | Weak; breaks parent encapsulation |
-| Testing | Easy to mock dependencies | Harder; tests depend on parent state |
-
-
----
-
-## The Unified Comparison
-
 | Feature / Dimension | Composition ("Has-A") | Inheritance ("Is-A") |
 | :--- | :--- | :--- |
 | **Core Concept** | "A Dog **has-a** barking behavior"<br>"A Car **has-an** Engine" | "A Dog **is-an** Animal"<br>"A Car **is-a** Vehicle" |
@@ -56,7 +35,3 @@ Go does not support inheritance and Instead of, it relies on composition. The id
 | **Flexibility** | **High:** Easy to swap or modify pieces at runtime | **Rigid:** Hard-coded and fixed at compile time |
 | **Encapsulation** | **Strong:** Inner details stay hidden inside components | **Weak:** Breaks parent encapsulation (via `protected`) |
 | **Testing** | **Easy:** Straightforward to mock isolated dependencies | **Harder:** Tests must manage complex parent states |
-
----
-
-
