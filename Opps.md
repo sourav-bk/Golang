@@ -23,9 +23,6 @@ Go does not support inheritance and Instead of, it relies on composition. The id
 
 ## Composition over Inheritance
 
-# Composition vs Inheritance
-
-
 | Feature / Dimension | Composition ("Has-A") | Inheritance ("Is-A") |
 | :--- | :--- | :--- |
 | **Core Concept** | "A Dog **has-a** barking behavior"<br>"A Car **has-an** Engine" | "A Dog **is-an** Animal"<br>"A Car **is-a** Vehicle" |
