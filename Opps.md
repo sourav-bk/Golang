@@ -13,11 +13,12 @@ Core OOP Concepts in Go :
 - ***Polymorphism (Interfaces)***: Go achieves polymorphism through implicit interfaces. A type satisfies an interface simply by implementing its required methods; there is no implements keyword.
 - ***Inheritance (Composition & Embedding)***: Go does not support classical inheritance. Instead, it uses struct embedding (composition), where one struct is placed inside another to "inherit" its fields and methods
 
-## Struct embedding 
+## Struct embedding : 
 
-Go doesn't have classes or inheritance. Instead,
-it uses struct embedding to embed one struct inside another to re-use struct attributes(fields and methods).
+Go doesn't have classes or inheritance. Instead, it uses struct embedding to embed one struct inside another struct, to re-use struct attributes (fields and methods).
 
-## Composition
+## Composition :
+
+Go does not support inheritance and Instead of, it relies on composition. The idea that .., The larger object is built by combining smaller and focused objects (follow "has-a" relationships rather than "is-a" relationships).
 
 ## Composition over Inheritance
