@@ -46,6 +46,8 @@ And Go runtime efficiently distributes goroutines across available cores.
 
 ***Channel*** in Go is a communication mechanism used by goroutines. It allows safe data sharing between goroutines without explicit locks.
 
+Think of it as a pipe., through which goroutines send/receive values.
+
 Go channels use the FIFO (First-In, First-Out) method and Values sent to a channel are received in the same order they were sent. 
 
 If multiple goroutines are sending/receiving, the order of operations is preserved as they are processed through the channel's internal buffer.
