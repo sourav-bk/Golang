@@ -10,7 +10,8 @@ Exp - User Enter, email and password on system/software. The system/software che
 - OAuth 2.0
 - Multi-Factor Authentication (MFA)
 - Single Sign-On (SSO)
-
+- Session Based Authentication
+  
 ## Authorization
 Authorization is.. what you can do (Your permissions and access rights).
 
