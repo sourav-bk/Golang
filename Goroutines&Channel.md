@@ -113,18 +113,23 @@ Channels can be TWO type -- 1. Unbuffered Channel   2. Buffered Channel
  Go manage or makes concurrency using 
  
  1. Goroutines 2. Channels 3. select 4. Sync primitives like WaitGroup, Mutex, Once, etc.
- - *** 1. Goroutines:***
-      Goroutine is a lightweight thread managed by the Go runtime.
- - *** 2. Channels:***
-      Channel is used for communication between goroutines. Think of it as a pipe through which goroutines send and receive values.
+ - ***1. Goroutines:***
+
+   Goroutine is a lightweight thread managed by the Go runtime.
+   
+ - ***2. Channels:***
+
+   Channel is used for communication between goroutines. Think of it as a pipe through which goroutines send and receive values.
+   
  - ***3. Select:***
+   
    The select statement lets a goroutine wait on multiple channel operations simultaneously.
    
    It blocks until one of its cases is ready to execute, making it essential for managing concurrency. If, multiple channels are ready at the same time, Go picks one at random to ensure fairness.
 
    It functions like a switch statement, but instead of checking values, each case is a communication operation.
    
- - *** 4.*** Sync primitives like WaitGroup, Mutex, Once, etc.***
+ - ***4. Sync primitives like WaitGroup, Mutex, Once, etc.***
 
 </details>
 
