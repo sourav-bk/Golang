@@ -44,7 +44,7 @@ And Go runtime efficiently distributes goroutines across available cores.
 
 ## ***Channel*** :
 
-***Channel*** in Go is a communication mechanism used by goroutines. It allows safe data sharing between goroutines without explicit locks.
+***Channel*** in Go, is a communication mechanism used by goroutines. It allows safe data sharing between goroutines without explicit locks.
 
 Think of it as a pipe., through which goroutines send/receive values.
 
@@ -216,13 +216,13 @@ For simple lock we use The sync.Mutex (The Simple Lock) or more specialized, "sm
 
 
 <details><summary><h2><mark> Worker pool </mark></h3></summary>
- Worker-pool in Go is a concurrency pattern.
+ Worker-pool in Go, is The concurrency pattern.
  Which is also known as thread pool.., it is the pattern used to achieve concurrency.
  
  Where fixed number of goroutines  — called workers.
- to process many jobs/task in background from the shared queue.
+ to process many jobs/task in background, from the shared queue.
  
- That pattern/design Clean the queue of jobs/task using fixed number of goroutines/workers  which running in background concurrently and sent via a channel.
+ That pattern/design Clean the queue of jobs/task., using fixed number of goroutines/workers.,  which running in background concurrently and sent via a channel.
 
 
  This pattern limits resource usage, prevents your system from being overwhelmed by too many concurrent goroutines, and optimizes CPU utilization
