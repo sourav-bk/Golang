@@ -133,8 +133,8 @@ Channels can be TWO type -- 1. Unbuffered Channel   2. Buffered Channel
  - ***4. Sync primitives like WaitGroup, Mutex, Once, etc.***
 
    In the Go programming language, WaitGroup, Mutex, and Once are essential tools in the sync package used for managing concurrent code.
-   - WaitGroup: Waits for a collection of goroutines to finish executing.
-   - Mutex: Locks shared data to prevent race conditions when multiple goroutines read/write simultaneously.
+   - WaitGroup: Waits for the collection of goroutines to finish executing.
+   - Mutex: Locks shared data to prevent race-conditions when multiple goroutines read/write simultaneously.
    - Once: Guarantees a block of code runs exactly once (like for lazy initialization or singletons)
 
 </details>
