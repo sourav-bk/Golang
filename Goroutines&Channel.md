@@ -225,6 +225,6 @@ For simple lock we use The sync.Mutex (The Simple Lock) or more specialized, "sm
  That pattern/design Clean the queue of jobs/task., using fixed number of goroutines/workers.,  which running in background concurrently and sent via a channel.
 
 
- This pattern limits resource usage, prevents your system from being overwhelmed by too many concurrent goroutines, and optimizes CPU utilization
+ This pattern limits resource usage, prevents system from being overwhelmed by too many concurrent goroutines, and optimizes CPU utilization
 
 </details>
