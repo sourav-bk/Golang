@@ -29,6 +29,13 @@ Exp - Once user logged-in/authenticated, user attempt to do some activity/access
 A breakdown of the primary authentication and authorization methods used in modern software development.
 
 ## 1. Basic Authentication
+Basic authentication (Basic Auth) is a simple, built-in HTTP security method where a client (like a web browser or API tool) sends a request containing a username and password. The system encodes this data using Base64 and verifies the credentials before granting access to protected resources
+
+- How it works :
+  1. Client sends username + password in every request.
+  2. Credentials are Base64 encoded in HTTP header: Authorization: Basic base64(username:password)
+     
+
 * **Mechanism**: Sends raw username and password in the HTTP header.
 * **Format**: Credentials are encoded in Base64 (`Authorization: Basic <credentials>`).
 * **Security**: Highly insecure unless paired strictly with HTTPS.
@@ -69,5 +76,21 @@ A breakdown of the primary authentication and authorization methods used in mode
 * **Factors**: Something you know (password), have (token/phone), or are (biometrics).
 * **Layer**: Acts as an additional security layer on top of any method above.
 * **Use Case**: Securing sensitive accounts, banking, and corporate logins.
+
+
+
+# 🔐 Web & API Authentication Techniques
+
+---
+
+## 1. Basic Authentication
+
+### 1. What is
+A simple authentication method where the client sends **username and password** with every request.
+
+### 2. How it works
+- User enters credentials  
+- Credentials are encoded using Base64  
+- Sent in HTTP header:
 
 
