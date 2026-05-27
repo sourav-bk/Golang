@@ -50,7 +50,7 @@ Think of it as a pipe., through which goroutines send/receive values.
 
 Go channels use the FIFO (First-In, First-Out) method and Values sent to a channel are received in the same order they were sent. 
 
-If multiple goroutines are sending/receiving, the order of operations is preserved as they are processed through the channel's internal buffer.
+If multiple goroutines are sending/receiving value, the order of operations is preserved, as they are processed through the channel's internal buffer.
 
 Channels are reference types. zero value is nil. Initialize using the make() function.
 
