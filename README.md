@@ -298,7 +298,8 @@ Go is memory-safe. Uninitialized pointers are nil. Go does not allow pointer ari
  <details><summary><h3><mark>Error in go? Panics | recover | defer </mark></h3></summary>
    
    In Golang, Error isn't an exception that crashes program — it’s just a value. Go treats errors as "first-class citizens," meaning we handle like, as any other variable.
-   The most common way to handle errors is to check if the returned error value is nil (meaning success) or not nil (meaning failure), and then deal with the failure.
+   
+   Most common way to handle errors is to check, if the returned error value is nil (meaning success) or not nil (meaning failure), and then deal with the failure.
    
    One of the most important concepts in Go is knowing when to return an error and when to panic. They may look similar at first, but they exist for completely different reasons by design.
    
