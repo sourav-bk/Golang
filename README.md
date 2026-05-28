@@ -301,7 +301,7 @@ Go is memory-safe. Uninitialized pointers are nil. Go does not allow pointer ari
    
    Most common way to handle errors is to check, if the returned error value is nil (meaning success) or not nil (meaning failure), and then deal with the failure.
    
-   One of the most important concepts in Go is knowing when to return an error and when to panic. They may look similar at first, but they exist for completely different reasons by design.
+   One of the most important concepts in Go is knowing., when to return an error.., and when to panic. They may look similar at first, but they exist for completely different reasons by design.
    
    - ##### Errors: Expected Failures
 
