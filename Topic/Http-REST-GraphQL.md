@@ -10,15 +10,14 @@ Key Concepts of HTTP:
 - ***Server →*** processes requests and sends responses
 
 - ***Request:***
+  
     -> Header
+  
       - The start line includes a method name
       - a request URI
       - the protocol version
+  
     -> Body
-A body consists of data in any forma.
-The format must match that specified by the Content-Type header 
-      
-    - Body
       
 
 
