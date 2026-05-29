@@ -12,7 +12,6 @@ Key Concepts of HTTP:
 - ***Request:***
   
     -> Header
-  
       - The start line includes a method name
       - a request URI
       - the protocol version
