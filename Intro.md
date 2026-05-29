@@ -2,7 +2,7 @@
 
 My name is Sourav Basak.
 
-I have over 5+ years of professional experience across two organizations. I started my career at Insync Tech-Fin Solutions and currently working as an Associate Consultant at Capgemini.
+I have over 5+ years of experience across two organizations. I started my career at Insync Tech-Fin Solutions and currently working as an Associate Consultant at Capgemini.
 
 At Capgemini, I initially joined as a Magento (Adobe Commerce) Developer. Due to evolving business needs I transitioned into a Golang Developer role. 
 
