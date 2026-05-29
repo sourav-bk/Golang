@@ -25,14 +25,14 @@ I currently work in client environment on Alshaya Group, its A leading company i
 
 e-commerce platforms have difarrent Component or mincorservices .
 
-Frontend ::
+- Frontend ::
 Frontend for AEM (Adobe Experience Manager).
 
 Frontend communicated with Adobe commarce.
 
 Product show and order capture though Adeobe commarce
 
-Backend ::
+- Backend ::
 OMS -> order managemnet system (oracle)
 
 PimS -> product Management system (PHP )
@@ -43,7 +43,8 @@ For notification(email , whatapp, sms ) - golang
 
 message queue ( Rabbit MQ) , GRPC, REST api
 
-Store locations:
+
+- Store locations:
 
 recently I Developed Store locator Feature.
 
