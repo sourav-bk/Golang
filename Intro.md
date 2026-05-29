@@ -1,15 +1,20 @@
 ## About your self ?
-I have nearly 5+ years of experience working with two companies. I started my career at Insync Tech Fix Solutions, and currently I am working as an Associate Consultant at Capgemini.
+
+I have over 5+ years of professional experience across two organizations. I started my career at Insync Tech-Fin Solutions and currently working as an Associate Consultant at Capgemini.
+
+At Capgemini, I initially joined as a Magento (Adobe Commerce) Developer. Due to evolving business needs I transitioned into a Golang Developer role. 
+
+During that time I gained exposure to the e-commerce domain, working on both B2B and B2C applications.
+
+From a technical standpoint, my core Programming-language include PHP and Golang. I have hands-on experience working with relational and NoSQL databases such as MySQL, MariaDB, PostgreSQL, and MongoDB. 
+
+Additionally, I have experience with caching and messaging systems, including Redis and RabbitMQ, enabling me to build scalable and efficient backend systems.
+
+Aadditionally, I have experience with caching and messaging systems, including Redis and RabbitMQ, enabling me to build scalable and efficient bckend systems.
+
+I have also been involved in designing and developing microservices-based architectures APIs using REST, GraphQL, and gRPC. 
 
 
-I joined Capgemini as a Magento / Adobe Commerce Developer. Due to limited Magento opportunities, I later transitioned to working as a Golang Developer. During this time, I gained good exposure to the E-commerce domain, including both B2B and B2C applications.
-
-
-From a technology perspective, my primary skills include PHP, JavaScript, and Golang. 
-
-I have hands-on experience with databases such as MySQL and NoSQL databases including MariaDB, PostgreSQL, and MongoDB. I have also worked with Redis cache and RabbitMQ for message queuing.
-
-Additionally, I have experience in building APIs using REST and GraphQL, working with microservices architecture, CI/CD pipelines, and basic exposure to gRPC
 
 
 ## About Project ?
