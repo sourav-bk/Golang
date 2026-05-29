@@ -6,8 +6,9 @@ HTTP follows client-server model, with a client opening a connection to make a r
 
 Key Concepts of HTTP:
 
-- ***Client →*** sends requests (e.g., your browser)
-- ***Server →*** processes requests and sends responses
+***Client →*** sends requests (e.g., your browser)
+
+***Server →*** processes requests and sends responses
 
 - ***Request:***
   
