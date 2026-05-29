@@ -12,7 +12,7 @@ From a technical standpoint, my core Programming-language include PHP and Golang
 
 I have hands-on experience working with., relational and NoSQL databases., such as MySQL, MariaDB, PostgreSQL, and MongoDB. 
 
-Additionally, I have experience with Redis for caching and RabbitMQ for messaging systems purpose and, that enabling me to build scalable and efficient backend systems.
+Additionally, I have experience with Redis for caching., and RabbitMQ for messaging systems purpose, that enabling me to build scalable and efficient backend systems.
 
 I have also been involved in designing and developing microservices-based architectures APIs using REST, GraphQL, and gRPC. and have had some exposure to CI/CD. 
 
