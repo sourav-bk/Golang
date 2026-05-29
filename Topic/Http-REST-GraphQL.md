@@ -14,7 +14,7 @@ Key Concepts of HTTP:
     - Request Header
       - Start line method name ( GET, POST, PUT, DELETE )
       - request URI
-      - Protocol version (1.1 , 2 )
+      - Protocol version ( 1 , 1.1 , 2 , 3 )
       - Content-Type (HTML, json, xml)
   
     - Request Body (optional)
