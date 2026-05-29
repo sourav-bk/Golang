@@ -26,22 +26,23 @@ I currently work in client environment on Alshaya Group, its A leading company i
 e-commerce platforms have difarrent Component or mincorservices .
 
 - Frontend ::
-Frontend for AEM (Adobe Experience Manager).
+  Frontend for AEM (Adobe Experience Manager).
 
-Frontend communicated with Adobe commarce.
+  Frontend communicated with Adobe commarce.
 
-Product show and order capture though Adeobe commarce
+  Product show and order capture though Adeobe commarce
 
 - Backend ::
-OMS -> order managemnet system (oracle)
 
-PimS -> product Management system (PHP )
+  OMS -> order managemnet system (oracle)
 
-IMS -> Inventory Management system
+  PimS -> product Management system (PHP )
 
-For notification(email , whatapp, sms ) - golang
+  IMS -> Inventory Management system
 
-message queue ( Rabbit MQ) , GRPC, REST api
+  For notification(email , whatapp, sms ) - golang
+
+  message queue ( Rabbit MQ) , GRPC, REST api
 
 
 - Store locations:
