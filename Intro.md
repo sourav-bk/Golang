@@ -6,7 +6,7 @@ I have over 5+ years of experience., across two organizations. I started my care
 
 At Capgemini, I joined as a Magento (Adobe Commerce) Developer, but Due to the business needs I transitioned into a Golang Developer role. 
 
-During that time I gained knoladge to the e-commerce domain, working on both B2B and B2C applications.
+During that time I gained knowledge to the e-commerce domain, working on both B2B and B2C applications.
 
 From a technical standpoint, my core Programming-language include PHP and Golang. I have hands-on experience working with relational and NoSQL databases such as MySQL, MariaDB, PostgreSQL, and MongoDB. 
 
