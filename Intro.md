@@ -4,13 +4,13 @@ My name is Sourav Basak.
 
 I have over 5+ years of experience., across two organizations. I started my career at Insync Tech-Fin Solutions and currently working as an Associate Consultant at Capgemini.
 
-At Capgemini, I joined as a Magento (Adobe Commerce) Developer, but Due to the business needs I transitioned into a Golang Developer role. 
+At Capgemini, I joined as a Magento (Adobe Commerce) Developer, but Due to the business needs, I transitioned into a Golang Developer role. 
 
-During that time I gained knowledge to the e-commerce domain, working on both B2B and B2C applications.
+During that time, I gained knowledge to the e-commerce domain, working on both B2B and B2C applications.
 
 From a technical standpoint, my core Programming-language include PHP and Golang. 
 
-I have hands-on experience working with relational and NoSQL databases such as MySQL, MariaDB, PostgreSQL, and MongoDB. 
+I have hands-on experience working with., relational and NoSQL databases., such as MySQL, MariaDB, PostgreSQL, and MongoDB. 
 
 Additionally, I have experience with Redis for caching and RabbitMQ for messaging systems purpose and, that enabling me to build scalable and efficient backend systems.
 
