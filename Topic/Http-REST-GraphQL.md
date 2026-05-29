@@ -305,30 +305,7 @@ HTTP status codes are three-digit numbers returned by a server to indicate the r
 | 429 | Too Many Requests | API rate limit exceeded |
 | 500 | Internal Server Error | Unexpected server error |
 
-## REST API Success Status Codes
 
-| HTTP Method | Success Status Code |
-|------------|--------------------|
-| GET | 200 OK |
-| POST | 201 Created |
-| PUT | 200 OK / 204 No Content |
-| PATCH | 200 OK |
-| DELETE | 204 No Content |
-
-## Common Error Scenarios
-
-| Scenario | Status Code |
-|----------|------------|
-| Invalid Request Data | 400 Bad Request |
-| Authentication Failed | 401 Unauthorized |
-| Authorization Failed | 403 Forbidden |
-| Resource Not Found | 404 Not Found |
-| Duplicate Resource | 409 Conflict |
-| Validation Failed | 422 Unprocessable Entity |
-| Rate Limit Exceeded | 429 Too Many Requests |
-| Internal Server Error | 500 Internal Server Error |
-
-> **Interview Tip:** The most commonly used status codes in backend development are **200, 201, 204, 400, 401, 403, 404, 409, 422, 429, and 500**.
 
 ---
 
@@ -380,53 +357,4 @@ HTTP status codes are three-digit numbers returned by a server to indicate the r
 
 
 
-# HTTP Status Codes
 
-HTTP status codes are three-digit numbers returned by a server to indicate the result of a client's request.
-
-| Category | Code | Status | Description |
-|----------|------|---------|-------------|
-| **1xx Informational** | 100 | Continue | Request received, continue sending data. |
-|  | 101 | Switching Protocols | Server agrees to switch protocols. |
-|  | 102 | Processing | Server is processing the request. |
-| **2xx Success** | 200 | OK | Request completed successfully. |
-|  | 201 | Created | New resource created successfully. |
-|  | 202 | Accepted | Request accepted for processing. |
-|  | 204 | No Content | Request successful, no content returned. |
-| **3xx Redirection** | 301 | Moved Permanently | Resource permanently moved to another URL. |
-|  | 302 | Found | Resource temporarily moved. |
-|  | 303 | See Other | Redirect to another resource using GET. |
-|  | 304 | Not Modified | Cached version is still valid. |
-|  | 307 | Temporary Redirect | Temporary redirect with same HTTP method. |
-|  | 308 | Permanent Redirect | Permanent redirect with same HTTP method. |
-| **4xx Client Error** | 400 | Bad Request | Invalid request syntax or parameters. |
-|  | 401 | Unauthorized | Authentication required. |
-|  | 403 | Forbidden | Access denied. |
-|  | 404 | Not Found | Requested resource not found. |
-|  | 405 | Method Not Allowed | HTTP method not supported. |
-|  | 408 | Request Timeout | Request took too long. |
-|  | 409 | Conflict | Conflict with current resource state. |
-|  | 415 | Unsupported Media Type | Unsupported request content type. |
-|  | 422 | Unprocessable Entity | Validation failed. |
-|  | 429 | Too Many Requests | Rate limit exceeded. |
-| **5xx Server Error** | 500 | Internal Server Error | Generic server-side error. |
-|  | 501 | Not Implemented | Feature not supported by server. |
-|  | 502 | Bad Gateway | Invalid response from upstream server. |
-|  | 503 | Service Unavailable | Server temporarily unavailable. |
-|  | 504 | Gateway Timeout | Upstream server did not respond in time. |
-
-## Most Common HTTP Status Codes for REST APIs
-
-| Code | Status | Common Usage |
-|------|---------|-------------|
-| 200 | OK | Successful GET request |
-| 201 | Created | Successful POST request |
-| 204 | No Content | Successful DELETE request |
-| 400 | Bad Request | Invalid request payload |
-| 401 | Unauthorized | Missing or invalid token |
-| 403 | Forbidden | Permission denied |
-| 404 | Not Found | Resource does not exist |
-| 409 | Conflict | Duplicate resource |
-| 422 | Unprocessable Entity | Validation error |
-| 429 | Too Many Requests | API rate limit exceeded |
-| 500 | Internal Server Error | Unexpected server error |
