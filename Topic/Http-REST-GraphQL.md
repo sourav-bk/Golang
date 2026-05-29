@@ -12,13 +12,23 @@ Key Concepts of HTTP:
 
 - ***Request:***
   
+     - Header
+      - The start line includes a method name
+      - a request URI
+      - the protocol version
+  
+    - Body
+      - A body consists of data in any forma.
+      - The format must match that specified by the Content-Type header 
+
+      
+- ***Response:***
+  
     - Header
       - The start line includes a method name
       - a request URI
       - the protocol version
   
-    -> Body
-      
-
-
-- ***Response:***
+    - Body
+      - A body consists of data in any forma.
+      - The format must match that specified by the Content-Type header 
