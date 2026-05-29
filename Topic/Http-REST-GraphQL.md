@@ -10,19 +10,19 @@ Key Concepts of HTTP:
 
 ***Server →*** processes requests and sends responses
 
-- ***Request:***
+- ***HTTP request contains:***
+    - Request Header
+      - Start line method name ( GET, POST, PUT, DELETE )
+      - request URI
+      - Protocol version (1.1 , 2 )
+      - Content-Type (HTML, json, xml)
   
-     - Header
-      - The start line includes a method name
-      - a request URI
-      - the protocol version
-  
-    - Body
-      - A body consists of data in any forma.
+    - Request Body (optional)
+      - A body consists of data in any format (HTML, json, xml) 
       - The format must match that specified by the Content-Type header 
 
       
-- ***Response:***
+- ***HTTP request contains:***
   
     - Header
       - The start line includes a method name
