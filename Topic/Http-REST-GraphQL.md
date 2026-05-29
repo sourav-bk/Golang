@@ -105,3 +105,52 @@ Authorization: Bearer mock_token_123
   "pin": 1234
 }
 ```
+
+
+
+
+# HTTP Response Structure
+
+An HTTP response is a structured message sent by a server to a client in reply to an HTTP request. It follows a standardized format to inform the client of the request's outcome and deliver any requested data.
+
+## Core Structure
+An HTTP response consists of four main parts:
+
+1. **Status Line**: The first line of the response.
+   * **HTTP Version**: The protocol version (e.g., `HTTP/1.1`).
+   * **Status Code**: A three-digit number indicating the result (e.g., `200`).
+   * **Reason Phrase**: A short text description of the status (e.g., `OK`).
+2. **HTTP Headers**: Metadata about the response or the server formatted as `Name: Value` pairs.
+   * `Content-Type`: Declares the media type (e.g., `application/json`).
+   * `Content-Length`: The size of the body in bytes.
+   * `Cache-Control`: Instructions for caching the response.
+3. **Empty Line**: A mandatory blank line separating headers from the body.
+4. **Message Body (Optional)**: The actual data requested by the client (HTML, images, JSON, etc.).
+
+---
+
+## Example HTTP Response
+
+```http
+HTTP/1.1 200 OK
+Date: Fri, 29 May 2026 12:28:53 GMT
+Server: Apache/2.4.1
+Content-Type: text/html
+Content-Length: 138
+
+<html>
+  <head><title>Example</title></head>
+  <body><p>Hello World!</p></body>
+</html>
+```
+
+---
+
+## Status Code Categories
+
+* **1xx (Informational)**: Request received, continuing process.
+* **2xx (Success)**: Action was successfully received and accepted.
+* **3xx (Redirection)**: Further action must be taken to complete the request.
+* **4xx (Client Error)**: The request contains bad syntax or cannot be fulfilled.
+* **5xx (Server Error)**: The server failed to fulfill a valid request.
+
