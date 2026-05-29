@@ -154,3 +154,92 @@ Content-Length: 138
 * **4xx (Client Error)**: The request contains bad syntax or cannot be fulfilled.
 * **5xx (Server Error)**: The server failed to fulfill a valid request.
 
+
+
+
+
+
+
+
+
+# HTTP Request and Response Structures
+
+Every HTTP communication consists of a request from a client and a response from a server. Both follow a highly structured, textual format.
+
+---
+
+## 1. HTTP Request Structure
+
+An HTTP request is issued by a client to trigger an action on a server. It consists of four distinct sections:
+
+### A. Request Line (Start-Line)
+The very first line of the request. It contains three components separated by spaces:
+* **HTTP Method:** The action to perform (e.g., `GET`, `POST`, `PUT`, `DELETE`).
+* **Request Target:** The path or absolute URL of the resource (e.g., `/index.html`).
+* **HTTP Version:** The protocol version being used (e.g., `HTTP/1.1`).
+
+### B. Request Headers
+Key-value pairs that pass additional metadata about the client and the request.
+* **Host:** The domain name of the target server (Required in HTTP/1.1).
+* **User-Agent:** Identifies the client software (browser, OS, or application).
+* **Accept:** Specifies the content types the client can handle (e.g., `text/html`, `application/json`).
+
+### C. Empty Line
+A mandatory blank line (`\r\n`) indicating that the header section is complete.
+
+### D. Request Body (Optional)
+Contains data sent to the server. This is typically omitted for `GET` requests but required for data-submitting methods like `POST` or `PUT` (e.g., JSON payloads, form data).
+
+### Request Example
+```http
+POST /api/users HTTP/1.1
+Host: ://example.com
+User-Agent: Mozilla/5.0
+Content-Type: application/json
+Content-Length: 35
+
+{
+  "name": "Alice",
+  "role": "Admin"
+}
+```
+
+---
+
+## 2. HTTP Response Structure
+
+An HTTP response is the server's acknowledgment and answer to the client's request. It mirrors the request structure closely:
+
+### A. Status Line (Start-Line)
+The first line of the response. It contains three components:
+* **HTTP Version:** The protocol version (e.g., `HTTP/1.1`).
+* **Status Code:** A 3-digit numeric code indicating the result (e.g., `200`, `404`, `500`).
+* **Reason Phrase:** A brief, human-readable description of the status code (e.g., `OK`, `Not Found`).
+
+### B. Response Headers
+Key-value pairs providing metadata about the server and the returned payload.
+* **Server:** Details about the server software handling the request.
+* **Content-Type:** The MIME type of the document in the body (e.g., `text/html; charset=UTF-8`).
+* **Content-Length:** The size of the response body in bytes.
+
+### C. Empty Line
+A mandatory blank line separating the metadata headers from the actual data payload.
+
+### D. Response Body (Optional)
+The core content requested by the client. It holds the HTML code, images, file downloads, or API data.
+
+### Response Example
+```http
+HTTP/1.1 200 OK
+Date: Fri, 29 May 2026 12:00:00 GMT
+Server: Apache/2.4.41
+Content-Type: application/json
+Content-Length: 43
+
+{
+  "status": "success",
+  "id": 10293
+}
+```
+
+
