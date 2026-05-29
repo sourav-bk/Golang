@@ -12,8 +12,6 @@ From a technical standpoint, my core Programming-language include PHP and Golang
 
 Additionally, I have experience with Redis for caching and RabbitMQ for messaging systems purpose and, that enabling me to build scalable and efficient backend systems.
 
-Aadditionally, I have experience with caching and messaging systems, including Redis and RabbitMQ, enabling me to build scalable and efficient bckend systems.
-
 I have also been involved in designing and developing microservices-based architectures APIs using REST, GraphQL, and gRPC. 
 
 
