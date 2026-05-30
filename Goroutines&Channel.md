@@ -44,19 +44,19 @@ And Go runtime efficiently distributes goroutines, across all available CPU core
 
 ## ***Channel*** :
 
-***Channel*** in Go, is a communication mechanism used by goroutines. It allows safe data sharing between goroutines without explicit locks.
+***Channel*** in Go, is a communication mechanism used by goroutines. It allows safe data sharing between goroutines without locks.
 
-Think of it as a pipe., through which goroutines send/receive values.
+Think of it as a pipe., through which.., goroutines send/receive values.
 
-Go channels use the FIFO (First-In, First-Out) method and Values sent to a channel are received in the same order they were sent. 
+Go channels use the FIFO (First-In, First-Out) method.
 
 If multiple goroutines are sending/receiving value, the order of operations is preserved, as they are processed through the channel's internal buffer.
 
 Channels are reference types. zero value is nil. Initialize using the make() function.
 
-We can send and receive values on channel with the channel operator, (<-)(->). ( receive operator && arrow operator )
+We can send and receive values on channel., with the channel operator, (<-)(->). ( receive operator && arrow operator )
 
-By default, channels are bidirectional, but for better API design and type safety, we often restrict them in function signatures:
+By default, channels are bidirectional, but for better API design and type safety, we restrict them in function signatures:
 
 - ***Bidirectional:*** chan T (can send and receive).
 
@@ -64,7 +64,7 @@ By default, channels are bidirectional, but for better API design and type safet
 
 - ***Receive-only:*** <-chan T (the arrow points out of the chan).
 
-Channel has been closed using close() function. No values can be sent after closing  but  Receivers can still read remaining values after close. Channel close() Used to signal completion.
+Channel has been closed using close() function. No values can be sent after closing., but Receivers can still read remaining values after close. Channel close() Used to signal completion.
 
 - ### Type of Channel 
 
