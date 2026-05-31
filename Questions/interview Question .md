@@ -9,3 +9,7 @@
 9. Rest and GRPC 
 10. monolithic architecture and microservec
 11. golang struct embedding vs inheritance
+12. context pakage
+13. https://gobyexample.com/
+14. Signals and graceful shutdown in golang
+15.  go fmt, go vet, & go doc
