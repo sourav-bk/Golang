@@ -66,6 +66,8 @@ Go also provides the go run command, which is used to quickly compile and run a 
 
 </details>
 <details><summary><h3><mark>Go Packages || Go Modules || Go workspaces</mark></h3></summary>
+
+ go fmt, go vet, & go doc
   
   - <b>Go Packages :</b>
     A package is a collection of one or more Go source files (.go files) located in the same directory that are compiled together and share the same package name.
