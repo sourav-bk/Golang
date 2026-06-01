@@ -159,7 +159,7 @@ All data races are race conditions. Not all race conditions are data races.
  
 A deadlock occurs when two or more goroutines are permanently blocked. Its waiting for each other to release resources or send/receive data — so no progress is possible.
 
-In simple Deadlock is a state where goroutines wait indefinitely for resources or communication, causing the program to stop executing.
+In simple Deadlock is a state where goroutines wait indefinitely for resources or communication, that causing the program to stop executing.
 
 In Go, deadlocks usually happen due to incorrect use of channels, mutexes, or wait groups.
 
