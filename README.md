@@ -460,7 +460,7 @@ All data races are race conditions. Not all race conditions are data races.
 </details>
 
 
-<details><summary><h2><mark>Deadlocks</mark></h3></summary>
+<details><summary><h2><mark>Deadlocks | WaitGroup | Mutex </mark></h3></summary>
  
 A deadlock occurs when two or more goroutines are permanently blocked. Its waiting for each other to release resources or send/receive data — so no progress is possible.
 
@@ -473,7 +473,7 @@ In Go, deadlocks usually happen due to incorrect use of channels, mutexes, or wa
 
 - ***Circular Wait (Mutexes)*** :: This occurs when Goroutine A holds Lock 1 and waits for Lock 2, while Goroutine B holds Lock 2 and waits for Lock 1.
 
-- ***Resource Leak / WaitGroup Misuse*** :: If  increment a sync.WaitGroup but a goroutine crashes or returns before calling .Done(), the wg.Wait() call will block forever.
+- ***Resource Leak / WaitGroup Misuse*** :: If increment a sync.WaitGroup but a goroutine crashes or returns before calling .Done(), the wg.Wait() call will block forever.
 
 
 ## sync.WaitGroup:
