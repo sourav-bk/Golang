@@ -303,7 +303,7 @@ Go is memory-safe. Uninitialized pointers are nil. Go does not allow pointer ari
 <br>
 
 # Goroutine, Channel, Concurrency, Deadlock :
-<details><summary><h2><mark>Go Routine and Channel? Type of Channel? </mark></h3></summary>
+<details><summary><h3><mark>Go Routine and Channel? Type of Channel? </mark></h3></summary>
  
 ## ***Go Routine*** :
 A Goroutine is a lightweight thread managed by the Go runtime, Used to run multiple function or method Concurrently.
@@ -382,7 +382,7 @@ Channels can be TWO type -- 1. Unbuffered Channel   2. Buffered Channel
  
 </details>
 
-<details><summary><h2><mark>Concurrency in go</mark></h3></summary>
+<details><summary><h3><mark>Concurrency in go</mark></h3></summary>
  
  Go follow Concurrency. Concurrency in Golang is one of most powerful features.
  
@@ -446,7 +446,7 @@ Channels can be TWO type -- 1. Unbuffered Channel   2. Buffered Channel
 
 </details>
 
-<details><summary><h2><mark>Data Race and Race Condition</mark></h3></summary>
+<details><summary><h3><mark>Data Race and Race Condition</mark></h3></summary>
 
 ## ***Race Conditions***:
 A Race Condition is a logic/design errors, not syntax errors in the program when the correctness of the program depends on the order/timing of goroutines. A Race condition happens when multiple goroutines access and modify shared data concurrently using goroutines without proper synchronization, that causing un-predictable results.
@@ -460,7 +460,7 @@ All data races are race conditions. Not all race conditions are data races.
 </details>
 
 
-<details><summary><h2><mark>Deadlocks | WaitGroup | Mutex </mark></h3></summary>
+<details><summary><h3><mark>Deadlocks | WaitGroup | Mutex </mark></h3></summary>
  
 A deadlock occurs when two or more goroutines are permanently blocked. Its waiting for each other to release resources or send/receive data — so no progress is possible.
 
@@ -519,8 +519,7 @@ For simple lock we use The sync.Mutex (The Simple Lock) or more specialized, "sm
 </details>
 
 
-
-<details><summary><h2><mark> Worker pool </mark></h3></summary>
+<details><summary><h3><mark> Worker pool </mark></h3></summary>
  Worker-pool in Go, is The concurrency pattern.
  Which is also known as thread pool.., it is the pattern used to achieve concurrency.
  
@@ -533,13 +532,7 @@ For simple lock we use The sync.Mutex (The Simple Lock) or more specialized, "sm
  This pattern limits the usage of resource, prevents system from being over-loaded by too many concurrent goroutines, and optimizes CPU utilization
 
 </details>
-
-
 <br>
-
-
-
-
 
 
 
