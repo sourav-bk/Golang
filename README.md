@@ -298,7 +298,9 @@ Go is memory-safe. Uninitialized pointers are nil. Go does not allow pointer ari
       
      
 
-</details>
+</details
+
+<br>
 
 # Goroutine, Channel, Concurrency, Deadlock :
 <details><summary><h2><mark>Go Routine and Channel? Type of Channel? </mark></h3></summary>
