@@ -228,3 +228,13 @@ For simple lock we use The sync.Mutex (The Simple Lock) or more specialized, "sm
  This pattern limits the usage of resource, prevents system from being over-loaded by too many concurrent goroutines, and optimizes CPU utilization
 
 </details>
+
+
+
+<details><summary><h2><mark> Memory leaks in Go </mark></h3></summary
+                                                             
+A memory leak is a type of resource leak that occurs when a computer program incorrectly manages memory allocations in a way that memory which is no longer needed is not released.
+
+Go has a garbage collector that does a very good job managing memory for us, tracking down memory that is no longer used and can be returned back to the system. Still there are some cases where we can end up with either memory leaks or our system needing excessive memory to work.
+
+</details>
