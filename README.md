@@ -261,7 +261,7 @@ Go is memory-safe. Uninitialized pointers are nil. Go does not allow pointer ari
   
   - ##### Interfaces :
 
-    In Go, an interface is a collection of method signatures . It acts as a contract that type must fulfill by implementing all the methods declared in the interface.
+    In Go, an interface is a collection of method signatures. It acts as a contract., that type must ful-fill by implementing all the methods., declared in the interface.
 
     Interfaces can also be used as variable types. The empty interface (interface{}) can hold values of any type, such as integers, strings, or float.
 
