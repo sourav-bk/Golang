@@ -556,7 +556,7 @@ For simple lock we use The sync.Mutex (The Simple Lock) or more specialized, "sm
    
    - ##### recover:
 
-     Inside the deferred function, recover() is called. If a panic is active, it captures the panic value and stops the unwinding of the stack, allowing the program to continue running.
+     Inside the deferred function, recover() is called. If a panic is active, it captures the panic value and stops the un-winding of the stack, allowing the program to continue running.
    <br><br>
 - #### defer statement:
   
