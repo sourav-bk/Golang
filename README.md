@@ -273,7 +273,7 @@ Go is memory-safe. Uninitialized pointers are nil. Go does not allow pointer ari
 <details><summary><h3><mark> Range, switch, default, select </summary></mark></h3>
   
   - ##### Range :
-    In Golang Range keyword is used in different kinds of data structures in order to iterates over elements. The range keyword is mainly used in for loops in order to iterate over all the elements of a map, slice, channel, or an array.
+    In Golang, Range keyword used in different kinds of data structures., in-order to iterates over elements. The range keyword is mainly used in for loops in-order to iterate over all the elements of a map, slice, channel, or an array.
   
   - ##### switch, default  :
     - switch :
