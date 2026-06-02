@@ -534,7 +534,6 @@ For simple lock we use The sync.Mutex (The Simple Lock) or more specialized, "sm
 <br>
 
 
-
 # Error Handling :
  <details><summary><h3><mark>Error in go? Panics | recover | defer </mark></h3></summary>
    
@@ -556,8 +555,10 @@ For simple lock we use The sync.Mutex (The Simple Lock) or more specialized, "sm
    
    - ##### recover:
 
-     Inside the deferred function, recover() is called. If a panic is active, it captures the panic value and stops the un-winding of the stack, allowing the program to continue running.
+     Inside the deferred function, recover() is called. If a panic is active, it captures the panic value and stops the un-winding of the stack, that allowing the program to continue running.
+     
    <br><br>
+   
 - #### defer statement:
   
   The defer statement guarantees that, Any function method, or statement is executed at the end of the surrounding function.
