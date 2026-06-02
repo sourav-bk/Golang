@@ -6,7 +6,7 @@ Focusing on interfaces and composition rather than traditional class-based inher
 
 Core OOP Concepts in Go :
 
-- ***Classes and Objects (Structs)***: Go uses structs instead of classes to define data structures. An "object" in Go is an instance of a struct.
+- ***Classes and Objects (Structs)***: Go uses structs instead of classes., to define data structures. An "object" in Go is an instance of a struct.
 - ***Encapsulation (Exported Identifiers)***: Access control is managed at the package level using naming conventions.
   - ***Public***: Identifiers starting with an uppercase letter (e.g., ExportedField) are accessible from other packages.
   - ***Private***: Identifiers starting with a lowercase letter (e.g., unexportedField) are restricted to their own package.
