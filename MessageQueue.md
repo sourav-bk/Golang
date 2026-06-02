@@ -8,8 +8,8 @@ Message broker is intermediary software that enables., different applications, s
 
 It acts as a "middleman / middleware" that receives Data/messages from producers and routes them to consumers, storing messages in a queue until, they are processed, that ensuring reliable delivery and asynchronous communication.
 
-RabbitMQ is a message broker that uses message queues as part of its core functionality. 
-It contains message queues where messages are stored (buffered) before being processed by the consumer and message queues follow FIFO order.
+RabbitMQ is a message broker that uses message queues, as part of its core functionality. 
+It contains message queues, where messages are stored (buffered), before being processed by the consumer.., and message queues follow FIFO order.
 
 In Core application layer, RabbitMQ primarily uses AMQP 0-9-1 (Advanced Message Queuing Protocol) for messaging. It also natively supports AMQP 1.0, MQTT (for IoT), STOMP (for interoperability), and HTTP/REST API (for management). These protocols operate over TCP/IP connections on transport layer.
 
