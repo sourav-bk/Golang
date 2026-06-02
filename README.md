@@ -257,7 +257,7 @@ Go is memory-safe. Uninitialized pointers are nil. Go does not allow pointer ari
 <details><summary><h3><mark>Closure | Interfaces | Generic</summary></mark></h3>
   
   - ##### Closure :
-    A closure is an anonymous function that uses variables from outside its own body. In Go, a closure captures variables from its outer scope and remembers their values between calls.
+    A closure is an anonymous function., that uses variables from outside.. its own body. In Go, Closure captures variables., from its outer scope and remembers their values between calls.
   
   - ##### Interfaces :
 
@@ -266,7 +266,7 @@ Go is memory-safe. Uninitialized pointers are nil. Go does not allow pointer ari
     Interfaces can also be used as variable types. The empty interface (interface{}) can hold values of any type, such as integers, strings, or float.
 
   - ##### Generic :
-    Generics introduced in Go 1.18. Generics in Go allow to write functions and types that work with multiple data types while maintaining type safety.
+    Generics introduced in Go 1.18 . Generics in Go, allow to write functions and types.., that work with multiple data types.., while maintaining type safety.
 
 </details>
 <br>
