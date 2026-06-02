@@ -21,7 +21,7 @@ I have also been involved in designing and developing microservices-based archit
 
 ## About Project ?
 
-I currently work in client environment on Alshaya Group, its A leading company in the Middle East. Alshaya manages brands like H&M, American Eagle, Boots, Victoria’s Secret, MUJI, COS, Alo Yoga, and Starbucks. I work as an Golang software Developer, helping to build and improve their e-commerce platforms to enhance customer experience
+I currently work in client environment on Alshaya Group, Its A leading company in the Middle East( UAE, Qatar, Kuwait, Bahrain, Saudi Arabia ). Alshaya manages brands like H&M, American Eagle, Boots, Victoria’s Secret, MUJI, COS, Alo Yoga, and Starbucks. I work as an Golang software Developer, helping to build and improve their e-commerce platforms to enhance customer experience.
 
 e-commerce platforms have difarrent Component or mincorservices .
 
