@@ -4,7 +4,7 @@ RabbitMQ is an open-source message broker.
 
 ### message broker?
 
-Message broker is intermediary software that enables different applications, systems, and services to communicate and exchange data, even if they run on different platforms or use different languages. 
+Message broker is intermediary software that enables., different applications, systems, and services to communicate and exchange data, even if they run on different platforms or use different languages. 
 
 It acts as a "middleman / middleware" that receives Data/messages from producers and routes them to consumers, storing messages in a queue until they are processed, that ensuring reliable delivery and asynchronous communication.
 
