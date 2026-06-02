@@ -546,12 +546,11 @@ For simple lock we use The sync.Mutex (The Simple Lock) or more specialized, "sm
    
    - ##### Errors: Expected Failures
 
-     Errors represent issues that can happen during normal program execution. They’re part of the flow, and program should be prepared for them. Errors should be handled gracefully. They should not crash program.
+     Errors re-present issues, that can happen during normal program execution. They’re part of the flow, and program should be prepared for them. Errors should be handled gracefully. They should not crash program.
    
    - ##### Panics: Unexpected Failures
 
-     A panic indicates something went terribly wrong, usually a programmer mistake or a critical, unrecoverable state.
-     Stop normal execution Crash the program.
+     Panic Indicates, something terribly wrong, usually a programmer mistake or a critical, unrecoverable state..,  that Stop normal execution and Crash the program.
    
    - ##### recover:
 
