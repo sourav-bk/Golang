@@ -7,6 +7,11 @@ This design makes Docker containers lightweight, fast, and portable, while keepi
 
 Think of it as a "shipping container" for software: it ensures that  application runs exactly the same way, whether it's on run on local  server, or a cloud platform.
 
+***Core Architectural Components :***
+
+
+***Components of Docker::***
+
 - Dockerfile:
 
   A simple text file containing the instructions used to build a Docker image.Docker
