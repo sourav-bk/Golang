@@ -10,7 +10,7 @@ Think of it as a "shipping container" for software: it ensures that  application
 ***Core Architectural Components ::***
 
 
-***Components of Docker::***
+***Components of Docker ::***
 
 - Dockerfile:
 
@@ -28,7 +28,7 @@ Think of it as a "shipping container" for software: it ensures that  application
 
   A cloud-based repository where developers can find, share, and store container images.
 
-***Container Lifecycle***
+***Container Lifecycle ::***
 
 # Docker vs. Virtual Machines (VM)
 
