@@ -9,11 +9,11 @@ Think of it as a "shipping container" for software: it ensures that  application
 
 ***Core Architectural Components ::***
 
-- The Docker client :
+- Docker Client :
   
-- The Docker daemon :
+- Docker Daemon :
   
-- Docker registries :
+- Docker Registries :
 
 ***Components of Docker ::***
 
