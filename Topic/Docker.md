@@ -23,7 +23,16 @@ Docker uses a client–server architecture. The Docker-client talks to the Docke
 - **Docker Daemon :**
   
   The Docker-Daemon is the core background service responsible for managing Docker containers, images, networks, and volumes. It listens for Docker API requests which coming from Docker-Client ( like from Docker-CLI or Docker-Desktop ) and performs the actual work of building, running, and managing containers or Orchestrating the entire lifecycle of Docker-containers. Docker-Daemon can also communicate with other Daemons to manage Docker services.
+
+  ---
+
+  **Docker Container Lifecycle Management**
+
+  Lifecycle of Docker container consists of five states:
   
+  1. Created state 2. Running state 3. Paused/unpaused state 4. Stopped state 5. Killed/Deleted state
+  <img alt="image" src="https://github.com/user-attachments/assets/6585623d-c5bd-48a9-9457-73e360eaa1f3" />
+
   
 - **Docker Registries :**
 
