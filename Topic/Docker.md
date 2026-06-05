@@ -18,7 +18,7 @@ Think of it as a "shipping container" for software: it ensures that  application
   
 - Docker Image:
 
-  A read-only template or "blueprint" that contains the application code, libraries, and environment settings needed to run it.
+  A read-only template/ snapshot  or "blueprint" that contains the application code, libraries, and environment settings needed to run it.
   
 - Docker Container:
 
