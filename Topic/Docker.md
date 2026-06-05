@@ -35,6 +35,25 @@ Docker uses a client–server architecture. The Docker-client talks to the Docke
 
   <img alt="image" src="https://github.com/user-attachments/assets/6585623d-c5bd-48a9-9457-73e360eaa1f3" />
 
+  **1. Created state**
+
+  A container is created from a Docker image but the main application process hasn't started yet.
+  
+  **2. Running state**
+  
+  The container executes the main commands specified in its image. Resources like CPU and memory are actively allocated.
+  
+  **3. Paused/unpaused state**
+
+  A container whose processes have been paused
+   
+  **4. Stopped state**
+
+     
+  **5. Killed/Deleted state**
+
+  The container is removed from the engine or orchestrator, and all its un-persisted resources are freed.
+
   
 - **Docker Registries :**
 
