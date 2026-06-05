@@ -8,8 +8,11 @@ This design makes Docker containers lightweight, fast, and portable, while keepi
 Think of it as a "shipping container" for software: it ensures that  application runs exactly the same way, whether it's on run on local  server, or a cloud platform.
 
 ***Core Architectural Components ::***
+Core Architectural have 3 core Components - ***1.Docker Client  2.Docker Daemon 3.Docker Registries***
 
-<img width="1280" height="720" alt="maxresdefault" src="https://github.com/user-attachments/assets/32211ef0-9de9-44eb-8d39-916fec0b2bfb" />
+Docker uses a client–server architecture. The Docker client talks to the Docker Daemon, which builds, runs, and manages containers. They communicate through a REST API via UNIX sockets or a network interface.
+
+<img alt="maxresdefault" src="https://github.com/user-attachments/assets/32211ef0-9de9-44eb-8d39-916fec0b2bfb" />
 
 - Docker Client :
   
