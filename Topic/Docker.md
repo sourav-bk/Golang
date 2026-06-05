@@ -7,7 +7,7 @@ This design makes Docker containers lightweight, fast, and portable, while keepi
 
 Think of it as a "shipping container" for software: it ensures that  application runs exactly the same way, whether it's on run on local  server, or a cloud platform.
 
-***Core Architectural Components :***
+***Core Architectural Components ::***
 
 
 ***Components of Docker::***
@@ -28,6 +28,7 @@ Think of it as a "shipping container" for software: it ensures that  application
 
   A cloud-based repository where developers can find, share, and store container images.
 
+***Container Lifecycle***
 
 # Docker vs. Virtual Machines (VM)
 
