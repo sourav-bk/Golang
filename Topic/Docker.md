@@ -52,7 +52,7 @@ Docker uses a client–server architecture. The Docker-client talks to the Docke
      
   **5. Killed/Deleted state**
 
-  The container is removed from the engine or orchestrator, and all its un-persisted resources are freed.
+  The container is removed from the engine or orchestrator. All its un-persisted resources are released and Container no longer exists on system.
 
   
 - **Docker Registries :**
