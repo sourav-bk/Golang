@@ -9,6 +9,8 @@ Think of it as a "shipping container" for software: it ensures that  application
 
 ***Core Architectural Components ::***
 
+<img width="1280" height="720" alt="maxresdefault" src="https://github.com/user-attachments/assets/32211ef0-9de9-44eb-8d39-916fec0b2bfb" />
+
 - Docker Client :
   
 - Docker Daemon :
