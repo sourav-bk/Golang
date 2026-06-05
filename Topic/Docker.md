@@ -7,6 +7,8 @@ This design makes Docker containers lightweight, fast, and portable, while keepi
 
 Think of it as a "shipping container" for software: it ensures that  application runs exactly the same way, whether it's on run on local  server, or a cloud platform.
 
+---
+
 ***Core Architectural Components ::***
 Docker Core Architecture have 3 core Components - **1. Docker Client | 2. Docker Daemon | 3. Docker Registries**
 
