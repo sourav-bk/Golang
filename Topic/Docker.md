@@ -26,6 +26,8 @@ Docker uses a client–server architecture. The Docker-client talks to the Docke
   
 - **Docker Registries :**
 
+  A Docker Registry is a centralized storage and distribution system for Docker images. It allows users to store, share, and manage container images.
+
 ***Components of Docker ::***
 
 - Dockerfile:
