@@ -18,6 +18,10 @@ Docker uses a client–server architecture. The Docker-client talks to the Docke
 
 - **Docker Client :**
   
+  The Docker client is the primary interface used to interact ( like command-line tool docker-CLI |  graphical interface Docker Desktop ) with the Docker ecosystem.
+
+  The Docker client is the primary interface used to interact with the Docker ecosystem. It provides both a command-line interface (CLI), known as the **Docker-CLI**, and a graphical user interface (GUI) through **Docker-Desktop**, enabling users to manage containers, images, and other Docker resources efficiently.
+  
 - **Docker Daemon :**
   
 - **Docker Registries :**
