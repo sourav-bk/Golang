@@ -27,7 +27,7 @@ Docker uses a client–server architecture. The Docker-client talks to the Docke
 
   ---
 
-  **Docker Container Lifecycle Management**
+  ### Docker Container Lifecycle Management
 
   Lifecycle of Docker container consists of five states:
   
