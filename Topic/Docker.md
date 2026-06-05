@@ -10,6 +10,7 @@ Think of it as a "shipping container" for software: it ensures that  application
 ---
 
 ***Core Architectural Components ::***
+
 Docker Core Architecture have 3 core Components - **1. Docker Client | 2. Docker Daemon | 3. Docker Registries**
 
 Docker uses a client–server architecture. The Docker-client talks to the Docker-Daemon, which builds, runs, and manages containers. They communicate through a REST API via UNIX sockets or a network interface.
