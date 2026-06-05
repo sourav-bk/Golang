@@ -27,6 +27,9 @@ Docker uses a client–server architecture. The Docker-client talks to the Docke
 - **Docker Registries :**
 
   A Docker Registry is a centralized storage and distribution system for Docker images. It allows users to store, share, and manage container images.
+  **Docker Hub** is a public registry that anyone can use, and Docker is configured to look for images on Docker Hub by default. We can even run our own private registry.
+  
+  When we use the `docker pull` or `docker run` commands, the required images are pulled from your configured registry. When you use the docker push command, your image is pushed to your configured registry.
 
 ***Components of Docker ::***
 
