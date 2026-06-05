@@ -14,11 +14,11 @@ Docker uses a client–server architecture. The Docker-client talks to the Docke
 
 <img alt="maxresdefault" src="https://github.com/user-attachments/assets/32211ef0-9de9-44eb-8d39-916fec0b2bfb" />
 
-- Docker Client :
+- **Docker Client :**
   
-- Docker Daemon :
+- **Docker Daemon :**
   
-- Docker Registries :
+- **Docker Registries :**
 
 ***Components of Docker ::***
 
