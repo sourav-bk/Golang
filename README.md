@@ -111,16 +111,16 @@ The go mod tidy command is used to maintain module files. It adds any missing de
   Analyzes Go code to identify suspicious constructs that may indicate potential bugs, even though the code compiles successfully. It uses heuristic checks, which means not all reported issues are guaranteed to be real problems, but it helps uncover mistakes that the compiler does not detect.
 
   Its check Incorrect Printf format strings, Un-used variables or assignments, Mis-used of struct tags, Un-reachable code, Possible nil dereferences
-   - CMD:
+  - CMD:
     - `go vet main.go` (format single file)
     - `go vet ./...` (format an entire package)
     - `go vet` (Current Package)
   
 - **go doc — Documentation Tool**
-
-  
-
-
+  Displays documentation for Go packages, functions, types, and methods. Its Shows comments written above functions/types and Helps explore APIs Doc from terminal.
+  - CMD
+    - `go doc module/package.Func`
+      
 <br><br>
 </details>
 
