@@ -96,6 +96,24 @@ The go get command is used to add, upgrade, or downgrade dependencies to a speci
 - <h6>go mod tidy :</h6>
 The go mod tidy command is used to maintain module files. It adds any missing dependencies, removes unused ones, and cleans up both the go.mod and go.sum files to keep the dependency list accurate and minimal.
 
+
+- **go fmt — Code Formatter**
+
+  Automatically formats Go source code to follow the official Go style. It Fix indentation Align, spacing, Organizes code layout consistently and Remove unnecessary parentheses or formatting issues.
+  - CMD:
+    - `go fmt main.go` (format single file)
+    - `go fmt ./...` (format an entire package)
+    - 
+
+  
+- **go vet — Static Analyzer (Bug Detector)**
+
+  
+- **go doc — Documentation Tool**
+
+  
+
+
 <br><br>
 </details>
 
