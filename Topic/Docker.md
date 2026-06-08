@@ -86,6 +86,12 @@ Docker uses a client–server architecture. The Docker-client talks to the Docke
 
 The core difference lies in architecture: **VMs virtualize hardware**, while **Docker virtualizes the operating system**.
 
+Docker and Virtual Machines both provide environments to run applications, but they differ mainly in how they use system resources and isolate processes
+
+**Virtual Machine (VM)** runs a full operating system on top of a hypervisor, meaning each VM includes its own guest OS, binaries, and libraries, making it heavier, slower to start, and more resource-intensive, but offering strong isolation and the ability to run different OS types on the same hardware; 
+
+**Docker** uses containerization, where containers share the host OS kernel and package only the application along with its dependencies, making them lightweight, faster to start, highly portable, and efficient in resource usage, though they provide comparatively less isolation than VMs since they rely on the host OS.
+
 ---
 
 ## Quick Comparison
