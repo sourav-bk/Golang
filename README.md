@@ -67,7 +67,7 @@ Go also provides the go run command, which is used to quickly compile and run a 
 </details>
 <details><summary><h3><mark>Go Packages || Go Modules || Go workspaces</mark></h3></summary>
 
- go fmt, go vet, & go doc
+
   
   - <b>Go Packages :</b>
     A package is a collection of one or more Go source files (.go files) located in the same directory that are compiled together and share the same package name.
@@ -108,6 +108,13 @@ The go mod tidy command is used to maintain module files. It adds any missing de
   
 - **go vet — Static Analyzer (Bug Detector)**
 
+  Analyzes Go code to identify suspicious constructs that may indicate potential bugs, even though the code compiles successfully. It uses heuristic checks, which means not all reported issues are guaranteed to be real problems, but it helps uncover mistakes that the compiler does not detect.
+
+  Its check Incorrect Printf format strings, Un-used variables or assignments, Mis-used of struct tags, Un-reachable code, Possible nil dereferences
+   - CMD:
+    - `go vet main.go` (format single file)
+    - `go vet ./...` (format an entire package)
+    - `go vet` (Current Package)
   
 - **go doc — Documentation Tool**
 
