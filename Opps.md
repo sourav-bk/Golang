@@ -38,11 +38,7 @@ Core OOP Concepts in Go :
 
   Polymorphism in Go is primarily achieved through interfaces, enabling code to work with multiple types in a uniform and flexible manner without needing class-based inheritance.
 
-- ***Inheritance (Composition & Embedding)***:
-
-  Go does not support classical inheritance. Instead, it uses struct embedding (composition), where one struct is placed inside another to "inherit" its fields and methods.
-
-  ```go
+    ```go
   package main
 
   import "fmt"
@@ -69,9 +65,13 @@ Core OOP Concepts in Go :
 	  a.Eat()  // fish
   }
 
-
-
   ```
+
+- ***Inheritance (Composition & Embedding)***:
+
+  Go does not support classical inheritance. Instead, it uses struct embedding (composition), where one struct is placed inside another to "inherit" its fields and methods.
+
+
   
 ---
 
