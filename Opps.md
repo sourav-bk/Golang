@@ -3,6 +3,8 @@
 Go is not a traditional object-oriented programming (OOP) language but it supports most OOP concepts using structs, methods, and interfaces. 
 Focusing on interfaces and composition rather than traditional class-based inheritance. This make more flexible and modular design.
 
+it achieves OOP concepts using structs (to represent class/objects), methods (functions attached to structs), interfaces (for polymorphism), and composition (for reuse).
+
 
 Core OOP Concepts in Go :
 
