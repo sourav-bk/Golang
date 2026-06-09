@@ -28,12 +28,13 @@ Core OOP Concepts in Go :
 
   Polymorphism is one of the key concepts of object-oriented programming and means “many forms.” It refers to the ability of a single method, function, or interface to behave differently based on the context or the type of data it operates on. In simple terms, polymorphism allows the same operation to be performed in different ways.
 
-  In traditional object-oriented languages, polymorphism is often achieved using method overloading or method overriding (same method name with different implementations or signatures). However, Go does not support classes, inheritance, or method overloading. Instead, polymorphism in Go is achieved using interfaces.
+  In traditional object-oriented languages, polymorphism is often achieved using method overloading or method overriding (same method name with different implementations or signatures).
+
+  However, Go does not support classes, inheritance, or method overloading. Instead, polymorphism in Go is achieved using interfaces.
 
   Go interfaces are implemented implicitly. This means a type does not need to explicitly declare that it implements an interface; if it provides the required methods, it automatically satisfies that interface. Because of this, a variable of an interface type can hold values of any type that implements the interface.
 
   This flexibility allows Go to achieve polymorphism. Different types can implement the same interface in their own way, and the same method call can produce different behavior depending on the actual type of the value stored in the interface.
-
 
   Polymorphism in Go is primarily achieved through interfaces, enabling code to work with multiple types in a uniform and flexible manner without needing class-based inheritance.
 
