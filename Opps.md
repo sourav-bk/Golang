@@ -27,6 +27,10 @@ Core OOP Concepts in Go :
 - ***Polymorphism (Interfaces)***:
   
   Go achieves polymorphism through implicit interfaces. A type satisfies an interface simply by implementing its required methods; there is no implements keyword.
+
+
+  Polymorphism is the ability of a message to be displayed in more than one form. Polymorphism is considered one of the important features of Object-Oriented Programming and can be achieved during either runtime or compile time. Golang is a light-object-oriented language and supports polymorphism through interfaces only.
+  
   
 - ***Inheritance (Composition & Embedding)***:
 
