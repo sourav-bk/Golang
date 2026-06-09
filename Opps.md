@@ -23,10 +23,16 @@ Core OOP Concepts in Go :
 
 
   Access control is managed at the package level using naming conventions.
-  - ***Public***: 
-  - ***Private***: 
-- ***Polymorphism (Interfaces)***: Go achieves polymorphism through implicit interfaces. A type satisfies an interface simply by implementing its required methods; there is no implements keyword.
-- ***Inheritance (Composition & Embedding)***: Go does not support classical inheritance. Instead, it uses struct embedding (composition), where one struct is placed inside another to "inherit" its fields and methods
+  
+- ***Polymorphism (Interfaces)***:
+  
+  Go achieves polymorphism through implicit interfaces. A type satisfies an interface simply by implementing its required methods; there is no implements keyword.
+  
+- ***Inheritance (Composition & Embedding)***:
+
+  Go does not support classical inheritance. Instead, it uses struct embedding (composition), where one struct is placed inside another to "inherit" its fields and methods
+  
+---
 
 ## Struct embedding : 
 
