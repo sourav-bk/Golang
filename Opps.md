@@ -25,13 +25,18 @@ Core OOP Concepts in Go :
   Access control is managed at the package level using naming conventions.
   
 - ***Polymorphism (Interfaces)***:
-  
-  Go achieves polymorphism through implicit interfaces. A type satisfies an interface simply by implementing its required methods; there is no implements keyword.
+
+  Polymorphism is one of the key concepts of object-oriented programming and means “many forms.” It refers to the ability of a single method, function, or interface to behave differently based on the context or the type of data it operates on. In simple terms, polymorphism allows the same operation to be performed in different ways.
+
+  In traditional object-oriented languages, polymorphism is often achieved using method overloading or method overriding (same method name with different implementations or signatures). However, Go does not support classes, inheritance, or method overloading. Instead, polymorphism in Go is achieved using interfaces.
+
+  Go interfaces are implemented implicitly. This means a type does not need to explicitly declare that it implements an interface; if it provides the required methods, it automatically satisfies that interface. Because of this, a variable of an interface type can hold values of any type that implements the interface.
+
+  This flexibility allows Go to achieve polymorphism. Different types can implement the same interface in their own way, and the same method call can produce different behavior depending on the actual type of the value stored in the interface.
 
 
-  Polymorphism is the ability of a Data/message to be displayed in more than one form. Polymorphism is considered one of the important features of Object-Oriented Programming and can be achieved during either runtime or compile time. Golang is a light-object-oriented language and supports polymorphism through interfaces only.
-  
-  
+  Polymorphism in Go is primarily achieved through interfaces, enabling code to work with multiple types in a uniform and flexible manner without needing class-based inheritance.
+
 - ***Inheritance (Composition & Embedding)***:
 
   Go does not support classical inheritance. Instead, it uses struct embedding (composition), where one struct is placed inside another to "inherit" its fields and methods
