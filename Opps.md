@@ -69,7 +69,7 @@ Core OOP Concepts in Go :
 
 - ***Inheritance (Composition & Embedding)***:
 
-  Go does not support classical inheritance. Instead, it uses struct embedding (composition), where one struct is placed inside another to "inherit" its fields and methods.
+  Go does not support classical inheritance. Instead, it uses struct embedding (composition), where one struct is placed inside another struct to "inherit" its fields and methods.
 
 
   
