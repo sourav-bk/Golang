@@ -70,55 +70,7 @@ Core OOP Concepts in Go :
 - ***Inheritance (Composition & Embedding)***:
 
   Go does not support classical inheritance. Instead, it uses struct embedding (composition), where one struct is placed inside another struct to "inherit" its fields and methods.
-  ```go
 
-  package main
-
-	import "fmt"
-
-	// define A struct
-	type A struct {
-		Value int
-	}
-
-	func (a A) GetData() {
-		fmt.Println("Print GetData() from A")
-	}
-
-	// define B struct
-	type B struct {
-		A
-		Value int
-	}
-
-	func (b B) GetData() {
-		fmt.Println("Print GetData() from B")
-	}
-
-	func main() {
-
-		b := B{
-			A: A{
-				Value: 10,
-			},
-			Value: 20,
-		}
-
-	fmt.Println(b.Value)   // 20 (outer one)
-	fmt.Println(b.A.Value) // 10 (inner one)
-
-	b.GetData()   // Print GetData() from B || call outer struct (B) GetData() method
-	b.A.GetData() // Print GetData() from A || call inner struct (A) GetData() method
-
-	}
-  
-
-  ```
-
-  
-
-
-  
 ---
 
 ## Struct embedding : 
@@ -177,6 +129,50 @@ func main() {
 - Shadowing (Overriding):
 
   When the outer struct and an embedded struct define a field or method with the same name, the outer struct takes priorities —this is known as shadowing. By default, the compiler resolves references to the outer struct’s member. However, the embedded struct’s member can still be accessed explicitly using the embedded type’s name.
+
+  ```go
+
+  package main
+
+	import "fmt"
+
+	// define A struct
+	type A struct {
+		Value int
+	}
+
+	func (a A) GetData() {
+		fmt.Println("Print GetData() from A")
+	}
+
+	// define B struct
+	type B struct {
+		A
+		Value int
+	}
+
+	func (b B) GetData() {
+		fmt.Println("Print GetData() from B")
+	}
+
+	func main() {
+
+		b := B{
+			A: A{
+				Value: 10,
+			},
+			Value: 20,
+		}
+
+	fmt.Println(b.Value)   // 20 (outer one)
+	fmt.Println(b.A.Value) // 10 (inner one)
+
+	b.GetData()   // Print GetData() from B || call outer struct (B) GetData() method
+	b.A.GetData() // Print GetData() from A || call inner struct (A) GetData() method
+
+	}
+
+  ```
 
 ## Composition :
 
