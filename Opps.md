@@ -84,14 +84,15 @@ When a struct is embedded, its fields and methods are automatically promoted to 
 Struct embedding enables developers to create flexible, reusable, and maintainable designs. Instead of inheriting behavior, Go encourages composing smaller, focused structs into larger ones, resulting in cleaner and more modular code.
 
 **Key Behaviors:**
-.
+
+
 - Field & Method Promotion :
 
   In Go, field and method promotion occurs when we embed an anonymous struct type( means specify only the type name without a designated variable name ) into another struct, that allowing the inner struct's fields and methods to be accessed directly from the outer struct.
   
 - Shadowing (Overriding):
 
-
+  When the outer struct and an embedded struct define a field or method with the same name, the outer struct takes priorities —this is known as shadowing. By default, the compiler resolves references to the outer struct’s member. However, the embedded struct’s member can still be accessed explicitly using the embedded type’s name.
 
 ## Composition :
 
