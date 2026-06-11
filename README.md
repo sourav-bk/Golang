@@ -291,7 +291,7 @@ Go is memory-safe. Uninitialized pointers are nil. Go does not allow pointer ari
 
     Interfaces can also be used as variable types. The empty interface (interface{}) can hold values of any type, such as integers, strings, or float.
 
-    Embedding Interfaces: Interface embedding in Go means combining multiple smaller interfaces into one larger interface. Instead of creating a big interface from scratch, you can reuse existing small interfaces and join them together. This makes your code cleaner, easier to manage, and more reusable. It follows Go’s idea of composition over inheritance by building bigger functionality from smaller pieces.
+    **Embedding Interfaces:** Embedding Interfaces in Go means combining multiple smaller interfaces into one larger interface. Instead of creating a big interface from scratch, you can reuse existing small interfaces and join them together. This makes your code cleaner, easier to manage, and more reusable. It follows Go’s idea of composition over inheritance by building bigger functionality from smaller pieces.
 
   - ##### Generic :
     Generics introduced in Go 1.18 . Generics in Go, allow to write functions and types.., that work with multiple data types.., while maintaining type safety.
