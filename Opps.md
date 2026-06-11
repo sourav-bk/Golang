@@ -77,7 +77,11 @@ Core OOP Concepts in Go :
 
 ## Struct embedding : 
 
-Go doesn't have classes or inheritance. Instead, it uses struct embedding to embed one struct inside another struct, to re-use struct attributes (fields and methods).
+In Go, struct embedding is a powerful way to build complex types through composition rather than inheritance. Since Go does not support classes or traditional inheritance, it achieves code reuse by allowing one struct to be embedded within another.
+
+When a struct is embedded, its fields and methods are automatically promoted to the outer struct. This means the outer struct can access them directly, as if they were its own, without needing explicit qualification.
+
+Struct embedding enables developers to create flexible, reusable, and maintainable designs. Instead of inheriting behavior, Go encourages composing smaller, focused structs into larger ones, resulting in cleaner and more modular code.
 
 ## Composition :
 
