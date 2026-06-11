@@ -94,3 +94,24 @@ Go does not support inheritance and Instead of, it relies on composition. The id
 | **Flexibility** | **High:** Easy to swap or modify pieces at runtime | **Rigid:** Hard-coded and fixed at compile time |
 | **Encapsulation** | **Strong:** Inner details stay hidden inside components | **Weak:** Breaks parent encapsulation (via `protected`) |
 | **Testing** | **Easy:** Straightforward to mock isolated dependencies | **Harder:** Tests must manage complex parent states |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+|   | Explicit Fields | Implicit |
+| --- | --- | --- |
+| | An explicit field is a standard field declared with both a name and a data type. When accessing it, you must explicitly specify the field name in your code |n implicit field is created using anonymous embedding—where you specify only the type name (e.g., Address) without a designated variable name. Go automatically "promotes" the fields of the embedded struct into the parent struct, letting you access them implicitly without typing out the nested struct's name. |
+| example | Row 2, Col 2 | Row 2, Col 3 |
