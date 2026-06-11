@@ -142,5 +142,5 @@ func main() {
 |   | Explicit Fields | Implicit |
 | --- | --- | --- |
 | | An explicit field is a standard field declared with both a name and a data type. When accessing it, you must explicitly specify the field name in your code |n implicit field is created using anonymous embedding—where you specify only the type name (e.g., Address) without a designated variable name. Go automatically "promotes" the fields of the embedded struct into the parent struct, letting you access them implicitly without typing out the nested struct's name. |
-| example | <img width="390" height="568" alt="image" src="https://github.com/user-attachments/assets/0b11d84f-50e1-473e-94cb-5c31415bdbe8" />| <img width="390" height="568" alt="image" src="https://github.com/user-attachments/assets/c3d23e1b-26fd-435e-8967-61557418d350" />
+| example | <img alt="image" src="https://github.com/user-attachments/assets/0b11d84f-50e1-473e-94cb-5c31415bdbe8" /> | <img alt="image" src="https://github.com/user-attachments/assets/c3d23e1b-26fd-435e-8967-61557418d350" />
 |
