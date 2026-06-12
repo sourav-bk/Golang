@@ -687,51 +687,51 @@ Struct embedding enables developers to create flexible, reusable, and maintainab
 
   In Go, field and method promotion occurs when we embed an anonymous struct type( means specify only the type name without a designated variable name ) into another struct, that allowing the inner struct's fields and methods to be accessed directly from the outer struct.
   
- ```go
-package main
+  ```go
+	package main
 
-import "fmt"
+	import "fmt"
 
-type Address struct {
-	City  string
-	State string
-}
-
-func (a Address) PrintAddress() {
-	fmt.Println(a.City, a.State)
-}
-
-type Person struct {
-	Name    string
-	Age     int
-	Address // embedded struct (no field name)
-}
-
-func main() {
-	p := Person{
-		Name: "Sourav",
-		Age:  27,
-		Address: Address{
-			City:  "Kolkata",
-			State: "WB",
-		},
+	type Address struct {
+		City  string
+		State string
 	}
 
-	fmt.Println(p.City) // works directly
-	p.PrintAddress()    // works directly
-	p.Address.PrintAddress()
+	func (a Address) PrintAddress() {
+		fmt.Println(a.City, a.State)
+	}
 
-}
+	type Person struct {
+		Name    string
+		Age     int
+		Address // embedded struct (no field name)
+	}
 
- ```
+	func main() {
+		p := Person{
+			Name: "Sourav",
+			Age:  27,
+			Address: Address{
+				City:  "Kolkata",
+				State: "WB",
+			},
+		}
+
+		fmt.Println(p.City) // works directly
+		p.PrintAddress()    // works directly
+		p.Address.PrintAddress()
+
+	}
+
+ 	```
   
 - Shadowing (Overriding):
 
   When the outer struct and an embedded struct define a field or method with the same name, the outer struct takes priorities —this is known as shadowing. By default, the compiler resolves references to the outer struct’s member. However, the embedded struct’s member can still be accessed explicitly using the embedded type’s name.
 
-  ```go
+  	```go
 
-  package main
+  	package main
 
 	import "fmt"
 
@@ -771,7 +771,7 @@ func main() {
 
 	}
 
-  ```
+  	```
   
  </details>
 
