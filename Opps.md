@@ -176,7 +176,20 @@ func main() {
 
 ## Composition :
 
-Go does not support inheritance and Instead of, it relies on composition. The idea that .., The larger object is built by combining smaller and focused objects (follow "has-a" relationships rather than "is-a" relationships).
+In Go, the concept of inheritance does not exist as it does in traditional object-oriented languages; instead, Go strongly promotes composition over inheritance. 
+
+This means that rather than creating complex class hierarchies, developers build larger, more capable types by combining smaller, reusable components using struct embedding and interfaces.
+ (follow "has-a" relationships rather than "is-a" relationships)
+
+With composition..,
+
+Struct can embed another struct and automatically gain access to its fields and methods, a feature known as fields/method promotion. This approach keeps the design simple, flexible, and loosely coupled, making the code easier to maintain and test. 
+
+Unlike inheritance, where behavior is tightly bound in a hierarchy, composition allows developers to mix and match functionality as needed. 
+
+Additionally.., 
+
+Go’s interfaces enable a form of polymorphism without requiring explicit declarations, as any type implementing the required methods satisfies the interface. Overall, Go favors composition because it avoids the complexity of deep inheritance chains while encouraging modular and reusable code design.
 
 ## Composition over Inheritance
 
