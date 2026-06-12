@@ -596,7 +596,7 @@ For simple lock we use The sync.Mutex (The Simple Lock) or more specialized, "sm
 
 <br>
 
-# Oops | :
+# Oops :
  <details><summary><h3><mark> Oop Concepts | Composition | Struct embedding  | interface  </mark></h3></summary>
 
   
