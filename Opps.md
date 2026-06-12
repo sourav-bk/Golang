@@ -179,7 +179,10 @@ func main() {
   
  </details>
 
- <details><summary><h3><mark> Composition (Composition over Inheritance) </mark></h3></summary>
+ <details><summary><h3><mark> Composition | Composition over Inheritance | Composition vs Inheritance) </mark></h3></summary>
+	 
+ #### Composition over Inheritance ::	 
+ 
  In Go, the concept of inheritance does not exist as it does in traditional object-oriented languages; instead, Go strongly promotes composition over inheritance. 
 	 This means that rather than creating complex class hierarchies, developers build larger, more capable types by combining smaller, reusable components using struct embedding and interfaces.
  (follow "has-a" relationships rather than "is-a" relationships)
@@ -193,11 +196,9 @@ func main() {
 Additionally.., 
 
  Go’s interfaces enable a form of polymorphism without requiring explicit declarations, as any type implementing the required methods satisfies the interface. Overall, Go favors composition because it avoids the complexity of deep inheritance chains while encouraging modular and reusable code design.
- 
- </details>
 
- <details><summary><h3><mark> Composition vs Inheritance </mark></h3></summary>
-	 omposition and inheritance are two different approaches to code reuse and design in programming. 
+ #### Composition and Inheritance ::	
+ Composition and inheritance are two different approaches to code reuse and design in programming. 
 - **Inheritance ::**
 Inheritance is based on an “is-a” relationship, where a child class derives from a parent class and inherits its properties and behavior, often leading to tightly coupled and rigid hierarchies. This can make systems harder to modify as changes in the parent can affect all derived classes. 
 
@@ -214,8 +215,12 @@ Composition is based on a “has-a” relationship, where a type is built by com
 | **Flexibility** | **High:** Easy to swap or modify pieces at runtime | **Rigid:** Hard-coded and fixed at compile time |
 | **Encapsulation** | **Strong:** Inner details stay hidden inside components | **Weak:** Breaks parent encapsulation (via `protected`) |
 | **Testing** | **Easy:** Straightforward to mock isolated dependencies | **Harder:** Tests must manage complex parent states |
+ 
  </details>
-<br>
+
+
+
+
 
 
 
