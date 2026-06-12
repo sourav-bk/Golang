@@ -687,7 +687,7 @@ Struct embedding enables developers to create flexible, reusable, and maintainab
 
   In Go, field and method promotion occurs when we embed an anonymous struct type( means specify only the type name without a designated variable name ) into another struct, that allowing the inner struct's fields and methods to be accessed directly from the outer struct.
   
-```go
+ ```go
 package main
 
 import "fmt"
@@ -723,7 +723,7 @@ func main() {
 
 }
 
-```
+ ```
   
 - Shadowing (Overriding):
 
@@ -772,8 +772,6 @@ func main() {
 	}
 
   ```
-
-
   
  </details>
 
