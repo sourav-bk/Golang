@@ -1,9 +1,49 @@
-## Object-oriented programming
+## Composition (Composition over Inheritance):
 
-Go is not a traditional object-oriented programming (OOP) language but it supports most OOP concepts using structs, methods, and interfaces. 
+In Go, the concept of inheritance does not exist as it does in traditional object-oriented languages; instead, Go strongly promotes composition over inheritance. 
+
+This means that rather than creating complex class hierarchies, developers build larger, more capable types by combining smaller, reusable components using struct embedding and interfaces.
+ (follow "has-a" relationships rather than "is-a" relationships)
+
+With composition..,
+
+Struct can embed another struct and automatically gain access to its fields and methods, a feature known as fields/method promotion. This approach keeps the design simple, flexible, and loosely coupled, making the code easier to maintain and test. 
+
+Unlike inheritance, where behavior is tightly bound in a hierarchy, composition allows developers to mix and match functionality as needed. 
+
+Additionally.., 
+
+Go’s interfaces enable a form of polymorphism without requiring explicit declarations, as any type implementing the required methods satisfies the interface. Overall, Go favors composition because it avoids the complexity of deep inheritance chains while encouraging modular and reusable code design.
+
+## Composition vs Inheritance
+
+Composition and inheritance are two different approaches to code reuse and design in programming. 
+- **Inheritance ::**
+Inheritance is based on an “is-a” relationship, where a child class derives from a parent class and inherits its properties and behavior, often leading to tightly coupled and rigid hierarchies. This can make systems harder to modify as changes in the parent can affect all derived classes. 
+
+In contrast, 
+- **Composition ::**
+Composition is based on a “has-a” relationship, where a type is built by combining smaller, independent components. This approach promotes flexibility, as behaviors can be added, modified, or replaced without affecting the entire structure. Composition results in loosely coupled systems that are easier to maintain, extend, and test. Because of these advantages, languages like Go favor composition over inheritance, using struct embedding and interfaces to achieve reuse and polymorphism without relying on deep class hierarchies.
+
+| Feature / Dimension | Composition ("Has-A") | Inheritance ("Is-A") |
+| :--- | :--- | :--- |
+| **Core Concept** | "A Dog **has-a** barking behavior"<br>"A Car **has-an** Engine" | "A Dog **is-an** Animal"<br>"A Car **is-a** Vehicle" |
+| **Mechanism** | Struct embeds other structs / references components | Subclass extends a base class |
+| **Reuse Direction** | **Horizontal:** Mix-and-match independent features | **Vertical:** Deep hierarchical inheritance tree |
+| **Coupling** | **Loose:** Components are decoupled, isolated modules | **Tight:** Child class depends heavily on parent state |
+| **Flexibility** | **High:** Easy to swap or modify pieces at runtime | **Rigid:** Hard-coded and fixed at compile time |
+| **Encapsulation** | **Strong:** Inner details stay hidden inside components | **Weak:** Breaks parent encapsulation (via `protected`) |
+| **Testing** | **Easy:** Straightforward to mock isolated dependencies | **Harder:** Tests must manage complex parent states |
+
+
+
+# Oops :
+ <details><summary><h3><mark> Object-oriented programming </mark></h3></summary>
+	 
+ Go is not a traditional object-oriented programming (OOP) language but it supports most OOP concepts using structs, methods, and interfaces. 
 Focusing on interfaces and composition rather than traditional class-based inheritance. This make more flexible and modular design.
 
-it achieves OOP concepts using structs (to represent class/objects), methods (functions attached to structs), interfaces (for polymorphism), and composition (for reuse).
+It achieves OOP concepts using structs (to represent class/objects), methods (functions attached to structs), interfaces (for polymorphism), and composition (for reuse).
 
 
 Core OOP Concepts in Go :
@@ -71,11 +111,11 @@ Core OOP Concepts in Go :
 
   Go does not support classical inheritance. Instead, it uses struct embedding (composition), where one struct is placed inside another struct to "inherit" its fields and methods.
 
----
 
-## Struct embedding : 
+ </details>
 
-In Go, struct embedding is a powerful way to build complex types through composition rather than inheritance. Since Go does not support classes or traditional inheritance, it achieves code reuse by allowing one struct to be embedded within another.
+ <details><summary><h3><mark> Struct embedding </mark></h3></summary>
+ In Go, struct embedding is a powerful way to build complex types through composition rather than inheritance. Since Go does not support classes or traditional inheritance, it achieves code reuse by allowing one struct to be embedded within another.
 
 When a struct is embedded, its fields and methods are automatically promoted to the outer struct. This means the outer struct can access them directly, as if they were its own, without needing explicit qualification.
 
@@ -174,26 +214,29 @@ func main() {
 
   ```
 
-## Composition (Composition over Inheritance):
 
-In Go, the concept of inheritance does not exist as it does in traditional object-oriented languages; instead, Go strongly promotes composition over inheritance. 
+  
+ </details>
 
-This means that rather than creating complex class hierarchies, developers build larger, more capable types by combining smaller, reusable components using struct embedding and interfaces.
+ <details><summary><h3><mark> Composition (Composition over Inheritance) </mark></h3></summary>
+ In Go, the concept of inheritance does not exist as it does in traditional object-oriented languages; instead, Go strongly promotes composition over inheritance. 
+	 This means that rather than creating complex class hierarchies, developers build larger, more capable types by combining smaller, reusable components using struct embedding and interfaces.
  (follow "has-a" relationships rather than "is-a" relationships)
 
-With composition..,
+ With composition..,
 
-Struct can embed another struct and automatically gain access to its fields and methods, a feature known as fields/method promotion. This approach keeps the design simple, flexible, and loosely coupled, making the code easier to maintain and test. 
+ Struct can embed another struct and automatically gain access to its fields and methods, a feature known as fields/method promotion. This approach keeps the design simple, flexible, and loosely coupled, making the code easier to maintain and test. 
 
-Unlike inheritance, where behavior is tightly bound in a hierarchy, composition allows developers to mix and match functionality as needed. 
+ Unlike inheritance, where behavior is tightly bound in a hierarchy, composition allows developers to mix and match functionality as needed. 
 
 Additionally.., 
 
-Go’s interfaces enable a form of polymorphism without requiring explicit declarations, as any type implementing the required methods satisfies the interface. Overall, Go favors composition because it avoids the complexity of deep inheritance chains while encouraging modular and reusable code design.
+ Go’s interfaces enable a form of polymorphism without requiring explicit declarations, as any type implementing the required methods satisfies the interface. Overall, Go favors composition because it avoids the complexity of deep inheritance chains while encouraging modular and reusable code design.
+ 
+ </details>
 
-## Composition vs Inheritance
-
-Composition and inheritance are two different approaches to code reuse and design in programming. 
+ <details><summary><h3><mark> Composition vs Inheritance </mark></h3></summary>
+	 omposition and inheritance are two different approaches to code reuse and design in programming. 
 - **Inheritance ::**
 Inheritance is based on an “is-a” relationship, where a child class derives from a parent class and inherits its properties and behavior, often leading to tightly coupled and rigid hierarchies. This can make systems harder to modify as changes in the parent can affect all derived classes. 
 
@@ -210,7 +253,8 @@ Composition is based on a “has-a” relationship, where a type is built by com
 | **Flexibility** | **High:** Easy to swap or modify pieces at runtime | **Rigid:** Hard-coded and fixed at compile time |
 | **Encapsulation** | **Strong:** Inner details stay hidden inside components | **Weak:** Breaks parent encapsulation (via `protected`) |
 | **Testing** | **Easy:** Straightforward to mock isolated dependencies | **Harder:** Tests must manage complex parent states |
-
+ </details>
+<br>
 
 
 
