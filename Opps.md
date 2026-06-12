@@ -174,7 +174,7 @@ func main() {
 
   ```
 
-## Composition :
+## Composition (Composition over Inheritance):
 
 In Go, the concept of inheritance does not exist as it does in traditional object-oriented languages; instead, Go strongly promotes composition over inheritance. 
 
@@ -191,7 +191,15 @@ Additionally..,
 
 Go’s interfaces enable a form of polymorphism without requiring explicit declarations, as any type implementing the required methods satisfies the interface. Overall, Go favors composition because it avoids the complexity of deep inheritance chains while encouraging modular and reusable code design.
 
-## Composition over Inheritance
+## Composition vs Inheritance
+
+Composition and inheritance are two different approaches to code reuse and design in programming. 
+- **Inheritance ::**
+Inheritance is based on an “is-a” relationship, where a child class derives from a parent class and inherits its properties and behavior, often leading to tightly coupled and rigid hierarchies. This can make systems harder to modify as changes in the parent can affect all derived classes. 
+
+In contrast, 
+- **Composition ::**
+Composition is based on a “has-a” relationship, where a type is built by combining smaller, independent components. This approach promotes flexibility, as behaviors can be added, modified, or replaced without affecting the entire structure. Composition results in loosely coupled systems that are easier to maintain, extend, and test. Because of these advantages, languages like Go favor composition over inheritance, using struct embedding and interfaces to achieve reuse and polymorphism without relying on deep class hierarchies.
 
 | Feature / Dimension | Composition ("Has-A") | Inheritance ("Is-A") |
 | :--- | :--- | :--- |
