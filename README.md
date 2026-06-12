@@ -597,10 +597,225 @@ For simple lock we use The sync.Mutex (The Simple Lock) or more specialized, "sm
 <br>
 
 # Oops :
- <details><summary><h3><mark> Oop Concepts | Composition | Struct embedding  | interface  </mark></h3></summary>
+ <details><summary><h3><mark> Object-oriented programming </mark></h3></summary>
+	 
+ Go is not a traditional object-oriented programming (OOP) language but it supports most OOP concepts using structs, methods, and interfaces. 
+Focusing on interfaces and composition rather than traditional class-based inheritance. This make more flexible and modular design.
+
+It achieves OOP concepts using structs (to represent class/objects), methods (functions attached to structs), interfaces (for polymorphism), and composition (for reuse).
+
+
+Core OOP Concepts in Go :
+
+- ***Classes and Objects (Structs)***:
+  Go uses structs instead of classes., to define data structures. An "object" in Go is an instance of a struct.
+  
+- ***Encapsulation (Exported Identifiers)***:
+
+  Encapsulation is one of the core principles of object-oriented programming. It refers to the concept of wrapping data and the methods that operate on that data into a single unit, while also restricting direct access to some of the object's components. In simple terms, encapsulation acts as a protective shield that prevents external code from directly accessing and modifying internal data.
+
+  In traditional object-oriented languages, encapsulation is achieved using classes, where data members are kept private and can only be accessed through public methods defined within the same class. However, Go does not support classes in the conventional sense. Instead, encapsulation in Go is achieved using packages and visibility rules.
+
+  Go provides two types of identifiers:
+  - Exported identifiers (public) :: Identifiers starting with an uppercase letter (e.g., ExportedField) are accessible from other packages.
+  - Unexported identifiers (private) :: Identifiers starting with a lowercase letter (e.g., unexportedField) are restricted to their own package.
+
+
+  Access control is managed at the package level using naming conventions.
+  
+- ***Polymorphism (Interfaces)***:
+
+  Polymorphism is one of the key concepts of object-oriented programming and means “many forms.” It refers to the ability of a single method, function, or interface to behave differently based on the context or the type of data it operates on. In simple terms, polymorphism allows the same operation to be performed in different ways.
+
+  In traditional object-oriented languages, polymorphism is often achieved using method overloading or method overriding (same method name with different implementations or signatures).
+
+  However, Go does not support classes, inheritance, or method overloading. Instead, polymorphism in Go is achieved using interfaces.
+
+  Go interfaces are implemented implicitly. This means a type does not need to explicitly declare that it implements an interface; if it provides the required methods, it automatically satisfies that interface. Because of this, a variable of an interface type can hold values of any type that implements the interface.
+
+  This flexibility allows Go to achieve polymorphism. Different types can implement the same interface in their own way, and the same method call can produce different behavior depending on the actual type of the value stored in the interface.
+
+  Polymorphism in Go is primarily achieved through interfaces, enabling code to work with multiple types in a uniform and flexible manner without needing class-based inheritance.
+
+  ```go
+  package main
+
+  import "fmt"
+
+  type Animal interface {
+	  Eat()
+  }
+
+  type Dog struct{}
+
+  func (Dog) Eat() { fmt.Println("meat") }
+
+  type Cat struct{}
+
+  func (Cat) Eat() { fmt.Println("fish") }
+
+  func main() {
+	  var a Animal
+
+	  a = Dog{}
+	  a.Eat()   // meat
+
+	  a = Cat{}
+	  a.Eat()  // fish
+  }
+
+  ```
+
+- ***Inheritance (Composition & Embedding)***:
+
+  Go does not support classical inheritance. Instead, it uses struct embedding (composition), where one struct is placed inside another struct to "inherit" its fields and methods.
+
+
+ </details>
+
+ <details><summary><h3><mark> Struct embedding </mark></h3></summary>
+ In Go, struct embedding is a powerful way to build complex types through composition rather than inheritance. Since Go does not support classes or traditional inheritance, it achieves code reuse by allowing one struct to be embedded within another.
+
+When a struct is embedded, its fields and methods are automatically promoted to the outer struct. This means the outer struct can access them directly, as if they were its own, without needing explicit qualification.
+
+Struct embedding enables developers to create flexible, reusable, and maintainable designs. Instead of inheriting behavior, Go encourages composing smaller, focused structs into larger ones, resulting in cleaner and more modular code.
+
+**Key Behaviors:**
+
+
+- Field & Method Promotion :
+
+  In Go, field and method promotion occurs when we embed an anonymous struct type( means specify only the type name without a designated variable name ) into another struct, that allowing the inner struct's fields and methods to be accessed directly from the outer struct.
+  
+```go
+package main
+
+import "fmt"
+
+type Address struct {
+	City  string
+	State string
+}
+
+func (a Address) PrintAddress() {
+	fmt.Println(a.City, a.State)
+}
+
+type Person struct {
+	Name    string
+	Age     int
+	Address // embedded struct (no field name)
+}
+
+func main() {
+	p := Person{
+		Name: "Sourav",
+		Age:  27,
+		Address: Address{
+			City:  "Kolkata",
+			State: "WB",
+		},
+	}
+
+	fmt.Println(p.City) // works directly
+	p.PrintAddress()    // works directly
+	p.Address.PrintAddress()
+
+}
+
+```
+  
+- Shadowing (Overriding):
+
+  When the outer struct and an embedded struct define a field or method with the same name, the outer struct takes priorities —this is known as shadowing. By default, the compiler resolves references to the outer struct’s member. However, the embedded struct’s member can still be accessed explicitly using the embedded type’s name.
+
+  ```go
+
+  package main
+
+	import "fmt"
+
+	// define A struct
+	type A struct {
+		Value int
+	}
+
+	func (a A) GetData() {
+		fmt.Println("Print GetData() from A")
+	}
+
+	// define B struct
+	type B struct {
+		A
+		Value int
+	}
+
+	func (b B) GetData() {
+		fmt.Println("Print GetData() from B")
+	}
+
+	func main() {
+
+		b := B{
+			A: A{
+				Value: 10,
+			},
+			Value: 20,
+		}
+
+	fmt.Println(b.Value)   // 20 (outer one)
+	fmt.Println(b.A.Value) // 10 (inner one)
+
+	b.GetData()   // Print GetData() from B || call outer struct (B) GetData() method
+	b.A.GetData() // Print GetData() from A || call inner struct (A) GetData() method
+
+	}
+
+  ```
+
 
   
  </details>
+
+ <details><summary><h3><mark> Composition | Composition over Inheritance | Composition vs Inheritance) </mark></h3></summary>
+	 
+ #### Composition over Inheritance ::	 
+ 
+ In Go, the concept of inheritance does not exist as it does in traditional object-oriented languages; instead, Go strongly promotes composition over inheritance. 
+	 This means that rather than creating complex class hierarchies, developers build larger, more capable types by combining smaller, reusable components using struct embedding and interfaces.
+ (follow "has-a" relationships rather than "is-a" relationships)
+
+ With composition..,
+
+ Struct can embed another struct and automatically gain access to its fields and methods, a feature known as fields/method promotion. This approach keeps the design simple, flexible, and loosely coupled, making the code easier to maintain and test. 
+
+ Unlike inheritance, where behavior is tightly bound in a hierarchy, composition allows developers to mix and match functionality as needed. 
+
+Additionally.., 
+
+ Go’s interfaces enable a form of polymorphism without requiring explicit declarations, as any type implementing the required methods satisfies the interface. Overall, Go favors composition because it avoids the complexity of deep inheritance chains while encouraging modular and reusable code design.
+
+ #### Composition and Inheritance ::	
+ Composition and inheritance are two different approaches to code reuse and design in programming. 
+- **Inheritance ::**
+Inheritance is based on an “is-a” relationship, where a child class derives from a parent class and inherits its properties and behavior, often leading to tightly coupled and rigid hierarchies. This can make systems harder to modify as changes in the parent can affect all derived classes. 
+
+In contrast, 
+- **Composition ::**
+Composition is based on a “has-a” relationship, where a type is built by combining smaller, independent components. This approach promotes flexibility, as behaviors can be added, modified, or replaced without affecting the entire structure. Composition results in loosely coupled systems that are easier to maintain, extend, and test. Because of these advantages, languages like Go favor composition over inheritance, using struct embedding and interfaces to achieve reuse and polymorphism without relying on deep class hierarchies.
+
+| Feature / Dimension | Composition ("Has-A") | Inheritance ("Is-A") |
+| :--- | :--- | :--- |
+| **Core Concept** | "A Dog **has-a** barking behavior"<br>"A Car **has-an** Engine" | "A Dog **is-an** Animal"<br>"A Car **is-a** Vehicle" |
+| **Mechanism** | Struct embeds other structs / references components | Subclass extends a base class |
+| **Reuse Direction** | **Horizontal:** Mix-and-match independent features | **Vertical:** Deep hierarchical inheritance tree |
+| **Coupling** | **Loose:** Components are decoupled, isolated modules | **Tight:** Child class depends heavily on parent state |
+| **Flexibility** | **High:** Easy to swap or modify pieces at runtime | **Rigid:** Hard-coded and fixed at compile time |
+| **Encapsulation** | **Strong:** Inner details stay hidden inside components | **Weak:** Breaks parent encapsulation (via `protected`) |
+| **Testing** | **Easy:** Straightforward to mock isolated dependencies | **Harder:** Tests must manage complex parent states |
+ 
+ </details>
+
 <br>
 
 
