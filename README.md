@@ -329,6 +329,41 @@ Go is memory-safe. Uninitialized pointers are nil. Go does not allow pointer ari
 </details
 <br><br>
 
+# Error Handling :
+ <details><summary><h3><mark>Error in go? Panics | recover | defer </mark></h3></summary>
+   
+   In Golang, Error isn't an exception that crashes program — it’s just a value. Go treats errors as "first-class citizens," meaning we handle like, as any other variable.
+   
+   Most common way to handle errors is to check, if the returned error value is nil (meaning success) or not nil (meaning failure), and then deal with the failure.
+   
+   One of the most important concepts in Go is knowing., when to return an error.., and when to panic. They may look similar at first, but they exist for completely different reasons by design.
+   
+   - ##### Errors: Expected Failures
+
+     Errors re-present issues, that can happen during normal program execution. They’re part of the flow, and program should be prepared for them.
+
+     Errors should be handled gracefully and should not crash program.
+   
+   - ##### Panics: Unexpected Failures
+
+     Panic Indicates, something terribly wrong, usually a programmer mistake or a critical, unrecoverable state..,  that Stop normal execution and Crash the program.
+   
+   - ##### recover:
+
+     Inside the deferred function, recover() is called. If a panic is active, it captures the panic value and stops the un-winding of the stack, that allowing the program to continue running.
+     
+   <br><br>
+   
+- #### defer statement:
+  
+  The defer statement guarantees that, Any function method, or statement is executed at the end of the surrounding function.
+  If a function contains multiple defer statements, they are pushed onto a stack and executed in reverse order, following Last-In, First-Out (LIFO) behavior.
+  
+ </details>
+
+<br>
+
+
 # Goroutine, Channel, Concurrency, Deadlock :
 <details><summary><h3><mark>Go Routine and Channel? Type of Channel? </mark></h3></summary>
  
@@ -561,47 +596,11 @@ For simple lock we use The sync.Mutex (The Simple Lock) or more specialized, "sm
 </details>
 <br>
 
-
-# Error Handling :
- <details><summary><h3><mark>Error in go? Panics | recover | defer </mark></h3></summary>
-   
-   In Golang, Error isn't an exception that crashes program — it’s just a value. Go treats errors as "first-class citizens," meaning we handle like, as any other variable.
-   
-   Most common way to handle errors is to check, if the returned error value is nil (meaning success) or not nil (meaning failure), and then deal with the failure.
-   
-   One of the most important concepts in Go is knowing., when to return an error.., and when to panic. They may look similar at first, but they exist for completely different reasons by design.
-   
-   - ##### Errors: Expected Failures
-
-     Errors re-present issues, that can happen during normal program execution. They’re part of the flow, and program should be prepared for them.
-
-     Errors should be handled gracefully and should not crash program.
-   
-   - ##### Panics: Unexpected Failures
-
-     Panic Indicates, something terribly wrong, usually a programmer mistake or a critical, unrecoverable state..,  that Stop normal execution and Crash the program.
-   
-   - ##### recover:
-
-     Inside the deferred function, recover() is called. If a panic is active, it captures the panic value and stops the un-winding of the stack, that allowing the program to continue running.
-     
-   <br><br>
-   
-- #### defer statement:
-  
-  The defer statement guarantees that, Any function method, or statement is executed at the end of the surrounding function.
-  If a function contains multiple defer statements, they are pushed onto a stack and executed in reverse order, following Last-In, First-Out (LIFO) behavior.
-  
- </details>
-
-<br>
-
 # Oops :
  <details><summary><h3><mark> Oop Concepts | Composition | Struct embedding  | interface  </mark></h3></summary>
 
   
  </details>
-
 <br>
 
 
