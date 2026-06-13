@@ -269,7 +269,7 @@ Go is memory-safe. Uninitialized pointers are nil. Go does not allow pointer ari
     
 </details>
 
-<details><summary><h3><mark>Function and method (variadic | anonymous )</mark></h3></summary>
+<details><summary><h3><mark>Function and method ( variadic | anonymous )</mark></h3></summary>
   
   - ##### Function :
     A function is piece or blocks of code that does a specific task and called independently. Function help organize code, improve readability, and allow re-use.
