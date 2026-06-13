@@ -241,7 +241,7 @@ The go mod tidy command is used to maintain module files. It adds any missing de
 </details>
 <hr>
 
-<details><summary><h3><mark>Memory management and Garbage collection</mark></h3></summary>
+<details><summary><h3><mark>Memory management and Garbage collection (GC) | Memory Leaks </mark></h3></summary>
   
   - **Memory management** : In Golang, its simple compared to other languages. Golang handles memory allocation and deallocation automatically. Go compiler is smart. it used escape analysis to decide, whether data is allocated on the stack or heap memory.
 
@@ -252,10 +252,21 @@ The go mod tidy command is used to maintain module files. It adds any missing de
     | Using new() we allocated memory but not initialize. new() give to Zero storage | and Using make() we allocated memory and it is initialize. make() give to non-Zero storage
 <br>
 
-  - **Garbage collection** :
+  - **Garbage collection (GC) ** :
     In Golang, GC automatically happens when objects are out of scope or nil. Go internally uses "Tricolor Mark-and-Sweep" algorithm for Garbage collection.
     Also, Golang provide limited excess to manipulate GC using GOGC and GOMEMLIMIT during go env setup.
-  > Manually trigger garbage collection using `runtime.GC()` during go runtime
+  > Manually trigger garbage collection using `runtime.GC()` during go runtime.
+
+  - ** Memory leaks ** :
+    
+    Go has automatic Garbage Collection. so, traditional memory leaks are un-common.
+
+    Memory leaks can still happen when memory remains referenced, even the application no longer requires them and therefore cannot be reclaimed by the GC.
+
+    Common causes include goroutine leaks, Active pointers,un-bounded caches or maps, slices retaining large backing arrays, missing context cancellations, global variables holding references and unclosed resources keep unwanted data alive.
+
+    Most Go memory leaks are caused by logical errors that keep un-used objects alive rather than by manual memory management issues.
+    
   
 </details>
 
