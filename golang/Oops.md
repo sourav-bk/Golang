@@ -49,3 +49,8 @@ Instead of relying on inheritance, Go promotes composition. By embedding types w
 
 https://www.linkedin.com/pulse/mastering-object-oriented-programming-go-arya-pathak-inu4f/
 
+
+
+SOLID principal in opps 
+
+
