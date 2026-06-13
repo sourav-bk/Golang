@@ -193,6 +193,11 @@ The go mod tidy command is used to maintain module files. It adds any missing de
     </details>
 </details>
 
+<details><summary><h3><mark> Character | byte - rune | alias | Enums </mark></h3></summary>
+
+  
+</details>
+
 <details><summary><h3><mark>Variables & Constant</mark></h3></summary>
   
   - ***Variable:***
