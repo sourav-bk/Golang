@@ -302,7 +302,7 @@ Go is memory-safe. Uninitialized pointers are nil. Go does not allow pointer ari
     Generics introduced in Go 1.18 . Generics in Go, allow to write functions and types.., that work with multiple data types.., while maintaining type safety.
 
 </details>
-<br>
+
 <details><summary><h3><mark> Range, switch, default, select </summary></mark></h3>
   
   - ##### Range :
@@ -328,10 +328,8 @@ Go is memory-safe. Uninitialized pointers are nil. Go does not allow pointer ari
       If, multiple channels are ready at the same time, Go picks one at random to ensure fairness.
       
       It functions like a switch statement, but instead of checking values, each case is a communication operation.
-      
-     
 
-</details
+</details>
 <br><br>
 
 # Error Handling :
