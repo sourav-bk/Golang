@@ -147,9 +147,11 @@ The go mod tidy command is used to maintain module files. It adds any missing de
 
  - **Why Do We Need Context?**
 
- When a client sends an HTTP request, the server creates one or more goroutines to handle the request efficiently. These goroutines may execute database queries, communicate with external APIs, and launch additional goroutines for parallel processing. All of these operations work together to generate the final response sent back to the client.
+  When a client sends an HTTP request, the server creates one or more goroutines to handle the request efficiently. These goroutines may execute database queries, communicate with external APIs, and launch additional goroutines for parallel processing. All operations work together to generate the final response sent back to the client.
 
- If the user cancels the initial request OR if it times-out OR want all those downstream goroutines to stop working immediately to free up resources. The context package halps how we orchestrate/manage that goroutines .
+  However, if the client cancels the request, disconnects, or if, the request exceeds its timeout, there's no reason for the remaining work to continue. Ideally, all downstream goroutines, database queries, and API calls should stop immediately to avoid wasting CPU, memory, network connections, and other resources.
+
+  For that, Go's context package becomes essential. It provides a mechanism to propagate cancellation signals, deadlines, and request-scoped values across goroutines and service boundaries. By passing a context throughout the request lifecycle, all participating operations can detect when the request has been canceled and terminate gracefully, ensuring efficient resource management and preventing goroutine leaks.
 	
  - **Core Concepts**
    
