@@ -140,14 +140,26 @@ The go mod tidy command is used to maintain module files. It adds any missing de
 </details>
 
 <details><summary><h3><mark> Context Package </mark></h3></summary>
- Core ConceptsThe context.Context is an immutable interface with four core methods.
-	Done() <-chan struct{}: Returns a channel that closes when the context is canceled or times out.
-	Err() error: Explains why the context was closed (e.g., context.Canceled or context.DeadlineExceeded).
-	Deadline() (deadline time.Time, ok bool): Returns the execution end time if one is set.
-	Value(key any) any: Fetches request-scoped metadata associated with a key.		
+
+ The context package is one of the most important built-in packages in Go.
+
+ It provides a standard way to manage the lifecycle of goroutines, handle timeouts and deadlines, and pass request-scoped data across API boundaries.
+
+ - **Why Do We Need Context?**
+
+ When a client sends an HTTP request, the server creates one or more goroutines to handle the request efficiently. These goroutines may execute database queries, communicate with external APIs, and launch additional goroutines for parallel processing. All of these operations work together to generate the final response sent back to the client.
+
+ If the user cancels the initial request OR if it times-out OR want all those downstream goroutines to stop working immediately to free up resources. The context package halps how we orchestrate/manage that goroutines .
+	
+ - **Core Concepts**
+   
+ The context.Context is an immutable interface with four core methods.
+  - Done() <-chan struct{}: Returns a channel that closes when the context is canceled or times out.
+  - Err() error: Explains why the context was closed (e.g., context.Canceled or context.DeadlineExceeded).
+  - Deadline() (deadline time.Time, ok bool): Returns the execution end time if one is set.
+  - Value(key any) any: Fetches request-scoped metadata associated with a key.		
+	
 </details>
-
-
 <hr>
 
 <details><summary><h3><mark>Data type in Go? Primitive & Non-Primitive</mark></h3></summary>
