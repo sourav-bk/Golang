@@ -140,7 +140,11 @@ The go mod tidy command is used to maintain module files. It adds any missing de
 </details>
 
 <details><summary><h3><mark> Context Package </mark></h3></summary>
- 
+ Core ConceptsThe context.Context is an immutable interface with four core methods.
+	Done() <-chan struct{}: Returns a channel that closes when the context is canceled or times out.
+	Err() error: Explains why the context was closed (e.g., context.Canceled or context.DeadlineExceeded).
+	Deadline() (deadline time.Time, ok bool): Returns the execution end time if one is set.
+	Value(key any) any: Fetches request-scoped metadata associated with a key.		
 </details>
 
 
