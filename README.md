@@ -395,6 +395,20 @@ Go is memory-safe. Uninitialized pointers are nil. Go does not allow pointer ari
   
   The defer statement guarantees that, Any function method, or statement is executed at the end of the surrounding function.
   If a function contains multiple defer statements, they are pushed onto a stack and executed in reverse order, following Last-In, First-Out (LIFO) behavior.
+
+  - How It Works Under the Hood :
+
+    - Immediate Evaluation:
+
+      When Go encounters a defer statement, it evaluates any arguments passed to the function immediately, but it does not run the function body yet.
+      
+    - LIFO Stack:
+      
+      Go pushes the deferred function call onto a temporary Last-In, First-Out (LIFO) stack for that goroutine.
+      
+    - Reverse Execution:
+
+      When the surrounding function finishes executing (reaches a return or a panic), Go pops the functions off the stack and executes them in reverse order. The last defer defined becomes the first one to execute
   
  </details>
 
