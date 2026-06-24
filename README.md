@@ -565,41 +565,9 @@ Channels can be TWO type -- 1. Unbuffered Channel   2. Buffered Channel
 A Race Condition is a logic/design errors, not syntax errors in the program when the correctness of the program depends on the order/timing of goroutines. A Race condition happens when multiple goroutines access and modify shared data concurrently using goroutines without proper synchronization, that causing un-predictable results.
 
 Go makes detection easier with -race flag during run or test Go program to check unsynchronized memory access at runtime.
-- Example::
-	<details><summary></summary>
-```go
-	package main
+-
+<details><summary>Example::</summary>
 
-	import (
-		"fmt"
-		"sync"
-	)
-
-	func main() {
-		mut := sync.Mutex{}
-		counter := 0
-		//counterChan := make(chan bool)
-
-		//Launch 1000 goroutines to increment the counter
-		for i := 0; i < 100; i++ {
-
-			go func() {
-				mut.Lock()
-				counter = counter+1
-				mut.Unlock()
-				//counterChan <- true
-			}()
-
-			//<-counterChan
-
-		}
-
-		mut.Lock()
-		fmt.Println("Final Counter:", counter)
-		mut.Unlock()
-	}
-
-```
 </details>
   
 
