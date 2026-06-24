@@ -565,7 +565,7 @@ Channels can be TWO type -- 1. Unbuffered Channel   2. Buffered Channel
 A Race Condition is a logic/design errors, not syntax errors in the program when the correctness of the program depends on the order/timing of goroutines. A Race condition happens when multiple goroutines access and modify shared data concurrently using goroutines without proper synchronization, that causing un-predictable results.
 
 Go makes detection easier with -race flag during run or test Go program to check unsynchronized memory access at runtime.
--
+
 <details><summary>Example::</summary>
 
 </details>
