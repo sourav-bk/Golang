@@ -567,7 +567,39 @@ A Race Condition is a logic/design errors, not syntax errors in the program when
 Go makes detection easier with -race flag during run or test Go program to check unsynchronized memory access at runtime.
 
 <details><summary>Example::</summary>
+	```go
+	
+	package main
+	
+	import (
+		"fmt"
+		"sync"
+	)
 
+	func main() {
+		mut := sync.Mutex{}
+		counter := 0
+		//counterChan := make(chan bool)
+
+		//Launch 1000 goroutines to increment the counter
+		for i := 0; i < 100; i++ {
+
+			go func() {
+				mut.Lock()
+				counter = counter+1
+				mut.Unlock()
+				//counterChan <- true
+			}()
+
+			//<-counterChan
+
+		}
+
+		mut.Lock()
+		fmt.Println("Final Counter:", counter)
+		mut.Unlock()
+	}
+	```
 </details>
   
 
