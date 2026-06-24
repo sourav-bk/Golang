@@ -569,31 +569,36 @@ Go makes detection easier with -race flag during run or test Go program to check
 <details><summary><mark>Example::</mark></summary>
 	
   ```go
-  package main
+ package main
 
-  import "fmt"
+ import (
+ 	"fmt"
+ 	"sync"
+ )
 
-  type Animal interface {
-	  Eat()
-  }
+ func main() {
+ 	mut := sync.Mutex{}
+	counter := 0
+	//counterChan := make(chan bool)
 
-  type Dog struct{}
+	// Launch 1000 goroutines to increment the counter
+ 	for i := 0; i < 100; i++ {
 
-  func (Dog) Eat() { fmt.Println("meat") }
+		go func() {
+			mut.Lock()
+			counter = counter + 1
+			mut.Unlock()
+			//counterChan <- true
+		}()
 
-  type Cat struct{}
+		//<-counterChan
 
-  func (Cat) Eat() { fmt.Println("fish") }
+	}
 
-  func main() {
-	  var a Animal
-
-	  a = Dog{}
-	  a.Eat()   // meat
-
-	  a = Cat{}
-	  a.Eat()  // fish
-  }
+	mut.Lock()
+	fmt.Println("Final Counter:", counter)
+	mut.Unlock()
+}
 
   ```
 </details>
