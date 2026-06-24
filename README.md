@@ -569,36 +569,45 @@ Go makes detection easier with -race flag during run or test Go program to check
 <details><summary><mark>Example::</mark></summary>
 	
   ```go
+
  package main
 
  import (
- 	"fmt"
- 	"sync"
+	"fmt"
+	// "sync"
  )
 
  func main() {
- 	mut := sync.Mutex{}
 	counter := 0
-	//counterChan := make(chan bool)
 
-	// Launch 1000 goroutines to increment the counter
- 	for i := 0; i < 100; i++ {
+	//mut := sync.Mutex{}              // use for Avoid -> Data Race
+	//wg := sync.WaitGroup{}           // use for Avoid -> Race Conditions
 
+	//countChan := make(chan bool) // use for Avoid -> Data Race and Race Conditions
+
+	// Launch 100 goroutines to increment the counter
+	for i := 0; i < 100; i++ {
+
+		//wg.Add(1)
 		go func() {
-			mut.Lock()
-			counter = counter + 1
-			mut.Unlock()
-			//counterChan <- true
+			//defer wg.Done()
+			//mut.Lock()
+			counter++
+			//mut.Unlock()
+			//countChan <- true
 		}()
-
-		//<-counterChan
-
+		//<-countChan
 	}
 
-	mut.Lock()
+	//wg.Wait()
+
+	//mut.Lock()
 	fmt.Println("Final Counter:", counter)
-	mut.Unlock()
-}
+	//mut.Unlock()
+
+	//go run --race main.go
+ }
+
 
   ```
 </details>
