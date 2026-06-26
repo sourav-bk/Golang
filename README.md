@@ -504,7 +504,7 @@ Channels can be TWO type -- 1. Unbuffered Channel   2. Buffered Channel
 
  ---
 
- ####Concurrency vs. Parallelism
+ #### Concurrency vs. Parallelism
  
  Concurrency is not Parallelism., although it enables parallelism.
  
