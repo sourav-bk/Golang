@@ -414,7 +414,6 @@ Go is memory-safe. Uninitialized pointers are nil. Go does not allow pointer ari
 
 <br>
 
-
 # Goroutine, Channel, Concurrency, Deadlock :
 <details><summary><h3><mark>Go Routine and Channel? Type of Channel? </mark></h3></summary>
  
@@ -423,8 +422,7 @@ A Goroutine is a lightweight thread managed by the Go runtime, Used to run multi
 While traditional OS thread might take up 1MB of memory, a Goroutine starts with just 2KB.
 
 ---
-#### Difference between Goroutine and Thread 
-# Goroutines vs OS Threads
+### Difference between Goroutine and Thread 
 
 OS threads are created and managed by the operating system kernel. Every time when we create a thread, the OS allocates a fixed stack size of around 1-2MB, and switching between threads requires a kernel context switch, which is expensive because it used OS system calls.
 
