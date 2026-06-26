@@ -437,18 +437,6 @@ In practice, We can spin up hundreds of thousands or even millions of goroutines
 In simple word : "Goroutines are lighter, cheaper, and runtime-managed. OS threads are heavier, costlier, and kernel-managed. Go abstracts OS threads away and lets think in goroutines."
 The GOMAXPROCS setting — it controls how many OS threads run goroutines in parallel, defaulting to the number of CPU cores.
 
-
-
-
-| Feature             | Goroutine                                                                | OS Thread                                                                |
-|---------------------|--------------------------------------------------------------------------|--------------------------------------------------------------------------|
-| Management          | Managed entirely by the Go runtime                                       | Managed by the Operating System Kernel                                   |
-| Memory Footprint    | Starts small (~2 KB) and dynamically grows                               | Usually reserves a fixed, large size (~1+ MB) per thread                 |
-| Creation Cost       | Extremely low – creates a lightweight state machine in user space        | High – requires expensive system calls and kernel-level bookkeeping      |
-| Maximum Capacity    | Millions can run concurrently                                            | Typically thousands at most before performance degrades                  |
-| Communication       | Uses channels for safe communication without explicit locks              | Requires shared memory, mutexes, and locks to prevent race conditions    |
-| Context Switching   | Fast – handled in user space by the Go scheduler                         | Slower – involves kernel mode switching and CPU register save/restore    |
-
 ---
 ***Concurrency***
 
