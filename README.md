@@ -426,6 +426,20 @@ While traditional OS thread might take up 1MB of memory, a Goroutine starts with
 #### Difference between Goroutine and Thread 
 # Goroutines vs OS Threads
 
+OS threads are created and managed by the operating system kernel. Every time when we create a thread, the OS allocates a fixed stack size of around 1-2MB, and switching between threads requires a kernel context switch, which is expensive because it used OS system calls.
+
+Goroutines, on the other hand, are managed by the Go runtime, not the OS. Its start with much smaller stack, around 2-4KB, and that stack grows and narrow dynamically as needed. This means creating a goroutine is extremely cheap compared to an OS thread.
+
+The Go runtime uses an M:N scheduling model. — it maps M goroutines onto N OS threads. So the runtime has its own scheduler that decides which goroutine runs on which OS thread, and this switching happens in user space, avoiding expensive kernel calls.
+
+In practice, We can spin up hundreds of thousands or even millions of goroutines in a single Go program, but doing the same with OS threads would crash system due to memory exhaustion.
+
+In simple word : "Goroutines are lighter, cheaper, and runtime-managed. OS threads are heavier, costlier, and kernel-managed. Go abstracts OS threads away and lets think in goroutines."
+The GOMAXPROCS setting — it controls how many OS threads run goroutines in parallel, defaulting to the number of CPU cores.
+
+
+
+
 | Feature             | Goroutine                                                                | OS Thread                                                                |
 |---------------------|--------------------------------------------------------------------------|--------------------------------------------------------------------------|
 | Management          | Managed entirely by the Go runtime                                       | Managed by the Operating System Kernel                                   |
