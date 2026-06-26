@@ -419,7 +419,8 @@ Go is memory-safe. Uninitialized pointers are nil. Go does not allow pointer ari
  
 ## ***Go Routine*** :
 A Goroutine is a lightweight thread managed by the Go runtime, Used to run multiple function or method Concurrently.
-While traditional OS thread might take up 1MB of memory, a Goroutine starts with just 2KB.
+While traditional OS thread might take up 1MB of memory, a Goroutine starts with just 2KB. Go runtime efficiently distributes goroutines, across all available CPU cores.
+
 
 ---
 ### Difference between Goroutine and Thread 
@@ -436,29 +437,6 @@ In simple word : "Goroutines are lighter, cheaper, and runtime-managed. OS threa
 The GOMAXPROCS setting — it controls how many OS threads run goroutines in parallel, defaulting to the number of CPU cores.
 
 ---
-***Concurrency***
-
-Go follow Concurrency. Concurrency is the ability to run multiple things at once.
-When we normally write code, that code runs sequentially, meaning that each job is run back to back. 
-In concurrent code, those jobs are running simultaneously.
-
-- #### Concurrency vs. Parallelism
-Concurrency is not Parallelism.
-
-Concurrency is ability to handle many tasks at once. and Parallelism doing multiple things at the exact same time.
-
-I will give small example:
-
-- Case 1: ***Concurrency*** - I was writing something, then I get thirsty, so I stopped writing and drank some water, then started writing again.
-
-- Case 2: ***Parallelism*** - I'm drinking and eating, Coke and pizza also watching TV at the same time. 
-
-Go is designed to be concurrent, which allows., it to be parallel, when have processor with multiple cores.
-
-Go program can be concurrent, even on a single core machine, but it achieves true parallelism, when running on a multi-core system, 
-
-And Go runtime efficiently distributes goroutines, across all available CPU cores.
-
 
 ## ***Channel*** :
 
