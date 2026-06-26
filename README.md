@@ -501,6 +501,10 @@ Channels can be TWO type -- 1. Unbuffered Channel   2. Buffered Channel
  
  Concurrency is the ability to run multiple tasks simultaneously.
  Its allows Go programs to make progress on independent operations by rapidly switching context between them, optimizing resource utilization and keeping applications responsive. 
+
+ ---
+
+ ####Concurrency vs. Parallelism
  
  Concurrency is not Parallelism., although it enables parallelism.
  
