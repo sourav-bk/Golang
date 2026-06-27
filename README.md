@@ -275,7 +275,7 @@ The go mod tidy command is used to maintain module files. It adds any missing de
     Also, Golang provide limited excess to manipulate GC using GOGC and GOMEMLIMIT during go env setup.
   > Manually trigger garbage collection using `runtime.GC()` during go runtime.
 
-  - ** Memory leaks ** :
+  - **Memory leaks** :
     
     Go has automatic Garbage Collection. so, traditional memory leaks are un-common.
 
