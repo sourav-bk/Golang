@@ -270,7 +270,7 @@ The go mod tidy command is used to maintain module files. It adds any missing de
     | Using new() we allocated memory but not initialize. new() give to Zero storage | and Using make() we allocated memory and it is initialize. make() give to non-Zero storage
 <br>
 
-  - **Garbage collection (GC) ** :
+  - **Garbage collection (GC)** :
     In Golang, GC automatically happens when objects are out of scope or nil. Go internally uses "Tricolor Mark-and-Sweep" algorithm for Garbage collection.
     Also, Golang provide limited excess to manipulate GC using GOGC and GOMEMLIMIT during go env setup.
   > Manually trigger garbage collection using `runtime.GC()` during go runtime.
