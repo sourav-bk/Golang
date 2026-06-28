@@ -513,7 +513,7 @@ Channels can be TWO type -- 1. Unbuffered Channel   2. Buffered Channel
  Managing concurrent in a program is a nightmare So CSP was designed precisely to solve in Managing concurrent, privent locks, race conditions, and unpredictable result or  crashes in concurrent go program.
  
  Go manage or makes concurrency using 
- 	<details><summary><h4>1. Goroutines, 2. Channels, 3. select, 4. Sync primitives like WaitGroup, Mutex, Once, etc.</h4></summary>
+ 	<details><summary>1. Goroutines, 2. Channels, 3. select, 4. Sync primitives like WaitGroup, Mutex, Once, etc.</summary>
 	
 - ***1. Goroutines:***
     
