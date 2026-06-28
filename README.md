@@ -337,7 +337,7 @@ Go is memory-safe. Uninitialized pointers are nil. Go does not allow pointer ari
 
 </details>
 
-<details><summary><h3><mark> Range, switch, default, select </summary></mark></h3>
+<details><summary><h3><mark> Range, switch, default, select </mark></h3></summary>
   
   - ##### Range :
     In Golang, Range keyword used in different kinds of data structures., in-order to iterates over elements. The range keyword is mainly used in.., <mark>For</mark> loops in-order to iterate over all the elements.., of a map, slice, channel, or an array.
@@ -516,28 +516,32 @@ Channels can be TWO type -- 1. Unbuffered Channel   2. Buffered Channel
  
  1. Goroutines 2. Channels 3. select 4. Sync primitives like WaitGroup, Mutex, Once, etc.
     
- - ***1. Goroutines:***
+    <details><summary><h4>Goroutines 2. Channels 3. select 4. Sync primitives like WaitGroup, Mutex, Once, etc.</h4></summary>
+		
+	- ***1. Goroutines:***
 
-   Goroutine is a lightweight thread managed by the Go runtime.
-   
- - ***2. Channels:***
+	Goroutine is a lightweight thread managed by the Go runtime.
 
-   Channel is used for communication between goroutines. Think of it as a pipe through which goroutines send and receive values.
-   
- - ***3. Select:***
-   
-   The select statement lets a goroutine wait on multiple channel operations simultaneously.
-   
-   It blocks until one of its cases is ready to execute, making it essential for managing concurrency. If, multiple channels are ready at the same time, Go picks one at random to ensure fairness.
+	- ***2. Channels:***
+	
+	Channel is used for communication between goroutines. Think of it as a pipe through which goroutines send and receive values.
 
-   It functions like a switch statement, but instead of checking values, each case is a communication operation.
-   
- - ***4. Sync primitives like WaitGroup, Mutex, Once, etc.***
+	- ***3. Select:***
+	
+	The select statement lets a goroutine wait on multiple channel operations simultaneously.
+	
+	It blocks until one of its cases is ready to execute, making it essential for managing concurrency. If, multiple channels are ready at the same time, Go picks one at random to ensure fairness.
 
-   In the Go programming language, WaitGroup, Mutex, and Once are essential tools in the sync package used for managing concurrent code.
-   - WaitGroup: Waits for the collection of goroutines to finish executing.
-   - Mutex: Locks shared data to prevent race-conditions. When, multiple goroutines read/write simultaneously.
-   - Once: Guarantees a block of code runs exactly once (like for lazy initialization or singletons)
+	It functions like a switch statement, but instead of checking values, each case is a communication operation.
+
+	- ***4. Sync primitives like WaitGroup, Mutex, Once, etc.***
+
+	In the Go programming language, WaitGroup, Mutex, and Once are essential tools in the sync package used for managing concurrent code.
+	- **WaitGroup:** Waits for the collection of goroutines to finish executing.
+	- **Mutex:** Locks shared data to prevent race-conditions. When, multiple goroutines read/write simultaneously.
+	- **Once:** Guarantees a block of code runs exactly once (like for lazy initialization or singletons)
+
+    </details>
 
 </details>
 
