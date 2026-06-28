@@ -504,9 +504,12 @@ Channels can be TWO type -- 1. Unbuffered Channel   2. Buffered Channel
 
  --- --- ---
 
- Go handles concurrency using the CSP(Communicating Sequential Processes) model.
+ Go's concurrency architecture is built on three core pillars: 
+ 1. **CSP (the foundational theory)**, 2. **The N:M model (how Go multiplexes tasks)**, 3. **GMP (the actual runtime engine)**. 
+ Together, they allow Go to handle millions of tasks effortlessly
 
- #### CSP(Communicating Sequential Processes)
+
+ ### CSP(Communicating Sequential Processes)
  
  CSP model is formal mathematical model/theory for describing collection of independent sequential processes, how data will share in the concurrent systems. 
  
