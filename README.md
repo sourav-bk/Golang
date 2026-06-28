@@ -511,7 +511,7 @@ Channels can be TWO type -- 1. Unbuffered Channel   2. Buffered Channel
  Together, they allow Go to handle millions of tasks effortlessly
 
 
- ### CSP(Communicating Sequential Processes)
+ ### CSP(Communicating Sequential Processes)::
  
  CSP model is formal mathematical model/theory for describing collection of independent sequential processes, how data will share in the concurrent systems. 
  
@@ -542,6 +542,25 @@ Channels can be TWO type -- 1. Unbuffered Channel   2. Buffered Channel
     </details>
 
 </details>
+
+ ### CSP(Communicating Sequential Processes)::
+ 
+ Historically, concurrency models were either 1:1 (one goroutine mapped strictly to one Operating System thread) or M:N (many user-level threads mapped to many OS threads).
+ 
+ BUT, Go uses the N:M model. It multiplexes a massive number of goroutines (N) onto a much smaller pool of OS threads (M). 
+ 
+ - So we can spawn hundreds of thousands of goroutines without crashing system, because each one starts with a tiny memory footprint (around 2KB). 
+ 
+ - Go runtime decides which goroutine runs on which thread, saving the OS from having to do heavy context switching.
+   
+
+ ### CSP(Communicating Sequential Processes)::
+ The GMP model is Go's engine that powers the N:M model. It breaks the execution context down into three primary components:
+ - **G (Goroutine):** The unit of work. It contains your code's stack, instruction pointer, and current state.
+ - **M (Machine):** An OS Thread (the "muscle"). This is the actual execution resource provided by the OS that runs the code.
+ - **P (Processor):** A logical processor (the "brain"). It represents the context required to execute Go code. Every P maintains a local run queue of goroutines waiting to be executed
+
+ 
 
 <details><summary><h3><mark>Data Race and Race Condition</mark></h3></summary>
 
