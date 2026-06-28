@@ -505,7 +505,9 @@ Channels can be TWO type -- 1. Unbuffered Channel   2. Buffered Channel
  --- --- ---
 
  Go's concurrency architecture is built on three core pillars: 
- 1. **CSP (the foundational theory)**, 2. **The N:M model (how Go multiplexes tasks)**, 3. **GMP (the actual runtime engine)**. 
+ 1. **CSP (the foundational theory)**,
+ 2. **The N:M model (how Go multiplexes tasks)**,
+ 3. **GMP (the actual runtime engine)**. 
  Together, they allow Go to handle millions of tasks effortlessly
 
 
