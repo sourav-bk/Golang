@@ -540,9 +540,7 @@ Channels can be TWO type -- 1. Unbuffered Channel   2. Buffered Channel
 	- **Mutex:** Locks shared data to prevent race-conditions. When, multiple goroutines read/write simultaneously.
 	- **Once:** Guarantees a block of code runs exactly once (like for lazy initialization or singletons)
     </details>
-
-</details>
-
+	
  ### CSP(Communicating Sequential Processes)::
  
  Historically, concurrency models were either 1:1 (one goroutine mapped strictly to one Operating System thread) or M:N (many user-level threads mapped to many OS threads).
@@ -554,11 +552,17 @@ Channels can be TWO type -- 1. Unbuffered Channel   2. Buffered Channel
  - Go runtime decides which goroutine runs on which thread, saving the OS from having to do heavy context switching.
    
 
- ### CSP(Communicating Sequential Processes)::
+ ### GMP model::
  The GMP model is Go's engine that powers the N:M model. It breaks the execution context down into three primary components:
+ 
  - **G (Goroutine):** The unit of work. It contains your code's stack, instruction pointer, and current state.
+   
  - **M (Machine):** An OS Thread (the "muscle"). This is the actual execution resource provided by the OS that runs the code.
- - **P (Processor):** A logical processor (the "brain"). It represents the context required to execute Go code. Every P maintains a local run queue of goroutines waiting to be executed
+   
+ - **P (Processor):** A logical processor (the "brain"). It represents the context required to execute Go code. Every P maintains a local run queue of goroutines waiting to be executed.
+
+</details>
+
 
  
 
