@@ -9,5 +9,5 @@ It follows a set of rules where resources are identified by URLs, and clients ca
 ## GraphQL ::
 GraphQL is a query language for APIs and runtime used to fetch and manipulate data from a server. It was developed by Facebook as an alternative to REST APIs, that allowing clients to request exactly the data they need instead of receiving fixed responses. 
 
-In GraphQL, a client sends single request with query specifying the required fields, and the server returns only that data in a structured format. This reduces over-fetching and under-fetching of data, improves performance, and makes APIs more flexible. Additionally, GraphQL uses a strongly typed schema, which defines the structure of the data and helps developers understand and validate API queries easily.
+In GraphQL, a client sends single request with query specifying the required fields, and the server returns only that data in a structured format. This reduces over-fetching and under-fetching of data, improves performance, and makes APIs more flexible. 
 
