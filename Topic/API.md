@@ -13,8 +13,9 @@ In GraphQL, a client sends single request with query specifying the required fie
 
 ## REST api && GraphQL :: 
 
-In a REST API, the server exposes multiple endpoints (URLs), each representing a specific resource such as users, products, or orders, and the client interacts with those endpoints using standard HTTP methods like GET, POST, PUT, and DELETE. and Request for Specific resource operations like create, update insert and Delete.
-As per that server returns a fixed structure of data for each request, which can sometimes result in over-fetching (receiving unnecessary data) or under-fetching (requiring multiple requests to gather all needed data).
+In a REST API, the server exposes multiple endpoints (URLs), each representing a specific resource such as users, products, or orders, and the client interacts with those endpoints using standard HTTP methods like GET, POST, PUT, and DELETE. and Request for Specific resource operations like create, update, insert and Delete.
+
+As per that Request, server returns a fixed structure of data for each request, which can sometimes result in over-fetching (receiving unnecessary data) or under-fetching (requiring multiple requests to gather all needed data).
 
 GraphQL uses a single endpoint with Standard HTTP POST methods and allows the client to send a flexible query specifying exactly what data it needs. Server then returns only that specific data, that reducing unnecessary data transfer and improving efficiency. 
 
