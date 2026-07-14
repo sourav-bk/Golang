@@ -217,13 +217,18 @@ The go mod tidy command is used to maintain module files. It adds any missing de
 </details>
 
 <details><summary><h3><mark> Character | byte - rune | alias | Enums </mark></h3></summary>
+
 **Character** ::
 	
 Go does not have a dedicated **Character** data type like Java or C++. Instead, It handles text through combinations of **bytes** and **runes**
 
 - **Byte** : 
 
+Byte is an alias (Alias provides an alternate name for an existing type) for uint8 (range= 0 to 255) and representing 8-bit or 1 byte raw data and ASCII characters
+
 - **Rune** :
+  
+Rune is an alias (Alias provides an alternate name for an existing type) for int32 (range= -2³¹ to 2³¹ - 1) and represents 32 bits or 4 bytes single Unicode character (like.. emojis, accents, non-Latin text).
 
 
 **Alias** ::
