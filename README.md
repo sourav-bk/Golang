@@ -232,7 +232,7 @@ Alias provides an alternate name for an existing type or package.., without crea
 Go primarily supports two forms of aliasing: **Type Aliases** and **Package Import Aliases**.
 | **Type Aliases**  |  **Package Import Aliases** |
 | --- | --- |
-|	`type Username = stringt`  |   `import PackageAliasName "path/to/package"`  |
+|	`type Username = string`  |   `import PackageAliasName "path/to/package"`  |
 
   
 </details>
