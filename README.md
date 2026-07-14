@@ -217,10 +217,9 @@ The go mod tidy command is used to maintain module files. It adds any missing de
 </details>
 
 <details><summary><h3><mark> Character | byte - rune | alias | Enums </mark></h3></summary>
-Character ::
-
+**Character** ::
+	
 Go does not have a dedicated **Character** data type like Java or C++. Instead, It handles text through combinations of **bytes** and **runes**
-
 
 - **Byte** : 
 
@@ -231,11 +230,6 @@ Go does not have a dedicated **Character** data type like Java or C++. Instead, 
 
 Alias provides an alternate name for an existing type or package.., without creating a completely new entity.
 Go primarily supports two forms of aliasing: **Type Aliases** and **Package Import Aliases**.
-
-type Username = stringt
-import PackageAliasName "path/to/package"
-
-
 | **Type Aliases**  |  **Package Import Aliases** |
 | --- | --- |
 |	`type Username = stringt`  |   `import PackageAliasName "path/to/package"`  |
