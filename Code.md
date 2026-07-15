@@ -1,4 +1,5 @@
-<details><summary><mark> </mark></summary>
+<details><summary><mark> two numbers concurrently </mark></summary>
+	
 ```go
   package main
 
