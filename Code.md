@@ -1,4 +1,5 @@
-<details><summary><mark> two numbers concurrently </mark></summary>
+<details>
+	<summary><mark> two numbers concurrently </mark></summary>
 	
 ```go
   package main
@@ -28,5 +29,36 @@
 
 <details>
   <summary><mark> </mark></summary>
+	
+```go
 
+	package main
+
+	import "fmt"
+
+	func isPalindrome(s string) bool {
+		left, right := 0, len(s)-1
+
+		for left < right {
+			if s[left] != s[right] {
+				return false
+			}
+			left++
+			right--
+		}
+
+		return true
+	}
+
+	func main() {
+		str := "madam"
+
+		if isPalindrome(str) {
+			fmt.Printf("%q is a palindrome\n", str)
+		} else {
+			fmt.Printf("%q is not a palindrome\n", str)
+		}
+	}
+
+```
 </details>
