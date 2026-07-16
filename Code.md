@@ -1,5 +1,5 @@
 <details>
-	<summary><mark> two numbers concurrently </mark></summary>
+	<summary><mark> Add Two numbers concurrently </mark></summary>
 	
 ```go
   package main
