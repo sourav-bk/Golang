@@ -28,37 +28,68 @@
 </details>
 
 <details>
-  <summary><mark> </mark></summary>
+  <summary><mark> Check Palindrome String | Number  </mark></summary>
 	
 ```go
 
-	package main
+package main
 
-	import "fmt"
+import "fmt"
 
-	func isPalindrome(s string) bool {
-		left, right := 0, len(s)-1
+func isPalindromeStr(s string) bool {
 
-		for left < right {
-			if s[left] != s[right] {
-				return false
-			}
-			left++
-			right--
+	left, right := 0, len(s)-1
+
+	for left < right {
+		if s[left] != s[right] {
+			return false
 		}
-
-		return true
+		left++
+		right--
 	}
 
-	func main() {
-		str := "madam"
+	return true
+}
 
-		if isPalindrome(str) {
-			fmt.Printf("%q is a palindrome\n", str)
-		} else {
-			fmt.Printf("%q is not a palindrome\n", str)
-		}
+func isPalindromeNum(n int) bool {
+
+	// Negative numbers are not palindromes
+	if n < 0 {
+		return false
 	}
+
+	original := n
+	reversed := 0
+
+	for n > 0 {
+		digit := n % 10
+		reversed = reversed*10 + digit
+		n /= 10
+	}
+
+	return original == reversed
+}
+
+func main() {
+
+	// check Palindrome String
+	str := "madam"
+	if isPalindromeStr(str) {
+		fmt.Printf("%q is a palindrome\n", str)
+	} else {
+		fmt.Printf("%q is not a palindrome\n", str)
+	}
+
+	// check Palindrome number
+
+	num := 1212
+	if isPalindromeNum(num) {
+		fmt.Printf("%d is a palindrome\n", num)
+	} else {
+		fmt.Printf("%d is not a palindrome\n", num)
+	}
+}
+
 
 ```
 </details>
