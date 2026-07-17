@@ -484,20 +484,20 @@ Channel has been closed using close() function. No values can be sent after clos
 
 - ### Type of Channel 
 
-Channels can be TWO type -- 1. Unbuffered Channel   2. Buffered Channel
+Channels can be TWO type -- 1. Un-buffered Channel   2. Buffered Channel
 
-- ***Unbuffered*** : Capacity of 0. The sender blocks until a receiver is ready. Used for strict synchronization. Since they have no capacity, they act as direct synchronization points.
+- ***Un-buffered*** : Capacity of 0. The sender blocks until a receiver is ready. Used for strict synchronization. Since they have no capacity, they act as direct synchronization points.
 
 - ***Buffered*** : Has a fixed capacity. The Sender only blocks when the buffer is full. receiver blocks when it's empty. its Allows asynchronous communication. Act as FIFO queues. The first value added to the buffer is the first one removed.
 
-**Difference between buffered and unbuffered channels** 
+- ### Difference between :: Buffered and Un-Buffered :: channels 
 
 In Go, the key difference between buffered and unbuffered channels is how they handle synchronization between goroutines. 
 
-Unbuffered channel has no capacity, so sender blocks until receiver is ready to receive the value, making it useful for strict synchronization and communication. 
+Un-buffered channel has no capacity, so sender blocks until receiver is ready to receive the value, making it useful for strict synchronization and communication. 
 Buffered channel has a fixed capacity and allows the sender to send values without blocking until the buffer becomes full. similarly, receivers can read values until the buffer is empty. 
 
-Therefore, unbuffered channels provide direct handoff and synchronization between goroutines, 
+Therefore, Un-buffered channels provide direct handoff and synchronization between goroutines, 
 whereas buffered channels offer temporary storage and help improve concurrency by reducing blocking when immediate synchronization is not required.
 
 
