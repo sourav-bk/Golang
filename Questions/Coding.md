@@ -133,3 +133,61 @@
  Q. Given a string, reverse the order of its characters and return the reversed string. 
  
  Q. Crud in Go
+
+
+
+ Project-Based Questions
+✅ Explain your project and the problem it solves.
+✅ Explain the architecture.
+✅ Write a simple GET and POST API following your project’s architecture.
+🔹 Golang Conceptual Questions
+🟢 Concurrency & Goroutines:
+1) What are goroutines? Difference between concurrency & parallelism?
+2) Issues faced due to goroutines?
+3) Real-time scenario explaining concurrency vs parallelism.
+🟢 Memory & Performance:
+1) What is a memory leak? How can it be prevented?
+2) How does Go handle garbage collection?
+3) Can we limit CPU usage in goroutines?
+🟢 Data Structures & Efficiency:
+1) Difference between array & slice? How are slices implemented internally?
+2) What is a race condition? How to prevent it?
+3) Buffered vs unbuffered channels?
+4) What is the rune data type, and when is it used?
+🟢 Go Language Features:
+1) Difference between functions & methods?
+2) What is an interface & how does it work?
+3) Explain select in channels.
+4) How does Go handle errors? Panic vs Fatal?
+5) How does defer work?
+6) How do you achieve OOP features in Go?
+7) Provide a layman’s story to explain interfaces & type assertion.
+🔹 Microservices, REST API & Kafka
+🌐 API & Authentication:
+1) Authentication vs Authorization – different ways to implement them?
+2) REST API methods & principles?
+3) Difference between gRPC & REST?
+⚡ Scalability & Security:
+1) What is a Circuit Breaker? SOLID principles? Open vs Closed state?
+2) Process of encryption & decryption?
+3) What is middleware & how is it implemented?
+4) How do you load balance & route traffic in microservices?
+🔹 Docker, Kubernetes & Cloud
+🐳 Containers & Deployment:
+1) What is a Dockerfile, docker-compose, CI/CD, secrets, and how are they used?
+2) Kubernetes principles & architecture?
+3) How do you autoscale containers?
+4) What security measures should be taken to secure containers?
+5) How do you monitor & troubleshoot failing pods?
+6) How to achieve high availability in a Kubernetes cluster?
+🔹 Problem-Solving Questions (Coding Challenges)
+🛠 Coding Challenges:
+✅ Implement goroutines & channels to solve a problem.
+✅ Solve a problem using interfaces & maps.
+✅ String, array, stack manipulation problems (LeetCode Easy/Medium).
+✅ Two pointers & sliding window problems.
+
+Final Thoughts 💡
+These questions were repeatedly asked across different companies and played a key role in structuring my preparation! 🚀
+
+Would love to hear from you — have you come across similar questions in your interviews? If not, I’d love to hear about your experience in the comments below. Let’s connect and grow together! 🤝
