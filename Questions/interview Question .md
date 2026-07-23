@@ -13,3 +13,4 @@
 13. https://gobyexample.com/
 14. Signals and graceful shutdown in golang
 15.  go fmt, go vet, & go doc
+16.  cap theory
