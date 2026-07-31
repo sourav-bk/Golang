@@ -98,6 +98,52 @@ func main() {
 	
 ```go
 
-package mainimport (	"fmt"	"sync")func main() {	X := 10 // Set your upper limit here		// Create unbuffered channels for signaling turns	oddChan := make(chan bool)	evenChan := make(chan bool)		var wg sync.WaitGroup	wg.Add(2)	// Goroutine for Odd numbers	go func() {		defer wg.Done()		for i := 1; i <= X; i += 2 {			<-oddChan // Wait for turn			fmt.Printf("Odd: %d\n", i)			evenChan <- true // Signal even goroutine		}	}()	// Goroutine for Even numbers	go func() {		defer wg.Done()		for i := 2; i <= X; i += 2 {			<-evenChan // Wait for turn			fmt.Printf("Even: %d\n", i)			if i < X {				oddChan <- true // Signal odd goroutine			}		}	}()	// Kickstart the sequence by signaling the odd goroutine	oddChan <- true	// Wait for both goroutines to finish	wg.Wait()}-- time and menory complexity for that program 
+package main
+
+import (
+	"fmt"
+	"sync"
+)
+
+func main() {
+	X := 10 // Set your upper limit here
+
+	// Create unbuffered channels for signaling turns
+	oddChan := make(chan bool)
+	evenChan := make(chan bool)
+
+	var wg sync.WaitGroup
+	wg.Add(2)
+
+	// Goroutine for Odd numbers
+	go func() {
+		defer wg.Done()
+		for i := 1; i <= X; i += 2 {
+			<-oddChan // Wait for turn
+			fmt.Printf("Odd: %d\n", i)
+			evenChan <- true // Signal even goroutine
+		}
+	}()
+
+	// Goroutine for Even numbers
+	go func() {
+		defer wg.Done()
+		for i := 2; i <= X; i += 2 {
+			<-evenChan // Wait for turn
+			fmt.Printf("Even: %d\n", i)
+			if i < X {
+				oddChan <- true // Signal odd goroutine
+			}
+		}
+	}()
+
+	// Kickstart the sequence by signaling the odd goroutine
+	oddChan <- true
+
+	// Wait for both goroutines to finish
+	wg.Wait()
+}
+
+
 ```
 </details>
