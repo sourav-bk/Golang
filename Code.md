@@ -160,3 +160,51 @@ func main() {
 
 ```
 </details>
+
+
+
+<details>
+	<summary><mark> Generate the Fibonacci series using Go routines. </mark></summary>
+	
+```go
+
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	// Define how many numbers you want in the series
+	const terms = 3
+
+	// Create an unbuffered channel to communicate between goroutines
+	ch := make(chan int)
+
+	// Launch the fibonacci generator as a background Go routine
+	go fibonacci(terms, ch)
+
+	fmt.Printf("First %d terms of Fibonacci series:\n", terms)
+
+	// The main goroutine blocks and reads numbers as they are sent.
+	// The loop terminates automatically when the channel is closed.
+	for num := range ch {
+		fmt.Printf("%d ", num)
+	}
+	fmt.Println()
+}
+
+// fibonacci is a producer function that calculates numbers
+// and sends them through a write-only channel.
+func fibonacci(n int, ch chan<- int) {
+	x, y := 0, 1
+	for i := 0; i < n; i++ {
+		ch <- x
+		x, y = y, x+y
+	}
+	// Crucial: Close the channel so the receiver knows when to stop reading
+	close(ch)
+}
+
+```
+</details>
