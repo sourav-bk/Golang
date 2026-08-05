@@ -162,6 +162,46 @@ func main() {
 </details>
 
 
+<details>
+  <summary><mark> Print numbers from 1 to x using Go routines and channels.</mark></summary>
+	
+```go
+
+package main
+
+import (
+	"fmt"
+)
+
+func generateNumbers(x int, ch chan<- int) {
+	// Loop from 1 to x and send each number to the channel
+	for i := 1; i <= x; i++ {
+		ch <- i
+	}
+	// Always close the channel to notify the receiver that data is finished
+	close(ch) 
+}
+
+func main() {
+	x := 10 // Change this to your desired value
+	ch := make(chan int)
+
+	// Start the producer goroutine
+	go generateNumbers(x, ch)
+
+	// Consumer: Read and print values from the channel sequentially
+	for num := range ch {
+		fmt.Println(num)
+	}
+}
+
+
+```
+</details>
+
+
+
+
 
 <details>
 	<summary><mark> Generate the Fibonacci series using Go routines. </mark></summary>
