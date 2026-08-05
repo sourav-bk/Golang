@@ -266,7 +266,6 @@ Go primarily supports two forms of aliasing: **Type Aliases** and **Package Impo
   - []byte -> string || s := string(b)
   
 </details>
-<hr>
 
 <details><summary><h3><mark> Array and Slice | len() and cap() </mark></h3></summary>
   
