@@ -202,18 +202,7 @@ The go mod tidy command is used to maintain module files. It adds any missing de
     </details>
     </li>
   </ul>
-    <details><summary>Convert types in Golang</summary>
-      
-  In Go, type conversion is explicit, meaning we must manually convert a value from one type to another. Be aware about during type conversions between certain types can lead to data loss.
   
-  - int -> float64 || var f float64 = float64(i)
-  - float64 -> int || var i int = int(f)
-  - int -> string || var stringValue string := strconv.Itoa(intValue)
-  - string -> int || i, err := strconv.Atoi(str) // Atoi returns the integer value and a potential error
-  - string -> []byte || b := []byte(s)
-  - []byte -> string || s := string(b)
-    
-    </details>
 </details>
 
 <details><summary><h3><mark> Character | byte - rune | alias | Enums </mark></h3></summary>
@@ -278,6 +267,12 @@ Go primarily supports two forms of aliasing: **Type Aliases** and **Package Impo
   
 </details>
 <hr>
+
+<details><summary><h3><mark> Array and Slice | len() and cap() </mark></h3></summary>
+  
+</details>
+<hr>
+
 
 <details><summary><h3><mark>Memory management and Garbage collection (GC) | Memory Leaks </mark></h3></summary>
   
