@@ -346,6 +346,54 @@ Go is memory-safe. Uninitialized pointers are nil. Go does not allow pointer ari
 
     **Embedding Interfaces:** We can combining multiple smaller interfaces into one larger interface. Instead of creating a big interface from scratch, you can reuse existing small interfaces and join them together. This makes your code cleaner, easier to manage, and more reusable. It follows Go’s idea of composition over inheritance by building bigger functionality from smaller pieces.
 
+
+	<details>
+	<summary><mark> Example </mark></summary>
+		```go
+
+		package main
+		import "fmt"
+
+		// Interface
+		type Human interface {
+			showName()
+		}
+
+		// Man struct
+		type Man struct {
+			Name string
+		}
+
+		func (m Man) showName() {
+			fmt.Println("I am a Man. My name is", m.Name)
+		}
+
+		// Woman struct
+		type Woman struct {
+			Name string
+		}
+
+		func (w Woman) showName() {
+			fmt.Println("I am a Woman. My name is", w.Name)
+		}
+
+		// Function accepting interface
+		func Introduce(h Human) {
+			h.showName()
+		}
+
+		func main() {
+			var man Human
+			var woman Human
+			man = Man{Name: "John"}
+			woman = Woman{Name: "Emma"}
+			Introduce(man)
+			Introduce(woman)
+		}
+
+		```
+	</details>
+
   - ##### Generic :
     Generics introduced in Go 1.18 . Generics in Go, allow to write functions and types.., that work with multiple data types.., while maintaining type safety.
 
