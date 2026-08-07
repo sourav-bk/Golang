@@ -350,8 +350,7 @@ Go is memory-safe. Uninitialized pointers are nil. Go does not allow pointer ari
 	<details>
 	<summary><mark> Example </mark></summary>
 		
-		```go
-
+	```go
 		package main
 		import "fmt"
 
@@ -392,7 +391,7 @@ Go is memory-safe. Uninitialized pointers are nil. Go does not allow pointer ari
 			Introduce(woman)
 		}
 
-		```
+	```
 	</details>
 
   - ##### Generic :
