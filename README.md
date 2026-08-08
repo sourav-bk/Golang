@@ -293,7 +293,18 @@ frameworks := [...]int{1,2,3}  //- [4]string array
   
   In simple word., Slice is dynamic Array.
   
-  A slice is a data type that provides flexible & dynamic data structure that built on top of the array. It can grow and shrink at runtime.
+  Basically, slice is a data-type., that provides flexible & dynamic data structure.., that built on top of the array. It can grow and shrink at runtime.
+
+
+  Under the hood, the architecture of a slice is defined by Data-structure called the slice header.
+  Slice header containing 3 internal components:
+  - Pointer (that point underlying actual array)
+  - Length ( number of elements currently accessible in the slice )
+  - Capacity ( total number of elements can available in the underlying array )
+  
+  It acts like a reference type.
+  **Modifying elements:** Passing a slice to a function copies the header, but it still points to the same array. Changing elements updates the original data.
+  **Resizing elements:** Modifying length or capacity (like using append()) only affects the local copy. It does not change the original slice unless you pass a pointer (*[]int).
 
 ```go Slice
 //declaring 
@@ -305,7 +316,9 @@ myslice2 := []string{"Go", "Slices", "Powerful"}  //-  cap =4 |  len =4 | myslic
 
 myslice1 := make([]int, 5, 10)   //- cap =10 |  len =5 | [0 0 0 0 0] 
 
-```  
+```
+
+	
 </details>
 <hr>
 
