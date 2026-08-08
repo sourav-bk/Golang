@@ -269,8 +269,9 @@ Go primarily supports two forms of aliasing: **Type Aliases** and **Package Impo
 
 <details><summary><h3><mark> Array and Slice | len() and cap() </mark></h3></summary>
 
-**Array**
-An array is a data type that holds a fixed number of elements of the same type. Once we declare its size, it cannot grow or shrink.
+- **Array**
+  
+  An array is a data type that holds a fixed number of elements of the same type. Once we declare its size, it cannot grow or shrink.
 
 ```go
 
@@ -288,9 +289,10 @@ frameworks := [...]int{1,2,3}  //- [4]string array
 
 ```
 
-**Slice**
-In simple word., Slice is dynamic Array.
-A slice is a data type that provides flexible & dynamic data structure that built on top of the array. It can grow and shrink at runtime.
+- **Slice**
+  
+  In simple word., Slice is dynamic Array.
+  A slice is a data type that provides flexible & dynamic data structure that built on top of the array. It can grow and shrink at runtime.
 
 ```go Slice
 //declaring 
