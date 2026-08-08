@@ -269,13 +269,40 @@ Go primarily supports two forms of aliasing: **Type Aliases** and **Package Impo
 
 <details><summary><h3><mark> Array and Slice | len() and cap() </mark></h3></summary>
 
-** Array **
+**Array**
+An array is a data type that holds a fixed number of elements of the same type. Once we declare its size, it cannot grow or shrink.
 
+```go
 
-** Slice **
+// Declare array 
+var numbers [5]int       //- Zero value: [0 0 0 0 0]
+numbers := new([3]int)   //- Zero value
 
+Initialize value
+numbers[0] = 10 
 
-  
+// Declare array with value
+var numbers = [5]int{2, 3, 5, 7, 11}
+numbers := [3]int{95, 82, 89}
+frameworks := [...]int{1,2,3}  //- [4]string array
+
+```
+
+**Slice**
+In simple word., Slice is dynamic Array.
+A slice is a data type that provides flexible & dynamic data structure that built on top of the array. It can grow and shrink at runtime.
+
+```go Slice
+//declaring 
+myslice1 := []int{}         //-  cap =0 |  len =0 | myslice1=[]
+
+myslice2 := []string{"Go", "Slices", "Powerful"}  //-  cap =4 |  len =4 | myslice1=[Go Slices Powerful ]
+    
+//Slice With The make()  slice_name := make([]type, length, capacity)
+
+myslice1 := make([]int, 5, 10)   //- cap =10 |  len =5 | [0 0 0 0 0] 
+
+```  
 </details>
 <hr>
 
