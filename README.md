@@ -268,6 +268,13 @@ Go primarily supports two forms of aliasing: **Type Aliases** and **Package Impo
 </details>
 
 <details><summary><h3><mark> Array and Slice | len() and cap() </mark></h3></summary>
+
+** Array **
+
+
+** Slice **
+
+
   
 </details>
 <hr>
