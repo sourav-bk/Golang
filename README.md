@@ -292,6 +292,7 @@ frameworks := [...]int{1,2,3}  //- [4]string array
 - **Slice**
   
   In simple word., Slice is dynamic Array.
+  
   A slice is a data type that provides flexible & dynamic data structure that built on top of the array. It can grow and shrink at runtime.
 
 ```go Slice
