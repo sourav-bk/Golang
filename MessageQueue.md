@@ -32,8 +32,8 @@ RabbitMQ Architecture component
 
 
 
-Data Flow Process
+## Data Flow Process
 
-type of exchanges 
+## type of exchanges 
 
-RabbitMQ use for
+## RabbitMQ use for
