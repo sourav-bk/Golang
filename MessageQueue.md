@@ -18,7 +18,7 @@ It acts as a central hub, allowing producers to send data and consumers to recei
 
 RabbitMQ Architecture component --
 
-<img width="400" alt="image" src="https://github.com/user-attachments/assets/3847c227-c51d-4e46-90e3-8a136a3bf25b" />
+<img width="600" alt="image" src="https://github.com/user-attachments/assets/3847c227-c51d-4e46-90e3-8a136a3bf25b" />
 
 - producer 
 
