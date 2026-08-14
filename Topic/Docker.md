@@ -1,4 +1,11 @@
-# Docker vs. Virtual Machines (VM)
+# Core GO :
+
+<details><summary><h3><mark>Docker vs. Virtual Machines (VM)</mark></h3></summary>
+  
+
+
+
+
 
 The core difference lies in architecture: **VMs virtualize hardware**, while **Docker virtualizes the operating system**.
 
@@ -44,6 +51,11 @@ VMs use a hypervisor to slice up physical hardware.
 
 ## Hybrid Approach
 You can **run Docker inside a VM**. This combines the hardware-level security of a VM with the speed and agility of Docker containers
+
+
+</details>
+
+
 
 
 
