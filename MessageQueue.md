@@ -61,7 +61,6 @@ At a high level, the RabbitMQ communication architecture consists of 3 major com
 
 - **RabbitMQ Broker ::**
   
- 
   
   - **Exchange :**
     
@@ -71,10 +70,16 @@ At a high level, the RabbitMQ communication architecture consists of 3 major com
 
     Messages are always sent to exchange first from Producer, not directly to a queue.
     
-    - Direct (exact key match),
-    - Fanout (broadcast to all),
-    - Topic (pattern matching),
-    - Headers (based on header attributes)
+    RabbitMQ provides 4 types of Exchanges:
+    
+    - Direct (exact key match)::
+      Routes messages to a queue based on an exact routing key match.
+    - Fanout (broadcast to all)::
+      Broadcasts messages to all bound queues, ignoring routing keys.
+    - Topic (pattern matching)::
+      Routes messages using pattern matching on routing keys. ( * matches exactly one word and # matches zero or more words )
+    - Headers (based on header attributes) ::
+      Routes messages based on message header attributes instead of routing keys.
       
   - **Binding :**
 
