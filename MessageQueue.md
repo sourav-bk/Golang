@@ -37,6 +37,9 @@ At a high level, the RabbitMQ communication architecture consists of 3 major com
 
   A channel is a lightweight virtual connection that operates within a single TCP connection. Producers use channels to publish messages to RabbitMQ efficiently without creating multiple TCP connections.
 
+  > Connection : A Connection is a physical TCP connection established between a client application.
+  > Channel : A Channel is a lightweight virtual connection that exists inside a TCP connection.
+
 - **RabbitMQ Broker ::**
   
   
