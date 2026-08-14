@@ -139,7 +139,11 @@ Docker uses a client–server architecture. The Docker-client talks to the Docke
 
 
   
+<details><summary><h3><mark> </mark></h3></summary>
 
-***Container Lifecycle ::***
+
+  
+  ---
+</details>
 
 
