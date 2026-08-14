@@ -16,7 +16,7 @@ In Core application layer, RabbitMQ primarily uses AMQP 0-9-1 (Advanced Message 
 It acts as a central hub, allowing producers to send data and consumers to receive it, decoupling services to increase scalability and reliability.
 
 
-RabbitMQ Architecture component --
+## RabbitMQ Architecture component
 
 <img width="600" alt="image" src="https://github.com/user-attachments/assets/3847c227-c51d-4e46-90e3-8a136a3bf25b" />
 
