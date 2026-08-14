@@ -55,6 +55,13 @@ At a high level, the RabbitMQ communication architecture consists of 3 major com
 - **Producer ::**
 
 - **RabbitMQ Broker ::**
+  
+  A Producer is an application, service, or program that creates and sends messages to a RabbitMQ server (broker).
+
+  Before sending messages, the producer must first establish a connection to the RabbitMQ server using the TCP protocol. After the connection is established, the producer creates a channel on top of that connection.
+
+  A channel is a lightweight virtual connection that operates within a single TCP connection. Producers use channels to publish messages to RabbitMQ efficiently without creating multiple TCP connections.
+  
   - **Exchange :**
     - Direct (exact key match),
     - Fanout (broadcast to all),
