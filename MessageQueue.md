@@ -42,7 +42,7 @@ RabbitMQ Architecture component --
 
 ## RabbitMQ use for ::
 
-RabbitMQ is a message broker that acts as middleware between applications. It works as an intermediary that receives messages from producers and routes them to the appropriate consumers.
+RabbitMQ is a message broker or tools that acts as middleware between applications. It works as an intermediary that receives messages from producers and routes them to the appropriate consumers.
 
 RabbitMQ follows a message queuing architecture, enabling asynchronous communication between applications, services, or microservices. It allows messages to be sent, stored, and processed independently, reducing direct dependencies between systems.
 
