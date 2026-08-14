@@ -57,12 +57,10 @@ You can **run Docker inside a VM**. This combines the hardware-level security of
 
 
 
+<details><summary><h3><mark>Docker / Containerization / container</mark></h3></summary>
 
 
 
-
-
-## Docker / Containerization / container
 
 Docker is an open-source OS‑level virtualization or containerization platform/tools. Containerization is a software deployment process that allows developers to package applications and all their dependencies(such as libraries, configurations, and runtime) into a single-lightweight unit, that called a container.
 
@@ -88,6 +86,10 @@ Docker uses a client–server architecture. The Docker-client talks to the Docke
 - **Docker Daemon :**
   
   The Docker-Daemon is the core background service responsible for managing Docker containers, images, networks, and volumes. It listens for Docker API requests which coming from Docker-Client ( like from Docker-CLI or Docker-Desktop ) and performs the actual work of building, running, and managing containers or Orchestrating the entire lifecycle of Docker-containers. Docker-Daemon can also communicate with other Daemons to manage Docker services.
+  
+</details>
+
+
 
   ---
 
