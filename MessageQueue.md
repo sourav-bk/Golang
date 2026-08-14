@@ -20,27 +20,7 @@ RabbitMQ Architecture component --
 
 <img width="600" alt="image" src="https://github.com/user-attachments/assets/3847c227-c51d-4e46-90e3-8a136a3bf25b" />
 
-- producer 
 
-- Broker
-  - Exchange
-    - Direct (exact key match),
-    - Fanout (broadcast to all),
-    - Topic (pattern matching),
-    - Headers (based on header attributes)
-  - Binding
-  - Queues
-    
-- Consumer
-
-
-
-
-## Data Flow Process
-
-## type of exchanges 
-
-## RabbitMQ use for ::
 
 RabbitMQ is a message broker or tools that acts as middleware between applications. It works as an intermediary that receives messages from producers and routes them to the appropriate consumers.
 
@@ -100,6 +80,33 @@ At a high level, the RabbitMQ communication architecture consists of 3 major com
   Like producers, consumers must first establish a TCP connection to the RabbitMQ server and then create a channel on top of that connection.
 
   Through the channel, consumers receive messages from the queue. After successfully processing a message, the consumer sends an acknowledgment (ACK) back to RabbitMQ. This acknowledgment informs RabbitMQ that the message has been processed successfully and can be removed from the queue.
+
+
+
+
+- producer 
+
+- Broker
+  - Exchange
+    - Direct (exact key match),
+    - Fanout (broadcast to all),
+    - Topic (pattern matching),
+    - Headers (based on header attributes)
+  - Binding
+  - Queues
+    
+- Consumer
+
+
+
+
+## Data Flow Process
+
+## type of exchanges 
+
+## RabbitMQ use for ::
+
+R
 
 
 
