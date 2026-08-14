@@ -20,8 +20,6 @@ RabbitMQ Architecture component --
 
 <img width="600" alt="image" src="https://github.com/user-attachments/assets/3847c227-c51d-4e46-90e3-8a136a3bf25b" />
 
-
-
 RabbitMQ is a message broker or tools that acts as middleware between applications. It works as an intermediary that receives messages from producers and routes them to the appropriate consumers.
 
 RabbitMQ follows a message queuing architecture, enabling asynchronous communication between applications, services, or microservices. It allows messages to be sent, stored, and processed independently, reducing direct dependencies between systems.
@@ -83,31 +81,29 @@ At a high level, the RabbitMQ communication architecture consists of 3 major com
 
 
 
-
-- producer 
-
-- Broker
-  - Exchange
-    - Direct (exact key match),
-    - Fanout (broadcast to all),
-    - Topic (pattern matching),
-    - Headers (based on header attributes)
-  - Binding
-  - Queues
-    
-- Consumer
-
-
-
-
 ## Data Flow Process
 
-## type of exchanges 
+[Producer]
+    |
+    | Publishes Message
+    ↓
+[Exchange]
+    |
+    | Routes via Binding & Routing Key
+    ↓
+[Queue]
+    |
+    | Delivers Message
+    ↓
+[Consumer]
+    |
+    | Sends Acknowledgment (ACK)
+    ↓
+[Message Removed from Queue]
+
+
 
 ## RabbitMQ use for ::
-
-R
-
 
 
 
