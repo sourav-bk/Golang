@@ -80,8 +80,7 @@ At a high level, the RabbitMQ communication architecture consists of 3 major com
   Through the channel, consumers receive messages from the queue. After successfully processing a message, the consumer sends an acknowledgment (ACK) back to RabbitMQ. This acknowledgment informs RabbitMQ that the message has been processed successfully and can be removed from the queue.
 
 
-
-## Data Flow Process
+## Data Flow Diagram
 
 [Producer]
     |
