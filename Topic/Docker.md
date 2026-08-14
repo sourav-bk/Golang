@@ -1,12 +1,5 @@
-# Core GO :
-
 <details><summary><h3><mark>Docker vs. Virtual Machines (VM)</mark></h3></summary>
   
-
-
-
-
-
 The core difference lies in architecture: **VMs virtualize hardware**, while **Docker virtualizes the operating system**.
 
 Docker and Virtual Machines both provide environments to run applications, but they differ mainly in how they use system resources and isolate processes
@@ -51,16 +44,12 @@ VMs use a hypervisor to slice up physical hardware.
 
 ## Hybrid Approach
 You can **run Docker inside a VM**. This combines the hardware-level security of a VM with the speed and agility of Docker containers
-
-
+---
 </details>
 
 
 
 <details><summary><h3><mark>Docker / Containerization / container</mark></h3></summary>
-
-
-
 
 Docker is an open-source OS‑level virtualization or containerization platform/tools. Containerization is a software deployment process that allows developers to package applications and all their dependencies(such as libraries, configurations, and runtime) into a single-lightweight unit, that called a container.
 
@@ -86,18 +75,16 @@ Docker uses a client–server architecture. The Docker-client talks to the Docke
 - **Docker Daemon :**
   
   The Docker-Daemon is the core background service responsible for managing Docker containers, images, networks, and volumes. It listens for Docker API requests which coming from Docker-Client ( like from Docker-CLI or Docker-Desktop ) and performs the actual work of building, running, and managing containers or Orchestrating the entire lifecycle of Docker-containers. Docker-Daemon can also communicate with other Daemons to manage Docker services.
+  ---
   
 </details>
 
 
-
-  ---
-
-  ### Docker Container Lifecycle Management
-
+<details><summary><h3><mark> Docker Container Lifecycle Management </mark></h3></summary>
+  
   Lifecycle of Docker container consists of five states:
   
-   **1. Created state | 2. Running state | 3. Paused/unpaused state | 4. Stopped state | 5. Killed/Deleted state**
+  **1. Created state | 2. Running state | 3. Paused/unpaused state | 4. Stopped state | 5. Killed/Deleted state**
 
   <img alt="image" src="https://github.com/user-attachments/assets/6585623d-c5bd-48a9-9457-73e360eaa1f3" />
 
@@ -145,6 +132,13 @@ Docker uses a client–server architecture. The Docker-client talks to the Docke
 - Hub:
 
   A cloud-based repository where developers can find, share, and store container images.
+
+  ---
+  
+</details>
+
+
+  
 
 ***Container Lifecycle ::***
 
