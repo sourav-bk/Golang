@@ -82,23 +82,8 @@ At a high level, the RabbitMQ communication architecture consists of 3 major com
 
 ## Data Flow Diagram
 
-[Producer]
-    |
-    | Publishes Message
-    ↓
-[Exchange]
-    |
-    | Routes via Binding & Routing Key
-    ↓
-[Queue]
-    |
-    | Delivers Message
-    ↓
-[Consumer]
-    |
-    | Sends Acknowledgment (ACK)
-    ↓
-[Message Removed from Queue]
+<img width="268" height="355" alt="image" src="https://github.com/user-attachments/assets/bfe26896-0fc5-442b-b5a0-e53ee43eee87" />
+
 
 
 
