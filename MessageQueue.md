@@ -64,12 +64,29 @@ At a high level, the RabbitMQ communication architecture consists of 3 major com
  
   
   - **Exchange :**
+    
+    Exchange is a message routing agent in RabbitMQ. It receives messages from producers and decides where to route using internal rules.
+
+    Exchange does not store messages itself. Instead, it uses routing rules to forward messages to one or more queues.
+
+    Messages are always sent to exchange first from Producer, not directly to a queue.
+    
     - Direct (exact key match),
     - Fanout (broadcast to all),
     - Topic (pattern matching),
     - Headers (based on header attributes)
+      
   - **Binding :**
+
+    Binding is a link or routing rule that connects an exchange to a queue. It defines how messages should be routed from the exchange to the queue.
+
+    Based on the binding configuration and routing criteria, the exchange determines which queue(s) should receive a particular message.
+    
   - **Queues :**
+
+    A Queue is a buffer that stores messages until they are processed by consumers. It receives messages from an exchange, holds them safely, and delivers them to one or more consumers.
+
+    Messages remain in the queue until they are successfully consumed and acknowledged.
     
 - **Consumer ::**
 
