@@ -51,16 +51,17 @@ Important: RabbitMQ itself neither produces nor consumes messages. Its primary r
 At a high level, the RabbitMQ communication architecture consists of 3 major components: **1.Producer** , **2.RabbitMQ Broker** , **3.Consumer**
 
 
-
 - **Producer ::**
-
-- **RabbitMQ Broker ::**
   
   A Producer is an application, service, or program that creates and sends messages to a RabbitMQ server (broker).
 
   Before sending messages, the producer must first establish a connection to the RabbitMQ server using the TCP protocol. After the connection is established, the producer creates a channel on top of that connection.
 
   A channel is a lightweight virtual connection that operates within a single TCP connection. Producers use channels to publish messages to RabbitMQ efficiently without creating multiple TCP connections.
+
+- **RabbitMQ Broker ::**
+  
+ 
   
   - **Exchange :**
     - Direct (exact key match),
@@ -71,6 +72,12 @@ At a high level, the RabbitMQ communication architecture consists of 3 major com
   - **Queues :**
     
 - **Consumer ::**
+
+  A Consumer is an application, service, or program that subscribes to a queue and receives messages from RabbitMQ for processing.
+
+  Like producers, consumers must first establish a TCP connection to the RabbitMQ server and then create a channel on top of that connection.
+
+  Through the channel, consumers receive messages from the queue. After successfully processing a message, the consumer sends an acknowledgment (ACK) back to RabbitMQ. This acknowledgment informs RabbitMQ that the message has been processed successfully and can be removed from the queue.
 
 
 
