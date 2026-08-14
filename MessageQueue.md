@@ -52,7 +52,7 @@ At a high level, the RabbitMQ communication architecture consists of 3 major com
 
 
 
-- **producer ::**
+- **Producer ::**
 
 - **RabbitMQ Broker ::**
   - **Exchange :**
