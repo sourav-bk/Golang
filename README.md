@@ -822,7 +822,56 @@ For simple lock we use The sync.Mutex (The Simple Lock) or more specialized, "sm
  That pattern/design Clean the queue of jobs/task., using fixed number of goroutines/workers.,  which running in background concurrently and sent via a channel.
 
 
- This pattern limits the usage of resource, prevents system from being over-loaded by too many concurrent goroutines, and optimizes CPU utilization
+ This pattern limits the usage of resource, prevents system from being over-loaded by too many concurrent goroutines, and optimizes CPU utilization.
+
+ <details><summary><mark>Example::</mark></summary>
+	
+  ```go
+
+package main
+
+import (
+	"fmt"
+	"time"
+)
+
+// Worker function
+func worker(id int, jobs <-chan int, results chan<- int) {
+	for job := range jobs {
+		fmt.Printf("Worker %d processing job %d\n", id, job)
+
+		time.Sleep(time.Second) // Simulate work
+
+		results <- job * 2
+	}
+}
+
+func main() {
+	const numWorkers = 3
+	const numJobs = 5
+
+	jobs := make(chan int, numJobs)
+	results := make(chan int, numJobs)
+
+	// Start workers
+	for w := 1; w <= numWorkers; w++ {
+		go worker(w, jobs, results)
+	}
+
+	// Send jobs
+	for j := 1; j <= numJobs; j++ {
+		jobs <- j
+	}
+	close(jobs)
+
+	// Collect results
+	for r := 1; r <= numJobs; r++ {
+		fmt.Println("Result:", <-results)
+	}
+}
+
+  ```
+</details>
 
 </details>
 <br>
