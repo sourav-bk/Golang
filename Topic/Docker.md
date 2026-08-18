@@ -140,11 +140,19 @@ Docker uses a client–server architecture. The Docker-client talks to the Docke
 
 
   
-<details><summary><h3><mark> </mark></h3></summary>
+<details><summary><h3><mark> Docker multi stage build, layer-caching, layer architecture in Docker </mark></h3></summary>
 
 
   
   ---
 </details>
 
+
+
+<details><summary><h3><mark> </mark></h3></summary>
+
+
+  
+  ---
+</details>
 
