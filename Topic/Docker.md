@@ -63,7 +63,7 @@ Think of it as a "shipping container" for software: it ensures that  application
 
 ***Core Architectural Components ::***
 
-Docker Core Architecture have 3 core Components - **1. Docker Client | 2. Docker Daemon | 3. Docker Registries**
+Docker Core Architecture have 3 core Components - **1. Docker Client | 2. Docker Host / Docker Daemon | 3. Docker Registries  **
 
 Docker uses a client–server architecture. The Docker-client talks to the Docker-Daemon, which builds, runs, and manages containers. They communicate through a REST API via UNIX sockets or a network interface.
 
@@ -76,6 +76,13 @@ Docker uses a client–server architecture. The Docker-client talks to the Docke
 - **Docker Daemon :**
   
   The Docker-Daemon is the core background service responsible for managing Docker containers, images, networks, and volumes. It listens for Docker API requests which coming from Docker-Client ( like from Docker-CLI or Docker-Desktop ) and performs the actual work of building, running, and managing containers or Orchestrating the entire lifecycle of Docker-containers. Docker-Daemon can also communicate with other Daemons to manage Docker services.
+
+- **Docker Registries :**
+
+  A Docker Registry is a centralized storage and distribution system for Docker images. It allows users to store, share, and manage container images.
+  **Docker Hub** is a public registry that anyone can use, and Docker is configured to look for images on Docker Hub by default. We can even run our own private registry.
+  
+  When we use the `docker pull` or `docker run` commands, the required images are pulled from configured registry. and When we use the `docker push` command, the image is pushed to configured registry.
   
   ---
   
@@ -110,12 +117,7 @@ Docker uses a client–server architecture. The Docker-client talks to the Docke
   The container is removed from the engine or orchestrator. All its un-persisted resources are released and Container no longer exists on system.
 
   
-- **Docker Registries :**
 
-  A Docker Registry is a centralized storage and distribution system for Docker images. It allows users to store, share, and manage container images.
-  **Docker Hub** is a public registry that anyone can use, and Docker is configured to look for images on Docker Hub by default. We can even run our own private registry.
-  
-  When we use the `docker pull` or `docker run` commands, the required images are pulled from configured registry. and When we use the `docker push` command, the image is pushed to configured registry.
 
 ***Components of Docker ::***
 
