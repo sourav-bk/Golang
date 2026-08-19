@@ -96,36 +96,39 @@ Docker uses a client–server architecture. The Docker-client talks to the Docke
   
 1. **Created state ::** container is created from a Docker image but the main application process hasn't started yet.
 
-   > [!NOTE]
    > we create container using
+   > 
    > docker create --name <container_name> <image_name>
 
-3. **Running state ::** container executes the main commands that specified in the image. Resources like CPU and memory are actively allocated.
-
-   > [!NOTE]
+2. **Running state ::** container executes the main commands that specified in the image. Resources like CPU and memory are actively allocated.
+   
    > we Start container FROM Running state
+   > 
    > docker create --name <container_name> <image_name>
+   >
    > (Start)  docker create --name <container_name> <image_name> | docker start <container_name>
+   >
    > (Create + Start) docker run --name <container_name> <image_name>
    
 
-4. **Paused/unpaused state ::** A container whose processes have been paused / or Freezes all processes but Memory is not released. Similar to putting laptop on sleep mode.
+3. **Paused/unpaused state ::** A container whose processes have been paused / or Freezes all processes but Memory is not released. Similar to putting laptop on sleep mode.
 
-   > [!NOTE]
    > we create container into Running state
+   > 
    > docker pause <container_name>   |   docker unpause <container_name>
 
-5. **Stopped state ::** Container is not running. No CPU is being used by the container. Container's filesystem still exists and configuration is preserved. we can start it again.
+4. **Stopped state ::** Container is not running. No CPU is being used by the container. Container's filesystem still exists and configuration is preserved. we can start it again.
 
-   > [!NOTE]
-   > we can Stopped Running state container using 
+   > we can Stopped Running state container using
+   >  
    > docker stop <Running_container_name>
 
-6. **Killed/Deleted state ::** Container is removed from the engine or orchestrator. All its un-persisted resources are released and Container no longer exists on system.
-
-   > [!NOTE]
-   > we can KILL/DELETE Running state container using 
+5. **Killed/Deleted state ::** Container is removed from the engine or orchestrator. All its un-persisted resources are released and Container no longer exists on system.
+   
+   > we can KILL/DELETE Running state container using
+   > 
    > docker kill <Running_container_name>
+   >
    > docker rm -f <Running_container_name>
 
 
@@ -188,7 +191,9 @@ Docker uses a client–server architecture. The Docker-client talks to the Docke
   ---
 </details>
 
-
-
 > [!NOTE]
-> This is a designated note block to highlight important information.
+> we can KILL/DELETE Running state container using
+> docker kill <Running_container_name>> docker rm -f <Running_container_name>
+
+
+
