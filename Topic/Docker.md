@@ -229,3 +229,7 @@ docker rm -f <Running_container_name>
   ---
 </details>
 
+
+
+> [!NOTE]
+> This is a designated note block to highlight important information.
