@@ -67,7 +67,7 @@ Docker Core Architecture have 3 core Components - **1. Docker Client | 2. Docker
 
 Docker uses a client–server architecture. The Docker-client talks to the Docker-Daemon, which builds, runs, and manages containers. They communicate through a REST API via UNIX sockets or a network interface.
 
-<img alt="maxresdefault" src="https://github.com/user-attachments/assets/32211ef0-9de9-44eb-8d39-916fec0b2bfb" />
+<img alt="maxresdefault" width="400" src="https://github.com/user-attachments/assets/32211ef0-9de9-44eb-8d39-916fec0b2bfb" />
 
 - **Docker Client :**
   
@@ -95,7 +95,7 @@ Docker uses a client–server architecture. The Docker-client talks to the Docke
   
   **1. Created state | 2. Running state | 3. Paused/unpaused state | 4. Stopped state | 5. Killed/Deleted state**
 
-  <img alt="image" src="https://github.com/user-attachments/assets/6585623d-c5bd-48a9-9457-73e360eaa1f3" />
+  <img alt="image" width="300" src="https://github.com/user-attachments/assets/6585623d-c5bd-48a9-9457-73e360eaa1f3" />
 
   
 1. **Created state ::** container is created from a Docker image but the main application process hasn't started yet.
