@@ -44,6 +44,7 @@ VMs use a hypervisor to slice up physical hardware.
 
 ## Hybrid Approach
 You can **run Docker inside a VM**. This combines the hardware-level security of a VM with the speed and agility of Docker containers
+
 ---
 </details>
 
