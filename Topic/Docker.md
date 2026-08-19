@@ -161,17 +161,26 @@ Docker uses a client–server architecture. The Docker-client talks to the Docke
   
   ***Components of Docker ::***
 
-- Dockerfile:
+- **Dockerfile:**
 
   A simple text file containing the instructions used to build a Docker image.Docker
   
-- Docker Image:
+- **Docker Image:**
 
   A read-only template/ snapshot  or "blueprint" that contains the application code, libraries, and environment settings needed to run it.
   
-- Docker Container:
+- **Docker Container:**
 
   A live, running instance of an image. It is isolated from other containers and the host system but shares the host's operating system kernel, making it much more lightweight than a virtual machine (VM).
+
+
+- **Docker Volume:**
+
+  A live, running instance of an image. It is isolated from other containers and the host system but shares the host's operating system kernel, making it much more lightweight than a virtual machine (VM).
+  
+
+- **Docker Network:**  
+  
 
 - Hub:
 
