@@ -134,23 +134,6 @@ Docker uses a client–server architecture. The Docker-client talks to the Docke
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
 ***Components of Docker ::***
 
 - Dockerfile:
@@ -191,9 +174,6 @@ Docker uses a client–server architecture. The Docker-client talks to the Docke
   ---
 </details>
 
-> [!NOTE]
-> we can KILL/DELETE Running state container using
-> docker kill <Running_container_name>> docker rm -f <Running_container_name>
 
 
 
