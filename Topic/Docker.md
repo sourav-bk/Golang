@@ -184,7 +184,69 @@ Docker uses a client–server architecture. The Docker-client talks to the Docke
 
   
 
-- **Docker Network:**  
+- **Docker Network:**
+
+  Docker networking is the mechanism/feature that allows containers to secure communicate with each other, the host system, and external networks like the internet.
+
+  It provides network isolation and connectivity, allowing containers to securely exchange data and services.
+
+  Each container gets its own isolated network stack, including a virtual NIC (e.g., eth0), IP address, and routing rules. Virtual networks such as bridge and overlay connect containers to the broader container network.
+
+How Docker Networking Works
+When you run containers, Docker automatically handles network setup. By default, Docker Compose sets up a default network so containers can discover each other by name (DNS-based service discovery). This means that instead of using IP addresses, one container can reach another simply by referencing the container or service name. 
+docs.docker.com
+
+A critical detail: the default bridge network does not resolve container names. This is the root cause of most "can't connect to the database" bugs in Docker. When two containers are placed on Docker's default bridge, they cannot find each other by name — only by IP. 
+arnab-k.medium.com
+
+However, user-defined bridge networks do support automatic DNS resolution. Two containers on the same user-defined bridge network can reach each other's listening ports over TCP/IP using container names.
+
+
+
+
+Bridge
+
+(default)
+The most common network type. When you start a container without specifying a network, it joins the default bridge network.
+
+A user-defined bridge network is recommended for production, as it provides DNS-based name resolution and better isolation.
+
+Bridged networking maps host.docker.internal through host-gateway, allowing containers to reach the host machine. 
+github.com
+
+2.
+Host
+
+Removes network isolation between the container and the Docker host. The container shares the host's networking namespace directly (no virtual NIC or separate IP).
+
+3.
+None
+
+Completely disables networking for the container. Useful for containers that need maximum isolation.
+
+4.
+Overlay
+
+Enables communication between containers running on different Docker hosts (multi-host networking). Essential for Docker Swarm and distributed architectures. Virtual networks like bridge and overlay are the two primary virtual network constructs in container networking. 
+cleanstart.com
+
+5.
+Macvlan
+
+Assigns a real MAC address to each container, making it appear as a physical device on the network. Useful for legacy applications that expect to be directly connected to the physical network.
+
+
+
+
+  Common Network Types ::
+  
+  Bridge Network (default): Communication between containers on the same host.
+
+  Host Network: Container shares the host's network.
+
+  Overlay Network: Communication between containers across multiple Docker hosts.
+
+  None Network: Disables networking for the container.
   
 
 - Hub:
