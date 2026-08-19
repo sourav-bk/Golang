@@ -95,7 +95,7 @@ Docker uses a client–server architecture. The Docker-client talks to the Docke
   
   **1. Created state | 2. Running state | 3. Paused/unpaused state | 4. Stopped state | 5. Killed/Deleted state**
 
-  <img alt="image" width="600" src="https://github.com/user-attachments/assets/6585623d-c5bd-48a9-9457-73e360eaa1f3" />
+  <img alt="image" width="450" src="https://github.com/user-attachments/assets/6585623d-c5bd-48a9-9457-73e360eaa1f3" />
 
   
 1. **Created state ::** container is created from a Docker image but the main application process hasn't started yet.
