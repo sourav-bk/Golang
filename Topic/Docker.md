@@ -135,28 +135,6 @@ Docker uses a client–server architecture. The Docker-client talks to the Docke
    >
    > docker rm -f <Running_container_name>
 
-
-
-
-***Components of Docker ::***
-
-- Dockerfile:
-
-  A simple text file containing the instructions used to build a Docker image.Docker
-  
-- Docker Image:
-
-  A read-only template/ snapshot  or "blueprint" that contains the application code, libraries, and environment settings needed to run it.
-  
-- Docker Container:
-
-  A live, running instance of an image. It is isolated from other containers and the host system but shares the host's operating system kernel, making it much more lightweight than a virtual machine (VM).
-
-- Hub:
-
-  A cloud-based repository where developers can find, share, and store container images.
-
-  ---
   
 </details>
 
@@ -180,8 +158,27 @@ Docker uses a client–server architecture. The Docker-client talks to the Docke
 
 
 <details><summary><h3><mark>Components of Docker</mark></h3></summary>
+  
+  ***Components of Docker ::***
 
+- Dockerfile:
 
+  A simple text file containing the instructions used to build a Docker image.Docker
+  
+- Docker Image:
+
+  A read-only template/ snapshot  or "blueprint" that contains the application code, libraries, and environment settings needed to run it.
+  
+- Docker Container:
+
+  A live, running instance of an image. It is isolated from other containers and the host system but shares the host's operating system kernel, making it much more lightweight than a virtual machine (VM).
+
+- Hub:
+
+  A cloud-based repository where developers can find, share, and store container images.
+
+  ---
+  
   
   ---
 </details>
