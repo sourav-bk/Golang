@@ -182,7 +182,7 @@ Docker uses a client–server architecture. The Docker-client talks to the Docke
 
   Each container receives its own network stack — a virtual NIC (eth0), a private IP address, and its own routing table. Virtual networks such as bridge and overlay connect containers to one another and to the outside world.
 
-  **Docker Networking Components ——————**1. Network Namespace, 2. Virtual Ethernet (Pair veth), 3. Docker Bridge, 4. NAT (Network Address Translation), 5. Port Mapping
+  **Docker Networking Components ——————** 1. Network Namespace, 2. Virtual Ethernet (Pair veth), 3. Docker Bridge, 4. NAT (Network Address Translation), 5. Port Mapping
 
   <details><summary><mark>More</mark></summary>   
     
