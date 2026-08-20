@@ -184,7 +184,7 @@ Docker uses a client–server architecture. The Docker-client talks to the Docke
 
   Docker Networking Components —————— 1. Network Namespace, 2. Virtual Ethernet (Pair veth), 3. Docker Bridge, 4. NAT (Network Address Translation), 5. Port Mapping
 
-  <details><summary><mark>More</mark>
+  <details><summary><mark>More</mark></summary>   
     
     1. Network Namespace ::
 
@@ -226,7 +226,7 @@ Docker uses a client–server architecture. The Docker-client talks to the Docke
 
        >docker run -p 8080:80 <image_name>
 
-  </summary>   
+  </details>   
 
   **Docker Network Types**
 
