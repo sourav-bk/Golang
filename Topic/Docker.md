@@ -141,24 +141,6 @@ Docker uses a client–server architecture. The Docker-client talks to the Docke
 </details>
 
 
-  
-<details><summary><h3><mark> Docker multi stage build, layer-caching, layer architecture in Docker </mark></h3></summary>
-
-
-  
-  ---
-</details>
-
-
-
-<details><summary><h3><mark> Docker networking? </mark></h3></summary>
-
-
-  
-  ---
-</details>
-
-
 <details><summary><h3><mark>Components of Docker</mark></h3></summary>
   
   ***Components of Docker ::***
@@ -238,8 +220,6 @@ Macvlan
 Assigns a real MAC address to each container, making it appear as a physical device on the network. Useful for legacy applications that expect to be directly connected to the physical network.
 
 
-
-
   Common Network Types ::
   
   Bridge Network (default): Communication between containers on the same host.
@@ -258,6 +238,18 @@ Assigns a real MAC address to each container, making it appear as a physical dev
   ---
   
   
+  ---
+</details>
+
+
+  
+<details><summary><h3><mark> Docker multi stage build, layer-caching, layer architecture in Docker </mark></h3></summary>
+  
+  ---
+</details>
+
+<details><summary><h3><mark> Docker networking? </mark></h3></summary>
+
   ---
 </details>
 
