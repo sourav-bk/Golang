@@ -232,6 +232,7 @@ Docker uses a client–server architecture. The Docker-client talks to the Docke
   Mainly have 3 type ——————  1. Bridge Network(default)  2. Host Network 3.  None Network
 
   <details><summary><mark>More</mark></summary>
+    
     - **Bridge Network(default) ——**
     
     The most common network type. When WE start a container without specifying a network, it joins the default bridge network.
@@ -246,9 +247,9 @@ Docker uses a client–server architecture. The Docker-client talks to the Docke
 
      The container shares the host's networking namespace directly (no virtual NIC or separate IP) for communication.
 
-     - **None Network ——**
+   - **None Network ——**
 
-       Completely disables networking for the container. Useful for containers that need maximum isolation.
+     Completely disables networking for the container. Useful for containers that need maximum isolation.
 
   </details>
   
