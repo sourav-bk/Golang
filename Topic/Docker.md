@@ -185,51 +185,48 @@ Docker uses a client–server architecture. The Docker-client talks to the Docke
   Docker Networking Components —————— 1. Network Namespace, 2. Virtual Ethernet (Pair veth), 3. Docker Bridge, 4. NAT (Network Address Translation), 5. Port Mapping
 
   <details><summary><mark>More</mark>
-  
-  1. Network Namespace ::
+    
+    1. Network Namespace ::
 
-     Each container runs inside its own **network namespace**, completely isolated from the host and other containers.
+       Each container runs inside its own **network namespace**, completely isolated from the host and other containers.
 
-     Container is own  Network interfaces, IP address, Routing table, DNS configuration, Firewall rules.
+       Container is own  Network interfaces, IP address, Routing table, DNS configuration, Firewall rules.
 
-     From inside the container, it looks like the container has its own independent network stack.
+       From inside the container, it looks like the container has its own independent network stack.
 
-2. Virtual Ethernet (Pair veth) ::
+    2. Virtual Ethernet (Pair veth) ::
 
-     Docker uses a virtual Ethernet pair (also called **veth pair** ) to connect Container to the host network.
+       Docker uses a virtual Ethernet pair (also called **veth pair** ) to connect Container to the host network.
 
-     We can think like, **veth pair** like a virtual network cable.
+       We can think like, **veth pair** like a virtual network cable.
 
-     This allows traffic to move between the container and the Docker network.
+       This allows traffic to move between the container and the Docker network.
+    
+    3. Docker Bridge ::
 
-3. Docker Bridge ::
+       By default, Docker creates the virtual bridge (also called **docker0** )
 
-     By default, Docker creates the virtual bridge (also called **docker0** )
+       The **Bridge** works like a virtual switch. It allows containers attached to the same bridge network to communicate with each other over private subnet.
 
-     The **Bridge** works like a virtual switch. It allows containers attached to the same bridge network to communicate with each other over private subnet.
+       For user-defined bridge networks, Docker also provides built-in DNS resolution so containers can communicate using names.
 
-     For user-defined bridge networks, Docker also provides built-in DNS resolution so containers can communicate using names.
+    4. NAT (Network Address Translation) ::
 
-4. NAT (Network Address Translation) ::
+       When container access the internet, Docker uses NAT through Linux iptables rules that translate the container's private IP to the host's public IP on outbound traffic.
 
-     When container access the internet, Docker uses NAT through Linux iptables rules that translate the container's private IP to the host's public IP on outbound traffic.
+       Container (172.17.0.2) → docker0 bridge → iptables (MASQUERADE) → Host machine IP → Internet.
 
-     Container (172.17.0.2) → docker0 bridge → iptables (MASQUERADE) → Host machine IP → Internet
+       NAS translates the container’s private IP address into the host machine’s IP address.
 
-     NAS translates the container’s private IP address into the host machine’s IP address.
+    5. Port Mapping ::
 
-5. Port Mapping ::
+       Containers are network-isolated by default. Even if an application inside a container listens on a port, that port is not automatically accessible from outside the container.
 
-     Containers are network-isolated by default. Even if an application inside a container listens on a port, that port is not automatically accessible from outside the container.
+       To expose a container port, we publish it using port mapping.
 
-     To expose a container port, we publish it using port mapping.
+       >docker run -p 8080:80 <image_name>
 
-     >docker run -p 8080:80 <image_name>
-
-  </summary>
-
-
-     
+  </summary>   
 
   **Docker Network Types**
 
