@@ -52,7 +52,9 @@ You can **run Docker inside a VM**. This combines the hardware-level security of
 
 <details><summary><h3><mark>Docker / Containerization / container</mark></h3></summary>
 
-Docker is an open-source OS‑level virtualization or containerization platform/tools. Containerization is a software deployment process that allows developers to package applications and all their dependencies(such as libraries, configurations, and runtime) into a single-lightweight unit, that called a container.
+**DockerDocker:** is an open-source OS‑level virtualization or containerization platform/tools.
+
+**Containerization :** Containerization is a software deployment process that allows developers to package applications and all their dependencies(such as libraries, configurations, and runtime) into a single-lightweight unit, that called a container.
 
 which allows applications to share the host OS kernel instead of running a separate guest OS like in traditional virtualization.
 This design makes Docker containers lightweight, fast, and portable, while keeping them isolated from one another.
