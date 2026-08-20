@@ -147,16 +147,21 @@ Docker uses a client–server architecture. The Docker-client talks to the Docke
 
 - **Dockerfile :**
 
-  A simple text file containing the instructions used to build a Docker image.Docker
+  A simple text file containing the instructions used to build a Docker image.
+
+  ---
   
 - **Docker Image :**
 
   A read-only template/ snapshot  or "blueprint" that contains the application code, libraries, and environment settings needed to run it.
+
+  ---
   
 - **Docker Container :**
 
   A live, running instance of an image. It is isolated from other containers and the host system but shares the host's operating system kernel, making it much more lightweight than a virtual machine (VM).
 
+---
 
 - **Docker Volume :**
 
@@ -165,9 +170,9 @@ Docker uses a client–server architecture. The Docker-client talks to the Docke
   Docker Volumes are the recommended way to store and manage data in Docker containers.
 
   Since containers are temporary by nature, any data stored inside a container is lost when the container is removed. Docker Volumes solve this problem by storing data outside the container on the host machine, ensuring the data remains safe and accessible even if the container is stopped, deleted, or recreated.
-
   
-
+---
+  
 - **Docker Network :**
 
   Docker networking is the mechanism/feature that allows containers to secure communicate with each other, the host system, and external networks like the internet.
