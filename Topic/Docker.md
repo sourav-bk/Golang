@@ -176,95 +176,97 @@ Docker uses a client–server architecture. The Docker-client talks to the Docke
 
   Each container gets its own isolated network stack, including a virtual NIC (e.g., eth0), IP address, and routing rules. Virtual networks such as bridge and overlay connect containers to the broader container network.
 
-**How Docker Networking Works**
+  **How Docker Networking Works**
 
-Docker networking is built/internally uses on top of core Linux primitives: network namespaces, virtual Ethernet (veth pairs) , Bridges, and NAT rules. Together, these provide containers with isolated connected networking.
+  Docker networking is built/internally uses on top of core Linux primitives: network namespaces, virtual Ethernet (veth pairs) , Bridges, and NAT rules. Together, these provide containers with isolated yet connected networking.
 
-Each container receives its own network stack — a virtual NIC (eth0), a private IP address, and its own routing table. Virtual networks such as bridge and overlay connect containers to one another and to the outside world.
+  Each container receives its own network stack — a virtual NIC (eth0), a private IP address, and its own routing table. Virtual networks such as bridge and overlay connect containers to one another and to the outside world.
 
+  Docker Networking Components ——————
 
-Docker Networking Components —————— 
+  1. Network Namespace ::
 
-1. Network Namespace ::
+     Each container runs inside its own **network namespace**, completely isolated from the host and other containers.
 
-Each container runs inside its own **network namespace**, completely isolated from the host and other containers. 
+     Container is own  Network interfaces, IP address, Routing table, DNS configuration, Firewall rules.
 
-Container is own  Network interfaces, IP address, Routing table, DNS configuration, Firewall rules.
+     From inside the container, it looks like the container has its own independent network stack.
 
-From inside the container, it looks like the container has its own independent network stack.
+  2. Virtual Ethernet Pair (veth) ::
 
+     Docker uses a virtual Ethernet pair (also called **veth pair** ) to connect Container to the host network.
 
-2. Virtual Ethernet Pair (veth) ::
+     We can think like, **veth pair** like a virtual network cable.
 
-Docker uses a virtual Ethernet pair (also called **veth pair** ) to connect Container to the host network.
+     This allows traffic to move between the container and the Docker network.
 
-WE can think like, **veth pair** like a virtual network cable.
+  3. Docker Bridge ::
 
-This allows traffic to move between the container and the Docker network.
+     By default, Docker creates the virtual bridge (also called **docker0** )
 
+     The **Bridge** works like a virtual switch. It allows containers attached to the same bridge network to communicate with each other over private subnet.
 
-3. Docker Bridge ::
+     For user-defined bridge networks, Docker also provides built-in DNS resolution so containers can communicate using names.
 
-By default, Docker creates the virtual bridge (also called **docker0** )
+  4. NAT (Network Address Translation) ::
 
-The **Bridge** works like a virtual switch. It allows containers attached to the same bridge network to communicate with each other over private subnet.
+     When container access the internet, Docker uses NAT through Linux iptables rules that translate the container's private IP to the host's public IP on outbound traffic.
 
-For user-defined bridge networks, Docker also provides built-in DNS resolution so containers can communicate using names.
+     Container (172.17.0.2) → docker0 bridge → iptables (MASQUERADE) → Host machine IP → Internet
 
+     NAS translates the container’s private IP address into the host machine’s IP address.
 
-4. NAT (Network Address Translation) ::
+  5. Port Mapping ::
 
-When container access the internet, Docker uses NAT through Linux iptables rules that translate the container's private IP to the host's public IP on outbound traffic.
+     Containers are network-isolated by default. Even if an application inside a container listens on a port, that port is not automatically accessible from outside the container.
 
-Container (172.17.0.2) → docker0 bridge → iptables (MASQUERADE) → Host machine IP → Internet
+     To expose a container port, we publish it using port mapping.
 
-NAS translates the container’s private IP address into the host machine’s IP address.
+     >docker run -p 8080:80 <image_name>
+     
 
+  **Docker Network Types**
 
-5. Port Mapping ::
+  Depending on how containers need to communicate. Docker provides different network types (also called network drivers).
 
-Containers are network-isolated by default. Even if an application inside a container listens on a port, that port is not automatically accessible from outside the container.
+  Mainly have 3 type ——————  1. Bridge Network(default)  2. Host Network 3.  None Network
 
-To expose a container port, we publish it using port mapping. 
+  <details><summary><mark>More</mark></summary>
+    - **Bridge Network(default) ——**
+    
+    The most common network type. When WE start a container without specifying a network, it joins the default bridge network.
+    
+    It provides DNS-based name resolution and better isolation.
 
-docker run -p 8080:80 <image_name>
+    Bridged networking maps host docker internal through host-gateway, allowing containers to reach the host machine.
 
+   - **Host Network ——**
 
+     Removes network isolation between the container.
 
-1.
-Bridge(default)
+     The container shares the host's networking namespace directly (no virtual NIC or separate IP) for communication.
 
-The most common network type. When you start a container without specifying a network, it joins the default bridge network.
+     - **None Network ——**
 
-A user-defined bridge network is recommended for production, as it provides DNS-based name resolution and better isolation.
+       Completely disables networking for the container. Useful for containers that need maximum isolation.
 
-Bridged networking maps host.docker.internal through host-gateway, allowing containers to reach the host machine. 
-github.com
-
-2.
-Host
-
-Removes network isolation between the container and the Docker host. The container shares the host's networking namespace directly (no virtual NIC or separate IP).
-
-3.
-None
-
-Completely disables networking for the container. Useful for containers that need maximum isolation.
-
-4.
-Overlay
-
-Enables communication between containers running on different Docker hosts (multi-host networking). Essential for Docker Swarm and distributed architectures. Virtual networks like bridge and overlay are the two primary virtual network constructs in container networking. 
-cleanstart.com
-
-5.
-Macvlan
-
-Assigns a real MAC address to each container, making it appear as a physical device on the network. Useful for legacy applications that expect to be directly connected to the physical network.
-
-
+  </details>
   
-  
+  but also have more 2 type ——————   4. Overlay Network 5. Macvlan Network
+
+  <details><summary><mark>More</mark></summary>
+    
+    - **Overlay Network ——**
+
+      Enables communication between containers running on different Docker hosts (multi-host networking). Essential for multi-Docker-host and distributed architectures.
+
+    - **Macvlan Network ——**
+
+      Assigns a real MAC address to each container, making it appear as a physical device on the network. Useful for legacy applications that expect to be directly connected to the physical network.
+
+
+  </details>
+
   ---
 </details>
 
