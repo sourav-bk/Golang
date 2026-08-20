@@ -180,6 +180,8 @@ Docker uses a client–server architecture. The Docker-client talks to the Docke
   It provides network isolation and connectivity, allowing containers to securely exchange data and services.
 
   Each container gets its own isolated network stack, including a virtual NIC (e.g., eth0), IP address, and routing rules. Virtual networks such as bridge and overlay connect containers to the broader container network.
+  
+  ---
 
   **How Docker Networking Works**
 
