@@ -50,7 +50,7 @@ You can **run Docker inside a VM**. This combines the hardware-level security of
 
 
 
-<details><summary><h3><mark>Docker / Containerization / container</mark></h3></summary>
+<details><summary><h3><mark> Docker | Containerization | container | Architecture </mark></h3></summary>
 
 **DockerDocker :** DockerDocker is an open-source OS‑level virtualization or containerization platform/tools.
 
