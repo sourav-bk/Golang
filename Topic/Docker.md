@@ -164,6 +164,13 @@ Docker uses a client–server architecture. The Docker-client talks to the Docke
     > EXPOSE → Specifies the application's listening port.
     > 
     > CMD → Defines the default command executed when the container starts.
+    
+
+  - **copy & add**
+    The primary difference is that COPY only moves local files from your host machine into the container, while ADD has extra features like auto-extracting tar files and downloading files from remote URLs.
+    
+  - **CMD & ENTRYPOINT**
+    The core difference between CMD and ENTRYPOINT is that CMD sets a default command or parameters that are easily replaced at runtime, while ENTRYPOINT sets a permanent executable that treats runtime arguments as appended parameters.
 
   ---
   
