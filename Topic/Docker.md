@@ -282,7 +282,7 @@ Docker uses a client–server architecture. The Docker-client talks to the Docke
 
 
   
-<details><summary><h3><mark> Docker multi stage build, layer-caching, layer architecture in Docker </mark></h3></summary>
+<details><summary><h3><mark> layer-caching, layer architecture in Docker </mark></h3></summary>
 
 
 **Docker Layer Architecture**
@@ -301,7 +301,7 @@ Docker Layer Architecture is the layered design of Docker images where each Dock
   ---
 </details>
 
-<details><summary><h3><mark> Docker networking? </mark></h3></summary>
+<details><summary><h3><mark> Docker multi stage build </mark></h3></summary>
 
   ---
 </details>
