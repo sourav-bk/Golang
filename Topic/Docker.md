@@ -311,5 +311,21 @@ Docker uses a client–server architecture. The Docker-client talks to the Docke
   
   Docker Multi-Stage Build is a technique that uses multiple FROM statements in a Dockerfile to separate the build environment from the runtime environment. The application is built in one stage, and only the necessary artifacts are copied to the final image, resulting in smaller, more secure, and optimized Docker images.
 
+  ```xml
+
+  # Build Stage
+  FROM golang:1.22 AS builder
+  WORKDIR /app
+  COPY . .
+  RUN go build -o myapp
+  
+  # Runtime Stage
+  FROM alpine:latest
+  COPY --from=builder /app/myapp /myapp
+  CMD ["/myapp"]
+
+  ```
+  
+
   ---
 </details>
