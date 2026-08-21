@@ -166,7 +166,7 @@ Docker uses a client–server architecture. The Docker-client talks to the Docke
     > CMD → Defines the default command executed when the container starts.
     
 
-  - **copy & add**
+  - **COPY & ADD**
     The primary difference is that COPY only moves local files from your host machine into the container, while ADD has extra features like auto-extracting tar files and downloading files from remote URLs.
     
   - **CMD & ENTRYPOINT**
