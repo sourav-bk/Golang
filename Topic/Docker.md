@@ -149,6 +149,16 @@ Docker uses a client–server architecture. The Docker-client talks to the Docke
 
   A simple text file containing the instructions used to build a Docker image.
 
+    **Common Dockerfile Commands**
+
+    > FROM → Defines the base image.
+    > WORKDIR → Sets the working directory inside the container.
+    > COPY → Copies files from host to container.
+    > RUN → Executes commands during image build.
+    > ENV → Sets environment variables.
+    > EXPOSE → Specifies the application's listening port.
+    > CMD → Defines the default command executed when the container starts.
+
   ---
   
 - **Docker Image :**
