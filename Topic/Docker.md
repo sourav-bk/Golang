@@ -302,6 +302,16 @@ Docker Layer Architecture is the layered design of Docker images where each Dock
 </details>
 
 <details><summary><h3><mark> Docker multi stage build </mark></h3></summary>
+Docker Multi-Stage Build is a feature that allows multiple FROM statements within a single Dockerfile. It separates the build stage from the runtime stage, enabling Docker to keep only the files required to run the application in the final image.
+
+In a traditional Docker build, the final image often contains source code, build tools, compilers, and dependencies, which increases image size and security risks. With a multi-stage build, the application is compiled or packaged in one stage, and only the final executable or required artifacts are copied to the runtime stage.
+
+As a result, the final Docker image becomes smaller, more secure, and more efficient, since unnecessary build tools and source files are excluded.
+
+**Interview Summary:**
+
+Docker Multi-Stage Build is a technique that uses multiple FROM statements in a Dockerfile to separate the build environment from the runtime environment. The application is built in one stage, and only the necessary artifacts are copied to the final image, resulting in smaller, more secure, and optimized Docker images.
+
 
   ---
 </details>
