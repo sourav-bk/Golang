@@ -1099,22 +1099,24 @@ Composition is based on a “has-a” relationship, where a type is built by com
   SOLID Principles in Go (Golang) are 5 object-oriented design principles that help write **maintainable, scalable, testable, and loosely coupled code**. Although Go is not a traditional OOP language, SOLID can still be applied using **interfaces, composition,** and **dependency injection**.
 	
 - **S for - Single Responsibility Principle (SRP)** :: 
-	 Means : Class, Struct, or Module should have only one reason to change. It must focus on single task.
+
+  	Means : Class, Struct, or Module should have only one reason to change. It must focus on single task.
   
 - **O for - Open/Closed Principle (OCP)** ::
-	 Means : Software entities should be open for extension but closed for modification. Instead of changing existing code, add new functionality through interfaces.
+
+  	Means : Software entities should be open for extension but closed for modification. Instead of changing existing code, add new functionality through interfaces.
   
 - **L for - Liskov Substitution Principle (LSP)** ::
   
-	 Means : Any type implementing an interface should be usable wherever that interface is expected, without causing unexpected behavior.If your code expects an interface, then any type that implements that interface should work correctly.
+	Means : Any type implementing an interface should be usable wherever that interface is expected, without causing unexpected behavior.If your code expects an interface, then any type that implements that interface should work correctly.
    
 - **I for - Interface Segregation Principle (ISP)** ::
   
-	 Means : that no type should be forced to implement methods it does not need; therefore, prefer small and specific interfaces over large general-purpose ones.
+	Means : that no type should be forced to implement methods it does not need; therefore, prefer small and specific interfaces over large general-purpose ones.
 	
 - **D for - Dependency Inversion Principle (DIP)** ::
   
-	 Means : High-level modules should not depend on low-level modules. Both should depend on abstractions (interfaces). rather than concrete implementations.
+	Means : High-level modules should not depend on low-level modules. Both should depend on abstractions (interfaces). rather than concrete implementations.
 	 
  </details>
 <br>
