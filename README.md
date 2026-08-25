@@ -1094,7 +1094,7 @@ Composition is based on a “has-a” relationship, where a type is built by com
  
  </details>
  
- <details><summary><h3><mark> Composition | Composition over Inheritance | Composition vs Inheritance) </mark></h3></summary>
+ <details><summary><h3><mark> SOLID Principles </mark></h3></summary>
 	 SOLID Principles in Go (Golang) are 5 object-oriented design principles that help write **maintainable, scalable, testable, and loosely coupled code**. Although Go is not a traditional OOP language, SOLID can still be applied using **interfaces, composition,** and **dependency injection**.
 	- S for - Single Responsibility Principle (SRP):: 
 	 Means : Class, Struct, or Module should have only one reason to change. It must focus on single task.
