@@ -277,3 +277,55 @@ func fibonacci(n int, ch chan<- int) {
 
 ```
 </details>
+
+
+<details>
+	<summary><mark> Key-value store concurrency </mark></summary>
+	
+```go
+
+package main
+import "fmt"
+import "sync"
+ 
+type kvStore struct {
+    data sync.Map
+}
+
+func NewKVStore() *kvStore {
+	return &kvStore{}
+}
+ 
+func (k *kvStore) Set(key string, value any) {
+    k.data.Store(key, value)
+}
+ 
+func (k *kvStore) Get(key string) (any, bool) {
+    return k.data.Load(key)
+}
+ 
+func (k *kvStore) Delete(key string) {
+    k.data.Delete(key)
+}
+ 
+func (k *kvStore) GetOrCreate(key string, value any) (any, bool) {
+    return k.data.LoadOrStore(key, value)
+}
+ 
+ 
+func main() {
+    fmt.Println("::__KVStore__::");
+	
+    store := NewKVStore()            //store := &KVStore{}
+    store.Set("name", "Sourav")
+    store.Set("key-01", "value-01")
+
+    value, ok := store.GetOrCreate("key-01","value-update")
+    if ok {
+        fmt.Println(value)
+    }
+
+}
+
+```
+</details>
