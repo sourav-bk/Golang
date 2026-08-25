@@ -288,26 +288,40 @@ package main
 import "fmt"
 import "sync"
  
+
+// kvStore represents a thread-safe in-memory key-value store // backed by sync.Map. 
 type kvStore struct {
     data sync.Map
 }
 
+// NewKVStore creates and returns a new instance of kvStore.
 func NewKVStore() *kvStore {
 	return &kvStore{}
 }
  
+
+// Set stores the given value for the specified key. // If the key already exists, its value is overwritten. 
 func (k *kvStore) Set(key string, value any) {
     k.data.Store(key, value)
 }
  
+// Get retrieves the value associated with the specified key. // It returns the value and a boolean indicating whether the key exists. 
 func (k *kvStore) Get(key string) (any, bool) {
     return k.data.Load(key)
 }
- 
+
+// Delete removes the specified key and its value from the store. 
 func (k *kvStore) Delete(key string) {
     k.data.Delete(key)
 }
- 
+
+// GetOrCreate retrieves the value for the specified key if it exists.
+// Otherwise, it stores the provided value and returns it.
+//
+// Returns:
+// - actual value stored in the map
+// - true if the key already existed
+// - false if a new value was stored 
 func (k *kvStore) GetOrCreate(key string, value any) (any, bool) {
     return k.data.LoadOrStore(key, value)
 }
