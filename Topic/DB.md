@@ -226,6 +226,22 @@ Common Types of Indexes---
 
 
   
+## CAP theorem 
+
+CAP theorem ::
+
+CAP theorem states that a distributed system cannot simultaneously guarantee Consistency, Availability, and Partition Tolerance during a network partition.
+
+1. **Consistency** : means all clients receive the same and most recent value regardless of which node serves the request.
+
+2. **Availability** : means the system always responds to user requests, even if the response might not contain the latest data.
+
+3. **Partition Tolerance** : is the ability of a distributed system to continue operating even when communication between some nodes is lost due to network failure.
+
+Since partitions are inevitable in distributed systems, we usually choose either CP (favor consistency) or AP (favor availability). Banking systems typically prefer CP, while social media feeds generally prefer AP
+
+
+  
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Q. What is the difference between DDL and DML?'
 Q. What is a primary key in a database, and how is it used to uniquely identify records?
