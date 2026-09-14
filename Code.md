@@ -25,6 +25,7 @@
 	  fmt.Println("Result 2:", <-resultChan) // Output: 10
   }
 ```
+
 </details>
 
 <details>
@@ -53,6 +54,40 @@
 	  go add(resultChan, 5, 5)
 	  fmt.Println("Result 2:", <-resultChan) // Output: 10
   }
+```
+</details>
+
+<details>
+	<summary><mark> Reverse -> String | Integer </mark></summary>
+	
+```go
+package main
+
+import "fmt"
+
+func ReverseString(s string) string {
+	runes := []rune(s)
+	for i, j := 0, len(runes)-1; i < j; i, j = i+1, j-1 {
+		runes[i], runes[j] = runes[j], runes[i]
+	}
+	return string(runes)
+}
+
+func ReverseInteger(n int) int {
+	res := 0
+	for n != 0 {
+		remainder := n % 10
+		res = (res * 10) + remainder
+		n /= 10
+	}
+	return res
+}
+
+func main() {
+	fmt.Println(ReverseString("golang"))      // Output: gnalog
+	fmt.Println(ReverseInteger(123))    // Output: 321
+}
+
 ```
 </details>
 
