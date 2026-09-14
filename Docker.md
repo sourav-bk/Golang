@@ -141,7 +141,7 @@ Docker uses a client–server architecture. The Docker-client talks to the Docke
 </details>
 
 
-<details><summary><h3><mark>Components of Docker</mark></h3></summary>
+<details><summary><h3><mark>Components of Docker | Dockerfile, Image, Container, Volume, Network</mark></h3></summary>
   
   ***Components of Docker ::***
 
