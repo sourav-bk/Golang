@@ -47,7 +47,7 @@
 
 Kubernetes follows a Master-Worker (Client-Server) architecture. The cluster consists of a Control Plane (Master) that manages the cluster, and Worker Nodes that run the actual application workloads.
 
-   **Control Plane :**
+   #### Control Plane
    
    The Control Plane is the brain of Kubernetes. It makes global decisions about the cluster (scheduling, detecting & responding to events). In production, it runs across multiple machines for high availability.
    
@@ -68,9 +68,9 @@ Kubernetes follows a Master-Worker (Client-Server) architecture. The cluster con
      
    </details>
 
-   **Worker Node :**
+   #### Worker Node
 
-   
+
 
    <details><summary>Components of Worker Node</summary>
    
