@@ -88,6 +88,7 @@ Kubernetes follows a Master-Worker (Client-Server) architecture. The cluster con
      The Kubelet is a fundamental component of the Kubernetes worker node . It acts as the primary agent responsible for the lifecycle of applications running on that node .
 
      Key responsibilities include:
+     
      - **Pod Management:**
        
        It is responsible for running and maintaining the Pods assigned to the node, ensuring they are always in a running state .
@@ -117,11 +118,29 @@ Kubernetes follows a Master-Worker (Client-Server) architecture. The cluster con
 
        It continuously monitors the API Server for changes to service configurations and updates the node's IP tables or IPVS rules to enforce network traffic routing.
 
-
-
      
-   - **Container Runtime**
+   - **Container-Runtime**
+     
+     Container-Runtime is the essential software component responsible for actually pulling container images and running the containers themselves on a worker node. It manages the low-level lifecycle of containers—starting, stopping, and handling their execution—based on specific instructions received from the Kubelet.
+     
    - **Pods**
+     A Pod is the smallest and most basic deployable unit in Kubernetes. Unlike in Docker, where you deploy individual containers, in Kubernetes, you deploy Pods that act as a wrapper around one or more containers.
+
+     Key features :
+
+     - **Abstraction:**
+
+       They provide a YAML-based specification that defines how a container should run, replacing the complex command-line arguments used in Docker.
+     
+     - **Encapsulation:**
+
+       While they often hold a single container, a Pod can contain multiple containers that share the same network and storage resources, allowing them to communicate easily.
+     
+     - **Foundation:**
+
+       A Pod is not a full-featured management tool on its own; it serves as the building block for higher-level abstractions like Deployments, which add essential capabilities such as auto-healing and auto-scaling.
+
+
    - **Deployment**
    - **ReplicaSet**
    - **Service**
