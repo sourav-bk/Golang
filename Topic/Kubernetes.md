@@ -56,6 +56,9 @@ Kubernetes follows a Master-Worker (Client-Server) architecture. The cluster con
    <details><summary>Components of Control Plane</summary>
       
    - **API Server (kube-apiserver)**
+     The API Server is the entry point of Kubernetes.Everything communicates through API Server.
+     It's Accepts REST API requests. Authentication & Authorization and Validates the requests. then Stores cluster state in ETCD or Communication with ETCD.
+     
    - **ETCD**
    - **Scheduler (kube-scheduler)**
    - **Controller Manager (kube-controller-manager)**
