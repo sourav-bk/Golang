@@ -79,7 +79,7 @@ Kubernetes follows a Master-Worker (Client-Server) architecture. The cluster con
 
    #### Worker Node
 
-
+   Worker Node in Kubernetes acts as the data plane or the machine that executes applications. It is responsible for running containerized workloads, managing networking, and reporting back to the control plane. 
 
    <details><summary>Components of Worker Node</summary>
    
