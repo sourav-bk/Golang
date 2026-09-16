@@ -60,6 +60,8 @@ Kubernetes follows a Master-Worker (Client-Server) architecture. The cluster con
      It's Accepts REST API requests. Authentication & Authorization and Validates the requests. then Stores cluster state in ETCD or Communication with ETCD.
      
    - **ETCD**
+     ETCD is a distributed key-value database. Purpose to Stores cluster configuration.., Stores pod information.., Stores node information.., Stores secrets/configmaps.
+     
    - **Scheduler (kube-scheduler)**
    - **Controller Manager (kube-controller-manager)**
    - **Cloud Controller Manager**
