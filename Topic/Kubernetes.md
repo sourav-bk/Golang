@@ -124,6 +124,7 @@ Kubernetes follows a Master-Worker (Client-Server) architecture. The cluster con
      Container-Runtime is the essential software component responsible for actually pulling container images and running the containers themselves on a worker node. It manages the low-level lifecycle of containers—starting, stopping, and handling their execution—based on specific instructions received from the Kubelet.
      
    - **Pods**
+     
      A Pod is the smallest and most basic deployable unit in Kubernetes. Unlike in Docker, where you deploy individual containers, in Kubernetes, you deploy Pods that act as a wrapper around one or more containers.
 
      Key features :
