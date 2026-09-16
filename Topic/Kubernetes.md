@@ -42,3 +42,41 @@
    
    **Using K8s :** Supports zero-downtime rolling updates and easy rollbacks.  
 </details>   
+
+<details><summary><h3><mark> K8S Architecture </mark></h3></summary>
+
+Kubernetes follows a Master-Worker (Client-Server) architecture. The cluster consists of a Control Plane (Master) that manages the cluster, and Worker Nodes that run the actual application workloads.
+
+   **Control Plane :**
+   The Control Plane is the brain of Kubernetes. It makes global decisions about the cluster (scheduling, detecting & responding to events). In production, it runs across multiple machines for high availability.
+   **Responsibilities:** Cluster management, Scheduling workloads, Maintaining desired state, Monitoring cluster health.
+
+   <details><summary>Components of Control Plane</summary>
+      
+   - **API Server (kube-apiserver)**
+   - **ETCD**
+   - **Scheduler (kube-scheduler)**
+   - **Controller Manager (kube-controller-manager)**
+   - **Cloud Controller Manager**
+     
+   </details>
+
+   **Worker Node :**
+
+   <details><summary>Components of Control Plane</summary>
+   
+   - **Kubelet**
+   - **Kube Proxy**
+   - **Container Runtime**
+   - **Pods**
+   - **Deployment**
+   - **ReplicaSet**
+   - **Service**
+   - **Ingress**
+   - **ConfigMap**
+   - **Secret**
+   
+   </details>
+
+   
+</details>
