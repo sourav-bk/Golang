@@ -56,16 +56,25 @@ Kubernetes follows a Master-Worker (Client-Server) architecture. The cluster con
    <details><summary>Components of Control Plane</summary>
       
    - **API Server (kube-apiserver)**
+
      The API Server is the entry point of Kubernetes.Everything communicates through API Server.
      It's Accepts REST API requests. Authentication & Authorization and Validates the requests. then Stores cluster state in ETCD or Communication with ETCD.
      
    - **ETCD**
+     
      ETCD is a distributed key-value database. Purpose to Stores cluster configuration.., Stores pod information.., Stores node information.., Stores secrets/configmaps.
      
    - **Scheduler (kube-scheduler)**
-   - **Controller Manager (kube-controller-manager)**
-   - **Cloud Controller Manager**
+
+     The Kubernetes Scheduler (kube-scheduler) is a core control plane component responsible for assigning newly created or unscheduled Pods to the most optimal Nodes in a cluster.
      
+   - **Controller Manager (kube-controller-manager)**
+     
+     The Controller Manager (kube-controller-manager) is a critical component of the Kubernetes control plane. Its primary role is to run various background control loops that ensure the actual state of our cluster matches the desired state defined in our configuration and give the Auto-healing and Scaling capability Functionality.
+   
+   - **Cloud Controller Manager**
+   - 
+     The Cloud Controller Manager (CCM) is a specialized component of the Kubernetes control plane that acts as a bridge between your Kubernetes cluster and the underlying cloud infrastructure
    </details>
 
    #### Worker Node
@@ -75,6 +84,22 @@ Kubernetes follows a Master-Worker (Client-Server) architecture. The cluster con
    <details><summary>Components of Worker Node</summary>
    
    - **Kubelet**
+     The Kubelet is a fundamental component of the Kubernetes worker node . It acts as the primary agent responsible for the lifecycle of applications running on that node .
+
+     Key responsibilities include:
+     - **Pod Management:**
+       
+       It is responsible for running and maintaining the Pods assigned to the node, ensuring they are always in a running state .
+       
+     - **Health Monitoring & Auto-healing:**
+       
+       It continuously checks if the Pods are healthy; if a Pod is not running correctly, it informs the Control Plane so that corrective actions can be taken, supporting Kubernetes' auto-healing capabilities .
+       
+     - **Runtime Coordination:**
+
+       It communicates with the container runtime (such as containerd or CRI-O) to actually execute the containers defined within the Pod specifications .
+
+
    - **Kube Proxy**
    - **Container Runtime**
    - **Pods**
