@@ -181,10 +181,17 @@ Kubernetes follows a Master-Worker (Client-Server) architecture. The cluster con
        While you can create a ReplicaSet manually, it is typically managed automatically by a Deployment, which acts as a higher-level wrapper for rolling updates and scaling operations.
         
    - **Service**
+     
      Service is a critical abstraction that provides load balancing, service discovery, and a stable network endpoint for accessing your applications. Because Pods are ephemeral and frequently change IP addresses, a Service provides a constant, stable IP address and DNS name for clients to connect to your application, regardless of the underlying Pod lifecycle. It intelligently routes incoming network traffic across all the healthy Pods that match its labels and selectors, ensuring high availability and efficient resource usage. Depending on the required reachability, a Service can be configured in different modes, including ClusterIP for internal access, NodePort for external access via a static node port, or LoadBalancer for exposing the application via a cloud-provider load balancer.
      
    - **Ingress**
+
+     Ingress is an API object that manages external access to services within a cluster, typically via HTTP and HTTPS. It acts as a entry point, providing advanced routing capabilities—such as path-based and host-based load balancing—that standard Service types (like NodePort or LoadBalancer) often lack. A critical component of this architecture is the Ingress Controller, which must be deployed in the cluster to actually implement the rules defined in your Ingress resources by monitoring the cluster and updating the underlying load balancer configuration accordingly. By consolidating traffic management, Ingress helps solve the cost and complexity issues associated with exposing multiple services individually through dedicated cloud-provider load balancers.
+     
    - **ConfigMap**
+
+     ConfigMap is an API object used to decouple configuration data from containerized application code. It allows you to store non-sensitive information—such as environment variables, database connection details, or configuration files—in a central resource that can be injected into Pods as environment variables or mounted as files within the container's filesystem. By using a ConfigMap, you avoid hardcoding configuration values inside your application, making your images more portable and enabling you to update settings dynamically without needing to rebuild or restart your containers.
+     
    - **Secret**
    
    </details>
