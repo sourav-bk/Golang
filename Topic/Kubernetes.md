@@ -148,7 +148,9 @@ Kubernetes follows a Master-Worker (Client-Server) architecture. The cluster con
 
      Key features:
 
-     - **Automation:** Unlike manually creating Pods, a Deployment allows you to define the desired state of your application (like the number of replicas), and it automatically ensures that state is maintained.
+     - **Automation:**
+
+       Unlike manually creating Pods, a Deployment allows you to define the desired state of your application (like the number of replicas), and it automatically ensures that state is maintained.
 
      - **Auto-healing:**
 
