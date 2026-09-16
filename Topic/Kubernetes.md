@@ -73,7 +73,7 @@ Kubernetes follows a Master-Worker (Client-Server) architecture. The cluster con
      The Controller Manager (kube-controller-manager) is a critical component of the Kubernetes control plane. Its primary role is to run various background control loops that ensure the actual state of our cluster matches the desired state defined in our configuration and give the Auto-healing and Scaling capability Functionality.
    
    - **Cloud Controller Manager**
-   - 
+     
      The Cloud Controller Manager (CCM) is a specialized component of the Kubernetes control plane that acts as a bridge between your Kubernetes cluster and the underlying cloud infrastructure
    </details>
 
@@ -84,6 +84,7 @@ Kubernetes follows a Master-Worker (Client-Server) architecture. The cluster con
    <details><summary>Components of Worker Node</summary>
    
    - **Kubelet**
+
      The Kubelet is a fundamental component of the Kubernetes worker node . It acts as the primary agent responsible for the lifecycle of applications running on that node .
 
      Key responsibilities include:
@@ -99,8 +100,26 @@ Kubernetes follows a Master-Worker (Client-Server) architecture. The cluster con
 
        It communicates with the container runtime (such as containerd or CRI-O) to actually execute the containers defined within the Pod specifications .
 
-
    - **Kube Proxy**
+
+     In Kubernetes, kube-proxy is a critical network component that runs on every worker node (45:09). It acts as the network manager for your cluster, ensuring that traffic reaches the correct Pod.
+     
+     Key responsibilities :
+     - **Networking & Service Discovery:**
+
+       It assigns IP addresses to Pods and ensures that services are discoverable within the cluster.
+
+     - **Load Balancing:**
+
+       It implements load-balancing logic. If you have multiple replicas of a Pod, it distributes incoming traffic across them.
+       
+     - **IP Table Management:**
+
+       It continuously monitors the API Server for changes to service configurations and updates the node's IP tables or IPVS rules to enforce network traffic routing.
+
+
+
+     
    - **Container Runtime**
    - **Pods**
    - **Deployment**
