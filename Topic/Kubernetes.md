@@ -1,4 +1,4 @@
-### What Problem Solved K8s ?
+<details><summary><h3><mark> What Problem Solved K8s | Benefit </mark></h3></summary>
 
 1. **Manual Deployment**
 
@@ -40,4 +40,5 @@
 
    Updating applications could cause downtime.
    
-   **Using K8s :** Supports zero-downtime rolling updates and easy rollbacks.   
+   **Using K8s :** Supports zero-downtime rolling updates and easy rollbacks.  
+</details>   
