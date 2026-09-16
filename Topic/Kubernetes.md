@@ -142,6 +142,27 @@ Kubernetes follows a Master-Worker (Client-Server) architecture. The cluster con
        A Pod is not a full-featured management tool on its own; it serves as the building block for higher-level abstractions like Deployments, which add essential capabilities such as auto-healing and auto-scaling.
 
 
+
+   - **ReplicaSet**
+
+     A ReplicaSet is a vital Kubernetes controller designed to guarantee that a specified number of Pod replicas are running at any given time. It serves as the engine behind Deployments.
+
+     Key functions:
+     
+     - **Maintaining Desired State:**
+
+       It continuously monitors the cluster to ensure the actual state matches the desired replica count defined in your configuration.
+
+     - **Auto-Healing:**
+
+       If a Pod is deleted or crashes, the ReplicaSet immediately detects the discrepancy and initiates the creation of a new replacement to maintain your application's availability.
+       
+     - **Abstraction:**
+
+       While you can create a ReplicaSet manually, it is typically managed automatically by a Deployment, which acts as a higher-level wrapper for rolling updates and scaling operations.
+       
+
+
    - **Deployment**
      
      Deployment is a high-level abstraction that acts as a manager for your application, sitting on top of Pods to provide robust orchestration.
@@ -164,23 +185,6 @@ Kubernetes follows a Master-Worker (Client-Server) architecture. The cluster con
 
        By using a Deployment, you do not need to manage individual ReplicaSets or Pods directly; you simply define the template in a YAML file and let the controller handle the lifecycle.
        
-   - **ReplicaSet**
-
-     A ReplicaSet is a vital Kubernetes controller designed to guarantee that a specified number of Pod replicas are running at any given time. It serves as the engine behind Deployments.
-
-     Key functions:
-     
-     - **Maintaining Desired State:**
-
-       It continuously monitors the cluster to ensure the actual state matches the desired replica count defined in your configuration.
-
-     - **Auto-Healing:**
-
-       If a Pod is deleted or crashes, the ReplicaSet immediately detects the discrepancy and initiates the creation of a new replacement to maintain your application's availability.
-       
-     - **Abstraction:**
-
-       While you can create a ReplicaSet manually, it is typically managed automatically by a Deployment, which acts as a higher-level wrapper for rolling updates and scaling operations.
         
    - **Service**
      
@@ -195,6 +199,8 @@ Kubernetes follows a Master-Worker (Client-Server) architecture. The cluster con
      ConfigMap is an API object used to decouple configuration data from containerized application code. It allows you to store non-sensitive information—such as environment variables, database connection details, or configuration files—in a central resource that can be injected into Pods as environment variables or mounted as files within the container's filesystem. By using a ConfigMap, you avoid hardcoding configuration values inside your application, making your images more portable and enabling you to update settings dynamically without needing to rebuild or restart your containers.
      
    - **Secret**
+
+     Secret is an API object designed to store and manage sensitive information, such as passwords, OAuth tokens, or SSH keys, that should not be exposed in cleartext within your configuration files. Unlike a ConfigMap, which stores non-sensitive data, Secrets are handled with higher security standards, including encryption at rest within the etcd database to protect against unauthorized access. Additionally, administrators can enforce strict Role-Based Access Control (RBAC) policies to restrict who can read or modify specific secrets, ensuring that only authorized users or services have access to sensitive credentials.
    
    </details>
 
