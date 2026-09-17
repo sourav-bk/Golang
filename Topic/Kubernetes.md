@@ -45,6 +45,8 @@
 
 <details><summary><h3><mark> K8S Architecture </mark></h3></summary>
 
+Kubernetes is an open-source platform that automates the deployment, scaling, and management of containerized applications.
+
 Kubernetes follows a Master-Worker (Client-Server) architecture. The cluster consists of a Control Plane (Master) that manages the cluster, and Worker Nodes that run the actual application workloads.
 
    #### Control Plane
