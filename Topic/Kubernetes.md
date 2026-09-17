@@ -208,3 +208,7 @@ Kubernetes follows a Master-Worker (Client-Server) architecture. The cluster con
 
    
 </details>
+
+
+<img width="577" height="740" alt="image" src="https://github.com/user-attachments/assets/a6ee4f84-8494-4bb0-950b-6d8ebf19fa77" />
+
